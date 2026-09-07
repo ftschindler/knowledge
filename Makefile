@@ -15,4 +15,4 @@ site:
 
 ## Start the live-reloading dev server
 serve:
-	NO_MKDOCS_2_WARNING=true uv run mkdocs serve
+	NO_MKDOCS_2_WARNING=true uv run mkdocs serve -a localhost:80$$(( RANDOM % 10 ))$$(( RANDOM % 10 ))
