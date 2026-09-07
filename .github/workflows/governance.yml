@@ -1,5 +1,5 @@
 ---
-name: 🩺
+name: Governance
 
 permissions:
   contents: read
@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   governance:
-    name: Governance checks
+    name: 🩺 (run governance checks)
     runs-on: ubuntu-latest
     timeout-minutes: 2
     defaults:
@@ -24,6 +24,7 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0  # v6
+
     - name: Setup Python
       id: setup-python
       uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1  # v6.3.0
