@@ -6,7 +6,10 @@ permissions:
   pull-requests: read
 
 on:
+  push:
+    branches: [main]
   pull_request:
+  workflow_call:
 
 concurrency:
   group: governance_${{ github.head_ref || github.ref_name }}
