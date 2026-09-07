@@ -1,0 +1,16 @@
+---
+dirs:
+- .
+fileExtensions:
+- md
+useGitIgnore: true
+ignorePatterns:
+- pattern: '.*\.excalidraw$'  # Rendered client-side, not resolvable as link targets
+- pattern: '.*\.kde\.org/.*'  # Returns 403 to automated requests
+- pattern: '^https://reddit\.com/.*'  # Returns 403 in CI
+- pattern: '^https://taiga\.io'  # Returns 403 in CI
+- pattern: '^https://www\.freedesktop\.org/.*'  # Returns 418 to automated requests
+- pattern: '^https://www\.npmjs\.com/.*'  # Returns 403 in CI
+- pattern: '^mailto:'
+- pattern: 'http://127.0.0.1:8000'  # This points to the locally served sitetimeout: 10000
+retryCount: 3

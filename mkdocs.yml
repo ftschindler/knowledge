@@ -1,0 +1,41 @@
+---
+site_name: "ftschindler: Knowledge"
+site_url: https://ftschindler.github.io/knowledge/
+repo_url: https://github.com/ftschindler/knowledge
+edit_uri: edit/main/docs/
+extra_css:
+- stylesheets/theme.css
+theme:
+  name: material
+  features:
+  - content.action.edit
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+hooks:
+- hooks/publish_about.py
+plugins:
+- search
+- awesome-pages
+- obsidian-support
+- backlinks_section
+- excalidraw
+- git-revision-date-localized:
+    enable_creation_date: true
+- glightbox
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- toc:
+    permalink: true

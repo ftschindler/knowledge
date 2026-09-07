@@ -1,0 +1,14 @@
+---
+# What this bundle requires of every concept, over and above the Open Knowledge
+# Format, which makes `type` the only mandatory key. Read by the bundle's own
+# pre-commit hook and by any federation tooling; both see one declaration and
+# cannot disagree.
+#
+# `verified` is deliberately absent: its absence is how OKF encodes "unverified",
+# and requiring it would push an author to assert it of their own work.
+required:
+- type
+- title
+- description
+- status
+- generated
