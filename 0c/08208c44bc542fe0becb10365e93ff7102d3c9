@@ -1,0 +1,21 @@
+mkdocs.yml
+  s_d9270f753fc99f::t_d4d041a37b9462 5
+README.md
+  s_d9270f753fc99f::t_5eb62da0cd7e1d 2-40
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "0c08208c44bc542fe0becb10365e93ff7102d3c9",
+  "prompts": {},
+  "sessions": {
+    "s_d9270f753fc99f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f84d62ac6ffespe9MtZiAlTm62",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
