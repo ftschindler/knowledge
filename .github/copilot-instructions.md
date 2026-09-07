@@ -75,8 +75,9 @@ generated: { by: <harness>/<model>, at: 2026-09-07T10:00:00Z }
 
 ### Content Structure
 
-- Use clear, descriptive headings (the `title` from the metadata will be rendered as
-  heading, so use ## for main sections, ### for subsections)
+- Do not repeat the title as a heading in the body. The `title` from the frontmatter is the
+  page heading: MkDocs renders it as the `h1`, and repeating it stores the same string twice
+  where the two can drift. Start the body at `##`
 - Include a brief summary or introduction for substantial documents
 - Use bullet points for lists and structured information
 
