@@ -89,7 +89,7 @@ repos:
     entry: Filenames must be lowercase with no whitespace
     language: fail
     files: '[\sA-Z]'
-    exclude: '^(README\.md|CONTRIBUTING\.md|\.github/CODEOWNERS|LICENSE|Makefile)$'
+    exclude: '^(README\.md|CONTRIBUTING\.md|\.github/CODEOWNERS|LICENSE|LICENSE-CODE|Makefile)$'
   - id: no-pip-install-in-workflows
     name: Ensure Python deps for GitHub workflows are tracked in pyproject.toml
     entry: 'pip install'
