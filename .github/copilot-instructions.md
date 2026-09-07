@@ -42,6 +42,36 @@ If not, add a corresponding pre-commit hook to prohibit addition and document th
   update log. Neither is a concept and neither takes frontmatter, except that the bundle
   root `index.md` may carry `okf_version`
 
+### Maintaining the index and the log
+
+Both are reserved pages, so they take no frontmatter and their headings are ordinary
+markdown rather than metadata.
+
+`index.md` groups concepts under `##` headings, one entry per concept, reusing the
+concept's own `description`:
+
+```markdown
+## Principles
+
+- [Autofix in the hook, don't just flag](principles/autofix-in-the-hook.md) - a linter that
+  reports what it could have fixed wastes the attention it just spent.
+```
+
+`log.md` records changes newest first, under a `## YYYY-MM-DD` heading per day. The date
+form is required by the format. Entries are one line each, and the leading bold word the
+specification shows is optional, so leave it out:
+
+```markdown
+## 2026-09-08
+
+- added [some concept](topic/some-concept.md)
+- deprecated [an older one](topic/older.md)
+```
+
+When appending, find today's heading and add a line under it, or create the heading at the
+top if the day has no entries yet. Do not append to the bottom of the file: the newest day
+belongs first.
+
 ### Frontmatter Requirements
 
 Every concept requires the fields listed in [docs/okf-floor.yaml](../docs/okf-floor.yaml):
