@@ -1,0 +1,23 @@
+hooks/publish_about.py
+  s_d9270f753fc99f::t_f0907b69fd76b0 1-53
+.github/copilot-instructions.md
+  s_d9270f753fc99f::t_28ec21a2a4c354 3-79
+.scripts/check_mailmap.py
+  s_d9270f753fc99f::t_68951c0ba0ee62 11-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "a640f15876560ebff76635535c9147aeebe20073",
+  "prompts": {},
+  "sessions": {
+    "s_d9270f753fc99f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f84d62ac6ffespe9MtZiAlTm62",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
