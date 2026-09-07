@@ -66,7 +66,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Block Autosquash Commits
-      if: ${{ !github.event.pull_request.draft }}
+      if: ${{ github.event_name == 'pull_request' }}
       shell: python {0}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -95,6 +95,7 @@ jobs:
                 sys.exit(1)
 
     - name: Block merge commits
+      if: ${{ github.event_name == 'pull_request' }}
       shell: python {0}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
