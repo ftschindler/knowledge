@@ -1,134 +1,45 @@
 # GitHub Copilot Instructions
 
-This repository is a knowledge base: concepts in plain markdown, published as a MkDocs site
+This repository is a knowledge base: concepts in plain Markdown, published as a MkDocs site
 and editable as an Obsidian vault or directly on GitHub.
 
-It is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format)
-bundle. `docs/` is the bundle root, so **every markdown file in it is a concept** and carries
-frontmatter accordingly. Pages that describe the site rather than carry knowledge live in
-`about/`, outside the bundle.
+**[about/editing_conventions.md](../about/editing_conventions.md) is the authority on how
+content is written here.** Read it before adding or changing content. What follows is the
+short version, not a substitute.
 
-## General Guidelines
+## Where a file goes
 
-This site relies on an interplay of many tools, and we can only make use of the subset of
-Markdown features supported by mkdocs, obsidian, markdownlint-cli2 and pymarkdown.
-When creating new content, ensure to check if Markdown features work across all tools.
-If not, add a corresponding pre-commit hook to prohibit addition and document the exception.
+`docs/` is an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowledge-format)
+bundle, so every Markdown file in it is a concept and carries frontmatter accordingly. Pages
+describing the site live in `about/`. Sources the knowledge is distilled from live in `raw/`
+and are never edited.
 
-- Ensure to run `prek` and respect linting and formatting as defined in
-  [.pre-commit-config.yaml](../.pre-commit-config.yaml).
+`docs/index.md` and `docs/log.md` are reserved by the format. Neither is a concept, and
+neither takes frontmatter.
 
-## Content Guidelines
+## The four rules worth stating twice
 
-- When creating or editing content, prioritise creating a coherent, well-connected knowledge
-  base whilst maintaining high standards of British English and technical accuracy.
+- **Every concept carries the fields in [docs/okf-floor.yaml](../docs/okf-floor.yaml).**
+  Nothing else is required, and nothing else is enforced.
+- **Never write `verified:`.** Its absence is how the format records that nobody has
+  confirmed the content. It is added by whoever confirms it, never by the author.
+- **Links are relative and must resolve.** To promise a page that does not exist yet, write
+  it as a stub with `status: draft` rather than linking at nothing; a dangling link fails the
+  site build.
+- **Do not repeat the title as a heading.** The frontmatter `title` is rendered as the page
+  heading, so start the body at `##`.
 
-### Language and Grammar
+## Language
 
-- Always use British English spelling and grammar conventions:
-  - Use "ise" endings (e.g., "realise", "optimise", "organised")
-  - Use "our" endings (e.g., "behaviour", "colour", "favour")
-  - British punctuation (e.g., single quotes for emphasis, logical punctuation placement)
-  - British terminology (e.g., "whilst" instead of "while", "amongst" instead of "among")
-  - no Oxford Comma
+- British English throughout: "ise" endings, "our" endings, "whilst" rather than "while",
+  no Oxford comma.
+- Write for a technical reader. Prefer the concrete behaviour over its abstract label.
+- Cross-reference related concepts by linking them, so the bundle stays connected rather
+  than becoming a pile of pages.
 
-### File Structure and Naming
+## Before committing
 
-- Concepts live in `docs/`, one file per idea, in a directory naming what the concept *is*
-- Use lowercase filenames, words separated by hyphens (e.g., `some-concept.md`)
-- Store assets like `image.jpg` required for an entry `foo.md` beside it, named after it
-  (e.g., `foo-image.jpg`), so a concept and its pictures move together
-- `index.md` and `log.md` are reserved by the format: an index of concepts and a dated
-  update log. Neither is a concept and neither takes frontmatter, except that the bundle
-  root `index.md` may carry `okf_version`
-
-### Maintaining the index and the log
-
-Both are reserved pages, so they take no frontmatter and their headings are ordinary
-markdown rather than metadata.
-
-`index.md` groups concepts under `##` headings, one entry per concept, reusing the
-concept's own `description`:
-
-```markdown
-## Principles
-
-- [Autofix in the hook, don't just flag](principles/autofix-in-the-hook.md) - a linter that
-  reports what it could have fixed wastes the attention it just spent.
-```
-
-`log.md` records changes newest first, under a `## YYYY-MM-DD` heading per day. The date
-form is required by the format. Entries are one line each, and the leading bold word the
-specification shows is optional, so leave it out:
-
-```markdown
-## 2026-09-08
-
-- added [some concept](topic/some-concept.md)
-- deprecated [an older one](topic/older.md)
-```
-
-When appending, find today's heading and add a line under it, or create the heading at the
-top if the day has no entries yet. Do not append to the bottom of the file: the newest day
-belongs first.
-
-### Frontmatter Requirements
-
-Every concept requires the fields listed in [docs/okf-floor.yaml](../docs/okf-floor.yaml):
-
-```yaml
----
-type: Principle
-title: Your concept title
-description: A single sentence summarising the concept.
-tags: [example]
-status: stable
-generated: { by: <harness>/<model>, at: 2026-09-07T10:00:00Z }
----
-```
-
-- `generated.by` names what did the writing: `<harness>/<model>` for an agent,
-  `human:<id>` for a person, `process:<id>` for a job
-- Never write `verified:`. Its absence records that nobody has confirmed the content, and it
-  is added by whoever confirms it, never by the author
-- Dates in `stale_after` and `sources[].last_modified` are written `YYYY-MM-DD`
-
-### Internal Linking
-
-- Always create meaningful cross-references to related content within the repository
-- Use relative paths for internal links (e.g., `[some topic](../some-topic.md)`), never
-  absolute ones: only relative links resolve in an editor, on the GitHub web UI and in the
-  rendered site alike
-- Link to relevant concepts, related proposals, supporting rationales and background
-- Ensure links work correctly by checking the relative path structure
-- When referencing concepts that have dedicated pages, always link to them
-
-### Content Structure
-
-- Do not repeat the title as a heading in the body. The `title` from the frontmatter is the
-  page heading: MkDocs renders it as the `h1`, and repeating it stores the same string twice
-  where the two can drift. Start the body at `##`
-- Include a brief summary or introduction for substantial documents
-- Use bullet points for lists and structured information
-
-### Formatting Guidelines
-
-- Use *italics* for emphasis of technical terms and concepts
-- Use **bold** for strong emphasis and important action items
-- Use `inline code` for file names and commands
-- Use proper markdown syntax for lists, headings and links
-
-### Technical Content
-
-- Maintain consistency with existing technical terminology
-- Reference specific technologies, tools and frameworks mentioned in other documents
-- Ensure technical accuracy and alignment with team practices
-- Include practical examples and implementation details where relevant
-
-### Quality Standards
-
-- All content should provide value
-- Ensure information is current and actionable
-- Write with the target audience in mind (technical professionals)
-- Review content for clarity, completeness and usefulness
-- Maintain consistency with existing content style and structure
+Run `prek` and respect what it reports; the same hooks run in CI. They check the frontmatter
+fields, that every concept is reachable from an index, that links resolve, and the file
+naming and Markdown rules. See [Local Dev Environment](../about/local_dev_environment.md)
+and in particular [.pre-commit-config.yaml](../.pre-commit-config.yaml).
