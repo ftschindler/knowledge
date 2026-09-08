@@ -13,5 +13,6 @@ ignorePatterns:
 - pattern: '^https://www\.npmjs\.com/.*'  # Returns 403 in CI
 - pattern: '^mailto:'
 - pattern: '^http://127\.0\.0\.1'  # The locally served site, not a public address
+- pattern: '^http://mathematics-muenster\.de'  # Plain HTTP only; headless Chrome refuses it
 timeout: 10000
 retryCount: 3
