@@ -22,8 +22,23 @@ from pathlib import Path
 from mkdocs.structure.files import File
 
 ABOUT_DIR = "about"
+BUNDLE_DIR = "docs"
 LANDING_PAGE = "welcome.md"
 BUNDLE_INDEX_URL = "index/"
+
+
+def on_page_markdown(markdown, page, config, files):
+    """Rewrite links from `about/` into the bundle so they resolve on the site.
+
+    On disk `about/` is a sibling of the bundle, so a link into it reads
+    `../docs/x.md`, which is what an editor, Obsidian and GitHub all follow. To
+    MkDocs, `about/` sits inside the bundle root, where the same target is
+    `../x.md`. Authors write the form that is true on disk and this corrects it
+    for the build, so one spelling works everywhere.
+    """
+    if not page.file.src_uri.startswith(f"{ABOUT_DIR}/"):
+        return markdown
+    return markdown.replace(f"](../{BUNDLE_DIR}/", "](../")
 
 
 def on_files(files, config):
