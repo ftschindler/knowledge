@@ -65,6 +65,15 @@ jobs:
         DOCKER_HOST: docker_intentionally_disabled
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    # Index coverage is a property of the whole bundle, so it is a question for a
+    # pull request rather than for a commit. The hook sits on the manual stage to
+    # stay off the commit path, which is why it needs invoking by name here.
+    - name: Check that every concept is reachable from an index
+      run: >
+        uv run --frozen --all-groups --all-extras prek run --hook-stage manual
+        --show-diff-on-failure --color=always --all-files okf-bundle
+      shell: bash
+
     - name: Block Autosquash Commits
       if: ${{ github.event_name == 'pull_request' }}
       shell: python {0}

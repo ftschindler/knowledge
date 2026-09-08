@@ -12,5 +12,6 @@ ignorePatterns:
 - pattern: '^https://www\.freedesktop\.org/.*'  # Returns 418 to automated requests
 - pattern: '^https://www\.npmjs\.com/.*'  # Returns 403 in CI
 - pattern: '^mailto:'
-- pattern: 'http://127.0.0.1:8000'  # This points to the locally served sitetimeout: 10000
+- pattern: '^http://127\.0\.0\.1'  # The locally served site, not a public address
+timeout: 10000
 retryCount: 3

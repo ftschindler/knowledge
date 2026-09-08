@@ -114,3 +114,17 @@ repos:
   - id: check-json
   - id: check-symlinks
   - id: fix-byte-order-marker
+
+# Open Knowledge Format conformance, and the floor this bundle declares for
+# itself in docs/okf-floor.yaml. The checker lives in the repository that
+# defines the format's use here; pinning it by revision is what keeps this
+# bundle standalone without carrying a copy that could drift.
+- repo: https://github.com/ftschindler/federated-knowledge-skills
+  rev: 57e97f7b6dd748038d45ea7121bd55e581305f4d
+  hooks:
+  - id: okf-concepts
+    args: [--bundle-root, docs, --floor, docs/okf-floor.yaml]
+  # Index coverage, which only makes sense over the whole bundle. On the manual
+  # stage, so it never runs on a commit; governance invokes it per pull request.
+  - id: okf-bundle
+    args: [--bundle-root, docs, --floor, docs/okf-floor.yaml]
