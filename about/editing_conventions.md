@@ -79,6 +79,13 @@ Do not repeat the title as a heading. MkDocs renders the frontmatter `title` as 
 heading, so a body `# Title` produces a second one and stores the same string twice, where
 the two can drift.
 
+Two constructs are forbidden outright, and a hook rejects them. Thematic breaks, because
+headings already separate sections and a rule line renders as a second, redundant divider;
+all three spellings count (`---`, `***`, `___`, and their spaced forms), since they render
+to the same `<hr>`. Frontmatter delimiters and table rows are of course exempt. And the em
+dash (U+2014), because `-` is typeable on any keyboard and greps the same way everywhere.
+Both are ignored inside fenced code blocks, where a snippet quotes something else's syntax.
+
 ## File naming
 
 Filenames are **lowercase**, with **underscores** between words and no whitespace:
