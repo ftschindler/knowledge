@@ -18,3 +18,4 @@
 - add [Autofix in the hook, don't just flag](principles/autofix_in_the_hook_dont_just_flag.md)
 - add [Order auto-fixers so later ones do not re-dirty earlier output](principles/order_auto_fixers_so_later_ones_do_not_re_dirty_earlier_output.md)
 - add [Verify a pre-commit hook's file-type filter actually matches your file](principles/verify_a_pre_commit_hooks_file_type_filter_actually_matches_your_file.md)
+- add [A markdown autofixer can corrupt YAML frontmatter it treats as content](principles/a_markdown_autofixer_can_corrupt_yaml_frontmatter_it_treats_as_content.md)
