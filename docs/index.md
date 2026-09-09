@@ -103,3 +103,4 @@ How knowledge gets organised, independently of any tool that stores it.
 Longer investigations, recorded as findings rather than conclusions. Read these when you want the evidence a decision above was made on.
 
 - [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md) - what the format these pages are written in actually specifies
+- [Substrate options for an OKF-based agent-first LLM wiki: investigation](research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md) - the survey of tools that could hold such a knowledge base, deliberately stopping short of choosing

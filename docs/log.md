@@ -61,3 +61,4 @@
 - add [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md)
 - add [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md)
 - add [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md)
+- add [Substrate options for an OKF-based agent-first LLM wiki: investigation](research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
