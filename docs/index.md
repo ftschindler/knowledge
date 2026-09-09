@@ -48,3 +48,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md) - how to keep an update bot from becoming noise you learn to ignore
 - [Keep declared toolchain versions in sync, and guard it](principles/keep_declared_toolchain_versions_in_sync_and_guard_it.md) - what to do when the same fact has to live in two files
 - [Validate config files against their published schema](principles/validate_config_files_against_their_published_schema.md) - linting the configuration, not just the content
+- [Document a rationale for every disabled lint rule](principles/document_a_rationale_for_every_disabled_lint_rule.md) - why a bare suppression is indistinguishable from an accident
