@@ -104,3 +104,4 @@ Longer investigations, recorded as findings rather than conclusions. Read these 
 
 - [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md) - what the format these pages are written in actually specifies
 - [Substrate options for an OKF-based agent-first LLM wiki: investigation](research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md) - the survey of tools that could hold such a knowledge base, deliberately stopping short of choosing
+- [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](research/agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md) - how an agent reaches these pages, and how several bundles at different privacy tiers meet
