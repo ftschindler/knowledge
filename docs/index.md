@@ -68,3 +68,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md) - one entry point whose help text cannot drift from its targets
 - [Fail early on a missing tool with a message that names it and points at the fix](principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md) - the difference between a guard and a bare command not found
 - [Do not make a tool a prerequisite for work it is not needed for](principles/do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md) - checking that a listed requirement is on a path anyone walks
+- [Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv](principles/resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md) - why a git hook must not depend on a virtualenv being active
