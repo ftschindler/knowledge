@@ -30,3 +30,4 @@
 - add [Grant least-privilege CI permissions at both workflow and job level](principles/grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md)
 - add [Split CI jobs for attributable failure and minimal dependencies](principles/split_ci_jobs_for_attributable_failure_and_minimal_dependencies.md)
 - add [Name every CI step so the run log reads as a narrative](principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md)
+- add [Bound every CI job with an explicit timeout](principles/bound_every_ci_job_with_an_explicit_timeout.md)
