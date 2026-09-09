@@ -29,3 +29,9 @@ What I wanted from a specific thing. Project-scoped, unlike the values above.
 
 - [Wishes for a personal knowledge base](wishes/wishes_for_a_personal_knowledge_base.md) - the full list of requirements the knowledge base had to meet
 - [Local-first, but not local-required](wishes/local_first_but_not_local_required.md) - one wish worth its own page: offline by default, never offline-only
+
+## Principles
+
+Reusable technical claims, each one a thing I would want true in any repository I work in. Start here if you are setting up a project and want the settled answers.
+
+- [Treat warnings as errors](principles/treat_warnings_as_errors.md) - the most general of these: keep the warning count at zero so a new one is visible
