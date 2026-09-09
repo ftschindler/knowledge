@@ -28,3 +28,4 @@ What I care about, ahead of any particular project. These sit under everything e
 What I wanted from a specific thing. Project-scoped, unlike the values above.
 
 - [Wishes for a personal knowledge base](wishes/wishes_for_a_personal_knowledge_base.md) - the full list of requirements the knowledge base had to meet
+- [Local-first, but not local-required](wishes/local_first_but_not_local_required.md) - one wish worth its own page: offline by default, never offline-only
