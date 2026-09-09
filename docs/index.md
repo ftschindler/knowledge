@@ -53,3 +53,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Split CI jobs for attributable failure and minimal dependencies](principles/split_ci_jobs_for_attributable_failure_and_minimal_dependencies.md) - cutting a workflow where you want the red check to point
 - [Name every CI step so the run log reads as a narrative](principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md) - making a failing run readable before you expand anything
 - [Bound every CI job with an explicit timeout](principles/bound_every_ci_job_with_an_explicit_timeout.md) - the six-hour default, and why it is never what you meant
+- [Cancel superseded CI runs with a concurrency group](principles/cancel_superseded_ci_runs_with_a_concurrency_group.md) - not spending a runner on a commit nobody is waiting for any more
