@@ -40,3 +40,4 @@
 - add [Declare formatting once, editor-agnostically, via .editorconfig](principles/declare_formatting_once_editor_agnostically_via_editorconfig.md)
 - add [Keep filenames lowercase with no whitespace](principles/keep_filenames_lowercase_with_no_whitespace.md)
 - add [Make support-tool config files dotfiles](principles/make_support_tool_config_files_dotfiles.md)
+- add [Track every committed binary type in .gitattributes](principles/track_every_committed_binary_type_in_gitattributes.md)
