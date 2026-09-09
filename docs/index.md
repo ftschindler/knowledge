@@ -61,3 +61,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Enforce LF line endings everywhere](principles/enforce_lf_line_endings_everywhere.md) - declaring line endings in more than one place, because one is not believed
 - [Declare formatting once, editor-agnostically, via .editorconfig](principles/declare_formatting_once_editor_agnostically_via_editorconfig.md) - the one formatting declaration every editor already reads
 - [Keep filenames lowercase with no whitespace](principles/keep_filenames_lowercase_with_no_whitespace.md) - a portability constraint worth a guard, where it applies
+- [Make support-tool config files dotfiles](principles/make_support_tool_config_files_dotfiles.md) - keeping the repo root about the project rather than its plumbing
