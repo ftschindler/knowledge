@@ -96,3 +96,4 @@ The concrete, copyable artefact a decision produced.
 How knowledge gets organised, independently of any tool that stores it.
 
 - [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) - the five layers this index is ordered by, and why each is its own layer
+- [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md) - what to do when one hierarchy cannot express two independent questions
