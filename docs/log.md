@@ -24,3 +24,4 @@
 - add [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md)
 - add [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md)
 - add [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md)
+- add [Keep declared toolchain versions in sync, and guard it](principles/keep_declared_toolchain_versions_in_sync_and_guard_it.md)
