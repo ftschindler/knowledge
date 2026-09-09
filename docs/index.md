@@ -56,3 +56,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Cancel superseded CI runs with a concurrency group](principles/cancel_superseded_ci_runs_with_a_concurrency_group.md) - not spending a runner on a commit nobody is waiting for any more
 - [Run CI steps under a strict shell (errexit, pipefail)](principles/run_ci_steps_under_a_strict_shell_errexit_pipefail.md) - the failure a lenient shell swallows in the middle of a pipe
 - [A test that cannot run must fail loudly, never skip into a green result](principles/a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md) - the difference between a check that passed and a check that never ran
+- [A sandbox test must use the live working-tree source and rebuild fresh each run](principles/a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md) - how a sandbox test starts testing a stale copy of itself
