@@ -44,3 +44,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Pin pre-commit hooks to frozen revisions](principles/pin_pre_commit_hooks_to_frozen_revisions.md) - hooks run arbitrary code on your tree, so pin them like dependencies
 - [Pin GitHub Actions to full commit SHAs](principles/pin_github_actions_to_full_commit_shas.md) - the same argument for CI, where a tag is a mutable pointer at your secrets
 - [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md) - pinning the tool is not enough when the tool launches a browser
+- [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md) - making CI fail on a stale lockfile instead of quietly resolving around it

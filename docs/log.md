@@ -22,3 +22,4 @@
 - add [Pin pre-commit hooks to frozen revisions](principles/pin_pre_commit_hooks_to_frozen_revisions.md)
 - add [Pin GitHub Actions to full commit SHAs](principles/pin_github_actions_to_full_commit_shas.md)
 - add [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md)
+- add [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md)
