@@ -45,3 +45,4 @@
 - add [Keep a linear history: block merge, fixup and squash commits](principles/keep_a_linear_history_block_merge_fixup_and_squash_commits.md)
 - add [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md)
 - add [Fail early on a missing tool with a message that names it and points at the fix](principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md)
+- add [Do not make a tool a prerequisite for work it is not needed for](principles/do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md)
