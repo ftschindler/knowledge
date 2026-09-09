@@ -63,3 +63,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Keep filenames lowercase with no whitespace](principles/keep_filenames_lowercase_with_no_whitespace.md) - a portability constraint worth a guard, where it applies
 - [Make support-tool config files dotfiles](principles/make_support_tool_config_files_dotfiles.md) - keeping the repo root about the project rather than its plumbing
 - [Track every committed binary type in .gitattributes](principles/track_every_committed_binary_type_in_gitattributes.md) - not trusting Git to guess which of your files are opaque
+- [Enforce a canonical author identity via .mailmap](principles/enforce_a_canonical_author_identity_via_mailmap.md) - one person, one identity in the history, checked mechanically
