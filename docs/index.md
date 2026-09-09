@@ -55,3 +55,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Bound every CI job with an explicit timeout](principles/bound_every_ci_job_with_an_explicit_timeout.md) - the six-hour default, and why it is never what you meant
 - [Cancel superseded CI runs with a concurrency group](principles/cancel_superseded_ci_runs_with_a_concurrency_group.md) - not spending a runner on a commit nobody is waiting for any more
 - [Run CI steps under a strict shell (errexit, pipefail)](principles/run_ci_steps_under_a_strict_shell_errexit_pipefail.md) - the failure a lenient shell swallows in the middle of a pipe
+- [A test that cannot run must fail loudly, never skip into a green result](principles/a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md) - the difference between a check that passed and a check that never ran
