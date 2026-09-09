@@ -22,3 +22,9 @@ What I care about, ahead of any particular project. These sit under everything e
 
 - [Prefer FOSS software wherever possible](values/prefer_foss_software_wherever_possible.md) - why an open tool wins a tie, and what it takes for a closed one to win anyway
 - [Prefer plain-text, tool-agnostic formats](values/prefer_plain_text_tool_agnostic_formats.md) - keeping the data mine by keeping it readable without the tool that wrote it
+
+## Wishes
+
+What I wanted from a specific thing. Project-scoped, unlike the values above.
+
+- [Wishes for a personal knowledge base](wishes/wishes_for_a_personal_knowledge_base.md) - the full list of requirements the knowledge base had to meet
