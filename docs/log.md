@@ -58,3 +58,4 @@
 - add [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md)
 - add [Building an agent-first wiki that is also a human PKB](decisions/building_an_agent_first_wiki_that_is_also_a_human_pkb.md)
 - add [MkDocs Material PKB publishing stack](blueprints/mkdocs_material_pkb_publishing_stack.md)
+- add [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md)
