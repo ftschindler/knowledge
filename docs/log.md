@@ -27,3 +27,4 @@
 - add [Keep declared toolchain versions in sync, and guard it](principles/keep_declared_toolchain_versions_in_sync_and_guard_it.md)
 - add [Validate config files against their published schema](principles/validate_config_files_against_their_published_schema.md)
 - add [Document a rationale for every disabled lint rule](principles/document_a_rationale_for_every_disabled_lint_rule.md)
+- add [Grant least-privilege CI permissions at both workflow and job level](principles/grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md)
