@@ -9,3 +9,4 @@
 
 - import the knowledge from the earlier awiki vault, one concept per commit
 - add [Prefer FOSS software wherever possible](values/prefer_foss_software_wherever_possible.md)
+- add [Prefer plain-text, tool-agnostic formats](values/prefer_plain_text_tool_agnostic_formats.md)
