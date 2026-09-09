@@ -41,3 +41,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Order auto-fixers so later ones do not re-dirty earlier output](principles/order_auto_fixers_so_later_ones_do_not_re_dirty_earlier_output.md) - what goes wrong once you have more than one fixer
 - [Verify a pre-commit hook's file-type filter actually matches your file](principles/verify_a_pre_commit_hooks_file_type_filter_actually_matches_your_file.md) - how a hook can pass without ever having looked at your file
 - [A markdown autofixer can corrupt YAML frontmatter it treats as content](principles/a_markdown_autofixer_can_corrupt_yaml_frontmatter_it_treats_as_content.md) - the specific way an autofixer eats a frontmatter block
+- [Pin pre-commit hooks to frozen revisions](principles/pin_pre_commit_hooks_to_frozen_revisions.md) - hooks run arbitrary code on your tree, so pin them like dependencies
