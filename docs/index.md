@@ -66,3 +66,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Enforce a canonical author identity via .mailmap](principles/enforce_a_canonical_author_identity_via_mailmap.md) - one person, one identity in the history, checked mechanically
 - [Keep a linear history: block merge, fixup and squash commits](principles/keep_a_linear_history_block_merge_fixup_and_squash_commits.md) - what it takes to actually get the linear history you asked for
 - [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md) - one entry point whose help text cannot drift from its targets
+- [Fail early on a missing tool with a message that names it and points at the fix](principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md) - the difference between a guard and a bare command not found

@@ -44,3 +44,4 @@
 - add [Enforce a canonical author identity via .mailmap](principles/enforce_a_canonical_author_identity_via_mailmap.md)
 - add [Keep a linear history: block merge, fixup and squash commits](principles/keep_a_linear_history_block_merge_fixup_and_squash_commits.md)
 - add [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md)
+- add [Fail early on a missing tool with a message that names it and points at the fix](principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md)
