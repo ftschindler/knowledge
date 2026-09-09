@@ -51,3 +51,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Document a rationale for every disabled lint rule](principles/document_a_rationale_for_every_disabled_lint_rule.md) - why a bare suppression is indistinguishable from an accident
 - [Grant least-privilege CI permissions at both workflow and job level](principles/grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md) - scoping a CI token twice, so a job holds only what it uses
 - [Split CI jobs for attributable failure and minimal dependencies](principles/split_ci_jobs_for_attributable_failure_and_minimal_dependencies.md) - cutting a workflow where you want the red check to point
+- [Name every CI step so the run log reads as a narrative](principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md) - making a failing run readable before you expand anything
