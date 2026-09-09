@@ -73,9 +73,9 @@ repos:
     entry: '!\[\['
     language: pygrep
     files: '\.md$'
-  - id: no-horizontal-rules
-    name: Forbid horizontal rules (---) in markdown
-    entry: uv run --script .scripts/check_no_horizontal_rules.py
+  - id: markdown-style
+    name: Forbid thematic breaks and em dashes in markdown
+    entry: uv run --script .scripts/check_markdown_style.py
     language: system
     files: '\.md$'
   - id: check-excalidraw-settings

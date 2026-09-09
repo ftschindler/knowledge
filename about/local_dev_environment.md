@@ -18,7 +18,7 @@ cd knowledge
 uv run mkdocs serve
 ```
 
-Open the printed URL, typically `http://127.0.0.1:8000`, to see the site. Changes to Markdown files are reflected
+Open the printed URL, typically `http://127.0.0.1:8XYZ`, to see the site. Changes to Markdown files are reflected
 immediately.
 
 !!! tip
