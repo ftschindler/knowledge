@@ -50,3 +50,4 @@
 - add [Use PEP 723 inline script metadata for zero-install tooling scripts](principles/use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md)
 - add [A declared-but-inert config documents intent, not enforcement](principles/a_declared_but_inert_config_documents_intent_not_enforcement.md)
 - add [Enforce the intersection of all renderers and consumers](principles/enforce_the_intersection_of_all_renderers_and_consumers.md)
+- add [Structure docs as the reader's task path - lead with action, defer rationale](principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md)
