@@ -56,3 +56,4 @@
 - add [Write in a calm, quantified, settled-fact voice - not a promotional one](principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
 - add [Give every cross-cutting concept one definitional home](principles/give_every_cross_cutting_concept_one_definitional_home.md)
 - add [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md)
+- add [Building an agent-first wiki that is also a human PKB](decisions/building_an_agent_first_wiki_that_is_also_a_human_pkb.md)

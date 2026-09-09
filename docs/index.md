@@ -83,3 +83,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 What I chose, given the values, wishes and principles above, and the reasoning that got me there.
 
 - [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself
+- [Building an agent-first wiki that is also a human PKB](decisions/building_an_agent_first_wiki_that_is_also_a_human_pkb.md) - its sibling: the general pattern, for a knowledge base an agent writes into
