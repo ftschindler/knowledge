@@ -45,3 +45,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Pin GitHub Actions to full commit SHAs](principles/pin_github_actions_to_full_commit_shas.md) - the same argument for CI, where a tag is a mutable pointer at your secrets
 - [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md) - pinning the tool is not enough when the tool launches a browser
 - [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md) - making CI fail on a stale lockfile instead of quietly resolving around it
+- [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md) - how to keep an update bot from becoming noise you learn to ignore

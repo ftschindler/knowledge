@@ -23,3 +23,4 @@
 - add [Pin GitHub Actions to full commit SHAs](principles/pin_github_actions_to_full_commit_shas.md)
 - add [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md)
 - add [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md)
+- add [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md)
