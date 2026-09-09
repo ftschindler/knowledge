@@ -59,3 +59,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [A sandbox test must use the live working-tree source and rebuild fresh each run](principles/a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md) - how a sandbox test starts testing a stale copy of itself
 - [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](principles/end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md) - testing a markdown procedure by running an agent against it, not by grepping it
 - [Enforce LF line endings everywhere](principles/enforce_lf_line_endings_everywhere.md) - declaring line endings in more than one place, because one is not believed
+- [Declare formatting once, editor-agnostically, via .editorconfig](principles/declare_formatting_once_editor_agnostically_via_editorconfig.md) - the one formatting declaration every editor already reads
