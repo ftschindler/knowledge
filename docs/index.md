@@ -65,3 +65,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Track every committed binary type in .gitattributes](principles/track_every_committed_binary_type_in_gitattributes.md) - not trusting Git to guess which of your files are opaque
 - [Enforce a canonical author identity via .mailmap](principles/enforce_a_canonical_author_identity_via_mailmap.md) - one person, one identity in the history, checked mechanically
 - [Keep a linear history: block merge, fixup and squash commits](principles/keep_a_linear_history_block_merge_fixup_and_squash_commits.md) - what it takes to actually get the linear history you asked for
+- [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md) - one entry point whose help text cannot drift from its targets
