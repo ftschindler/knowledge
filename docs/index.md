@@ -75,3 +75,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Structure docs as the reader's task path - lead with action, defer rationale](principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md) - organising a guide around what the reader does next
 - [Hand the reader one idea at a time](principles/hand_the_reader_one_idea_at_a_time.md) - why honest, jargon-free prose can still be exhausting to read
 - [Name the concrete behaviour, not its abstract label](principles/name_the_concrete_behaviour_not_its_abstract_label.md) - the re-read a category name causes where a behaviour would not
+- [Write in a calm, quantified, settled-fact voice - not a promotional one](principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) - the voice these pages are written in, and its tells on both sides
