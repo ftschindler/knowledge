@@ -32,3 +32,4 @@
 - add [Name every CI step so the run log reads as a narrative](principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md)
 - add [Bound every CI job with an explicit timeout](principles/bound_every_ci_job_with_an_explicit_timeout.md)
 - add [Cancel superseded CI runs with a concurrency group](principles/cancel_superseded_ci_runs_with_a_concurrency_group.md)
+- add [Run CI steps under a strict shell (errexit, pipefail)](principles/run_ci_steps_under_a_strict_shell_errexit_pipefail.md)
