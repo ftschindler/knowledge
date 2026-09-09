@@ -66,3 +66,4 @@
 - add [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md)
 - add [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md)
 - add [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md)
+- add [KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)](linux/kde_plasma_phantom_pointer_after_hibernate_resume_unresolved.md)
