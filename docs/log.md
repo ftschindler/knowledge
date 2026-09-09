@@ -36,3 +36,4 @@
 - add [A test that cannot run must fail loudly, never skip into a green result](principles/a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md)
 - add [A sandbox test must use the live working-tree source and rebuild fresh each run](principles/a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md)
 - add [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](principles/end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md)
+- add [Enforce LF line endings everywhere](principles/enforce_lf_line_endings_everywhere.md)
