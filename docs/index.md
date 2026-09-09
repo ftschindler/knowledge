@@ -77,3 +77,9 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Name the concrete behaviour, not its abstract label](principles/name_the_concrete_behaviour_not_its_abstract_label.md) - the re-read a category name causes where a behaviour would not
 - [Write in a calm, quantified, settled-fact voice - not a promotional one](principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) - the voice these pages are written in, and its tells on both sides
 - [Give every cross-cutting concept one definitional home](principles/give_every_cross_cutting_concept_one_definitional_home.md) - single source of truth, applied to prose instead of code
+
+## Decisions
+
+What I chose, given the values, wishes and principles above, and the reasoning that got me there.
+
+- [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself
