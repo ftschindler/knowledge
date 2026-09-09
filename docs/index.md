@@ -114,3 +114,4 @@ Things that cost time once. Each records the symptom, what it turned out to be, 
 
 - [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md) - a root process denied a write to a world-writable file, and the sysctl that explains it
 - [KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)](linux/kde_plasma_phantom_pointer_after_hibernate_resume_unresolved.md) - still unsolved: what a phantom pointer after resume is not, and how that was established
+- [awiki title extraction breaks on frontmatter-led source files](tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md) - a tool that titles a page from its first line, meeting a file that opens with YAML

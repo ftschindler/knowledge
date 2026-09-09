@@ -67,3 +67,4 @@
 - add [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md)
 - add [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md)
 - add [KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)](linux/kde_plasma_phantom_pointer_after_hibernate_resume_unresolved.md)
+- add [awiki title extraction breaks on frontmatter-led source files](tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
