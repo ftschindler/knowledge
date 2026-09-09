@@ -60,3 +60,4 @@
 - add [MkDocs Material PKB publishing stack](blueprints/mkdocs_material_pkb_publishing_stack.md)
 - add [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md)
 - add [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md)
+- add [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md)

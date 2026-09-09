@@ -97,3 +97,9 @@ How knowledge gets organised, independently of any tool that stores it.
 
 - [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) - the five layers this index is ordered by, and why each is its own layer
 - [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md) - what to do when one hierarchy cannot express two independent questions
+
+## Research
+
+Longer investigations, recorded as findings rather than conclusions. Read these when you want the evidence a decision above was made on.
+
+- [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md) - what the format these pages are written in actually specifies
