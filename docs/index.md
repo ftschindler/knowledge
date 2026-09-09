@@ -39,3 +39,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Mirror every local guard in CI](principles/mirror_every_local_guard_in_ci.md) - why the commit hook alone is not the boundary
 - [Autofix in the hook, don't just flag](principles/autofix_in_the_hook_dont_just_flag.md) - when a hook should edit the file rather than complain about it
 - [Order auto-fixers so later ones do not re-dirty earlier output](principles/order_auto_fixers_so_later_ones_do_not_re_dirty_earlier_output.md) - what goes wrong once you have more than one fixer
+- [Verify a pre-commit hook's file-type filter actually matches your file](principles/verify_a_pre_commit_hooks_file_type_filter_actually_matches_your_file.md) - how a hook can pass without ever having looked at your file
