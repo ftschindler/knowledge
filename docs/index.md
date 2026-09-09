@@ -35,3 +35,4 @@ What I wanted from a specific thing. Project-scoped, unlike the values above.
 Reusable technical claims, each one a thing I would want true in any repository I work in. Start here if you are setting up a project and want the settled answers.
 
 - [Treat warnings as errors](principles/treat_warnings_as_errors.md) - the most general of these: keep the warning count at zero so a new one is visible
+- [Guard invariants at commit-time, not review-time](principles/guard_invariants_at_commit_time_not_review_time.md) - the case for spending automation instead of reviewer attention
