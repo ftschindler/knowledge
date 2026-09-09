@@ -70,3 +70,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Do not make a tool a prerequisite for work it is not needed for](principles/do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md) - checking that a listed requirement is on a path anyone walks
 - [Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv](principles/resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md) - why a git hook must not depend on a virtualenv being active
 - [Use PEP 723 inline script metadata for zero-install tooling scripts](principles/use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md) - a standalone script that carries its own dependencies
+- [A declared-but-inert config documents intent, not enforcement](principles/a_declared_but_inert_config_documents_intent_not_enforcement.md) - keeping a rule that fires on nothing, without believing it protects you
