@@ -64,3 +64,4 @@
 - add [Substrate options for an OKF-based agent-first LLM wiki: investigation](research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
 - add [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](research/agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md)
 - add [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md)
+- add [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md)
