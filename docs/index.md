@@ -107,3 +107,9 @@ Longer investigations, recorded as findings rather than conclusions. Read these 
 - [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](research/agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md) - how an agent reaches these pages, and how several bundles at different privacy tiers meet
 - [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md) - the architecture that answered the previous two, and that this bundle is now an instance of
 - [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
+
+## Findings
+
+Things that cost time once. Each records the symptom, what it turned out to be, and how to get past it, so the next encounter is short.
+
+- [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md) - a root process denied a write to a world-writable file, and the sysctl that explains it
