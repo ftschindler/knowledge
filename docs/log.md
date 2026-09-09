@@ -38,3 +38,4 @@
 - add [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](principles/end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md)
 - add [Enforce LF line endings everywhere](principles/enforce_lf_line_endings_everywhere.md)
 - add [Declare formatting once, editor-agnostically, via .editorconfig](principles/declare_formatting_once_editor_agnostically_via_editorconfig.md)
+- add [Keep filenames lowercase with no whitespace](principles/keep_filenames_lowercase_with_no_whitespace.md)
