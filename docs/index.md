@@ -37,3 +37,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Treat warnings as errors](principles/treat_warnings_as_errors.md) - the most general of these: keep the warning count at zero so a new one is visible
 - [Guard invariants at commit-time, not review-time](principles/guard_invariants_at_commit_time_not_review_time.md) - the case for spending automation instead of reviewer attention
 - [Mirror every local guard in CI](principles/mirror_every_local_guard_in_ci.md) - why the commit hook alone is not the boundary
+- [Autofix in the hook, don't just flag](principles/autofix_in_the_hook_dont_just_flag.md) - when a hook should edit the file rather than complain about it

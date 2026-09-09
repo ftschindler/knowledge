@@ -15,3 +15,4 @@
 - add [Treat warnings as errors](principles/treat_warnings_as_errors.md)
 - add [Guard invariants at commit-time, not review-time](principles/guard_invariants_at_commit_time_not_review_time.md)
 - add [Mirror every local guard in CI](principles/mirror_every_local_guard_in_ci.md)
+- add [Autofix in the hook, don't just flag](principles/autofix_in_the_hook_dont_just_flag.md)
