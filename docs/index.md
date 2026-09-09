@@ -73,3 +73,4 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [A declared-but-inert config documents intent, not enforcement](principles/a_declared_but_inert_config_documents_intent_not_enforcement.md) - keeping a rule that fires on nothing, without believing it protects you
 - [Enforce the intersection of all renderers and consumers](principles/enforce_the_intersection_of_all_renderers_and_consumers.md) - writing for the least capable tool that will read it
 - [Structure docs as the reader's task path - lead with action, defer rationale](principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md) - organising a guide around what the reader does next
+- [Hand the reader one idea at a time](principles/hand_the_reader_one_idea_at_a_time.md) - why honest, jargon-free prose can still be exhausting to read

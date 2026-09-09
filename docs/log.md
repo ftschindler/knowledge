@@ -51,3 +51,4 @@
 - add [A declared-but-inert config documents intent, not enforcement](principles/a_declared_but_inert_config_documents_intent_not_enforcement.md)
 - add [Enforce the intersection of all renderers and consumers](principles/enforce_the_intersection_of_all_renderers_and_consumers.md)
 - add [Structure docs as the reader's task path - lead with action, defer rationale](principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md)
+- add [Hand the reader one idea at a time](principles/hand_the_reader_one_idea_at_a_time.md)
