@@ -1,0 +1,44 @@
+docs/research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md
+  s_ad9456a5632bf3::t_386f392c9876b8 57
+  s_62fc1f804ef7d6::t_f16f1bcd0094c0 22-27
+docs/research/agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md
+  s_62fc1f804ef7d6::t_7d0992451c3ea6 25
+docs/index.md
+  s_62fc1f804ef7d6::t_5030622799b7bb 12-20
+docs/log.md
+  s_2c93387ca5c28a::t_0112f62fd49b50 6
+docs/explorations/running_this_knowledge_base_on_awiki.md
+  s_62fc1f804ef7d6::t_56d8e3127f3510 1-172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "354dc9da134c71979384abbe568ab69916a91e61",
+  "prompts": {},
+  "sessions": {
+    "s_2c93387ca5c28a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ses_f75b848f6ffeGDqe2625rjlaGV",
+        "model": "unknown"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    },
+    "s_62fc1f804ef7d6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f75b848f6ffeGDqe2625rjlaGV",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    },
+    "s_ad9456a5632bf3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f75c60b77ffeOzfHKWSFG7AVok",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
