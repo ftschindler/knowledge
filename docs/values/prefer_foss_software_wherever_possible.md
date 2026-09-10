@@ -11,7 +11,11 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
+verified:
+  by: human:felix_schindler
+  at: '2026-09-10T07:18:06Z'
 ---
+
 **Value.** Given a choice between a free and open-source tool and a proprietary
 one that both meet the need, prefer the FOSS option.
 
