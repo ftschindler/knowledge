@@ -131,6 +131,7 @@ Longer investigations, recorded as findings rather than conclusions. Read these 
 External tools and projects worth a page of their own: what each one is, who makes it, and what it is for. Everything I have learned *about* a tool lives under its nature elsewhere and links back to its page here.
 
 - [agent-wiki (awiki)](tools/agent_wiki.md) - a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
+- [agent-knowledge (kb skills)](tools/agent_knowledge.md) - skills rather than an engine for maintaining OKF bundles, and the upstream whose own bundle is cited here
 
 ## Findings
 
