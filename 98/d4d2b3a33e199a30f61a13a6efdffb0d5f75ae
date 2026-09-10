@@ -1,0 +1,14 @@
+docs/wishes/wishes_for_a_personal_knowledge_base.md
+  h_0f8f9341a40674 15-17,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "98d4d2b3a33e199a30f61a13a6efdffb0d5f75ae",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
