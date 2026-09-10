@@ -113,7 +113,9 @@ How knowledge gets organised, independently of any tool that stores it.
 
 - [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) - the five layers this index is ordered by, and why each is its own layer
 - [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md) - what to do when one hierarchy cannot express two independent questions
+- [Categorize by what content is, not why you made it](knowledge_management/categorize_by_what_content_is_not_why_you_made_it.md) - the drift that files a security review under whatever you were doing when you wrote it
 - [Record an abandoned exploration as an exploration, not a superseded decision](knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md) - what to do with the record of a commitment you have since withdrawn
+- [Automatic session capture is not an inbox](knowledge_management/automatic_session_capture_is_not_an_inbox.md) - why a queue that fills itself never reaches zero, and what capture must refuse to ask
 
 ## Research
 

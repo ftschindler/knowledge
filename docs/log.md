@@ -5,6 +5,10 @@
 - add the **Explorations** layer, for work committed to and later withdrawn
 - add "Running this knowledge base on awiki", replacing the decision "Building an agent-first wiki that is also a human PKB", which was never a lasting choice
 - add "Federating my knowledge base as privacy-tiered OKF bundles", the decision that exploration led to
+- add "Record an abandoned exploration as an exploration, not a superseded decision"
+- add "Automatic session capture is not an inbox", replacing "GTD-style inbox capture in an Agent Wiki vault"
+- add "Categorize by what content is, not why you made it", with its examples rewritten against this bundle
+- extend "Layer build-knowledge as a values-to-blueprints derivation pipeline" with the research and exploration layers
 
 ## 2026-09-09
 
