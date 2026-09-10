@@ -9,6 +9,8 @@
 - add "Automatic session capture is not an inbox", replacing "GTD-style inbox capture in an Agent Wiki vault"
 - add "Categorize by what content is, not why you made it", with its examples rewritten against this bundle
 - extend "Layer build-knowledge as a values-to-blueprints derivation pipeline" with the research and exploration layers
+- drop "KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)", an unresolved investigation nothing else rests on
+- drop "About this vault" and "Why this vault uses nature-folders and domain-tags", whose role is now carried by the index and `okf-floor.yaml`
 
 ## 2026-09-09
 

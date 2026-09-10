@@ -96,8 +96,3 @@ sysctl fs.protected_regular           # 1 = enforced
 
 If the owner differs from the writer and the directory is sticky and
 world-writable, this is the cause.
-
-## Related
-
-- [KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)](kde_plasma_phantom_pointer_after_hibernate_resume_unresolved.md) - the
-  investigation during which this was hit

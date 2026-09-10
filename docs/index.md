@@ -92,7 +92,6 @@ Reusable technical claims, each one a thing I would want true in any repository 
 What I chose, given the values, wishes and principles above, and the reasoning that got me there (basically a friendlier first-person take on an [architecture decision record](https://adr.github.io/)).
 
 - [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself, and still the substrate it runs on
-
 - [Federating my knowledge base as privacy-tiered OKF bundles](decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md) - what fills the `docs/` directory above, and how several such bundles relate
 
 ## Explorations
@@ -132,6 +131,5 @@ Longer investigations, recorded as findings rather than conclusions. Read these 
 Things that cost time once. Each records the symptom, what it turned out to be, and how to get past it, so the next encounter is short.
 
 - [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md) - a root process denied a write to a world-writable file, and the sysctl that explains it
-- [KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)](linux/kde_plasma_phantom_pointer_after_hibernate_resume_unresolved.md) - still unsolved: what a phantom pointer after resume is not, and how that was established
 - [awiki title extraction breaks on frontmatter-led source files](tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md) - a tool that titles a page from its first line, meeting a file that opens with YAML
 - [awiki tracks backlinks via wikilinks only, not Markdown links](tools/awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md) - why an ordinary Markdown link left pages reported as orphans
