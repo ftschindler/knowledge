@@ -1,6 +1,6 @@
 ---
 type: Decision
-title: Building a PKB that is mine, forever-readable, and visual
+title: Building my visual PKB
 description: The decision that resolved my wishes, values and principles for a personal knowledge base
   into a concrete publishing stack.
 tags:
@@ -13,11 +13,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-A decision record for how I built my personal knowledge base - written wish-first
-and first-person, an friendlier take on an
-[architecture decision record](https://adr.github.io/) (see
-[Layer build-knowledge as a values-to-blueprints derivation pipeline](../knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) for the
-model). It resolves my wishes, values and principles into a concrete
+
+A decision record for how I built my personal knowledge base.
+It resolves my wishes, values and principles into a concrete
 [MkDocs Material PKB publishing stack](../blueprints/mkdocs_material_pkb_publishing_stack.md).
 
 ## What I wanted
@@ -46,7 +44,7 @@ Working wish by wish, each choice resting on the value or principle above it:
   of truth. `nvim` on the same folder is always an equal path.
 - **Local-first → a git-backed folder** I can clone and edit offline with any
   editor.
-- **…not local-required → host it with web editing** (GitHub), so edits from the
+- **...not local-required → host it with web editing** (GitHub), so edits from the
   browser become ordinary commits. (See [Local-first, but not local-required](../wishes/local_first_but_not_local_required.md).)
 - **A browsable, published site → MkDocs + Material**, building the Markdown into a
   searchable static site.
@@ -63,8 +61,3 @@ blueprint for the full list of principles it instantiates.
 
 - **MkDocs 2.0 incompatibility** - Material for MkDocs needs MkDocs `<2` for now,
   so the stack is pinned below 2 until a drop-in replacement is ready.
-- **Wiki-links are forbidden in that PKB** (standard Markdown links only, for
-  GitHub + site portability) - the opposite of *this* awiki vault, which is built
-  on wiki-links. Same author, two KBs, opposite link conventions - each correct for
-  its own rendering context. A caution against copying one blueprint's conventions
-  blindly into a differently-rendered store.
