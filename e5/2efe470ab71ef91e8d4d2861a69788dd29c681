@@ -1,0 +1,19 @@
+docs/decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md
+  s_62fc1f804ef7d6::t_a087a83c791d97 1-107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "e52efe470ab71ef91e8d4d2861a69788dd29c681",
+  "prompts": {},
+  "sessions": {
+    "s_62fc1f804ef7d6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f75b848f6ffeGDqe2625rjlaGV",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
