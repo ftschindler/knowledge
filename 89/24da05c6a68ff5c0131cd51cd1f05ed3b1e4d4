@@ -1,0 +1,14 @@
+docs/decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md
+  h_0f8f9341a40674 3,16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "8924da05c6a68ff5c0131cd51cd1f05ed3b1e4d4",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
