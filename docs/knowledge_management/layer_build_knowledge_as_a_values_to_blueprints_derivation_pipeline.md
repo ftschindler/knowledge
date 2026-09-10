@@ -32,6 +32,26 @@ The **decision record is the hinge**: the one place where the general meets the
 specific and collapses into a concrete choice. Everything above it is reusable
 across projects; the blueprint below it is the artefact that choice produces.
 
+## Two layers that feed the hinge
+
+Decisions are rarely made straight from values and wishes. Two further layers
+sit beside the pipeline and supply the hinge with evidence:
+
+| Layer | Question it answers | Nature |
+| --- | --- | --- |
+| **Research** | What is actually the case, before I commit to anything? | evidence gathered, conclusion deferred |
+| **Explorations** | What did I try, what did it teach me, and why did I stop? | a commitment made and then withdrawn |
+
+They differ by commitment, and that difference is what tells a reader how much
+weight the findings carry: research is reading, an exploration is building.
+Somebody who read the documentation and somebody who ran the thing for a month
+know different amounts.
+
+An exploration is emphatically **not** a decision with a `deprecated` marker on
+it, and getting that wrong loses the knowledge the episode produced. The full
+argument, and the page shape an exploration takes, is
+[Record an abandoned exploration as an exploration, not a superseded decision](record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md).
+
 ## The why-test: which layer does a belief belong to?
 
 You place a piece of knowledge by the **nature of its justification** - ask "why
@@ -46,6 +66,8 @@ do I hold this?" and see where the answer bottoms out:
   requirement for one project, not a universal claim.
 - **"Because, given those values/principles/wishes, this was the best option"** →
   it's a **decision**.
+- **"Because I built it and found out"**, in the past tense, about something you
+  no longer do → it's an **exploration**.
 
 The test is generative, not just descriptive: it lets you file *future* content,
 and it catches miscategorisation - e.g. "prefer FOSS" *feels* like a principle
@@ -63,7 +85,8 @@ compliance artefact. Because the knowledge is *yours*, the record can be persona
 
 ## Related
 
-Applying this model means creating a topic per layer, which is itself an instance
+Applying this model means creating a directory per layer, which is itself an instance
 of [Split orthogonal classification axes across folders and tags](split_orthogonal_classification_axes_across_folders_and_tags.md) (nature is the
 folder axis). This page is the general technique; standing up the actual
-`values` / `wishes` / `decisions` / `blueprints` topics is its application.
+`values` / `wishes` / `decisions` / `blueprints` directories, alongside `research`
+and `explorations`, is its application.
