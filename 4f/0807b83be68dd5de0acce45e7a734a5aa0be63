@@ -1,0 +1,29 @@
+docs/knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md
+  s_62fc1f804ef7d6::t_ea15770e3d1446 1-14,16-67
+  h_0f8f9341a40674 15
+docs/knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md
+  s_62fc1f804ef7d6::t_fe38de0adad8ce 35-54
+  s_62fc1f804ef7d6::t_386fc8bdc82ffd 88,91-92
+  s_62fc1f804ef7d6::t_537a1b45b62bea 69-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "4f0807b83be68dd5de0acce45e7a734a5aa0be63",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_62fc1f804ef7d6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f75b848f6ffeGDqe2625rjlaGV",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
