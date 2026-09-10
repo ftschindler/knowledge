@@ -68,6 +68,13 @@ build rather than the alphabet.
 `log.md` records changes newest first, under a `## YYYY-MM-DD` heading per day. When adding
 to the log, find today's heading or create one at the top; do not append at the bottom.
 
+**Log entries name a concept in plain text and never link to one.** The log is append-only:
+an entry stays true after its subject is renamed, moved or deleted, whilst a link does not,
+and there is no good way to react to that. Rewriting the entry falsifies the record, deleting
+it loses the history, and leaving it dangling breaks the site build from a line nobody is
+editing. This is the one place in the bundle where a link is wrong; `index.md`, which
+describes the present rather than the past, must link and must resolve.
+
 **A concept never links into `about/`.** The bundle has to make sense on its own, so it may
 not depend on the pages that describe the site around it. Links run the other way.
 

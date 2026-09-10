@@ -1,71 +1,71 @@
 # Log
 
+## 2026-09-09
+
+- import the knowledge from the earlier awiki vault, one concept per commit
+- add "Prefer FOSS software wherever possible"
+- add "Prefer plain-text, tool-agnostic formats"
+- add "Wishes for a personal knowledge base"
+- add "Local-first, but not local-required"
+- add "Treat warnings as errors"
+- add "Guard invariants at commit-time, not review-time"
+- add "Mirror every local guard in CI"
+- add "Autofix in the hook, don't just flag"
+- add "Order auto-fixers so later ones do not re-dirty earlier output"
+- add "Verify a pre-commit hook's file-type filter actually matches your file"
+- add "A markdown autofixer can corrupt YAML frontmatter it treats as content"
+- add "Pin pre-commit hooks to frozen revisions"
+- add "Pin GitHub Actions to full commit SHAs"
+- add "Pin transitive runtime dependencies, not just the tool"
+- add "Install from a frozen lockfile in CI"
+- add "Batch dependency updates with a cooldown, not a firehose"
+- add "Keep declared toolchain versions in sync, and guard it"
+- add "Validate config files against their published schema"
+- add "Document a rationale for every disabled lint rule"
+- add "Grant least-privilege CI permissions at both workflow and job level"
+- add "Split CI jobs for attributable failure and minimal dependencies"
+- add "Name every CI step so the run log reads as a narrative"
+- add "Bound every CI job with an explicit timeout"
+- add "Cancel superseded CI runs with a concurrency group"
+- add "Run CI steps under a strict shell (errexit, pipefail)"
+- add "A test that cannot run must fail loudly, never skip into a green result"
+- add "A sandbox test must use the live working-tree source and rebuild fresh each run"
+- add "End-to-end test an LLM skill by driving a real agent in a disposable fake HOME"
+- add "Enforce LF line endings everywhere"
+- add "Declare formatting once, editor-agnostically, via .editorconfig"
+- add "Keep filenames lowercase with no whitespace"
+- add "Make support-tool config files dotfiles"
+- add "Track every committed binary type in .gitattributes"
+- add "Enforce a canonical author identity via .mailmap"
+- add "Keep a linear history: block merge, fixup and squash commits"
+- add "Make the build interface a self-documenting Makefile"
+- add "Fail early on a missing tool with a message that names it and points at the fix"
+- add "Do not make a tool a prerequisite for work it is not needed for"
+- add "Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv"
+- add "Use PEP 723 inline script metadata for zero-install tooling scripts"
+- add "A declared-but-inert config documents intent, not enforcement"
+- add "Enforce the intersection of all renderers and consumers"
+- add "Structure docs as the reader's task path - lead with action, defer rationale"
+- add "Hand the reader one idea at a time"
+- add "Name the concrete behaviour, not its abstract label"
+- add "Write in a calm, quantified, settled-fact voice - not a promotional one"
+- add "Give every cross-cutting concept one definitional home"
+- add "Building a PKB that is mine, forever-readable, and visual"
+- add "Building an agent-first wiki that is also a human PKB"
+- add "MkDocs Material PKB publishing stack"
+- add "Layer build-knowledge as a values-to-blueprints derivation pipeline"
+- add "Split orthogonal classification axes across folders and tags"
+- add "Open Knowledge Format (OKF): findings"
+- add "Substrate options for an OKF-based agent-first LLM wiki: investigation"
+- add "Agent-integration layer and multi-vault interaction for an OKF-conformant PKB"
+- add "Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills"
+- add "Security Analysis of Agent Wiki (awiki)"
+- add "fs.protected_regular Blocks Root Writes in Sticky tmp"
+- add "KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)"
+- add "awiki title extraction breaks on frontmatter-led source files"
+- add "awiki tracks backlinks via wikilinks only, not Markdown links"
+
 ## 2026-09-07
 
 - created the bundle
 - add an entry on Felix
-
-## 2026-09-09
-
-- import the knowledge from the earlier awiki vault, one concept per commit
-- add [Prefer FOSS software wherever possible](values/prefer_foss_software_wherever_possible.md)
-- add [Prefer plain-text, tool-agnostic formats](values/prefer_plain_text_tool_agnostic_formats.md)
-- add [Wishes for a personal knowledge base](wishes/wishes_for_a_personal_knowledge_base.md)
-- add [Local-first, but not local-required](wishes/local_first_but_not_local_required.md)
-- add [Treat warnings as errors](principles/treat_warnings_as_errors.md)
-- add [Guard invariants at commit-time, not review-time](principles/guard_invariants_at_commit_time_not_review_time.md)
-- add [Mirror every local guard in CI](principles/mirror_every_local_guard_in_ci.md)
-- add [Autofix in the hook, don't just flag](principles/autofix_in_the_hook_dont_just_flag.md)
-- add [Order auto-fixers so later ones do not re-dirty earlier output](principles/order_auto_fixers_so_later_ones_do_not_re_dirty_earlier_output.md)
-- add [Verify a pre-commit hook's file-type filter actually matches your file](principles/verify_a_pre_commit_hooks_file_type_filter_actually_matches_your_file.md)
-- add [A markdown autofixer can corrupt YAML frontmatter it treats as content](principles/a_markdown_autofixer_can_corrupt_yaml_frontmatter_it_treats_as_content.md)
-- add [Pin pre-commit hooks to frozen revisions](principles/pin_pre_commit_hooks_to_frozen_revisions.md)
-- add [Pin GitHub Actions to full commit SHAs](principles/pin_github_actions_to_full_commit_shas.md)
-- add [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md)
-- add [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md)
-- add [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md)
-- add [Keep declared toolchain versions in sync, and guard it](principles/keep_declared_toolchain_versions_in_sync_and_guard_it.md)
-- add [Validate config files against their published schema](principles/validate_config_files_against_their_published_schema.md)
-- add [Document a rationale for every disabled lint rule](principles/document_a_rationale_for_every_disabled_lint_rule.md)
-- add [Grant least-privilege CI permissions at both workflow and job level](principles/grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md)
-- add [Split CI jobs for attributable failure and minimal dependencies](principles/split_ci_jobs_for_attributable_failure_and_minimal_dependencies.md)
-- add [Name every CI step so the run log reads as a narrative](principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md)
-- add [Bound every CI job with an explicit timeout](principles/bound_every_ci_job_with_an_explicit_timeout.md)
-- add [Cancel superseded CI runs with a concurrency group](principles/cancel_superseded_ci_runs_with_a_concurrency_group.md)
-- add [Run CI steps under a strict shell (errexit, pipefail)](principles/run_ci_steps_under_a_strict_shell_errexit_pipefail.md)
-- add [A test that cannot run must fail loudly, never skip into a green result](principles/a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md)
-- add [A sandbox test must use the live working-tree source and rebuild fresh each run](principles/a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md)
-- add [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](principles/end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md)
-- add [Enforce LF line endings everywhere](principles/enforce_lf_line_endings_everywhere.md)
-- add [Declare formatting once, editor-agnostically, via .editorconfig](principles/declare_formatting_once_editor_agnostically_via_editorconfig.md)
-- add [Keep filenames lowercase with no whitespace](principles/keep_filenames_lowercase_with_no_whitespace.md)
-- add [Make support-tool config files dotfiles](principles/make_support_tool_config_files_dotfiles.md)
-- add [Track every committed binary type in .gitattributes](principles/track_every_committed_binary_type_in_gitattributes.md)
-- add [Enforce a canonical author identity via .mailmap](principles/enforce_a_canonical_author_identity_via_mailmap.md)
-- add [Keep a linear history: block merge, fixup and squash commits](principles/keep_a_linear_history_block_merge_fixup_and_squash_commits.md)
-- add [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md)
-- add [Fail early on a missing tool with a message that names it and points at the fix](principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md)
-- add [Do not make a tool a prerequisite for work it is not needed for](principles/do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md)
-- add [Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv](principles/resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md)
-- add [Use PEP 723 inline script metadata for zero-install tooling scripts](principles/use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md)
-- add [A declared-but-inert config documents intent, not enforcement](principles/a_declared_but_inert_config_documents_intent_not_enforcement.md)
-- add [Enforce the intersection of all renderers and consumers](principles/enforce_the_intersection_of_all_renderers_and_consumers.md)
-- add [Structure docs as the reader's task path - lead with action, defer rationale](principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md)
-- add [Hand the reader one idea at a time](principles/hand_the_reader_one_idea_at_a_time.md)
-- add [Name the concrete behaviour, not its abstract label](principles/name_the_concrete_behaviour_not_its_abstract_label.md)
-- add [Write in a calm, quantified, settled-fact voice - not a promotional one](principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
-- add [Give every cross-cutting concept one definitional home](principles/give_every_cross_cutting_concept_one_definitional_home.md)
-- add [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md)
-- add [Building an agent-first wiki that is also a human PKB](decisions/building_an_agent_first_wiki_that_is_also_a_human_pkb.md)
-- add [MkDocs Material PKB publishing stack](blueprints/mkdocs_material_pkb_publishing_stack.md)
-- add [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md)
-- add [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md)
-- add [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md)
-- add [Substrate options for an OKF-based agent-first LLM wiki: investigation](research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
-- add [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](research/agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md)
-- add [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md)
-- add [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md)
-- add [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md)
-- add [KDE Plasma - Phantom Pointer After Hibernate Resume (Unresolved)](linux/kde_plasma_phantom_pointer_after_hibernate_resume_unresolved.md)
-- add [awiki title extraction breaks on frontmatter-led source files](tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
-- add [awiki tracks backlinks via wikilinks only, not Markdown links](tools/awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md)
