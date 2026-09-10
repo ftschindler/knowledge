@@ -26,7 +26,7 @@ below, which is why several of them still carry an `awiki` tag.
 
 ## What I was after
 
-[Building a PKB that is mine, forever-readable, and visual](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md)
+[Building my visual PKB](../decisions/building_my_visual_pkb.md)
 had already settled the human half: plain Markdown in git, MkDocs Material to
 publish it, Obsidian as an optional editor. What it did not answer was what
 changes once an **agent** becomes the primary author rather than an occasional

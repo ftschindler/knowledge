@@ -11,6 +11,9 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
+verified:
+  by: human:felix_schindler
+  at: '2026-09-10T10:08:05Z'
 ---
 
 You adopt a tool, build on it for a while, learn why it does not fit, and move

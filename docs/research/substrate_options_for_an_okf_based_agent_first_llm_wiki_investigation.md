@@ -22,7 +22,7 @@ given hardened requirements and an already-adopted OKF target. Sibling context
 lives in the exploration
 [Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md),
 the decision
-[Building my visual PKB](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md),
+[Building my visual PKB](../decisions/building_my_visual_pkb.md),
 and the research
 [Open Knowledge Format (OKF): findings](open_knowledge_format_okf_findings.md).
 

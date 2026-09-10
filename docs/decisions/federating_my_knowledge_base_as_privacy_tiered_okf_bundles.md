@@ -22,7 +22,7 @@ It is the current answer to the question
 failed to settle, and the bundle you are reading is its first instance.
 
 It does not supersede
-[Building a PKB that is mine, forever-readable, and visual](building_a_pkb_that_is_mine_forever_readable_and_visual.md).
+[Building my visual PKB](building_my_visual_pkb.md).
 That decision still holds in full: this is still plain Markdown in git, still
 published with the
 [MkDocs Material PKB publishing stack](../blueprints/mkdocs_material_pkb_publishing_stack.md),

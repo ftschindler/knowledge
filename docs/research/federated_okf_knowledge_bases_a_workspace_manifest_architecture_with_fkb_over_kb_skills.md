@@ -24,7 +24,7 @@ a starting point a fresh session can build from. It settles the questions left o
 in [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md)
 and [Substrate options for an OKF-based agent-first LLM wiki: investigation](substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md).
 Substrate context: [MkDocs Material PKB publishing stack](../blueprints/mkdocs_material_pkb_publishing_stack.md),
-[Building a PKB that is mine, forever-readable, and visual](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md). Alternatives that
+[Building my visual PKB](../decisions/building_my_visual_pkb.md). Alternatives that
 were considered and rejected are in *Things we tried* at the end.
 
 ## Problem

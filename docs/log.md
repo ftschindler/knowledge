@@ -2,6 +2,7 @@
 
 ## 2026-09-10
 
+- rename "Building a PKB that is mine, forever-readable, and visual" to "Building my visual PKB", filename and inbound link texts with it
 - add the **Explorations** layer, for work committed to and later withdrawn
 - add "Running this knowledge base on awiki", replacing the decision "Building an agent-first wiki that is also a human PKB", which was never a lasting choice
 - add "Federating my knowledge base as privacy-tiered OKF bundles", the decision that exploration led to

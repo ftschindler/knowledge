@@ -19,7 +19,7 @@ verified:
 
 The requirements I wanted a personal knowledge base (PKB) to satisfy - the
 *"I want..."* layer that, together with my values and principles, drives the
-[Building a PKB that is mine, forever-readable, and visual](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) decision.
+[Building my visual PKB](../decisions/building_my_visual_pkb.md) decision.
 
 These are project-specific wishes, not universal claims: another project would
 have different ones. See
@@ -47,5 +47,5 @@ wishes are their own layer.
 
 The wishes lean on values - [Prefer plain-text, tool-agnostic formats](../values/prefer_plain_text_tool_agnostic_formats.md) and
 [Prefer FOSS software wherever possible](../values/prefer_foss_software_wherever_possible.md) - and are resolved into concrete tool
-choices in the [Building a PKB that is mine, forever-readable, and visual](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md)
+choices in the [Building my visual PKB](../decisions/building_my_visual_pkb.md)
 decision record.

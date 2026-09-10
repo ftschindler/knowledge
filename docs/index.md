@@ -91,7 +91,7 @@ Reusable technical claims, each one a thing I would want true in any repository 
 
 What I chose, given the values, wishes and principles above, and the reasoning that got me there (basically a friendlier first-person take on an [architecture decision record](https://adr.github.io/)).
 
-- [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself, and still the substrate it runs on
+- [Building my visual PKB](decisions/building_my_visual_pkb.md) - the decision record for this knowledge base itself, and still the substrate it runs on
 - [Federating my knowledge base as privacy-tiered OKF bundles](decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md) - what fills the `docs/` directory above, and how several such bundles relate
 
 ## Explorations
