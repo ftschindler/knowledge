@@ -17,7 +17,7 @@ generated:
 proposal, and impose a cooldown so freshly-released versions settle before
 they're offered.
 
-**When to apply.** Any automated dependency bot (Dependabot, Renovate, …) on a
+**When to apply.** Any automated dependency bot (Dependabot, Renovate, ...) on a
 repo where a flood of individual PRs would be noise. Larger security-critical
 projects may want faster, ungrouped security bumps - tune accordingly.
 

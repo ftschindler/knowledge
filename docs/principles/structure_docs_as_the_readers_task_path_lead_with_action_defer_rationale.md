@@ -66,7 +66,7 @@ sentence level, applied to the page's shape.
 | Reference shape (author's model) | Task-path shape (reader's path) |
 | --- | --- |
 | A requirements table leading with per-tool rationale | *"We require uv and Node"* first; why-this-tool demoted to a `>` aside |
-| "Install the git hooks:" as the opening step | `git clone … && cd … && make bootstrap` - the real first step, runnable |
+| "Install the git hooks:" as the opening step | `git clone ... && cd ... && make bootstrap` - the real first step, runnable |
 | One paragraph + two blockquotes covering the whole e2e harness | `make test_skills` first; the harness mechanism factored into a linked `####` section, its steps a bulleted list |
 
 **How enforced.** Review the document by walking it as the reader: can a

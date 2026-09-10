@@ -24,10 +24,10 @@ you have two orthogonal axes - for example:
   fix*?
 - **Domain**: is this about *software*, *philosophy*, *your house*, *health*?
 
-…you face a bad trilemma if you insist on folders alone:
+...you face a bad trilemma if you insist on folders alone:
 
 1. **Encode both in the folder name** (`tech-principles`, `life-principles`,
-   `house-blueprints`, …) - the names multiply combinatorially: every new domain
+   `house-blueprints`, ...) - the names multiply combinatorially: every new domain
    *times* every new nature. This is topic explosion.
 2. **Collapse to one axis** and lose the other - now a philosophy principle and a
    git principle sit in the same `principles/` folder with no way to separate

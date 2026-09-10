@@ -57,7 +57,7 @@ $ uv run prek install
 ```
 
 **How enforced.** Convention: the `bootstrap` target and setup docs use the
-ephemeral form (`uvx prek install`), never `uv run … install`, for anything that
+ephemeral form (`uvx prek install`), never `uv run ... install`, for anything that
 writes a git hook. This narrows the [frozen -lockfile-everywhere](install_from_a_frozen_lockfile_in_ci.md) reflex: freezing is right for CI and reproducible runs,
 but a git hook is not a CI step - it must survive a missing environment, so it
 trades lockfile-pinning for path stability. Keep the tool in the dependency

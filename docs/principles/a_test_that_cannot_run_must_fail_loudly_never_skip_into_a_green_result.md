@@ -23,7 +23,7 @@ absent tooling makes "the environment could not run this" indistinguishable from
 (`node`/`npm`/`docker`), a service, a network resource, a credential. Especially
 end-to-end layers, which are both the most environment-dependent and the ones
 whose silent absence is most dangerous. The escape hatch to resist is
-`pytest.mark.skipif(not have("npm"), …)` and its equivalents.
+`pytest.mark.skipif(not have("npm"), ...)` and its equivalents.
 
 **Why.** A green suite is a claim: "everything I guard, I verified." A skip on
 missing tooling quietly narrows that claim without narrowing the *report* - the

@@ -22,7 +22,7 @@ localizes the failure before you expand a single step.
 `uses:` actions, whose default labels are opaque `owner/action@sha` strings.
 
 **Why.** An unnamed step renders in the log as its raw `uses:` reference -
-`actions/checkout@3d3c42e5…` - which tells a reader nothing about *why* that step
+`actions/checkout@3d3c42e5...` - which tells a reader nothing about *why* that step
 exists here. A workflow of five anonymous steps is five SHA strings the reader
 must decode against the YAML to follow. Named steps (`Checkout`, `Setup node`,
 `Run Node tests`) turn the log into a readable sequence: the eye lands on the

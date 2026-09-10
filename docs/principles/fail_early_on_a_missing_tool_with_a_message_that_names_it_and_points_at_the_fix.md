@@ -48,7 +48,7 @@ test_skills: | guard-node guard-npm guard-npx guard-uvx
 ```
 
 **How enforced.** Each target declares its binaries as `guard-<tool>` order-only
-prerequisites (`| guard-node …`), so the assumption lives next to the recipe and
+prerequisites (`| guard-node ...`), so the assumption lives next to the recipe and
 is checked before any step runs. The pattern rule carries no `##` doc comment, so
 it stays out of a [self -documenting help listing](make_the_build_interface_a_self_documenting_makefile.md). The error names the tool and points at the same
 [requirements](do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md)

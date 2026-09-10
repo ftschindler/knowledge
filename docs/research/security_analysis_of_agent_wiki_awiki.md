@@ -98,7 +98,7 @@ that vault (git, Dropbox, `awiki serve`), you sync everything in it.
 [`redact.py`](https://github.com/TacoTakumi/agent-wiki/blob/main/src/agent_wiki/redact.py)
 runs **unconditionally** on conversation bodies during `ingest-conversation`, replacing a set
 of regexes with `[REDACTED]`: emails, `sk-`/`sk-ant-` keys, `ghp_`-style GitHub tokens, Slack
-`xox…` tokens, Google `AIza…` keys and PEM private-key blocks, plus your local username
+`xox...` tokens, Google `AIza...` keys and PEM private-key blocks, plus your local username
 (replaced with `[USER]`). This is a **useful, cheap best-effort filter**, and worth knowing its
 limits:
 

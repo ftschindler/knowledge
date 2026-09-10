@@ -23,7 +23,7 @@ backlinks and do not clear a target's orphan status.
 Verified empirically (2026-08-27): two throwaway pages were ingested where the
 source linked the target via a standard Markdown link
 (`[the target](markdown-link-test-target.md)`). After `awiki index`, `awiki lint`
-still reported the target as `[ORPHAN] … has no incoming wikilinks` - note the
+still reported the target as `[ORPHAN] ... has no incoming wikilinks` - note the
 literal wording keys on *wikilinks*. The Markdown link produced neither a
 tracked backlink nor a broken-`[LINK]` warning; it was simply ignored by the
 graph.

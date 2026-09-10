@@ -46,7 +46,7 @@ coupling spread across many sites instead of centralized in one.
    earns one.
 3. **Demote every other mention to a reference.** Elsewhere, state only the
    local slice needed there, then link to the home (`see [trust
-   model](#…)`). A field table names the field and its default; the *why* lives
+   model](#...)`). A field table names the field and its default; the *why* lives
    at the home. A diagram may label the concept; its definition does not travel
    with it.
 4. **Check the back-references resolve.** Any sentence that says "the X" must
@@ -65,7 +65,7 @@ whole document.
 | Smeared (locally correct, globally scattered) | Homed (one definition, N references) |
 | --- | --- |
 | Trust model restated in getting-started, field table, two diagrams, and rationale | One `### Trust model` section; the table says "default `[]`", the diagram labels "read-all", both defer the *why* to the section |
-| "The asymmetry is the trust model: you may learn from anything, but…" (re-derives it) | "This read-all/write-one split is the `[trust model](#…)` in action" (references it) |
+| "The asymmetry is the trust model: you may learn from anything, but..." (re-derives it) | "This read-all/write-one split is the `[trust model](#...)` in action" (references it) |
 | A caveat's honest limits buried in a `> Note` far from where the concept is defined | The limit lives *in* the concept's home section, under a "What this does not guarantee" line |
 
 **How enforced.** After drafting, grep for each recurring concept's keywords;

@@ -57,7 +57,7 @@ X". LLM wording drifts run to run; the artifacts it leaves do not.
 
 - **Preserve the sandbox on failure and print how to re-enter it.** A failed e2e is
   useless if the evidence is deleted. Keep the fake home and emit a copy-pasteable
-  `cd <workdir> && env HOME=… XDG_*=… bash` command so the run can be inspected by
+  `cd <workdir> && env HOME=... XDG_*=... bash` command so the run can be inspected by
   hand. Pair it with a convenience script that builds the same home deliberately
   (sharing one builder with the fixtures, so there is no second definition of "how
   the sandbox is built").

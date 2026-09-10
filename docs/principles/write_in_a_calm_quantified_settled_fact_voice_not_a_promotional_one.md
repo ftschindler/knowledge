@@ -31,8 +31,8 @@ should read like [a maintainer wrote it, not a marketer](../values/prefer_plain_
    environment, and verifies all imports."* - one sentence, four verbs, no
    hedging. Not *"This will seamlessly set up your entire environment."*
 2. **"We" for choices, never for hype.** Use first-person-plural for decisions
-   the project made on the reader's behalf: *"We ship tests which…", "We
-   recommend prek…"*. Never *"our powerful setup"*. In a walkthrough (as opposed
+   the project made on the reader's behalf: *"We ship tests which...", "We
+   recommend prek..."*. Never *"our powerful setup"*. In a walkthrough (as opposed
    to terse reference prose) "we" may also serve as a companionable teaching
    narrator guiding the reader through the task - *"We can also run individual
    test layers", "As we can only test the skills by driving an agent, these
@@ -51,7 +51,7 @@ should read like [a maintainer wrote it, not a marketer](../values/prefer_plain_
    may not potentially"*.
 6. **Asides go in parentheticals and blockquotes; the main line stays clean.**
    The happy path is the prose; cost, caveats, and escape hatches live in `>`
-   notes and `(…)`.
+   notes and `(...)`.
 7. **No throat-clearing.** No sentence opens with *"In order to", "It is
    important to note that", "As you can see", "Simply", "Just"*. Open with the
    subject and move.
