@@ -2,6 +2,7 @@
 
 ## 2026-09-10
 
+- add "agent-wiki (awiki)", the first entry in a new Tools section that gives an external tool one page of its own
 - mark "Running this knowledge base on awiki" as an exploration with a note linking to the index section that defines the genre
 - move the genre prefaces of "Running this knowledge base on awiki" and "Federating my knowledge base as privacy-tiered OKF bundles" into the index section blurbs, where they hold for every page in the section
 - rename "Building a PKB that is mine, forever-readable, and visual" to "Building my visual PKB", filename and inbound link texts with it

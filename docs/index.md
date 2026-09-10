@@ -126,6 +126,12 @@ Longer investigations, recorded as findings rather than conclusions. Read these 
 - [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md) - the architecture that answered the previous two, and that this bundle is now an instance of
 - [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
 
+## Tools
+
+External tools and projects worth a page of their own: what each one is, who makes it, and what it is for. Everything I have learned *about* a tool lives under its nature elsewhere and links back to its page here.
+
+- [agent-wiki (awiki)](tools/agent_wiki.md) - a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
+
 ## Findings
 
 Things that cost time once. Each records the symptom, what it turned out to be, and how to get past it, so the next encounter is short.
