@@ -93,6 +93,8 @@ What I chose, given the values, wishes and principles above, and the reasoning t
 
 - [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself, and still the substrate it runs on
 
+- [Federating my knowledge base as privacy-tiered OKF bundles](decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md) - what fills the `docs/` directory above, and how several such bundles relate
+
 ## Explorations
 
 What I built, ran on real content, and stopped. Recorded for what they taught rather than what they concluded, and never to be read as a current choice.
