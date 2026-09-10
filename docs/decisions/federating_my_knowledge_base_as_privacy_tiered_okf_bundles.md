@@ -15,11 +15,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
 ---
-A decision record in the same wish-first voice as its predecessors (see
-[Layer build-knowledge as a values-to-blueprints derivation pipeline](../knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md)).
-It is the current answer to the question
+The current answer to the question
 [Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md)
-failed to settle, and the bundle you are reading is its first instance.
+failed to settle. The bundle you are reading is its first instance.
 
 It does not supersede
 [Building my visual PKB](building_my_visual_pkb.md).

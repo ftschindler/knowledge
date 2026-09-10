@@ -89,14 +89,14 @@ Reusable technical claims, each one a thing I would want true in any repository 
 
 ## Decisions
 
-What I chose, given the values, wishes and principles above, and the reasoning that got me there (basically a friendlier first-person take on an [architecture decision record](https://adr.github.io/)).
+What I chose, given the values, wishes and principles above, and the reasoning that got me there. Each is written wish-first and first-person, a friendlier take on an [architecture decision record](https://adr.github.io/): what I wanted, what I care about, what that led me to, what I built, and what I would reconsider. A decision here is one I still stand behind; where that stopped being true, the page moved to Explorations below.
 
 - [Building my visual PKB](decisions/building_my_visual_pkb.md) - the decision record for this knowledge base itself, and still the substrate it runs on
 - [Federating my knowledge base as privacy-tiered OKF bundles](decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md) - what fills the `docs/` directory above, and how several such bundles relate
 
 ## Explorations
 
-What I built, ran on real content, and stopped. Recorded for what they taught rather than what they concluded, and never to be read as a current choice.
+What I committed to, built on, and then withdrew from. An exploration is not a decision gone stale but a piece of work that ran to completion and returned a verdict, so each is recorded for what it taught rather than for what it concluded, and none should be read as a current choice. [Record an abandoned exploration as an exploration, not a superseded decision](knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md) is the argument for keeping them here rather than marking them deprecated.
 
 - [Running this knowledge base on awiki](explorations/running_this_knowledge_base_on_awiki.md) - a year of agent-first authoring on a dedicated wiki engine, the four things that ended it, and the much longer list of what survived
 

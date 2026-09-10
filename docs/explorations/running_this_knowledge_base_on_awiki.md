@@ -15,27 +15,24 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
 ---
-An **exploration**, not a decision: something I built, ran on real content, and
-stopped. It is recorded here because the exploration produced knowledge worth
-keeping even though its conclusion was "not this tool". See
-[Record an abandoned exploration as an exploration, not a superseded decision](../knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md)
-for why that distinction gets its own layer rather than a `deprecated` marker.
-
 Most of the pages in this bundle were first written inside the vault described
 below, which is why several of them still carry an `awiki` tag.
 
-## What I was after
+## What I wanted
 
-[Building my visual PKB](../decisions/building_my_visual_pkb.md)
-had already settled the human half: plain Markdown in git, MkDocs Material to
-publish it, Obsidian as an optional editor. What it did not answer was what
-changes once an **agent** becomes the primary author rather than an occasional
-helper. Two things I wanted from that:
+[Building my visual PKB](../decisions/building_my_visual_pkb.md) had already
+resolved the [Wishes for a personal knowledge base](../wishes/wishes_for_a_personal_knowledge_base.md)
+into a substrate: plain Markdown in git, MkDocs Material to publish it, Obsidian
+as an optional editor. Those wishes still stood, and none of what follows was
+allowed to cost them. What they did not cover is what changes once an **agent**
+becomes the primary author rather than an occasional helper, which added two
+more:
 
-- A knowledge base an agent writes into first, that a human can still read,
-  browse and edit in a plain editor.
-- To reuse the MkDocs shape as closely as possible rather than invent a second
-  stack: content confined to `docs/`, build and quality gates around it.
+- **Agent-first, without ceasing to be human-readable.** An agent writes the
+  pages; a person can still read, browse and edit them in a plain editor.
+- **One stack, not two.** Reuse the MkDocs shape rather than invent a second
+  system beside it: content confined to `docs/`, build and quality gates around
+  that folder, the same as the site already had.
 
 ## What I tried
 
