@@ -15,6 +15,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
 ---
+!!! note "This is an [exploration](../index.md#explorations)"
+    Something I committed to, built on, and withdrew from. It is a record of what the
+    work taught, not a description of how anything is done now.
+
 Most of the pages in this bundle were first written inside the vault described
 below, which is why several of them still carry an `awiki` tag.
 
