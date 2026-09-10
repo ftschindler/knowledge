@@ -86,6 +86,32 @@ Do not repeat the title as a heading. MkDocs renders the frontmatter `title` as 
 heading, so a body `# Title` produces a second one and stores the same string twice, where
 the two can drift.
 
+### Every concept opens with its genre
+
+The first thing in the body, before any prose, is a note naming what kind of page this is and
+linking to the index section that defines the kind:
+
+```markdown
+!!! note "This is an [exploration](../index.md#explorations)"
+    Something I committed to, built on, and withdrew from. It is a record of what the
+    work taught, not a description of how anything is done now.
+```
+
+The title carries the link, so the genre word is what a reader clicks. The body is one or two
+sentences saying what that genre *is*, not what this page contains: it is the same text on
+every page in the section, and the page's own opening follows underneath.
+
+This exists because a reader rarely arrives through the index. The index defines the genres
+and orders the sections by how the ideas build, but a link from search, from another site or
+from an agent lands in the middle of the bundle, where the only marker of genre is the
+frontmatter `type`, which the theme does not render. A decision and an exploration read alike
+until you know that one is current and the other is history, and that difference changes what
+the page is *for*.
+
+Match the note's wording to the section's blurb in `index.md`, and the anchor to that
+section's heading. Both are one edit: renaming a section means updating every note that points
+at it, and a broken anchor fails the build.
+
 Two constructs are forbidden outright, and a hook rejects them. Thematic breaks, because
 headings already separate sections and a rule line renders as a second, redundant divider;
 all three spellings count (`---`, `***`, `___`, and their spaced forms), since they render
