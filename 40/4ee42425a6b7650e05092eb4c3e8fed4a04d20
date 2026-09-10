@@ -1,0 +1,52 @@
+docs/principles/a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md
+  s_ad9456a5632bf3::t_386f392c9876b8 26
+.scripts/check_markdown_style.py
+  s_ad9456a5632bf3::t_98dc914c811365 32
+  s_ad9456a5632bf3::t_26c2e157bbc54b 14,16
+  s_ad9456a5632bf3::t_9daad9ca766681 63-66
+.pre-commit-config.yaml
+  h_0f8f9341a40674 77
+docs/principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md
+  s_ad9456a5632bf3::t_386f392c9876b8 20
+docs/principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md
+  s_ad9456a5632bf3::t_386f392c9876b8 25
+docs/principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md
+  s_ad9456a5632bf3::t_386f392c9876b8 51
+docs/tools/awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md
+  s_ad9456a5632bf3::t_386f392c9876b8 26
+docs/principles/end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md
+  s_ad9456a5632bf3::t_386f392c9876b8 60
+docs/principles/resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md
+  s_ad9456a5632bf3::t_386f392c9876b8 60
+docs/principles/give_every_cross_cutting_concept_one_definitional_home.md
+  s_ad9456a5632bf3::t_386f392c9876b8 49,68
+docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md
+  s_ad9456a5632bf3::t_386f392c9876b8 34-35,54
+docs/research/security_analysis_of_agent_wiki_awiki.md
+  s_ad9456a5632bf3::t_386f392c9876b8 101
+docs/principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md
+  s_ad9456a5632bf3::t_386f392c9876b8 69
+docs/knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md
+  s_ad9456a5632bf3::t_386f392c9876b8 27,30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "404ee42425a6b7650e05092eb4c3e8fed4a04d20",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_ad9456a5632bf3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f75c60b77ffeOzfHKWSFG7AVok",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
