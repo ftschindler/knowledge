@@ -22,7 +22,7 @@ as an [OKF v0.2](open_knowledge_format_okf_findings.md)-conformant personal
 knowledge base whose substrate is already settled (the
 [MkDocs Material PKB publishing stack](../blueprints/mkdocs_material_pkb_publishing_stack.md) + git + pre-commit). Sibling context:
 [Substrate options for an OKF-based agent-first LLM wiki: investigation](substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md),
-[Building an agent-first wiki that is also a human PKB](../decisions/building_an_agent_first_wiki_that_is_also_a_human_pkb.md),
+[Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md),
 [Building a PKB that is mine, forever-readable, and visual](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md).
 
 ## Question 1: how OKF-conformant vaults interact

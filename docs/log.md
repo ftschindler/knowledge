@@ -1,5 +1,10 @@
 # Log
 
+## 2026-09-10
+
+- add the **Explorations** layer, for work committed to and later withdrawn
+- add "Running this knowledge base on awiki", replacing the decision "Building an agent-first wiki that is also a human PKB", which was never a lasting choice
+
 ## 2026-09-09
 
 - import the knowledge from the earlier awiki vault, one concept per commit

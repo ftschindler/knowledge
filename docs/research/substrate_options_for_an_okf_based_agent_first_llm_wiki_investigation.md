@@ -19,10 +19,12 @@ generated:
 A **research result** (not a decision - deliberately deferred). Investigates what
 tool or substrate to adopt for an agent-first LLM wiki that is also a human PKB,
 given hardened requirements and an already-adopted OKF target. Sibling context
-lives in the decisions "Building an agent-first wiki that is also a human PKB"
-and "Building a PKB that is mine, forever-readable, and visual", the research
-"Open Knowledge Format (OKF): findings", and the inbox handoff "Investigate the
-right tool/substrate for an OKF-based LLM wiki PKB".
+lives in the exploration
+[Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md),
+the decision
+[Building my visual PKB](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md),
+and the research
+[Open Knowledge Format (OKF): findings](open_knowledge_format_okf_findings.md).
 
 ## The requirements this was scored against
 
@@ -52,7 +54,7 @@ right tool/substrate for an OKF-based LLM wiki PKB".
    every non-reserved `.md` a concept doc (§2–4, so **no raw/rendered split**), and
    links *"using standard markdown links"* (§6.1). Conformance is file-structural
    (§11). The [launch blog](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing)
-   frames OKF as *"format, not platform… no new runtime, no required SDK."*
+   frames OKF as *"format, not platform... no new runtime, no required SDK."*
 
 Consequence: **OKF + existing git/pre-commit + an AGENTS.md contract satisfies
 R1/R2/R3 by construction.** awiki's raw/rendered split (R2 fail) and wikilink-only

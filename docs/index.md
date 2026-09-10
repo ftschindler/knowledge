@@ -9,6 +9,15 @@ This is where I note knowledge worth keeping, written to be read by people and a
 Each page states one idea and links to the ones it rests on, so this is meant to be followed rather than
 searched.
 
+A good deal of what is here was written whilst working out how a knowledge base like this should be
+built, and that took three passes. First a plain MkDocs and Obsidian setup over a git repository, which
+is still the substrate everything below runs on. Then a phase spent running it on a dedicated
+agent-first wiki engine, which taught a great deal and was abandoned. Now a set of independent,
+privacy-tiered [Open Knowledge Format](research/open_knowledge_format_okf_findings.md) bundles, of which
+this is the public one. Pages from all three passes are here, filed by what they are rather than by
+when they were written, so a page about the middle pass sits under **Explorations** and is history
+rather than an instruction.
+
 ## People
 
 Who appears in these notes, and in what capacity.
@@ -80,10 +89,15 @@ Reusable technical claims, each one a thing I would want true in any repository 
 
 ## Decisions
 
-What I chose, given the values, wishes and principles above, and the reasoning that got me there.
+What I chose, given the values, wishes and principles above, and the reasoning that got me there (basically a friendlier first-person take on an [architecture decision record](https://adr.github.io/)).
 
-- [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself
-- [Building an agent-first wiki that is also a human PKB](decisions/building_an_agent_first_wiki_that_is_also_a_human_pkb.md) - its sibling: the general pattern, for a knowledge base an agent writes into
+- [Building a PKB that is mine, forever-readable, and visual](decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) - the decision record for this knowledge base itself, and still the substrate it runs on
+
+## Explorations
+
+What I built, ran on real content, and stopped. Recorded for what they taught rather than what they concluded, and never to be read as a current choice.
+
+- [Running this knowledge base on awiki](explorations/running_this_knowledge_base_on_awiki.md) - a year of agent-first authoring on a dedicated wiki engine, the four things that ended it, and the much longer list of what survived
 
 ## Blueprints
 
@@ -97,6 +111,7 @@ How knowledge gets organised, independently of any tool that stores it.
 
 - [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) - the five layers this index is ordered by, and why each is its own layer
 - [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md) - what to do when one hierarchy cannot express two independent questions
+- [Record an abandoned exploration as an exploration, not a superseded decision](knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md) - what to do with the record of a commitment you have since withdrawn
 
 ## Research
 
