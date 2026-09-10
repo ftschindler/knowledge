@@ -12,9 +12,13 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
+verified:
+  by: human:felix_schindler
+  at: '2026-09-10T07:34:55Z'
 ---
+
 The requirements I wanted a personal knowledge base (PKB) to satisfy - the
-*"I want…"* layer that, together with my values and principles, drives the
+*"I want..."* layer that, together with my values and principles, drives the
 [Building a PKB that is mine, forever-readable, and visual](../decisions/building_a_pkb_that_is_mine_forever_readable_and_visual.md) decision.
 
 These are project-specific wishes, not universal claims: another project would
@@ -32,7 +36,7 @@ wishes are their own layer.
   the notes, not bolted on as opaque images.
 - **Local-first** - I can just point `nvim` at a folder and work, fully offline,
   with no service required.
-- **…but not local-required** - I can also edit from anywhere through a hosted path
+- **...but not local-required** - I can also edit from anywhere through a hosted path
   (the web) with zero local setup, so contribution never *demands* a local
   environment. (See [Local-first, but not local-required](local_first_but_not_local_required.md).)
 - **A convenience layer, optionally** - a richer editing UX available on top of the
