@@ -214,3 +214,30 @@ client-side, in light or dark mode to match the reader.
 A rule no hook checks is still a rule. See
 [the development environment](local_dev_environment.md#pre-commit-hooks) for running these
 locally.
+
+## Committing
+
+Commit after every logical change, and do not leave work sitting uncommitted. This repository
+has a remote, so a commit is not the only thing standing between a change and losing it, but it
+is what makes a bad edit cheap to undo, and it is the unit a reviewer reads before anything is
+published. A branch carrying a day of mixed work is reviewed as a wall; the same work in six
+commits is reviewed as six decisions.
+
+A logical change is a concept and everything that moves with it: the page itself, its assets,
+the entry in the nearest `index.md`, and the `log.md` line. That last one is the marker in
+practice, since roughly every log entry corresponds to one commit. Several `write` calls whilst
+drafting a single page are one change, not three.
+
+Two consequences worth stating, because both have gone wrong here:
+
+- **A rename is one commit, not two.** The title, the filename, every inbound link's target
+  *and* its link text move together. Split across commits, the intermediate state is a bundle
+  that renders a page under one name and refers to it by another, and no hook sees it because
+  every link still resolves.
+- **A commit that deletes a concept also removes its index entry.** Leaving that for later
+  breaks the build from a line nobody is editing. The `log.md` entry that added it stays,
+  degraded to plain text; see [the log format](#reserved-pages) above.
+
+When a hook rewrites a file during the commit, stage what it changed and amend rather than
+adding a follow-up commit, so the fix lands in the commit that needed it. When a hook fails
+outright, fix the cause and amend the same way; never pass `--no-verify`.
