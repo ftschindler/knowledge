@@ -26,10 +26,6 @@ sources:
   author: human:stjbrown
   last_modified: '2026-08-01'
 ---
-!!! note "This is a [tool reference](index.md)"
-    What an external tool or project is, who makes it, and what it is for. Everything I have
-    learned *about* it lives elsewhere and links back here.
-
 [agent-knowledge](https://github.com/stjbrown/agent-knowledge) is a set of portable agent
 skills for building and maintaining knowledge bundles in plain Markdown, conformant to
 [Open Knowledge Format v0.2](../research/open_knowledge_format_okf_findings.md). It is the

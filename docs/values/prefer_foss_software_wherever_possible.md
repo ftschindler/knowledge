@@ -15,10 +15,6 @@ verified:
   by: human:felix_schindler
   at: '2026-09-10T07:18:06Z'
 ---
-!!! note "This is a [value](index.md)"
-    What I care about, ahead of any particular project. These sit under
-    everything else in the bundle.
-
 **Value.** Given a choice between a free and open-source tool and a proprietary
 one that both meet the need, prefer the FOSS option.
 

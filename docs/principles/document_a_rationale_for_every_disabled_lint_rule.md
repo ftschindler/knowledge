@@ -13,10 +13,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** Every lint rule you disable (or reconfigure away from its default)
 must carry an inline comment explaining *why*. No silent, unexplained
 suppressions.

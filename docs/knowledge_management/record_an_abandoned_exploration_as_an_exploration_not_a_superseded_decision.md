@@ -15,9 +15,6 @@ verified:
   by: human:felix_schindler
   at: '2026-09-10T10:08:05Z'
 ---
-!!! note "This is a [knowledge-management practice](index.md)"
-    How knowledge gets organised, independently of any tool that stores it.
-
 You adopt a tool, build on it for a while, learn why it does not fit, and move
 to something else. The decision record you wrote at the time now asserts
 something untrue. There are three obvious things to do with it and two of them

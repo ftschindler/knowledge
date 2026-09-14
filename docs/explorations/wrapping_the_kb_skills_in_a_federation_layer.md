@@ -15,10 +15,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-14T00:00:00Z'
 ---
-!!! note "This is an [exploration](index.md)"
-    Something I committed to, built on, and withdrew from. It is a record of what the
-    work taught, not a description of how anything is done now.
-
 **A stub.** The work happened and was retired; this page is the account of it, and is not
 written yet. What it needs to cover:
 

@@ -15,10 +15,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-31T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** To test an agent *skill* (a markdown procedure an LLM executes, not
 code), don't just assert strings in the `SKILL.md` - build a disposable, isolated
 fake `HOME`, install a real agent runtime into it, place the skills exactly as a

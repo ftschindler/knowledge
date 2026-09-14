@@ -15,10 +15,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** When a tool a repository uses on itself must keep working outside the
 project environment - most sharply, a **git hook** - resolve it through an
 ephemeral runner (`uvx`, `pipx run`, `npx`) rather than the project virtualenv or

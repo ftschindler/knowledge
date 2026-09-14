@@ -22,10 +22,6 @@ sources:
   title: 'uv: documentation'
   last_modified: '2026-09-11'
 ---
-!!! note "This is a [tool reference](index.md)"
-    What an external tool or project is, who makes it, and what it is for. Everything I have
-    learned *about* it lives elsewhere and links back here.
-
 [uv](https://docs.astral.sh/uv/) is a Python package and project manager that replaces the
 `pip` / `pip-tools` / `pipx` / `venv` stack with one binary. It is the tool this knowledge
 base and its publishing stack install through, and the reason a Python environment here is

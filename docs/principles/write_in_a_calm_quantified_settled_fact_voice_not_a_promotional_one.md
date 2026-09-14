@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** Technical prose - especially anything an agent generates - should
 read like a maintainer standing next to the reader, narrating what the machine
 does as settled fact, volunteering the real costs, and handing the reader

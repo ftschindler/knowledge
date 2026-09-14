@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** A configuration entry that does nothing until a matching input exists
 is legitimate to keep as a statement of intent, even when it enforces nothing
 today. Distinguish the two roles explicitly: an inert declaration says "this is

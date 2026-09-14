@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** For small standalone tooling scripts, declare their dependencies in an
 inline PEP 723 metadata block and run them with a launcher that provisions those
 deps on the fly - so the script needs no project install or virtualenv.

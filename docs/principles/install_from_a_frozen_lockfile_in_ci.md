@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** In CI, install dependencies from the committed lockfile in
 **frozen** mode - fail if the lockfile is out of date rather than silently
 resolving or updating it.

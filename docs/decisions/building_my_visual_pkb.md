@@ -13,10 +13,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [decision](index.md)"
-    What I chose, given my values, wishes and principles, and the reasoning
-    that got me there. A decision here is one I still stand behind.
-
 How I built my personal knowledge base, resolving my wishes, values and principles
 into a concrete
 [MkDocs Material PKB publishing stack](../blueprints/mkdocs_material_pkb_publishing_stack.md).

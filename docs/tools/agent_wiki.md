@@ -29,10 +29,6 @@ sources:
   author: human:stjbrown
   last_modified: '2026-08-01'
 ---
-!!! note "This is a [tool reference](index.md)"
-    What an external tool or project is, who makes it, and what it is for. Everything I have
-    learned *about* it lives elsewhere and links back here.
-
 [agent-wiki](https://github.com/TacoTakumi/agent-wiki) (`awiki`) is a single plain-markdown
 vault that AI agents search before reaching for the web, and write back to when they learn
 something worth keeping. It is an implementation of the

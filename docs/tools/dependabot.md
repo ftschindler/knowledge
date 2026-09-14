@@ -22,10 +22,6 @@ sources:
   title: 'GitHub: Dependabot documentation'
   last_modified: '2026-09-11'
 ---
-!!! note "This is a [tool reference](index.md)"
-    What an external tool or project is, who makes it, and what it is for. Everything I have
-    learned *about* it lives elsewhere and links back here.
-
 [Dependabot](https://docs.github.com/en/code-security/dependabot) is GitHub's dependency
 update bot: it reads a repository's manifests and lockfiles, and opens pull requests when a
 dependency has moved. It is built into GitHub rather than installed, and it is the update

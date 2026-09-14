@@ -16,10 +16,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [piece of research](index.md)"
-    A longer investigation, recorded as findings rather than conclusions. A
-    survey is a claim about what existed when it was written.
-
 Two open questions about running a
 [Karpathy-style LLM wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 as an [OKF v0.2](open_knowledge_format_okf_findings.md)-conformant personal

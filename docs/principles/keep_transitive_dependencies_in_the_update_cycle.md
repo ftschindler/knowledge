@@ -16,10 +16,6 @@ verified:
   by: human:felix_schindler
   at: '2026-09-11T12:19:50Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** Whatever keeps your dependencies current must consider every package
 in the lockfile, not just the ones the manifest names. A process scoped to
 direct dependencies has never examined most of what you ship.

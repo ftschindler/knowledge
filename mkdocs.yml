@@ -30,6 +30,7 @@ theme:
       name: Switch to light mode
 hooks:
 - hooks/publish_about.py
+- hooks/concept_genre.py
 plugins:
 - search
 - awesome-pages
