@@ -29,6 +29,10 @@ hooks:
 plugins:
 - search
 - awesome-pages
+# The domain axis: folders carry a page's nature, tags carry its subject, so the
+# tag listing is the only place the bundle can be read by subject. Listings are
+# rendered wherever a page carries the `material/tags` marker; see about/tags.md.
+- tags
 - obsidian-support
 - backlinks_section
 - excalidraw
