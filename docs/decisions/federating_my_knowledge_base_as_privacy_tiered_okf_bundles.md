@@ -14,6 +14,9 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
+verified:
+  by: human:felix_schindler
+  at: '2026-09-14T09:15:57Z'
 ---
 !!! note "This is a [decision](index.md)"
     What I chose, given my values, wishes and principles, and the reasoning
@@ -70,9 +73,9 @@ exploration produced:
   rather than a second system beside it.
 - **Federation instead of one vault.** Several independent OKF bundles, each its
   own git repository, each cloning and publishing standalone and unaware of the
-  others, bound by a single local `workspace.okf.yaml` that assigns each a role.
+  others, bound by a single local manifest file that assigns each a role.
   The architecture is written up in
-  [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md).
+  [Federated OKF knowledge bases: a workspace-manifest architecture](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md).
 - **The leak boundary in each repository, not in the skill layer.** The manifest
   is a guardrail; the actual boundary is each bundle's own pre-commit hooks and
   publish gate, so a bundle stays safe even when an agent bypasses the federation
@@ -104,6 +107,6 @@ from a working setup rather than guessed at. This decision points forward to it.
 - **The conveniences listed in the exploration**: auto-context injection,
   transcript ingest adapters, a served vault. Each is rebuildable as a skill or a
   script if it is ever actually missed.
-- **A federation of independent repositories is more moving parts than one
-  vault.** The trade is worth it only because privacy tiers are a real
+- **A federation of independent repositories is more moving parts than one vault.**
+  The trade is worth it only because privacy tiers are a real
   requirement here. Someone with a single tier should not copy this.

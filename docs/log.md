@@ -1,5 +1,10 @@
 # Log
 
+## 2026-09-14
+
+- retitle "Federated OKF knowledge bases" and rewrite its skill-layer section: the manifest, the reference rule and the commit-time guard are current, but the layer that wrapped a second set of skills was built and retired, and the title still advertised it
+- add "Wrapping the kb skills in a federation layer" as a draft stub, since the retirement is an exploration and was recorded only as a paragraph in another repository
+
 ## 2026-09-13
 
 - trim the five concepts that opened by restating their genre in prose, which the note above them now says

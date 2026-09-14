@@ -76,7 +76,7 @@ work without it.
 [Substrate options for an OKF-based agent-first LLM wiki: investigation](../research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
 scored it as the best fit for "skill plus contract, CLI optional", and its index is the
 worked example behind the conclusion in
-[Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md)
+[Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
 that an index should be authored rather than generated: it truncates, compresses or rewrites
 its own concept descriptions rather than copying them, which is what a generator cannot do.
 
@@ -91,4 +91,5 @@ the `kb-*` skills, with a federated skill invoking a single-bundle one per bundl
 executing the prose it returned. That is control flow through prompt obedience, and it was
 abandoned for it; skills also have no dependency resolution, so nothing could guarantee the
 wrapped skills were installed. What survived is the format discipline and the bundle, not the
-delegation.
+delegation. The account is
+[Wrapping the kb skills in a federation layer](../explorations/wrapping_the_kb_skills_in_a_federation_layer.md).

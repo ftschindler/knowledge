@@ -1,6 +1,6 @@
 ---
 type: Reference
-title: 'Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills'
+title: 'Federated OKF knowledge bases: a workspace-manifest architecture'
 description: An implementation-ready architecture binding independent OKF bundles into one privacy-tiered
   knowledge base through a workspace manifest and a skill layer.
 tags:
@@ -45,11 +45,10 @@ place**, never smeared across the bundles or the cross-links.
   others.
 - **One workspace manifest** (`workspace.okf.yaml`) is the sole artifact that knows
   the bundles are related; it assigns each bundle a role in this local context.
-- **Two skill layers:** upstream `kb*` (single-bundle mechanic, vendored unmodified)
-  wrapped by a thin `fkb*` (federation layer that reads the manifest and delegates
-  all mutation to `kb*`).
-- **The leak guard is enforced in each repo's own pre-commit/CI**, not only in
-  `fkb`, so a bundle is safe even under direct `kb*` misuse.
+- **A thin skill layer** that reads the manifest and owns only the concerns a single
+  bundle cannot handle for itself.
+- **The leak guard is enforced in each repo's own pre-commit/CI**, not only in the
+  skill layer, so a bundle is safe even when an agent writes to it directly.
 
 ```text
 ~/.agents/wikis/
@@ -120,74 +119,65 @@ also be recorded as OKF `sources[]` provenance entries (with the upstream's
 `publish` URL and a `last_modified` signal), so provenance survives if the live link
 breaks.
 
-## The skill layer: fkb wraps kb
+## The skill layer
 
-Two layers, so nothing is reimplemented or reshipped:
+Agents reach the bundles through skills rather than a runtime. A skill's first act is
+to read `workspace.okf.yaml`; it then owns the manifest-aware concerns, which are the
+only concerns a single bundle cannot handle for itself:
 
-- **`kb*`** - the upstream
-  [stjbrown/agent-knowledge](https://github.com/stjbrown/agent-knowledge) skills,
-  **vendored unmodified**. Single-bundle mechanic: operate on the current bundle
-  (`kb-ingest`/`kb-query`/`kb-lint`/`kb-init`/`kb-visualize`), manifest-oblivious,
-  standalone-usable.
-- **`fkb*`** - a **thin** federation layer (to build). Every `fkb` skill's first act
-  is to read `workspace.okf.yaml`; it owns *only* the manifest-aware concerns, then
-  **delegates all bundle mutation to `kb*`**.
-
-The split is clean because **every `fkb` responsibility requires the manifest, and
-every `kb` responsibility is single-bundle and manifest-oblivious** - the same
-boundary the manifest already draws.
-
-### fkb skill contracts
-
-- **`fkb-ingest`** - read source → **classify** target bundle (fail-closed to a
-  sealed/most-private bundle) → **gate** (target must be `writable`; placing into a
+- **ingest** - read source → **classify** the target bundle (fail-closed to the
+  sealed, most-private one) → **gate** (target must be `writable`; placing into a
   more-open bundle than the default needs human sign-off, since publishing is
-  irreversible disclosure) → resolve cross-links via `path`/`publish` → `cd` into
-  `target.path` and invoke **`kb-ingest`** to do the actual write (concept + that
-  bundle's own `index.md`/`log.md`).
-- **`fkb-query`** - fan `kb-query` across all manifest bundles (read is
-  unrestricted), merge/rank, cite by bundle-qualified path/URL. Read-all, write-one
-  asymmetry.
-- **`fkb-lint`** - per-bundle `kb-lint` (conformance, within-bundle links) **plus**
-  the one check `kb` cannot do: the cross-bundle `referenceable_by` rule + dangling
-  upstream refs. Pure superset.
-- **`fkb-promote`** - net-new: move a concept to a more-open bundle; first-class and
-  human-gated because it is irreversible disclosure (target git history keeps it
-  forever). This is *why* ingest fails closed to sealed - demotion cannot un-leak
-  history.
-- **`fkb-init`** - `kb-init` scaffolds the bundle; `fkb` adds the manifest line.
+  irreversible disclosure) → resolve cross-links via `path`/`publish` → write the
+  concept, and that bundle's own `index.md` and `log.md`.
+- **query** - fan out across every bundle in the manifest, since reading is
+  unrestricted, then merge and cite by bundle-qualified path or URL. The asymmetry is
+  read-all, write-one.
+- **lint** - per-bundle conformance and within-bundle links, plus the one check a
+  single bundle cannot make: the cross-bundle `referenceable_by` rule, and references
+  into an upstream that no longer resolve.
+- **promote** - move a concept to a more-open bundle. First-class and human-gated,
+  because it is irreversible disclosure: the target's git history keeps it forever.
+  This is *why* ingest fails closed to sealed - demotion cannot un-leak history.
 
-**Delegation discipline (do not violate):** `fkb` decides *which bundle and whether
-allowed*; it must **never** edit a concept body or index/log directly - always via
-`kb`, or the layering rots. Dividend: upstream `kb*` improvements flow in for free,
-bundles stay standalone-clean, and the security-critical `fkb` surface stays small.
+!!! warning "Layering this over a second set of skills does not work"
+    An earlier version of this architecture wrapped the single-bundle `kb-*` skills
+    from [agent-knowledge](../tools/agent_knowledge.md), with each federated skill
+    invoking its single-bundle counterpart per bundle and delegating every write to
+    it. The attraction was obvious: nothing reimplemented, upstream improvements for
+    free.
 
-## Enforcement: the leak guard cannot live only in fkb
+    It was built and retired. A skill is prose an LLM reads, so one skill invoking
+    another is control flow through prompt obedience, and skills have no dependency
+    resolution to guarantee the wrapped ones are even installed. The rule that
+    replaced it: **a skill may run a command; a skill never invokes another skill.**
+    See [Wrapping the kb skills in a federation layer](../explorations/wrapping_the_kb_skills_in_a_federation_layer.md).
 
-Direct invocation of the vendored `kb*` skills bypasses `fkb`:
+## Enforcement: the leak guard cannot live only in the skill
 
-- Direct **`kb-query`/`kb-lint`** degrade *gracefully* - narrower but correct (one
-  bundle instead of federated). Harmless.
-- Direct **`kb-ingest`/`kb-promote`** degrade *dangerously* - they bypass classify +
-  disclosure gate + fail-closed default, risking sensitive content written straight
-  into a publishable bundle, silently.
+An agent can always write a file directly, and a skill is a document it may not have
+read. So the failure to design against is not misuse of the skill layer but
+**bypassing it**: a concept written straight into a publishable bundle, skipping the
+classify step, the disclosure gate and the fail-closed default, silently.
 
-Therefore the leak boundary **must not depend on anyone remembering to use `fkb`**.
+Therefore the leak boundary **must not depend on anyone remembering to use the skill
+layer**.
 Each bundle must be leak-safe *by itself*, enforced at commit time in its own repo,
 independent of the manifest:
 
 - **Per-repo pre-commit is the real gate.** A publishing bundle's own hooks reject
   outbound cross-bundle links except to declared-safe (public URL) targets - this
-  catches an up-link leak even if authored by a direct `kb-ingest`, because
-  pre-commit runs on the commit, not the skill.
+  catches an up-link leak however the file was authored, because pre-commit runs on
+  the commit, not on the skill.
 - **Keyword/secret scanner** per publishing bundle (client names, internal
   hostnames, codenames) - the "named-entity ⇒ not public" rule enforced at commit.
 - **CI publish-gate** - human review of the diff before anything goes live, the
   second checkpoint the semantic "is this prose confidential" judgment needs
   (pre-commit cannot reliably make it).
 
-`fkb` provides convenience and correctness; the per-repo commit-time guards provide
-the actual security boundary. This extends the standalone-clean property from
+The skill layer provides convenience and correctness; the per-repo commit-time guards
+provide the actual security boundary. The manifest is a guardrail, not a security
+boundary. This extends the standalone-clean property from
 "clones clean" to "commits clean even under misuse."
 
 ## Suggested build order
@@ -195,15 +185,13 @@ the actual security boundary. This extends the standalone-clean property from
 1. **Manifest schema + loader.** Define `workspace.okf.yaml`, a JSON-schema for it,
    and a small loader that resolves `name → {path, referenceable_by, writable,
    publish}` and the local↔URL map. Everything else depends on this.
-2. **`fkb-lint` (workspace scope) + per-repo pre-commit guards.** Build the security
-   boundary before any writer exists: cross-bundle `referenceable_by` check,
-   dangling-ref check, and the per-repo "no foreign outbound links" + keyword-scanner
-   hooks. This is the leak boundary; it must precede ingest.
-3. **Vendor `kb*`** unmodified; confirm each `kb*` skill operates on a bundle root
-   passed as cwd (so `fkb` can point it at `path`, including a `docs/` subdir).
-4. **`fkb-ingest`** (classify → gate → delegate) and **`fkb-query`** (fan-out +
-   merge). The core daily loop.
-5. **`fkb-promote`** and **`fkb-init`** last - lower-frequency operations.
+2. **Workspace-scope lint + per-repo pre-commit guards.** Build the security boundary
+   before any writer exists: cross-bundle `referenceable_by` check, dangling-ref
+   check, and the per-repo "no foreign outbound links" and keyword-scanner hooks.
+   This is the leak boundary; it must precede ingest.
+3. **Ingest** (classify → gate → write) and **query** (fan-out and merge). The core
+   daily loop.
+4. **Promote** and **init** last - lower-frequency operations.
 
 Pilot on one writable bundle (`public`) plus one read-only upstream to exercise both
 axes before adding the private tiers.
