@@ -7,7 +7,7 @@ tags:
 - okf
 - llm-wiki
 - pkb
-- awiki
+- agent-wiki
 - knowledge-management
 - agent-first
 - research

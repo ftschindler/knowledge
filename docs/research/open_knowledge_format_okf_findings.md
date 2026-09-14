@@ -7,7 +7,7 @@ tags:
 - research
 - okf
 - knowledge-management
-- awiki
+- agent-wiki
 - plain-text
 status: stable
 generated:

@@ -5,7 +5,7 @@ description: The phase in which this knowledge base was an agent-wiki vault, wha
   agent-first authoring, and the four things that ended it.
 tags:
 - exploration
-- awiki
+- agent-wiki
 - llm-wiki
 - pkb
 - knowledge-management
@@ -20,7 +20,7 @@ generated:
     work taught, not a description of how anything is done now.
 
 Most of the pages in this bundle were first written inside the vault described
-below, which is why several of them still carry an `awiki` tag.
+below, and moved here when it was retired.
 
 ## What I wanted
 

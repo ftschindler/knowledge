@@ -5,7 +5,7 @@ description: A CLI-driven markdown knowledge vault that agents search before the
   and the tool this knowledge base ran on for a while.
 tags:
 - tools
-- awiki
+- agent-wiki
 - llm-wiki
 - okf
 - knowledge-management
