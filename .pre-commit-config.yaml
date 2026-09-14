@@ -74,7 +74,7 @@ repos:
     language: pygrep
     files: '\.md$'
   - id: markdown-style
-    name: Forbid thematic breaks and em dashes in markdown
+    name: Enforce markdown styling house-rules
     entry: uv run --script .scripts/check_markdown_style.py
     language: system
     files: '\.md$'

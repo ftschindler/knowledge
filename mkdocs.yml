@@ -10,6 +10,9 @@ theme:
   name: material
   features:
   - content.action.edit
+  # Render a directory's index.md when its section is clicked in the nav, rather
+  # than only expanding the section. Requires the file to be named index.md.
+  - navigation.indexes
   palette:
   - media: "(prefers-color-scheme: light)"
     scheme: default
@@ -26,6 +29,10 @@ hooks:
 plugins:
 - search
 - awesome-pages
+# The domain axis: folders carry a page's nature, tags carry its subject, so the
+# tag listing is the only place the bundle can be read by subject. Listings are
+# rendered wherever a page carries the `material/tags` marker; see about/tags.md.
+- tags
 - obsidian-support
 - backlinks_section
 - excalidraw

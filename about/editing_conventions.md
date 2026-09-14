@@ -56,20 +56,58 @@ the author about their own work.
 neither takes frontmatter, except that `index.md` carries `okf_version` because it sits at
 the bundle root.
 
-`index.md` groups concepts under `##` headings, one line each. Write the entry in **index
-voice**: shorter than the concept's own `description`, tuned to being scanned in a list
-rather than read alone. Copying the description across would store the same sentence twice,
-and reads worse in both places.
+**Every directory carries its own `index.md`**, and the root one does not list concepts. A
+directory index is where a genre is defined: what kind of page belongs here, the conventions
+that apply to it, and the listing of its pages, ordered however suits that genre. The root
+index says what the bundle is, how to read it, and links to each section in the order the
+ideas build. See [Directory indexes](#directory-indexes) below.
 
-The index also carries what no list can: a sentence saying what the bundle is for, a line
-under each heading saying what that section holds, and an order that follows how the ideas
-build rather than the alphabet.
+Write a listing entry in **index voice**: shorter than the concept's own `description`, tuned
+to being scanned in a list rather than read alone. Copying the description across would store
+the same sentence twice, and reads worse in both places.
 
 `log.md` records changes newest first, under a `## YYYY-MM-DD` heading per day. When adding
 to the log, find today's heading or create one at the top; do not append at the bottom.
 
+**Log entries name a concept in plain text and never link to one.** The log is append-only:
+an entry stays true after its subject is renamed, moved or deleted, whilst a link does not,
+and there is no good way to react to that. Rewriting the entry falsifies the record, deleting
+it loses the history, and leaving it dangling breaks the site build from a line nobody is
+editing. This is the one place in the bundle where a link is wrong; `index.md`, which
+describes the present rather than the past, must link and must resolve.
+
 **A concept never links into `about/`.** The bundle has to make sense on its own, so it may
 not depend on the pages that describe the site around it. Links run the other way.
+
+## Directory indexes
+
+One directory, one genre, one index. The directory is the unit because the folder axis carries
+the nature of a page (see
+[Split orthogonal classification axes across folders and tags](../docs/knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md)),
+so a directory and a genre are the same thing seen twice, and the index is where that thing
+gets described.
+
+A directory index holds three things, in this order:
+
+1. **What this genre is**, in a sentence or two, matching the genre note its concepts carry.
+2. **What we do here**: the conventions local to this genre. Findings lead their filename with
+   a date and carry `stale_after`; decisions are written wish-first. Where a convention rests
+   on a reusable argument, link the concept that makes it rather than restating it.
+3. **The listing**, ordered however this genre reads best. Derivation order for decisions,
+   newest first for findings, and so on. Say which, if it is not obvious.
+
+The split between (1)-(2) and a concept is worth holding onto: **the index says what we do
+here, a concept says why anyone would.** A directory index is a reserved file, so it carries no
+frontmatter and cannot be typed, tagged, cited in `sources[]` or verified. Anything in it that
+would survive being read by a stranger with a different knowledge base is a concept in the
+wrong place.
+
+The root `index.md` therefore lists sections rather than pages, which keeps it a page a reader
+can hold in their head as the bundle grows. It also carries the one thing no section can: what
+the bundle is for, and the order the sections build in.
+
+Give each directory a `.pages` file whose `title` matches its index heading, so the nav and the
+page agree, and list the directories in the root `.pages` in the same order as the root index.
 
 ## Page structure
 
@@ -79,12 +117,75 @@ Do not repeat the title as a heading. MkDocs renders the frontmatter `title` as 
 heading, so a body `# Title` produces a second one and stores the same string twice, where
 the two can drift.
 
+### Every concept opens with its genre
+
+The first thing in the body, before any prose, is a note naming what kind of page this is and
+linking to the index section that defines the kind:
+
+```markdown
+!!! note "This is an [exploration](index.md)"
+    Something I committed to, built on, and withdrew from. It is a record of what the
+    work taught, not a description of how anything is done now.
+```
+
+The title carries the link, so the genre word is what a reader clicks. The body is one or two
+sentences saying what that genre *is*, not what this page contains: it is the same text on
+every page in the section, and the page's own opening follows underneath.
+
+This exists because a reader rarely arrives through the index. The index defines the genres
+and orders the sections by how the ideas build, but a link from search, from another site or
+from an agent lands in the middle of the bundle, where the only marker of genre is the
+frontmatter `type`, which the theme does not render. A decision and an exploration read alike
+until you know that one is current and the other is history, and that difference changes what
+the page is *for*.
+
+The link is always `index.md`, the index of the concept's own directory, with no `../` and no
+anchor. Every page in a directory carries the identical note, so match its wording to the
+opening of that directory's index.
+
 Two constructs are forbidden outright, and a hook rejects them. Thematic breaks, because
 headings already separate sections and a rule line renders as a second, redundant divider;
 all three spellings count (`---`, `***`, `___`, and their spaced forms), since they render
 to the same `<hr>`. Frontmatter delimiters and table rows are of course exempt. And the em
 dash (U+2014), because `-` is typeable on any keyboard and greps the same way everywhere.
 Both are ignored inside fenced code blocks, where a snippet quotes something else's syntax.
+
+## Voice
+
+British English throughout: "ise" endings, "our" endings, "whilst" rather than "while", no
+Oxford comma. Write for a technical reader, and prefer the concrete behaviour to its abstract
+label.
+
+The register is the one
+[Write in a calm, quantified, settled-fact voice - not a promotional one](../docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
+describes: a maintainer standing next to the reader, narrating what happened as settled fact,
+volunteering the real costs, first-person where a person decided something.
+
+**It is not "warm", and aiming at warmth produces the opposite.** Warmth is the cheapest
+register to imitate, so anything asked to be warm reaches for enthusiasm, second-person
+chumminess and exclamation, which is precisely the prose this bundle is trying not to contain.
+What makes these pages read as written by a person is specificity and restraint: a page that
+names what it gave up, quantifies where it can, and declines to hedge. Concreteness is
+expensive to fake; warmth is free.
+
+### Read before you write
+
+**Before writing a new concept, read two existing pages from the directory you are writing
+into.** The directory's `index.md` lists them, so this costs one file and two reads.
+
+This is not a courtesy step, it is the actual style control. A rule *describes* a voice; the
+existing pages *are* one, and prose matches nearby prose far more reliably than it satisfies an
+adjective. Every convention on this page put together does less to keep the bundle sounding like
+one author than two pages of the real thing in front of you.
+
+It matters most for whoever has read least. An agent that opens `okf-floor.yaml`, the index and
+nothing else has seen the bundle's *schema* and none of its *voice*, and will supply its own.
+That is also why the indexes are written in full house voice rather than as terse catalogues:
+they are read first, so they set the register for whatever gets written next.
+
+When writing several pages in one session, re-read from the bundle rather than from what you
+just wrote. Otherwise the reference drifts to your own last page, and a long session ends
+somewhere the rest of the bundle is not.
 
 ## File naming
 
@@ -181,3 +282,30 @@ client-side, in light or dark mode to match the reader.
 A rule no hook checks is still a rule. See
 [the development environment](local_dev_environment.md#pre-commit-hooks) for running these
 locally.
+
+## Committing
+
+Commit after every logical change, and do not leave work sitting uncommitted. This repository
+has a remote, so a commit is not the only thing standing between a change and losing it, but it
+is what makes a bad edit cheap to undo, and it is the unit a reviewer reads before anything is
+published. A branch carrying a day of mixed work is reviewed as a wall; the same work in six
+commits is reviewed as six decisions.
+
+A logical change is a concept and everything that moves with it: the page itself, its assets,
+the entry in the nearest `index.md`, and the `log.md` line. That last one is the marker in
+practice, since roughly every log entry corresponds to one commit. Several `write` calls whilst
+drafting a single page are one change, not three.
+
+Two consequences worth stating, because both have gone wrong here:
+
+- **A rename is one commit, not two.** The title, the filename, every inbound link's target
+  *and* its link text move together. Split across commits, the intermediate state is a bundle
+  that renders a page under one name and refers to it by another, and no hook sees it because
+  every link still resolves.
+- **A commit that deletes a concept also removes its index entry.** Leaving that for later
+  breaks the build from a line nobody is editing. The `log.md` entry that added it stays,
+  degraded to plain text; see [the log format](#reserved-pages) above.
+
+When a hook rewrites a file during the commit, stage what it changed and amend rather than
+adding a follow-up commit, so the fix lands in the commit that needed it. When a hook fails
+outright, fix the cause and amend the same way; never pass `--no-verify`.

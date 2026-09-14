@@ -11,8 +11,9 @@
   delimiters are exempt, as are table delimiter rows (`| --- |`).
 - The em dash `—`. Use `-` instead, so prose is typeable on any keyboard and
   greps the same way everywhere.
+- The ellipsis `…`. Use `...` instead, for the same reason.
 
-Both checks skip fenced code blocks: a snippet quotes something else's syntax.
+All checks skip fenced code blocks: a snippet quotes something else's syntax.
 """
 
 from __future__ import annotations
@@ -28,6 +29,7 @@ THEMATIC_BREAK = re.compile(
     r"^ {0,3}(?:(?:-[ \t]*){3,}|(?:\*[ \t]*){3,}|(?:_[ \t]*){3,})$"
 )
 EM_DASH = "\u2014"
+ELLIPSIS = "\u2026"
 
 
 def check(path: Path) -> list[str]:
@@ -58,6 +60,10 @@ def check(path: Path) -> list[str]:
             )
         if EM_DASH in line:
             problems.append(f"{path}:{number}: em dash `{EM_DASH}` - use `-` instead")
+        if ELLIPSIS in line:
+            problems.append(
+                f"{path}:{number}: ellipsis `{ELLIPSIS}` - use `...` instead"
+            )
     return problems
 
 
