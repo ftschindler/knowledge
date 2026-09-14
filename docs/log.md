@@ -1,5 +1,14 @@
 # Log
 
+## 2026-09-11
+
+- date findings in the filename (`20260911_...`) and list the directory newest first, since when a finding was written is part of what it claims
+- enable the theme's `navigation.indexes`, so clicking a section in the nav opens its `index.md` instead of only expanding the section
+- give **Findings** a directory of its own and a sub-index, moving all four out of `tools/` and `linux/`, which dissolves: a finding's subject is a tag, not a folder
+- adopt `stale_after` for findings about a tool, whose claims are claims about a version
+- amend "Categorize by what content is, not why you made it", whose own worked example filed a finding under `tools/`: rejecting the circumstance of discovery is not enough if the answer you land on is a subject rather than a nature
+- extend "Split orthogonal classification axes across folders and tags" with how the rule drifts back, the two tells for it, and `knowledge_management/` as a named exception
+
 ## 2026-09-10
 
 - add "agent-wiki (awiki)", the first entry in a new Tools section that gives an external tool one page of its own

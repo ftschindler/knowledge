@@ -4,12 +4,14 @@ title: awiki title extraction breaks on frontmatter-led source files
 description: awiki's plain-file ingest derives a page title from the first line, so a file that leads
   with YAML frontmatter gets a nonsense title.
 tags:
+- finding
 - agent-wiki
-- bug
 - frontmatter
 - markdown
 - ingest
+- bug
 status: stable
+stale_after: '2027-03-11'
 generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'

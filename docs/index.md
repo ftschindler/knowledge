@@ -115,6 +115,7 @@ How knowledge gets organised, independently of any tool that stores it.
 - [Categorize by what content is, not why you made it](knowledge_management/categorize_by_what_content_is_not_why_you_made_it.md) - the drift that files a security review under whatever you were doing when you wrote it
 - [Record an abandoned exploration as an exploration, not a superseded decision](knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md) - what to do with the record of a commitment you have since withdrawn
 - [Automatic session capture is not an inbox](knowledge_management/automatic_session_capture_is_not_an_inbox.md) - why a queue that fills itself never reaches zero, and what capture must refuse to ask
+- [Keep the GTD inbox inside the private bundle, not beside it](knowledge_management/keep_the_gtd_inbox_inside_the_private_bundle.md) - where a queue of pages meant to be deleted can live in a knowledge base without breaking it
 
 ## Research
 
@@ -135,8 +136,6 @@ External tools and projects worth a page of their own: what each one is, who mak
 
 ## Findings
 
-Things that cost time once. Each records the symptom, what it turned out to be, and how to get past it, so the next encounter is short.
+Things I discovered at some point. For instance, a recorded symptom, what it turned out to be, and how to get past it, so the next encounter is short. The cheapest pages here: a finding is not asked to be general or to connect to anything, only to be true at some point in time. They are listed on their own page rather than here, because this is a potentially fast-growing section which reads least as a narrative.
 
-- [fs.protected_regular Blocks Root Writes in Sticky tmp](linux/fsprotected_regular_blocks_root_writes_in_sticky_tmp.md) - a root process denied a write to a world-writable file, and the sysctl that explains it
-- [awiki title extraction breaks on frontmatter-led source files](tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md) - a tool that titles a page from its first line, meeting a file that opens with YAML
-- [awiki tracks backlinks via wikilinks only, not Markdown links](tools/awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md) - why an ordinary Markdown link left pages reported as orphans
+- [All findings](findings/index.md)

@@ -75,7 +75,7 @@ been decisive.
 
 awiki's backlink and orphan graph is built exclusively from wikilink syntax;
 ordinary Markdown links are invisible to it, verified empirically in
-[awiki tracks backlinks via wikilinks only, not Markdown links](../tools/awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md).
+[awiki tracks backlinks via wikilinks only, not Markdown links](../findings/20260827_awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md).
 Keeping the graph working therefore meant authoring wikilinks, which are portable
 only across wikilink-aware tools, in direct conflict with
 [Prefer plain-text, tool-agnostic formats](../values/prefer_plain_text_tool_agnostic_formats.md).
@@ -110,7 +110,7 @@ pre-commit were already the control plane in this repository. Adding a second
 one, which the first could not see into, bought nothing.
 
 The point at which this stopped being theoretical was
-[awiki title extraction breaks on frontmatter-led source files](../tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md):
+[awiki title extraction breaks on frontmatter-led source files](../findings/20260827_awiki_title_extraction_breaks_on_frontmatter_led_source_files.md):
 ingesting a file authored under this bundle's own convention, where the title
 lives in frontmatter and the body starts at `##`, silently produced a garbage
 title and a garbage slug. Two authoring conventions, one of which I could not

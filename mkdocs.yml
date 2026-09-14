@@ -10,6 +10,9 @@ theme:
   name: material
   features:
   - content.action.edit
+  # Render a directory's index.md when its section is clicked in the nav, rather
+  # than only expanding the section. Requires the file to be named index.md.
+  - navigation.indexes
   palette:
   - media: "(prefers-color-scheme: light)"
     scheme: default

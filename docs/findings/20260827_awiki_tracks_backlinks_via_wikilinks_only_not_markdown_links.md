@@ -4,10 +4,13 @@ title: awiki tracks backlinks via wikilinks only, not Markdown links
 description: awiki builds its link graph exclusively from wikilink syntax, so ordinary Markdown links
   to internal pages never count as backlinks.
 tags:
-- tools
-- awiki
+- finding
+- agent-wiki
+- markdown
 - knowledge-management
+- bug
 status: stable
+stale_after: '2027-03-11'
 generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'

@@ -83,7 +83,7 @@ use but notable.
 
 ## Relationship to awiki
 
-[awiki tracks backlinks via wikilinks only, not Markdown links](../tools/awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md): awiki claims
+[awiki tracks backlinks via wikilinks only, not Markdown links](../findings/20260827_awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md): awiki claims
 ~80% OKF conformance, yet its headline Obsidian-style wikilink cross-references
 (double square brackets around a page title) are
 precisely a point where it *diverges* from OKF, whose links are standard markdown.

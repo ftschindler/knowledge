@@ -48,6 +48,29 @@ which is open-ended**. Put the *bounded, stable* axis on folders and let the
 change, but adding a tag value is free. If natures are few and stable while
 domains will grow unpredictably, folders = nature, tags = domain.
 
+## How it drifts back
+
+Naming the rule does not settle it, because the pressure to file by domain
+arrives one page at a time and always looks reasonable locally. This bundle put
+its tool findings in `tools/` and its one Linux finding in `linux/`, each time on
+the sensible-sounding grounds that the page was *about* that subject. The result
+was a nature with no folder of its own, two natures sharing `tools/`, and a
+`linux/` directory holding exactly one file - a folder tree quietly re-growing
+along the domain axis it was supposed to keep off. It was fixed by giving
+`Finding` the folder its siblings already had and demoting the subject to a tag.
+
+Two tells, both cheap to check. A **directory holding one file** is usually a
+domain that got a folder. And a **nature with no folder**, whose pages are
+scattered across several, can only be found by reading an index that reassembles
+them - which is the retrieval the folder axis was meant to provide.
+
+One exception stands here deliberately: `knowledge_management/` is a domain
+folder, holding principles and practices about this bundle itself. Consistency
+says it should dissolve into the nature folders behind a tag. It has not, because
+it is the one subject whose pages are read as a group rather than found
+individually, and naming a live exception is more honest than pretending the rule
+is applied everywhere.
+
 ## Why it generalises
 
 This is tool-agnostic: it holds for a filesystem, a wiki, Notion, a photo

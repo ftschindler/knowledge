@@ -91,8 +91,8 @@ concept, whilst awiki splits each one into a raw source and a rendered page.
 
 ## What I learned using it
 
-- [awiki tracks backlinks via wikilinks only, not Markdown links](awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md)
-- [awiki title extraction breaks on frontmatter-led source files](awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
+- [awiki tracks backlinks via wikilinks only, not Markdown links](../findings/20260827_awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md)
+- [awiki title extraction breaks on frontmatter-led source files](../findings/20260827_awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
 - [Security Analysis of Agent Wiki (awiki)](../research/security_analysis_of_agent_wiki_awiki.md) - a full source read, asking what it does with your data
 - [Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md) - the phase spent running on it, and why it ended
 

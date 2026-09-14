@@ -21,10 +21,22 @@ when I found them, not because of what they actually are.
 Corrected:
 [Security Analysis of Agent Wiki (awiki)](../research/security_analysis_of_agent_wiki_awiki.md)
 is a security review, so it belongs in `research`.
-[awiki title extraction breaks on frontmatter-led source files](../tools/awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
-is a verified tool defect with a workaround, so it belongs in `tools`. Both
-stand on their own merits as durable, hard-won knowledge. Neither needed the
-knowledge-management framing to justify existing.
+[awiki title extraction breaks on frontmatter-led source files](../findings/20260827_awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
+is a finding, so it belongs in `findings`. Both stand on their own merits as
+durable, hard-won knowledge. Neither needed the knowledge-management framing to
+justify existing.
+
+That second correction was itself half-done, and the second half is the more
+instructive one. The bug first went to `tools/`, on the reasoning that a tool
+defect belongs with the tool. But "about a tool" is the *domain*, not the nature:
+the page is a finding that happens to concern a tool, exactly as the sysctl
+finding beside it is a finding that happens to concern Linux. Filing by domain
+put two natures in one directory and produced a folder tree that grew a slot per
+subject, which is the explosion
+[Split orthogonal classification axes across folders and tags](split_orthogonal_classification_axes_across_folders_and_tags.md)
+describes. The nature is `Finding`; the tool rides along as a tag. Rejecting the
+circumstance of discovery is necessary but not sufficient - the answer you land
+on has to be a nature, and a subject is not one.
 
 ## The rule
 

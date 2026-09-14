@@ -4,11 +4,11 @@ title: fs.protected_regular Blocks Root Writes in Sticky tmp
 description: A file in a sticky /tmp owned by another user cannot be opened for writing even by root,
   because the restriction keys off ownership rather than permission bits.
 tags:
+- finding
 - linux
 - sysctl
 - permissions
 - security
-- gotcha
 - tmp
 status: stable
 generated:
