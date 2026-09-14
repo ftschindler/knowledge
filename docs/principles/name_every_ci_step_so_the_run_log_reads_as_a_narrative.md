@@ -13,6 +13,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Give every CI step an explicit `name:`, so the run log is a labeled
 sequence of what happened rather than a wall of anonymous action references. The
 log is read under pressure - when something is red - and a self-describing log

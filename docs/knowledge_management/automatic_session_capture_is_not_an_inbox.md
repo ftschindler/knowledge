@@ -13,6 +13,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
 ---
+!!! note "This is a [knowledge-management practice](index.md)"
+    How knowledge gets organised, independently of any tool that stores it.
+
 A knowledge base that captures agent conversations automatically looks like it
 has solved capture. It has not, and the two are easy to conflate because both
 produce a pile of unfiled material.

@@ -7,6 +7,7 @@
 - point each concept's genre note at its own directory's index rather than a root-index anchor
 - trim the findings index to what we do here, deferring the reasoning to the two concepts below
 - order the nav explicitly in `.pages`, so Explorations no longer sits between Decisions and Blueprints
+- give the remaining 67 concepts their genre note, so every page says what kind of page it is and links to the index that defines the kind
 
 - add "Give a knowledge base a tier that is not asked to earn its place" and "Date a page whose claim is about a version", the two reusable claims behind the findings directory, both drafts pending a rewrite in my own voice
 - require a commit per logical change, in the editing conventions

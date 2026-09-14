@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** When chaining multiple auto-fixers over the same files, order them so a
 later fixer cannot reintroduce changes an earlier one just made - run the broad
 whitespace/line-ending hygiene fixers last.

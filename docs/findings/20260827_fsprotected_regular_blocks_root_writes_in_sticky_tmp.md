@@ -15,6 +15,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [finding](index.md)"
+    Something that cost time once: the symptom, what it turned out to be, and
+    how to get past it. Cheap by design, and true of a moment rather than in general.
+
 A file in `/tmp` owned by another user cannot be opened for writing -
 **even by root** - and `chmod 777` does not help, because the restriction keys
 off *ownership*, not permission bits.

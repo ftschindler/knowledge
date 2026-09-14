@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Name every support-tool configuration file as a dotfile
 (`.taplo.toml`, `.markdownlint-cli2.jsonc`, `.biome.json`) rather than a plain
 name in the repo root, so the root shows the project's actual content and tool

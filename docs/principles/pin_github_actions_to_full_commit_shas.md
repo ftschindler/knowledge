@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Reference every third-party GitHub Action by its full 40-character
 commit SHA, not by a mutable tag like `@v4` or a branch.
 

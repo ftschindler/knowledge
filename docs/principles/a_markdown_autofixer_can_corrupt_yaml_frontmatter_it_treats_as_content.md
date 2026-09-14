@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Before enabling a markdown auto-fixer (pymarkdown, and others) on files
 that carry YAML frontmatter, make it *recognise* the frontmatter block - otherwise
 its `fix` mode reflows the leading `---` block as if it were prose and silently

@@ -15,6 +15,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
 ---
+!!! note "This is a [decision](index.md)"
+    What I chose, given my values, wishes and principles, and the reasoning
+    that got me there. A decision here is one I still stand behind.
+
 The current answer to the question
 [Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md)
 failed to settle. The bundle you are reading is its first instance.

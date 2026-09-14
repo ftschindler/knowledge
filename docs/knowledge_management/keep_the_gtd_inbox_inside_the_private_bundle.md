@@ -14,6 +14,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-11T00:00:00Z'
 ---
+!!! note "This is a [knowledge-management practice](index.md)"
+    How knowledge gets organised, independently of any tool that stores it.
+
 A GTD inbox holds items that are meant to stop existing. A knowledge base holds
 pages that are meant to persist and be linked. Putting the first inside the
 second looks like a category error, and the usual reflex is to keep captures in

@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [piece of research](index.md)"
+    A longer investigation, recorded as findings rather than conclusions. A
+    survey is a claim about what existed when it was written.
+
 Findings from reading the [OKF v0.2 specification](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md)
 (GoogleCloudPlatform/open-knowledge-format). Factual notes only; any decision
 about adopting it is tracked separately.

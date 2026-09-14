@@ -17,6 +17,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [piece of research](index.md)"
+    A longer investigation, recorded as findings rather than conclusions. A
+    survey is a claim about what existed when it was written.
+
 An **implementation-ready** architecture for binding an arbitrary number of
 independent [OKF v0.2](open_knowledge_format_okf_findings.md) bundles into one
 privacy-tiered personal knowledge base, driven by an agent skill layer. Written as

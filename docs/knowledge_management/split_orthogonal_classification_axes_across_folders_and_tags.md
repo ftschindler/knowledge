@@ -12,6 +12,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [knowledge-management practice](index.md)"
+    How knowledge gets organised, independently of any tool that stores it.
+
 When you classify knowledge along **two independent axes at once**, don't try to
 express both in one folder tree. Put one axis on folders, the other on tags.
 

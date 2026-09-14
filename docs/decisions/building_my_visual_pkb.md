@@ -13,6 +13,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [decision](index.md)"
+    What I chose, given my values, wishes and principles, and the reasoning
+    that got me there. A decision here is one I still stand behind.
 
 A decision record for how I built my personal knowledge base.
 It resolves my wishes, values and principles into a concrete

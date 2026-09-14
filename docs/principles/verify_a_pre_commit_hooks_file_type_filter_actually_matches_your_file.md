@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** When you point a shared pre-commit hook at a file via `files:`, confirm
 the file is not silently dropped by the hook's built-in `types`/`types_or`
 filter - the two are ANDed, and a non-matching type makes the hook a no-op that

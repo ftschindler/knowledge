@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Declare the *minimum* token permissions a workflow needs, explicitly -
 set a restrictive baseline at the workflow level, then narrow (or selectively
 elevate) per job, so each job holds only what it actually uses.

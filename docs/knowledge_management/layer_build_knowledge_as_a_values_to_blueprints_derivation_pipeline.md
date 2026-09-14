@@ -12,6 +12,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [knowledge-management practice](index.md)"
+    How knowledge gets organised, independently of any tool that stores it.
+
 Knowledge about *how you build things* isn't one undifferentiated pile. It
 stratifies into five layers, each answering a different question, flowing from
 the general and enduring to the specific and concrete:

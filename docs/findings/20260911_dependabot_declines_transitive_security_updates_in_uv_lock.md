@@ -21,6 +21,10 @@ sources:
   title: 'dependabot-core#14073: uv transitive dependencies are not updated under lockfile-only'
   last_modified: '2026-09-02'
 ---
+!!! note "This is a [finding](index.md)"
+    Something that cost time once: the symptom, what it turned out to be, and
+    how to get past it. Cheap by design, and true of a moment rather than in general.
+
 **Versions**: [Dependabot](../tools/dependabot.md) as hosted in September 2026, against a
 [uv](../tools/uv.md) project. The `uv` updater is young and moving; re-check before
 relying on any of this.

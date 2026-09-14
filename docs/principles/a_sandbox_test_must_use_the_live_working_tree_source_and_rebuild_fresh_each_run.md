@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-31T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** When a test builds a sandbox (a fake HOME, a temp project, a container)
 that copies in your source under test, it must copy from the **live working tree**
 and rebuild the sandbox **fresh on every run** - never from a cached snapshot, a

@@ -16,6 +16,9 @@ verified:
   by: human:felix_schindler
   at: '2026-09-10T07:34:55Z'
 ---
+!!! note "This is a [wish](index.md)"
+    What I wanted from a specific thing, where a value is what I want
+    generally.
 
 The requirements I wanted a personal knowledge base (PKB) to satisfy - the
 *"I want..."* layer that, together with my values and principles, drives the

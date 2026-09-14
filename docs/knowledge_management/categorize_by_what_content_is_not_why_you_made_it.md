@@ -12,6 +12,9 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [knowledge-management practice](index.md)"
+    How knowledge gets organised, independently of any tool that stores it.
+
 While setting up this bundle, two findings - a security review of `agent-wiki`
 and a bug hit while ingesting into it - both got filed under
 `knowledge_management`. That was wrong: neither is *about* managing

@@ -13,6 +13,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Normalise all text files to LF line endings, and enforce it in more
 than one place - `.gitattributes`, `.editorconfig`, and a commit-time hook -
 rather than trusting each contributor's editor.

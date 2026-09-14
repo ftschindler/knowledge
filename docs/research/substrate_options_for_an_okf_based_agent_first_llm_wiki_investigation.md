@@ -16,6 +16,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
+!!! note "This is a [piece of research](index.md)"
+    A longer investigation, recorded as findings rather than conclusions. A
+    survey is a claim about what existed when it was written.
+
 A **research result** (not a decision - deliberately deferred). Investigates what
 tool or substrate to adopt for an agent-first LLM wiki that is also a human PKB,
 given hardened requirements and an already-adopted OKF target. Sibling context

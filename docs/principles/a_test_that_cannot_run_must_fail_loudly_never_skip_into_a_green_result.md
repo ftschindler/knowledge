@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** When a test or verification cannot execute because its environment is
 missing a prerequisite, it must fail loudly - not skip. A conditional skip on
 absent tooling makes "the environment could not run this" indistinguishable from

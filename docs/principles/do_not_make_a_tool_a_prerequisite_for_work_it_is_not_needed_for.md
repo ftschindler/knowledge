@@ -14,6 +14,10 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
+!!! note "This is a [principle](index.md)"
+    A reusable technical claim: something I would want true in any
+    repository I work in.
+
 **Claim.** Before listing a tool as a requirement - in a dependency manifest, a
 setup guide, or a required-install list - verify it actually lies on a path the
 contributor's workflow exercises. A tool that only matters under a trigger that
