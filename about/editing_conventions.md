@@ -150,6 +150,43 @@ to the same `<hr>`. Frontmatter delimiters and table rows are of course exempt. 
 dash (U+2014), because `-` is typeable on any keyboard and greps the same way everywhere.
 Both are ignored inside fenced code blocks, where a snippet quotes something else's syntax.
 
+## Voice
+
+British English throughout: "ise" endings, "our" endings, "whilst" rather than "while", no
+Oxford comma. Write for a technical reader, and prefer the concrete behaviour to its abstract
+label.
+
+The register is the one
+[Write in a calm, quantified, settled-fact voice - not a promotional one](../docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
+describes: a maintainer standing next to the reader, narrating what happened as settled fact,
+volunteering the real costs, first-person where a person decided something.
+
+**It is not "warm", and aiming at warmth produces the opposite.** Warmth is the cheapest
+register to imitate, so anything asked to be warm reaches for enthusiasm, second-person
+chumminess and exclamation, which is precisely the prose this bundle is trying not to contain.
+What makes these pages read as written by a person is specificity and restraint: a page that
+names what it gave up, quantifies where it can, and declines to hedge. Concreteness is
+expensive to fake; warmth is free.
+
+### Read before you write
+
+**Before writing a new concept, read two existing pages from the directory you are writing
+into.** The directory's `index.md` lists them, so this costs one file and two reads.
+
+This is not a courtesy step, it is the actual style control. A rule *describes* a voice; the
+existing pages *are* one, and prose matches nearby prose far more reliably than it satisfies an
+adjective. Every convention on this page put together does less to keep the bundle sounding like
+one author than two pages of the real thing in front of you.
+
+It matters most for whoever has read least. An agent that opens `okf-floor.yaml`, the index and
+nothing else has seen the bundle's *schema* and none of its *voice*, and will supply its own.
+That is also why the indexes are written in full house voice rather than as terse catalogues:
+they are read first, so they set the register for whatever gets written next.
+
+When writing several pages in one session, re-read from the bundle rather than from what you
+just wrote. Otherwise the reference drifts to your own last page, and a long session ends
+somewhere the rest of the bundle is not.
+
 ## File naming
 
 Filenames are **lowercase**, with **underscores** between words and no whitespace:
