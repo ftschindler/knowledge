@@ -63,7 +63,7 @@ vulnerable packages at all.
 **`versioning-strategy: lockfile-only` makes it worse, not better.** It reads as
 "only write the lockfile", which is precisely the intent for a uv project. For
 the `uv` updater it also stops transitive dependencies being resolved
-([dependabot-core#14073](https://github.com/dependabot/dependabot-core/issues/14073)),
+(dependabot-core#14073[^dc-14073]),
 so it forbids the only edit that could have fixed them.
 
 Two things it was *not*, both of which cost time as hypotheses. `cooldown` does

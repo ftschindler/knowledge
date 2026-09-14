@@ -29,10 +29,10 @@ sources:
   author: human:stjbrown
   last_modified: '2026-08-01'
 ---
-[agent-wiki](https://github.com/TacoTakumi/agent-wiki) (`awiki`) is a single plain-markdown
+agent-wiki[^awiki-readme] (`awiki`) is a single plain-markdown
 vault that AI agents search before reaching for the web, and write back to when they learn
 something worth keeping. It is an implementation of the
-[LLM wiki](https://github.com/stjbrown/agent-knowledge/blob/main/knowledge/concepts/llm_wiki.md)
+LLM wiki[^ak-llm-wiki]
 pattern, and it is the tool this knowledge base ran on before it became an OKF bundle.
 
 | | |
@@ -51,7 +51,7 @@ folders, a generated `index.md` and an append-only `log.md`. No database. It ope
 or Logseq as-is, and greps like any other directory.
 
 It follows the
-[three-layer architecture](https://github.com/stjbrown/agent-knowledge/blob/main/knowledge/concepts/three_layer_architecture.md)
+three-layer architecture[^ak-three-layer]
 the pattern describes, and follows it literally: an immutable `raw/` archive of ingested
 sources, the wiki pages rendered *from* those sources, and `wiki.yaml` as the schema layer.
 Each page carries a `render_hash`, so a page edited by hand is detected as drift and

@@ -22,7 +22,7 @@ sources:
   title: 'GitHub: Dependabot documentation'
   last_modified: '2026-09-11'
 ---
-[Dependabot](https://docs.github.com/en/code-security/dependabot) is GitHub's dependency
+Dependabot[^dependabot-docs] is GitHub's dependency
 update bot: it reads a repository's manifests and lockfiles, and opens pull requests when a
 dependency has moved. It is built into GitHub rather than installed, and it is the update
 mechanism behind [Batch dependency updates with a cooldown, not a firehose](../principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md).

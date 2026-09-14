@@ -22,7 +22,7 @@ sources:
   title: 'uv: documentation'
   last_modified: '2026-09-11'
 ---
-[uv](https://docs.astral.sh/uv/) is a Python package and project manager that replaces the
+uv[^uv-docs] is a Python package and project manager that replaces the
 `pip` / `pip-tools` / `pipx` / `venv` stack with one binary. It is the tool this knowledge
 base and its publishing stack install through, and the reason a Python environment here is
 reproducible rather than merely described.

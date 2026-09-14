@@ -26,7 +26,7 @@ sources:
   author: human:stjbrown
   last_modified: '2026-08-01'
 ---
-[agent-knowledge](https://github.com/stjbrown/agent-knowledge) is a set of portable agent
+agent-knowledge[^ak-readme] is a set of portable agent
 skills for building and maintaining knowledge bundles in plain Markdown, conformant to
 [Open Knowledge Format v0.2](../research/open_knowledge_format_okf_findings.md). It is the
 closest published thing to what this knowledge base is, and it appears here in two roles at
@@ -77,7 +77,7 @@ that an index should be authored rather than generated: it truncates, compresses
 its own concept descriptions rather than copying them, which is what a generator cannot do.
 
 **Its knowledge bundle is an upstream source.** The repository documents itself: `knowledge/`
-is a conformant OKF bundle of about 60 concepts *about* OKF and the LLM wiki pattern, covering
+is a conformant OKF bundle[^ak-bundle] of about 60 concepts *about* OKF and the LLM wiki pattern, covering
 the specification section by section, the operations, and a survey of the ecosystem. It is
 checked out here as a read-only bundle, so pages in this bundle cite it rather than
 re-deriving the pattern. [agent-wiki (awiki)](agent_wiki.md) does exactly that.
