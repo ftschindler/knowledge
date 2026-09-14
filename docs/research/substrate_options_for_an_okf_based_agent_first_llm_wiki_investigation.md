@@ -35,7 +35,7 @@ and the research
 - **R1** - agent-first AND human-readable/editable plain markdown (nvim + Obsidian
   both equal paths).
 - **R2** - no `raw/`-vs-rendered duplication for notes that are *already* markdown.
-  (awiki copies an authored `.md` into `raw/` then renders a second page copy with
+  ([awiki](../tools/agent_wiki.md) copies an authored `.md` into `raw/` then renders a second page copy with
   a drift-guard sidecar - circular for already-markdown authored content.)
 - **R3** - ties into agent skills + an AGENTS.md/CLAUDE.md contract, but a bespoke
   CLI must be **optional, not the only door in** - git + pre-commit already exist as
@@ -90,7 +90,7 @@ wiki.
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | **OKF files + thin pre-commit scripts + AGENTS.md contract, NO engine** | pass | pass (decisive) | pass (native) | pass | md |
 | 2 | **Unify into one Obsidian+MkDocs standard-md tree, agent-maintained by contract** | pass | pass | pass | pass | md |
-| 3 | Adopt a different engine: NimaChu/my-wiki or stjbrown/agent-knowledge | pass | pass | pass (skill optional) | pass/partial | md |
+| 3 | Adopt a different engine: NimaChu/my-wiki or [stjbrown/agent-knowledge](../tools/agent_knowledge.md) | pass | pass | pass (skill optional) | pass/partial | md |
 | reject | SamurAIGPT/llm-wiki-agent, jesse-lane-ai, xinhuagu, h4pplness | - | - | - | - | force `[[wl]]` / CLI-centric |
 
 Options 1 and 2 are the same spine (no engine; contract + pre-commit as control
@@ -100,7 +100,7 @@ plane); 2 additionally folds the human PKB and agent wiki into one tree.
 
 - **NimaChu/my-wiki** (MIT, ~123★, active) - skill *optional*, standard markdown
   links, OKF v0.2-compatible guidance. Strongest ready-made fit.
-- **stjbrown/agent-knowledge** (MIT, active) - portable skills over plain markdown
+- **[stjbrown/agent-knowledge](../tools/agent_knowledge.md)** (MIT, active) - portable skills over plain markdown
   bundles, Janet CLI optional, explicit Google OKF v0.2. Best architectural match
   to "skill + contract, CLI optional".
 - **langchain-ai/openwiki** (MIT, very active) - technically strong, OKF v0.2

@@ -14,6 +14,9 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
+verified:
+  by: human:felix_schindler
+  at: '2026-09-14T09:08:45Z'
 ---
 !!! note "This is an [exploration](index.md)"
     Something I committed to, built on, and withdrew from. It is a record of what the
@@ -49,7 +52,7 @@ three layers (immutable raw sources, an LLM-owned wiki, and a schema file such
 as `AGENTS.md`) and its operations (ingest, query, lint including orphan
 detection) are the shape I set out to follow.
 
-The tool was [agent-wiki (awiki)](https://github.com/TacoTakumi/agent-wiki),
+The tool was [agent-wiki (awiki)](../tools/agent_wiki.md),
 which implements that concept directly. I ran it as a **multi-vault** setup: a
 `public` vault (the ancestor of this bundle), a private sink for captured agent
 conversations, and internal vaults for work, all reached through one CLI with a

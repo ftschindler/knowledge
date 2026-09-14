@@ -18,7 +18,7 @@ generated:
     A longer investigation, recorded as findings rather than conclusions. A
     survey is a claim about what existed when it was written.
 
-**Context** – A security review of [TacoTakumi/agent-wiki](https://github.com/TacoTakumi/agent-wiki)
+**Context** – A security review of [TacoTakumi/agent-wiki](../tools/agent_wiki.md)
 (PyPI: `agent-wiki-kb`), a CLI-driven markdown knowledge base that AI agents search before
 reaching for the web and write back to when they learn something. The driving question:
 **what is the potential for data leaks, and are there any deliberate reporting or
