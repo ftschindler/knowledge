@@ -1,5 +1,10 @@
 # Log
 
+## 2026-09-13
+
+- add "Give a knowledge base a tier that is not asked to earn its place" and "Date a page whose claim is about a version", the two reusable claims behind the findings directory, both drafts pending a rewrite in my own voice
+- require a commit per logical change, in the editing conventions
+
 ## 2026-09-11
 
 - date findings in the filename (`20260911_...`) and list the directory newest first, since when a finding was written is part of what it claims
