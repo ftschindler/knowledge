@@ -16,10 +16,6 @@ verified:
   by: human:felix_schindler
   at: '2026-09-10T07:25:00Z'
 ---
-!!! note "This is a [value](index.md)"
-    What I care about, ahead of any particular project. These sit under
-    everything else in the bundle.
-
 **Value.** Wherever content can be stored as plain text or in an open,
 widely-supported format (Markdown, plain files, open JSON),
 prefer that over a proprietary or binary format tied to one application.

@@ -6,9 +6,6 @@ tags: [people, felix, numerical-analysis, model-order-reduction, arup]
 status: stable
 generated: { by: human:felix_schindler, at: 2026-09-07T13:00:00Z }
 ---
-!!! note "This is a [person](index.md)"
-    Who appears in these notes, and in what capacity.
-
 ![Image of Felix Schindler in front of a black board at the University of Münster](felix_schindler.png)
 
 > Numerical Analysis | Model Order Reduction | Computational Science

@@ -15,9 +15,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [blueprint](index.md)"
-    The concrete, copyable artefact a decision produced.
-
 The stack for a git-backed, plain-Markdown personal knowledge base that publishes
 to a static site, produced by the
 [Building my visual PKB](../decisions/building_my_visual_pkb.md) decision. It is

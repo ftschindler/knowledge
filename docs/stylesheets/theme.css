@@ -1,1 +1,117 @@
-/* Default light theme — no custom brand overrides */
+/* The metadata card. No brand overrides beyond it: the Material default stands. */
+
+/*
+  The card is rendered twice by overrides/main.html, once in the right-hand rail
+  and once after the content, and exactly one copy is shown. The rail copy is the
+  default; below 76.25em, where Material hides the rail entirely, the inline copy
+  takes over. A page carrying `hide: toc` hides the rail on every width, so the
+  inline copy is forced on there.
+*/
+
+.ft-meta--inline {
+  display: none;
+}
+
+@media screen and (max-width: 76.2344em) {
+  .ft-meta--rail {
+    display: none;
+  }
+
+  .ft-meta--inline {
+    display: block;
+  }
+}
+
+[data-md-component="sidebar"][hidden] + .md-content .ft-meta--inline {
+  display: block;
+}
+
+/*
+  Pin the card to the bottom of the rail, whatever the table of contents does
+  above it. The column becomes a flex column; the toc takes the space it needs
+  and scrolls when there is not enough, and `margin-top: auto` pushes the card
+  down to the floor.
+*/
+
+.md-sidebar--secondary .md-sidebar__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.md-sidebar--secondary .md-sidebar__inner > .md-nav--secondary {
+  flex: 0 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.ft-meta--rail {
+  flex: 0 0 auto;
+  margin-top: auto;
+  padding-top: 0.6rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+/*
+  The facts themselves, styled to read as the same class of information as the
+  created and updated dates Material prints under the content: small, quiet, and
+  never competing with the prose.
+*/
+
+.ft-meta {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+.ft-meta--inline {
+  margin-top: 1em;
+  padding-top: 0.6rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.ft-meta__fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin: 0.3rem 0;
+}
+
+.ft-meta__fact--quiet {
+  color: var(--md-default-fg-color--lighter);
+}
+
+.ft-meta__icon {
+  flex: 0 0 auto;
+  width: 0.8rem;
+  height: 0.8rem;
+  /* Align the icon with the first line of the label rather than its box. */
+  margin-top: 0.05rem;
+}
+
+.ft-meta__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentcolor;
+}
+
+.ft-meta__label a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--md-default-fg-color--lightest);
+}
+
+.ft-meta__label a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Print has no rail, and the card is provenance worth keeping on paper. */
+@media print {
+  .ft-meta--rail {
+    display: none;
+  }
+
+  .ft-meta--inline {
+    display: block;
+  }
+}

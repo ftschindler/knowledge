@@ -13,10 +13,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [wish](index.md)"
-    What I wanted from a specific thing, where a value is what I want
-    generally.
-
 **Wish.** The canonical store works fully offline with nothing but a text editor,
 yet the same content stays editable through a hosted path that needs no local
 setup at all.

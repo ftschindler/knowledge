@@ -13,10 +13,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** Run CI `run:` steps under a strict shell - errexit, nounset-where-safe,
 and crucially `pipefail` - instead of the platform's lenient default, so any
 failure in a command *or anywhere in a pipe* fails the step.

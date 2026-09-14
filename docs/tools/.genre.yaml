@@ -1,0 +1,11 @@
+---
+# What kind of page this directory holds. One directory, one genre, so this is
+# declared once here rather than copied into every page's body. The build hook
+# `hooks/concept_genre.py` renders the note, and the `genre-conformance` check
+# holds every concept's `type` to the one named here.
+type: Tool
+article: a
+word: tool reference
+note: |-
+  What an external tool or project is, who makes it, and what it is for. Everything I have
+  learned *about* it lives elsewhere and links back here.

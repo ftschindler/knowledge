@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** A task runner should validate the tools a target assumes *before*
 running the target, and abort with a message that names the missing tool and
 says where to get it - not die halfway through a recipe with a bare

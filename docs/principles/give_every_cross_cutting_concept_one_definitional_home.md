@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** In any document longer than a screen, a concept that surfaces in
 several places - a trust model, a security invariant, a naming convention -
 must be *defined* in exactly one section; every other mention *references* that

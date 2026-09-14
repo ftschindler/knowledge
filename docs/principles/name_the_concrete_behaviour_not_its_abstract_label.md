@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** A sentence can pass every honesty and voice check - settled-fact
 tense, no hype, no throat-clearing - and still force the reader to re-read it,
 because it names an abstract *category* instead of the concrete *behaviour* the

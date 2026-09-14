@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-28T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** A task-oriented document (setup guide, README, runbook) is organised
 by the reader's *actual path through the task*, not by the author's mental model
 of the system. At each step, lead with what the reader must **do** - the runnable

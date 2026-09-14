@@ -15,10 +15,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-02T00:00:00Z'
 ---
-!!! note "This is a [principle](index.md)"
-    A reusable technical claim: something I would want true in any
-    repository I work in.
-
 **Claim.** Prose can be honest, calm and free of jargon and still be hard work,
 because it delivers three ideas per sentence to a reader who can hold one. The
 fix is not to cut content. It is to serialise it: one idea per sentence, one

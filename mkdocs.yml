@@ -8,6 +8,10 @@ extra_css:
 - stylesheets/theme.css
 theme:
   name: material
+  # overrides/ adds the metadata card to the right-hand rail; see
+  # about/tech_stack.md. It overrides Material blocks rather than copying its
+  # partials, so a theme upgrade cannot silently leave a stale copy behind.
+  custom_dir: overrides
   features:
   - content.action.edit
   # Render a directory's index.md when its section is clicked in the nav, rather
@@ -26,6 +30,7 @@ theme:
       name: Switch to light mode
 hooks:
 - hooks/publish_about.py
+- hooks/concept_genre.py
 plugins:
 - search
 - awesome-pages

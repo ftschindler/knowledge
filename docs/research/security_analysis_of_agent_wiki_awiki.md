@@ -14,10 +14,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-!!! note "This is a [piece of research](index.md)"
-    A longer investigation, recorded as findings rather than conclusions. A
-    survey is a claim about what existed when it was written.
-
 **Context** – A security review of [TacoTakumi/agent-wiki](../tools/agent_wiki.md)
 (PyPI: `agent-wiki-kb`), a CLI-driven markdown knowledge base that AI agents search before
 reaching for the web and write back to when they learn something. The driving question:

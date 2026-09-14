@@ -18,10 +18,6 @@ verified:
   by: human:felix_schindler
   at: '2026-09-14T09:08:45Z'
 ---
-!!! note "This is an [exploration](index.md)"
-    Something I committed to, built on, and withdrew from. It is a record of what the
-    work taught, not a description of how anything is done now.
-
 Most of the pages in this bundle were first written inside the vault described
 below, and moved here when it was retired.
 

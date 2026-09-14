@@ -21,10 +21,6 @@ sources:
   title: 'dependabot-core#14073: uv transitive dependencies are not updated under lockfile-only'
   last_modified: '2026-09-02'
 ---
-!!! note "This is a [finding](index.md)"
-    Something that cost time once: the symptom, what it turned out to be, and
-    how to get past it. Cheap by design, and true of a moment rather than in general.
-
 **Versions**: [Dependabot](../tools/dependabot.md) as hosted in September 2026, against a
 [uv](../tools/uv.md) project. The `uv` updater is young and moving; re-check before
 relying on any of this.
@@ -67,7 +63,7 @@ vulnerable packages at all.
 **`versioning-strategy: lockfile-only` makes it worse, not better.** It reads as
 "only write the lockfile", which is precisely the intent for a uv project. For
 the `uv` updater it also stops transitive dependencies being resolved
-([dependabot-core#14073](https://github.com/dependabot/dependabot-core/issues/14073)),
+(dependabot-core#14073[^dc-14073]),
 so it forbids the only edit that could have fixed them.
 
 Two things it was *not*, both of which cost time as hypotheses. `cooldown` does

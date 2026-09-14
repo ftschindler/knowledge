@@ -2,6 +2,10 @@
 
 ## 2026-09-14
 
+- render a page's provenance where a reader can see it: genre, status, who generated it, who verified it or that nobody has, and when to revisit it, in a card pinned to the foot of the table-of-contents column and moved under the content on narrow screens
+- declare each directory's genre once in its own `.genre.yaml` and render the note from it, deleting the copy that sat in all seventy-six concepts; `type` is now held to the declaration by a hook
+- render `sources[]` as footnotes, cited in prose by id, and reject a source nothing cites or a citation nothing declares
+
 - add "Separate audiences with separate bundles, not with folders or tags", recovered from the awiki vault's dropped meta pages during a final sweep: the claim that sharing happens at the vault boundary is what frees the folder axis to carry nature, and it had not survived the import
 
 - retitle "Federated OKF knowledge bases" and rewrite its skill-layer section: the manifest, the reference rule and the commit-time guard are current, but the layer that wrapped a second set of skills was built and retired, and the title still advertised it

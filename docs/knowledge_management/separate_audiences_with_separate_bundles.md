@@ -13,9 +13,6 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-14T00:00:00Z'
 ---
-!!! note "This is a [knowledge-management practice](index.md)"
-    How knowledge gets organised, independently of any tool that stores it.
-
 A knowledge base that outlives its first subject eventually holds things not everyone should
 read: work under a client's name, notes about people, a half-formed opinion. The reflex is to
 put the boundary where the other structure already is, in a folder called `private` or a tag
