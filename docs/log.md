@@ -2,6 +2,8 @@
 
 ## 2026-09-14
 
+- add "Separate audiences with separate bundles, not with folders or tags", recovered from the awiki vault's dropped meta pages during a final sweep: the claim that sharing happens at the vault boundary is what frees the folder axis to carry nature, and it had not survived the import
+
 - retitle "Federated OKF knowledge bases" and rewrite its skill-layer section: the manifest, the reference rule and the commit-time guard are current, but the layer that wrapped a second set of skills was built and retired, and the title still advertised it
 - add "Wrapping the kb skills in a federation layer" as a draft stub, since the retirement is an exploration and was recorded only as a paragraph in another repository
 

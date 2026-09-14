@@ -81,6 +81,12 @@ library - anywhere you have hierarchy + labels. The insight is recognising that
 *two axes exist* in the first place; once named, the folder/tag split falls out
 mechanically.
 
+This only works because a third axis, *who may read this*, is kept out of the tree
+entirely: see
+[Separate audiences with separate bundles, not with folders or tags](separate_audiences_with_separate_bundles.md).
+Were audience a folder or a tag, it would compete for the same scarce slots and the
+trilemma above would have three horns instead of two.
+
 Related: [Categorize by what content is, not why you made it](categorize_by_what_content_is_not_why_you_made_it.md) tells you *what
 the nature axis even is* for a given item; this page tells you what to do once
 you have two axes to reconcile.
