@@ -1,3 +1,7 @@
+# Sections in the order the root index lists them, which is the order the ideas
+# build rather than the alphabet. The trailing `...` is not decoration: it takes
+# everything not named above, which is how the `about/` pages the publish hook
+# injects reach the navigation at all. Without it they are silently dropped.
 nav:
 - index.md
 - people
@@ -12,3 +16,4 @@ nav:
 - tools
 - findings
 - log.md
+- ...
