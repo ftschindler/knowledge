@@ -1,0 +1,47 @@
+docs/blueprints/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-10
+mkdocs.yml
+  s_fa25a3999022c9::t_84b45eab37b095 33
+.pre-commit-config.yaml
+  s_fa25a3999022c9::t_8345bd8462940b 81-85
+.scripts/check_genre.py
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-81
+docs/principles/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+docs/research/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+docs/tools/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+docs/values/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+docs/knowledge_management/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-10
+docs/decisions/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+docs/findings/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+hooks/concept_genre.py
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-51
+docs/explorations/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+docs/people/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-10
+docs/wishes/.genre.yaml
+  s_fa25a3999022c9::t_f6a8eff649ee89 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "4e7bb712d484b2979b011f3d5bdc044c12dde331",
+  "prompts": {},
+  "sessions": {
+    "s_fa25a3999022c9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f60241885ffeuNSa1rT8VYMGJF",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
