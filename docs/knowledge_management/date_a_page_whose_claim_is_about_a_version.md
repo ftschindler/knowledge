@@ -13,7 +13,7 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-13T00:00:00Z'
 ---
-!!! note "This is a [knowledge-management practice](../index.md#knowledge-management)"
+!!! note "This is a [knowledge-management practice](index.md)"
     How knowledge gets organised, independently of any tool that stores it.
 
 "Treat warnings as errors" was true in 2019 and will be true in 2035. "The

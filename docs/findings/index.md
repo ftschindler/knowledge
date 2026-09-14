@@ -3,26 +3,19 @@
 Things that cost time once. Each records the symptom, what it turned out to be, and how to get
 past it, so the next encounter is short.
 
-A finding is the cheapest page here to write, and deliberately so. It does not have to be
-general, it does not have to connect to anything, and it is not asked to earn its place the way
-a [principle](../index.md#principles) is: it only has to be true, and to have cost someone an
-afternoon. Where a finding does turn out to carry a reusable claim, the claim moves to a
-principle and the finding links to it rather than restating it, per
-[Give every cross-cutting concept one definitional home](../principles/give_every_cross_cutting_concept_one_definitional_home.md).
+A finding is the cheapest page here to write, and deliberately so: it does not have to be
+general, it does not have to connect to anything, and it only has to be true and to have cost
+someone an afternoon. See
+[Give a knowledge base a tier that is not asked to earn its place](../knowledge_management/give_a_knowledge_base_a_tier_that_is_not_asked_to_earn_its_place.md)
+for why that tier is the one that fills, and what happens when a finding turns out to carry a
+reusable claim.
 
-Two conventions follow from that. A finding names the **symptom** in its title, in the words
-you would have searched for, because that is how anyone arrives here. And it carries
-`stale_after`, because a finding about a tool is a claim about a version: when the bug is fixed
-or the default changes, the page is wrong rather than merely old, and the date is what turns
-"is this still true?" into something a linter can ask.
-
-For the same reason the filename leads with the date it was found, `20260911_`, and this
-directory is listed newest first, grouped by year and month. A principle is read for what it
-claims and its age is beside the point; a finding is read for what was true of some version of
-something, so when it was written is part of the claim. Newest first because the recent ones
-are the ones still likely to hold.
-
-The domain lives in the tags, not in a directory, per
+Here that means four conventions. The title names the **symptom**, in the words you would have
+searched for, because that is how anyone arrives. The filename leads with the date it was found,
+`20260911_`, and this list runs newest first. A finding about a tool carries `stale_after`, since
+its claim is a claim about a version; the reasoning is
+[Date a page whose claim is about a version](../knowledge_management/date_a_page_whose_claim_is_about_a_version.md).
+And the subject lives in the tags rather than in a directory, per
 [Split orthogonal classification axes across folders and tags](../knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md).
 
 ## 2026

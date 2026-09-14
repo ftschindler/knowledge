@@ -18,129 +18,18 @@ this is the public one. Pages from all three passes are here, filed by what they
 when they were written, so a page about the middle pass sits under **Explorations** and is history
 rather than an instruction.
 
-## People
+## Sections
 
-Who appears in these notes, and in what capacity.
+Each section defines what it holds on its own page, and lists what is in it. They are ordered by how the ideas build rather than alphabetically, so reading top to bottom moves from what I care about to what I actually built.
 
-- [Felix Schindler](people/felix_schindler.md) - applied mathematician, computational
-  scientist, and the person whose notes these are.
-
-## Values
-
-What I care about, ahead of any particular project. These sit under everything else here.
-
-- [Prefer FOSS software wherever possible](values/prefer_foss_software_wherever_possible.md) - why an open tool wins a tie, and what it takes for a closed one to win anyway
-- [Prefer plain-text, tool-agnostic formats](values/prefer_plain_text_tool_agnostic_formats.md) - keeping the data mine by keeping it readable without the tool that wrote it
-
-## Wishes
-
-What I wanted from a specific thing. Project-scoped, unlike the values above.
-
-- [Wishes for a personal knowledge base](wishes/wishes_for_a_personal_knowledge_base.md) - the full list of requirements the knowledge base had to meet
-- [Local-first, but not local-required](wishes/local_first_but_not_local_required.md) - one wish worth its own page: offline by default, never offline-only
-
-## Principles
-
-Reusable technical claims, each one a thing I would want true in any repository I work in. Start here if you are setting up a project and want the settled answers.
-
-- [Treat warnings as errors](principles/treat_warnings_as_errors.md) - the most general of these: keep the warning count at zero so a new one is visible
-- [Guard invariants at commit-time, not review-time](principles/guard_invariants_at_commit_time_not_review_time.md) - the case for spending automation instead of reviewer attention
-- [Mirror every local guard in CI](principles/mirror_every_local_guard_in_ci.md) - why the commit hook alone is not the boundary
-- [Autofix in the hook, don't just flag](principles/autofix_in_the_hook_dont_just_flag.md) - when a hook should edit the file rather than complain about it
-- [Order auto-fixers so later ones do not re-dirty earlier output](principles/order_auto_fixers_so_later_ones_do_not_re_dirty_earlier_output.md) - what goes wrong once you have more than one fixer
-- [Verify a pre-commit hook's file-type filter actually matches your file](principles/verify_a_pre_commit_hooks_file_type_filter_actually_matches_your_file.md) - how a hook can pass without ever having looked at your file
-- [A markdown autofixer can corrupt YAML frontmatter it treats as content](principles/a_markdown_autofixer_can_corrupt_yaml_frontmatter_it_treats_as_content.md) - the specific way an autofixer eats a frontmatter block
-- [Pin pre-commit hooks to frozen revisions](principles/pin_pre_commit_hooks_to_frozen_revisions.md) - hooks run arbitrary code on your tree, so pin them like dependencies
-- [Pin GitHub Actions to full commit SHAs](principles/pin_github_actions_to_full_commit_shas.md) - the same argument for CI, where a tag is a mutable pointer at your secrets
-- [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md) - pinning the tool is not enough when the tool launches a browser
-- [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md) - making CI fail on a stale lockfile instead of quietly resolving around it
-- [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md) - how to keep an update bot from becoming noise you learn to ignore
-- [Keep transitive dependencies in the regular update cycle](principles/keep_transitive_dependencies_in_the_update_cycle.md) - the packages nobody chose, which is why nobody is watching them
-- [Keep declared toolchain versions in sync, and guard it](principles/keep_declared_toolchain_versions_in_sync_and_guard_it.md) - what to do when the same fact has to live in two files
-- [Validate config files against their published schema](principles/validate_config_files_against_their_published_schema.md) - linting the configuration, not just the content
-- [Document a rationale for every disabled lint rule](principles/document_a_rationale_for_every_disabled_lint_rule.md) - why a bare suppression is indistinguishable from an accident
-- [Grant least-privilege CI permissions at both workflow and job level](principles/grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md) - scoping a CI token twice, so a job holds only what it uses
-- [Split CI jobs for attributable failure and minimal dependencies](principles/split_ci_jobs_for_attributable_failure_and_minimal_dependencies.md) - cutting a workflow where you want the red check to point
-- [Name every CI step so the run log reads as a narrative](principles/name_every_ci_step_so_the_run_log_reads_as_a_narrative.md) - making a failing run readable before you expand anything
-- [Bound every CI job with an explicit timeout](principles/bound_every_ci_job_with_an_explicit_timeout.md) - the six-hour default, and why it is never what you meant
-- [Cancel superseded CI runs with a concurrency group](principles/cancel_superseded_ci_runs_with_a_concurrency_group.md) - not spending a runner on a commit nobody is waiting for any more
-- [Run CI steps under a strict shell (errexit, pipefail)](principles/run_ci_steps_under_a_strict_shell_errexit_pipefail.md) - the failure a lenient shell swallows in the middle of a pipe
-- [A test that cannot run must fail loudly, never skip into a green result](principles/a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md) - the difference between a check that passed and a check that never ran
-- [A sandbox test must use the live working-tree source and rebuild fresh each run](principles/a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md) - how a sandbox test starts testing a stale copy of itself
-- [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](principles/end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md) - testing a markdown procedure by running an agent against it, not by grepping it
-- [Enforce LF line endings everywhere](principles/enforce_lf_line_endings_everywhere.md) - declaring line endings in more than one place, because one is not believed
-- [Declare formatting once, editor-agnostically, via .editorconfig](principles/declare_formatting_once_editor_agnostically_via_editorconfig.md) - the one formatting declaration every editor already reads
-- [Keep filenames lowercase with no whitespace](principles/keep_filenames_lowercase_with_no_whitespace.md) - a portability constraint worth a guard, where it applies
-- [Make support-tool config files dotfiles](principles/make_support_tool_config_files_dotfiles.md) - keeping the repo root about the project rather than its plumbing
-- [Track every committed binary type in .gitattributes](principles/track_every_committed_binary_type_in_gitattributes.md) - not trusting Git to guess which of your files are opaque
-- [Enforce a canonical author identity via .mailmap](principles/enforce_a_canonical_author_identity_via_mailmap.md) - one person, one identity in the history, checked mechanically
-- [Keep a linear history: block merge, fixup and squash commits](principles/keep_a_linear_history_block_merge_fixup_and_squash_commits.md) - what it takes to actually get the linear history you asked for
-- [Make the build interface a self-documenting Makefile](principles/make_the_build_interface_a_self_documenting_makefile.md) - one entry point whose help text cannot drift from its targets
-- [Fail early on a missing tool with a message that names it and points at the fix](principles/fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md) - the difference between a guard and a bare command not found
-- [Do not make a tool a prerequisite for work it is not needed for](principles/do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md) - checking that a listed requirement is on a path anyone walks
-- [Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv](principles/resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md) - why a git hook must not depend on a virtualenv being active
-- [Use PEP 723 inline script metadata for zero-install tooling scripts](principles/use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md) - a standalone script that carries its own dependencies
-- [A declared-but-inert config documents intent, not enforcement](principles/a_declared_but_inert_config_documents_intent_not_enforcement.md) - keeping a rule that fires on nothing, without believing it protects you
-- [Enforce the intersection of all renderers and consumers](principles/enforce_the_intersection_of_all_renderers_and_consumers.md) - writing for the least capable tool that will read it
-- [Structure docs as the reader's task path - lead with action, defer rationale](principles/structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md) - organising a guide around what the reader does next
-- [Hand the reader one idea at a time](principles/hand_the_reader_one_idea_at_a_time.md) - why honest, jargon-free prose can still be exhausting to read
-- [Name the concrete behaviour, not its abstract label](principles/name_the_concrete_behaviour_not_its_abstract_label.md) - the re-read a category name causes where a behaviour would not
-- [Write in a calm, quantified, settled-fact voice - not a promotional one](principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) - the voice these pages are written in, and its tells on both sides
-- [Give every cross-cutting concept one definitional home](principles/give_every_cross_cutting_concept_one_definitional_home.md) - single source of truth, applied to prose instead of code
-
-## Decisions
-
-What I chose, given the values, wishes and principles above, and the reasoning that got me there. Each is written wish-first and first-person, a friendlier take on an [architecture decision record](https://adr.github.io/): what I wanted, what I care about, what that led me to, what I built, and what I would reconsider. A decision here is one I still stand behind; where that stopped being true, the page moved to Explorations below.
-
-- [Building my visual PKB](decisions/building_my_visual_pkb.md) - the decision record for this knowledge base itself, and still the substrate it runs on
-- [Federating my knowledge base as privacy-tiered OKF bundles](decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md) - what fills the `docs/` directory above, and how several such bundles relate
-
-## Explorations
-
-What I committed to, built on, and then withdrew from. An exploration is not a decision gone stale but a piece of work that ran to completion and returned a verdict, so each is recorded for what it taught rather than for what it concluded, and none should be read as a current choice. [Record an abandoned exploration as an exploration, not a superseded decision](knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md) is the argument for keeping them here rather than marking them deprecated.
-
-- [Running this knowledge base on awiki](explorations/running_this_knowledge_base_on_awiki.md) - a year of agent-first authoring on a dedicated wiki engine, the four things that ended it, and the much longer list of what survived
-
-## Blueprints
-
-The concrete, copyable artefact a decision produced.
-
-- [MkDocs Material PKB publishing stack](blueprints/mkdocs_material_pkb_publishing_stack.md) - the stack this site runs on, component by component, with the reasons attached
-
-## Knowledge management
-
-How knowledge gets organised, independently of any tool that stores it.
-
-- [Layer build-knowledge as a values-to-blueprints derivation pipeline](knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) - the five layers this index is ordered by, and why each is its own layer
-- [Split orthogonal classification axes across folders and tags](knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md) - what to do when one hierarchy cannot express two independent questions
-- [Categorize by what content is, not why you made it](knowledge_management/categorize_by_what_content_is_not_why_you_made_it.md) - the drift that files a security review under whatever you were doing when you wrote it
-- [Record an abandoned exploration as an exploration, not a superseded decision](knowledge_management/record_an_abandoned_exploration_as_an_exploration_not_a_superseded_decision.md) - what to do with the record of a commitment you have since withdrawn
-- [Give a knowledge base a tier that is not asked to earn its place](knowledge_management/give_a_knowledge_base_a_tier_that_is_not_asked_to_earn_its_place.md) - why the cheapest pages are the ones that fill, and what promotion does instead of ceremony
-- [Date a page whose claim is about a version](knowledge_management/date_a_page_whose_claim_is_about_a_version.md) - when a date belongs in a filename, and why putting one on a principle reverses its meaning
-- [Automatic session capture is not an inbox](knowledge_management/automatic_session_capture_is_not_an_inbox.md) - why a queue that fills itself never reaches zero, and what capture must refuse to ask
-- [Keep the GTD inbox inside the private bundle, not beside it](knowledge_management/keep_the_gtd_inbox_inside_the_private_bundle.md) - where a queue of pages meant to be deleted can live in a knowledge base without breaking it
-
-## Research
-
-Longer investigations, recorded as findings rather than conclusions. Read these when you want the evidence a decision above was made on.
-
-- [Open Knowledge Format (OKF): findings](research/open_knowledge_format_okf_findings.md) - what the format these pages are written in actually specifies
-- [Substrate options for an OKF-based agent-first LLM wiki: investigation](research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md) - the survey of tools that could hold such a knowledge base, deliberately stopping short of choosing
-- [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](research/agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md) - how an agent reaches these pages, and how several bundles at different privacy tiers meet
-- [Federated OKF knowledge bases: a workspace-manifest architecture with fkb-over-kb skills](research/federated_okf_knowledge_bases_a_workspace_manifest_architecture_with_fkb_over_kb_skills.md) - the architecture that answered the previous two, and that this bundle is now an instance of
-- [Security Analysis of Agent Wiki (awiki)](research/security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
-
-## Tools
-
-External tools and projects worth a page of their own: what each one is, who makes it, and what it is for. Everything I have learned *about* a tool lives under its nature elsewhere and links back to its page here.
-
-- [agent-wiki (awiki)](tools/agent_wiki.md) - a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
-- [agent-knowledge (kb skills)](tools/agent_knowledge.md) - skills rather than an engine for maintaining OKF bundles, and the upstream whose own bundle is cited here
-- [uv](tools/uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
-- [Dependabot](tools/dependabot.md) - the update bot, and the three different things that share its name
-
-## Findings
-
-Things I discovered at some point. For instance, a recorded symptom, what it turned out to be, and how to get past it, so the next encounter is short. The cheapest pages here: a finding is not asked to be general or to connect to anything, only to be true at some point in time. They are listed on their own page rather than here, because this is a potentially fast-growing section which reads least as a narrative.
-
-- [All findings](findings/index.md)
+- [People](people/index.md) - who appears in these notes, and in what capacity
+- [Values](values/index.md) - what I care about, ahead of any particular project
+- [Wishes](wishes/index.md) - what I wanted from a specific thing, where a value is what I want generally
+- [Principles](principles/index.md) - reusable technical claims, each one a thing I would want true in any repository I work in
+- [Decisions](decisions/index.md) - what I chose given those, and the reasoning that got me there
+- [Explorations](explorations/index.md) - what I committed to, built on, and then withdrew from, kept for what it taught
+- [Blueprints](blueprints/index.md) - the concrete, copyable artefact a decision produced
+- [Knowledge management](knowledge_management/index.md) - how knowledge gets organised, independently of any tool that stores it
+- [Research](research/index.md) - longer investigations, recorded as findings rather than conclusions
+- [Tools](tools/index.md) - an external tool or project that earns a page of its own
+- [Findings](findings/index.md) - things that cost time once: the symptom, what it was, and how to get past it

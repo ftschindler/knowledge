@@ -15,7 +15,7 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-09-10T00:00:00Z'
 ---
-!!! note "This is an [exploration](../index.md#explorations)"
+!!! note "This is an [exploration](index.md)"
     Something I committed to, built on, and withdrew from. It is a record of what the
     work taught, not a description of how anything is done now.
 

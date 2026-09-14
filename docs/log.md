@@ -2,6 +2,12 @@
 
 ## 2026-09-13
 
+- give every directory its own `index.md`, which is now where a genre is defined: what belongs here, the conventions local to it, and the listing
+- cut the root index to what the bundle is, the three passes it came out of, and a link to each section in the order the ideas build; it no longer lists pages
+- point each concept's genre note at its own directory's index rather than a root-index anchor
+- trim the findings index to what we do here, deferring the reasoning to the two concepts below
+- order the nav explicitly in `.pages`, so Explorations no longer sits between Decisions and Blueprints
+
 - add "Give a knowledge base a tier that is not asked to earn its place" and "Date a page whose claim is about a version", the two reusable claims behind the findings directory, both drafts pending a rewrite in my own voice
 - require a commit per logical change, in the editing conventions
 

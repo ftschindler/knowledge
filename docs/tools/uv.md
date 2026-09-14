@@ -22,7 +22,7 @@ sources:
   title: 'uv: documentation'
   last_modified: '2026-09-11'
 ---
-!!! note "This is a [tool reference](../index.md#tools)"
+!!! note "This is a [tool reference](index.md)"
     What an external tool or project is, who makes it, and what it is for. Everything I have
     learned *about* it lives elsewhere and links back here.
 
