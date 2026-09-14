@@ -32,13 +32,31 @@ This site is a git-backed static site built from Markdown files and
   - automatic backlink sections
 - **[mkdocs-glightbox](https://github.com/blueswen/mkdocs-glightbox)** - image lightbox support
 
-## Build hook
+## Build hooks
 
-`hooks/publish_about.py` reconciles the bundle with the site, without changing anything on
-disk. It publishes `about/`, which sits outside the MkDocs source directory; gives the site
-its landing page; moves the bundle's own index to `/index/` so that page can take the root;
-and rewrites links from `about/` into the bundle, so a single spelling resolves both in an
-editor and on the rendered site.
+Three hooks reconcile the bundle with the site, none of them changing anything on disk.
+
+- **`hooks/publish_about.py`** publishes `about/`, which sits outside the MkDocs source
+  directory; gives the site its landing page; moves the bundle's own index to `/index/` so
+  that page can take the root; and rewrites links from `about/` into the bundle, so a single
+  spelling resolves both in an editor and on the rendered site.
+- **`hooks/concept_genre.py`** renders each concept's genre note from the `.genre.yaml` its
+  directory declares, so the sentence saying what kind of page this is exists once per genre
+  rather than once per page.
+- **`hooks/concept_sources.py`** renders a concept's declared `sources[]` as the footnotes its
+  prose cites, so a source's URL, title and last-checked date live only in the frontmatter.
+
+## Theme overrides
+
+`overrides/` adds the metadata card: a page's genre, status, who generated it, who verified it
+if anyone has, and when to revisit it, pinned to the foot of the table-of-contents column and
+moved under the content on screens too narrow to have one. What each field renders as is in
+[Editing Conventions](editing_conventions.md#what-the-reader-sees-of-it); the styling is in
+`docs/stylesheets/theme.css`.
+
+It overrides Material's own template *blocks* rather than copying its partials. A copied
+partial is a fork that goes stale silently at the next theme upgrade, whilst a block override
+is six lines that either still apply or fail loudly.
 
 ## Tooling
 

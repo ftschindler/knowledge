@@ -15,7 +15,8 @@ bundle, published as a [MkDocs](https://www.mkdocs.org) site and editable as an
 | `docs/index.md`, `docs/log.md` | Reserved by the format: an index of concepts, and a dated update log |
 | `docs/okf-floor.yaml` | What this bundle requires of a concept, beyond the format's single mandatory key |
 | `about/` | Pages describing the site rather than carrying knowledge, kept outside the bundle |
-| `hooks/` | A MkDocs build hook that publishes `about/` and gives the site its landing page |
+| `hooks/` | MkDocs build hooks: they publish `about/`, and render each concept's genre note and sources |
+| `overrides/` | Theme overrides, for the metadata card in the table-of-contents column |
 
 ## Working on it
 
@@ -31,9 +32,9 @@ Two licences, because this repository holds two kinds of thing.
 
 - **The knowledge** - everything except the directories below - is licensed under
   [CC BY 4.0](LICENSE). Use it, adapt it, build on it, including commercially; credit it.
-- **The code** - `hooks/` and `.scripts/` - is licensed under [MIT](LICENSE-CODE). Creative
-  Commons licences are not intended for software, and MIT keeps these files reusable in
-  projects that expect an ordinary open-source licence.
+- **The code** - `hooks/`, `.scripts/` and `overrides/` - is licensed under
+  [MIT](LICENSE-CODE). Creative Commons licences are not intended for software, and MIT keeps
+  these files reusable in projects that expect an ordinary open-source licence.
 
 These terms cover the concepts written here. Material reproduced from elsewhere - quoted
 articles, mirrored sources, transcripts of third-party content - remains under whatever
