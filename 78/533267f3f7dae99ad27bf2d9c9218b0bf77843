@@ -1,0 +1,41 @@
+docs/index.md
+  h_0f8f9341a40674 139
+  s_5c9bdd72725083::t_db12be7cb92e42 141
+docs/log.md
+  s_5c9bdd72725083::t_4c762b03cdbc78 5-6
+  s_5c9bdd72725083::t_283602b7bc0e1c 7-10
+docs/findings/index.md
+  s_5c9bdd72725083::t_565e64d0f63976 20-23,28,30-31
+  s_5c9bdd72725083::t_b6e08b8924eaf8 32-34
+  s_5c9bdd72725083::t_1b3a627d5adbf4 19,24
+  s_5c9bdd72725083::t_63b7e8ff93c815 1-18,25-27,29
+docs/knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md
+  s_5c9bdd72725083::t_0974bb2e648519 51-73
+docs/findings/.pages
+  s_5c9bdd72725083::t_11fb9f6dc6dc4c 1-3
+docs/knowledge_management/categorize_by_what_content_is_not_why_you_made_it.md
+  s_5c9bdd72725083::t_fa5a01147e985b 25-39
+mkdocs.yml
+  s_5c9bdd72725083::t_ad3ce71dbe5b38 13-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "78533267f3f7dae99ad27bf2d9c9218b0bf77843",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_5c9bdd72725083": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f7087e1a8ffeKJ5K5OgrvvK4DG",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
