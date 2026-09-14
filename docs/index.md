@@ -55,6 +55,7 @@ Reusable technical claims, each one a thing I would want true in any repository 
 - [Pin transitive runtime dependencies, not just the tool](principles/pin_transitive_runtime_dependencies_not_just_the_tool.md) - pinning the tool is not enough when the tool launches a browser
 - [Install from a frozen lockfile in CI](principles/install_from_a_frozen_lockfile_in_ci.md) - making CI fail on a stale lockfile instead of quietly resolving around it
 - [Batch dependency updates with a cooldown, not a firehose](principles/batch_dependency_updates_with_a_cooldown_not_a_firehose.md) - how to keep an update bot from becoming noise you learn to ignore
+- [Keep transitive dependencies in the regular update cycle](principles/keep_transitive_dependencies_in_the_update_cycle.md) - the packages nobody chose, which is why nobody is watching them
 - [Keep declared toolchain versions in sync, and guard it](principles/keep_declared_toolchain_versions_in_sync_and_guard_it.md) - what to do when the same fact has to live in two files
 - [Validate config files against their published schema](principles/validate_config_files_against_their_published_schema.md) - linting the configuration, not just the content
 - [Document a rationale for every disabled lint rule](principles/document_a_rationale_for_every_disabled_lint_rule.md) - why a bare suppression is indistinguishable from an accident
@@ -133,6 +134,8 @@ External tools and projects worth a page of their own: what each one is, who mak
 
 - [agent-wiki (awiki)](tools/agent_wiki.md) - a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
 - [agent-knowledge (kb skills)](tools/agent_knowledge.md) - skills rather than an engine for maintaining OKF bundles, and the upstream whose own bundle is cited here
+- [uv](tools/uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
+- [Dependabot](tools/dependabot.md) - the update bot, and the three different things that share its name
 
 ## Findings
 

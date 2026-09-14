@@ -8,6 +8,10 @@
 - adopt `stale_after` for findings about a tool, whose claims are claims about a version
 - amend "Categorize by what content is, not why you made it", whose own worked example filed a finding under `tools/`: rejecting the circumstance of discovery is not enough if the answer you land on is a subject rather than a nature
 - extend "Split orthogonal classification axes across folders and tags" with how the rule drifts back, the two tells for it, and `knowledge_management/` as a named exception
+- add "Keep transitive dependencies in the regular update cycle", replacing "Tell the update bot to look at transitive dependencies", which stated one principle, one tool's configuration and one bug on a single page
+- add "Dependabot declines transitive security updates in uv.lock", the finding that page's tool-specific half became
+- add "uv" and "Dependabot" as tool references, giving both a home: they were named across 13 and 4 concepts respectively without one
+- correct "Batch dependency updates with a cooldown, not a firehose", which implied a cooldown is a dial to back off for security: it never applies to security updates, though a package manager's own cooldown does
 
 ## 2026-09-10
 

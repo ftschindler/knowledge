@@ -27,6 +27,10 @@ The domain lives in the tags, not in a directory, per
 
 ## 2026
 
+### September
+
+- 2026-09-11: [Dependabot declines transitive security updates in uv.lock](20260911_dependabot_declines_transitive_security_updates_in_uv_lock.md) - an error naming a version conflict that does not exist, and the two settings that actually caused it
+
 ### August
 
 - 2026-08-27: [fs.protected_regular blocks root writes in sticky tmp](20260827_fsprotected_regular_blocks_root_writes_in_sticky_tmp.md) - a root process denied a write to a world-writable file, and the sysctl that explains it
