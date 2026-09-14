@@ -1,0 +1,27 @@
+docs/tools/dependabot.md
+  s_fa25a3999022c9::t_8345bd8462940b 25
+docs/tools/agent_wiki.md
+  s_fa25a3999022c9::t_8345bd8462940b 32,35,54
+docs/tools/uv.md
+  s_fa25a3999022c9::t_8345bd8462940b 25
+docs/tools/agent_knowledge.md
+  s_fa25a3999022c9::t_8345bd8462940b 29,80
+docs/findings/20260911_dependabot_declines_transitive_security_updates_in_uv_lock.md
+  s_fa25a3999022c9::t_8345bd8462940b 66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "3c0dfdd901168bccda9fff9f6325cc0f63ae2e3b",
+  "prompts": {},
+  "sessions": {
+    "s_fa25a3999022c9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f60241885ffeuNSa1rT8VYMGJF",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
