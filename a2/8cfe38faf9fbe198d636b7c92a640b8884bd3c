@@ -1,0 +1,32 @@
+overrides/partials/meta.html
+  s_fa25a3999022c9::t_42dcaae879e4e8 27
+  s_fa25a3999022c9::t_ec2c04c6dfa256 1-26,28-58
+mkdocs.yml
+  s_fa25a3999022c9::t_2609a7633648d4 11-14
+overrides/main.html
+  s_fa25a3999022c9::t_ec330b041e2fef 1-53
+docs/stylesheets/theme.css
+  s_fa25a3999022c9::t_b55b26dfa62c1d 39
+  s_fa25a3999022c9::t_3361da7aceece2 1-38,40-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "a28cfe38faf9fbe198d636b7c92a640b8884bd3c",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_fa25a3999022c9": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f60241885ffeuNSa1rT8VYMGJF",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
