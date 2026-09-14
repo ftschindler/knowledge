@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+<!--
+  The metadata card, twice, because the rail it belongs in does not exist on
+  every screen.
+
+  A page's provenance is in its frontmatter and nowhere a reader can see it, so
+  `partials/meta.html` renders it. Its home is the bottom of the right-hand
+  rail, under the table of contents, which is what this block override is for:
+  everything here is Material's own `site_nav`, with one include added.
+
+  Material hides that rail below 76.25em, and hides it outright on a page
+  carrying `hide: toc`. Either would take the card with it, so the card is
+  included a second time after the content and the stylesheet shows exactly one
+  of the two. See docs/stylesheets/theme.css.
+-->
+
+{% block site_nav %}
+  {% if nav %}
+    {% if page.meta and page.meta.hide %}
+      {% set hidden = "hidden" if "navigation" in page.meta.hide %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          {% include "partials/nav.html" %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% if "toc.integrate" not in features %}
+    {% if page.meta and page.meta.hide %}
+      {% set hidden = "hidden" if "toc" in page.meta.hide %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+          {% include "partials/toc.html" %}
+          {% with placement = "rail" %}
+            {% include "partials/meta.html" %}
+          {% endwith %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% include "partials/content.html" %}
+  {% with placement = "inline" %}
+    {% include "partials/meta.html" %}
+  {% endwith %}
+{% endblock %}
