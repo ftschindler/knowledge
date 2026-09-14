@@ -9,15 +9,6 @@ This is where I note knowledge worth keeping, written to be read by people and a
 Each page states one idea and links to the ones it rests on, so this is meant to be followed rather than
 searched.
 
-A good deal of what is here was written whilst working out how a knowledge base like this should be
-built, and that took three passes. First a plain MkDocs and Obsidian setup over a git repository, which
-is still the substrate everything below runs on. Then a phase spent running it on a dedicated
-agent-first wiki engine, which taught a great deal and was abandoned. Now a set of independent,
-privacy-tiered [Open Knowledge Format](research/open_knowledge_format_okf_findings.md) bundles, of which
-this is the public one. Pages from all three passes are here, filed by what they are rather than by
-when they were written, so a page about the middle pass sits under **Explorations** and is history
-rather than an instruction.
-
 ## Sections
 
 Each section defines what it holds on its own page, and lists what is in it. They are ordered by how the ideas build rather than alphabetically, so reading top to bottom moves from what I care about to what I actually built.
