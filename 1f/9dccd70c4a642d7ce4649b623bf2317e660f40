@@ -1,0 +1,24 @@
+docs/knowledge_management/separate_audiences_with_separate_bundles.md
+  s_62fc1f804ef7d6::t_6b8f19702b6f32 1-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "1f9dccd70c4a642d7ce4649b623bf2317e660f40",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_62fc1f804ef7d6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f75b848f6ffeGDqe2625rjlaGV",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
