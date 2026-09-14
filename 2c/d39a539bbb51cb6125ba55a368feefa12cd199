@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "2cd39a539bbb51cb6125ba55a368feefa12cd199",
+  "prompts": {},
+  "humans": {
+    "h_0f8f9341a40674": {
+      "author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
