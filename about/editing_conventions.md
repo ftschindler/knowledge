@@ -56,14 +56,15 @@ the author about their own work.
 neither takes frontmatter, except that `index.md` carries `okf_version` because it sits at
 the bundle root.
 
-`index.md` groups concepts under `##` headings, one line each. Write the entry in **index
-voice**: shorter than the concept's own `description`, tuned to being scanned in a list
-rather than read alone. Copying the description across would store the same sentence twice,
-and reads worse in both places.
+**Every directory carries its own `index.md`**, and the root one does not list concepts. A
+directory index is where a genre is defined: what kind of page belongs here, the conventions
+that apply to it, and the listing of its pages, ordered however suits that genre. The root
+index says what the bundle is, how to read it, and links to each section in the order the
+ideas build. See [Directory indexes](#directory-indexes) below.
 
-The index also carries what no list can: a sentence saying what the bundle is for, a line
-under each heading saying what that section holds, and an order that follows how the ideas
-build rather than the alphabet.
+Write a listing entry in **index voice**: shorter than the concept's own `description`, tuned
+to being scanned in a list rather than read alone. Copying the description across would store
+the same sentence twice, and reads worse in both places.
 
 `log.md` records changes newest first, under a `## YYYY-MM-DD` heading per day. When adding
 to the log, find today's heading or create one at the top; do not append at the bottom.
@@ -77,6 +78,36 @@ describes the present rather than the past, must link and must resolve.
 
 **A concept never links into `about/`.** The bundle has to make sense on its own, so it may
 not depend on the pages that describe the site around it. Links run the other way.
+
+## Directory indexes
+
+One directory, one genre, one index. The directory is the unit because the folder axis carries
+the nature of a page (see
+[Split orthogonal classification axes across folders and tags](../docs/knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md)),
+so a directory and a genre are the same thing seen twice, and the index is where that thing
+gets described.
+
+A directory index holds three things, in this order:
+
+1. **What this genre is**, in a sentence or two, matching the genre note its concepts carry.
+2. **What we do here**: the conventions local to this genre. Findings lead their filename with
+   a date and carry `stale_after`; decisions are written wish-first. Where a convention rests
+   on a reusable argument, link the concept that makes it rather than restating it.
+3. **The listing**, ordered however this genre reads best. Derivation order for decisions,
+   newest first for findings, and so on. Say which, if it is not obvious.
+
+The split between (1)-(2) and a concept is worth holding onto: **the index says what we do
+here, a concept says why anyone would.** A directory index is a reserved file, so it carries no
+frontmatter and cannot be typed, tagged, cited in `sources[]` or verified. Anything in it that
+would survive being read by a stranger with a different knowledge base is a concept in the
+wrong place.
+
+The root `index.md` therefore lists sections rather than pages, which keeps it a page a reader
+can hold in their head as the bundle grows. It also carries the one thing no section can: what
+the bundle is for, and the order the sections build in.
+
+Give each directory a `.pages` file whose `title` matches its index heading, so the nav and the
+page agree, and list the directories in the root `.pages` in the same order as the root index.
 
 ## Page structure
 
@@ -92,7 +123,7 @@ The first thing in the body, before any prose, is a note naming what kind of pag
 linking to the index section that defines the kind:
 
 ```markdown
-!!! note "This is an [exploration](../index.md#explorations)"
+!!! note "This is an [exploration](index.md)"
     Something I committed to, built on, and withdrew from. It is a record of what the
     work taught, not a description of how anything is done now.
 ```
@@ -108,9 +139,9 @@ frontmatter `type`, which the theme does not render. A decision and an explorati
 until you know that one is current and the other is history, and that difference changes what
 the page is *for*.
 
-Match the note's wording to the section's blurb in `index.md`, and the anchor to that
-section's heading. Both are one edit: renaming a section means updating every note that points
-at it, and a broken anchor fails the build.
+The link is always `index.md`, the index of the concept's own directory, with no `../` and no
+anchor. Every page in a directory carries the identical note, so match its wording to the
+opening of that directory's index.
 
 Two constructs are forbidden outright, and a hook rejects them. Thematic breaks, because
 headings already separate sections and a rule line renders as a second, redundant divider;
