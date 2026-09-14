@@ -12,6 +12,8 @@
 - add "Dependabot declines transitive security updates in uv.lock", the finding that page's tool-specific half became
 - add "uv" and "Dependabot" as tool references, giving both a home: they were named across 13 and 4 concepts respectively without one
 - correct "Batch dependency updates with a cooldown, not a firehose", which implied a cooldown is a dial to back off for security: it never applies to security updates, though a package manager's own cooldown does
+- add "Keep the GTD inbox inside the private bundle, not beside it", the practice behind the inbox section now living in the private bundle
+- note in the same page that a section may carry its own log, and what the reserved-filename rule does to a file named `inbox.log.md`
 
 ## 2026-09-10
 
