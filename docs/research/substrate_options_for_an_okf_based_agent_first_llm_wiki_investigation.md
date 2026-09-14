@@ -20,9 +20,9 @@ generated:
     A longer investigation, recorded as findings rather than conclusions. A
     survey is a claim about what existed when it was written.
 
-A **research result** (not a decision - deliberately deferred). Investigates what
-tool or substrate to adopt for an agent-first LLM wiki that is also a human PKB,
-given hardened requirements and an already-adopted OKF target. Sibling context
+What tool or substrate to adopt for an agent-first LLM wiki that is also a human
+PKB, given hardened requirements and an already-adopted OKF target. It deliberately
+stops short of choosing. Sibling context
 lives in the exploration
 [Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md),
 the decision

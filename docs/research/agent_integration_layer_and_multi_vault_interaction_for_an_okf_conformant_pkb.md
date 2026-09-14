@@ -20,7 +20,7 @@ generated:
     A longer investigation, recorded as findings rather than conclusions. A
     survey is a claim about what existed when it was written.
 
-A research finding covering two open questions about running an
+Two open questions about running a
 [Karpathy-style LLM wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 as an [OKF v0.2](open_knowledge_format_okf_findings.md)-conformant personal
 knowledge base whose substrate is already settled (the

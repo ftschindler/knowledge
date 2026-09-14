@@ -20,14 +20,12 @@ verified:
     What I wanted from a specific thing, where a value is what I want
     generally.
 
-The requirements I wanted a personal knowledge base (PKB) to satisfy - the
-*"I want..."* layer that, together with my values and principles, drives the
-[Building my visual PKB](../decisions/building_my_visual_pkb.md) decision.
-
-These are project-specific wishes, not universal claims: another project would
-have different ones. See
-[Layer build-knowledge as a values-to-blueprints derivation pipeline](../knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md) for why
-wishes are their own layer.
+The requirements I wanted a personal knowledge base (PKB) to satisfy, which
+together with my values and principles drive the
+[Building my visual PKB](../decisions/building_my_visual_pkb.md) decision. Another
+project would have different ones; see
+[Layer build-knowledge as a values-to-blueprints derivation pipeline](../knowledge_management/layer_build_knowledge_as_a_values_to_blueprints_derivation_pipeline.md)
+for why that makes them their own layer.
 
 ## The wishes
 

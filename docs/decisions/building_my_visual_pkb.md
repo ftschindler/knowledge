@@ -17,8 +17,8 @@ generated:
     What I chose, given my values, wishes and principles, and the reasoning
     that got me there. A decision here is one I still stand behind.
 
-A decision record for how I built my personal knowledge base.
-It resolves my wishes, values and principles into a concrete
+How I built my personal knowledge base, resolving my wishes, values and principles
+into a concrete
 [MkDocs Material PKB publishing stack](../blueprints/mkdocs_material_pkb_publishing_stack.md).
 
 ## What I wanted

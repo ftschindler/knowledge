@@ -2,6 +2,8 @@
 
 ## 2026-09-13
 
+- trim the five concepts that opened by restating their genre in prose, which the note above them now says
+
 - give every directory its own `index.md`, which is now where a genre is defined: what belongs here, the conventions local to it, and the listing
 - cut the root index to what the bundle is, the three passes it came out of, and a link to each section in the order the ideas build; it no longer lists pages
 - point each concept's genre note at its own directory's index rather than a root-index anchor
