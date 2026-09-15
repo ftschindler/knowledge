@@ -13,7 +13,7 @@ bundle, published as a [MkDocs](https://www.mkdocs.org) site and editable as an
 | --- | --- |
 | `docs/` | The bundle. Every markdown file in it is a concept, with frontmatter to match |
 | `docs/index.md`, `docs/log.md` | Reserved by the format: an index of concepts, and a dated update log |
-| `docs/okf-floor.yaml` | What this bundle requires of a concept, beyond the format's single mandatory key |
+| `docs/fkb.yaml` | What this bundle requires of a concept beyond the format's single mandatory key, and where its house rules live |
 | `about/` | Pages describing the site rather than carrying knowledge, kept outside the bundle |
 | `hooks/` | MkDocs build hooks: they publish `about/`, and render each concept's genre note and sources |
 | `overrides/` | Theme overrides, for the metadata card in the table-of-contents column |

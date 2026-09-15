@@ -6,6 +6,13 @@
 #
 # `verified` is deliberately absent: its absence is how OKF encodes "unverified",
 # and requiring it would push an author to assert it of their own work.
+# Where the house rules live, resolved against this file. They sit beside the
+# site rather than inside the bundle, because they describe how to write here
+# and are not themselves a concept; the path is allowed to leave the bundle
+# root for exactly that case. Nothing parses the page - it is prose, for an
+# agent to read before it writes.
+conventions: ../about/editing_conventions.md
+
 required:
 - type
 - title

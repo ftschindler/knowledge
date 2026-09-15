@@ -19,7 +19,7 @@ neither takes frontmatter.
 
 ## The four rules worth stating twice
 
-- **Every concept carries the fields in [docs/okf-floor.yaml](../docs/okf-floor.yaml).**
+- **Every concept carries the fields in [docs/fkb.yaml](../docs/fkb.yaml).**
   Nothing else is required, and nothing else is enforced.
 - **Never write `verified:`.** Its absence is how the format records that nobody has
   confirmed the content. It is added by whoever confirms it, never by the author.
