@@ -60,9 +60,9 @@ exploration produced:
   specifies one concept per Markdown document, standard Markdown links, and no
   required tooling, with conformance judged file-structurally. It grants what the
   engine was for and imposes none of what the engine cost. `docs/` is an OKF
-  bundle; [okf-floor.yaml](https://github.com/ftschindler/knowledge/blob/main/docs/okf-floor.yaml)
-  declares the handful of fields this bundle requires beyond it, in one place both
-  the local hooks and any federation tooling read.
+  bundle; [fkb.yaml](../fkb.yaml) declares the handful of fields this bundle
+  requires beyond it, in one place both the local hooks and any federation
+  tooling read.
 - **Git and pre-commit as the only control plane.** Each job the CLI used to do
   becomes a hook: frontmatter conformance, link resolution, index reachability,
   file naming. This is the existing quality-gate machinery pointed at the content

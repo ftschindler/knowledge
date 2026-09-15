@@ -1,5 +1,11 @@
 # Log
 
+## 2026-09-15
+
+- rename `okf-floor.yaml` to `fkb.yaml`: the `okf-` prefix claimed the format defines the file when the floor is ours, and `floor` named one of the three jobs it had grown into; the new name is the filename the federation's tooling looks for when it discovers a bundle, which is the one thing about the file nobody but that tooling owns
+- point the declaration at the editing conventions, so an agent that reads the schema is told where the voice lives instead of finding the fields and stopping; the checker warns if the pointer stops resolving, which is the failure that was otherwise silent
+- move the pinned conformance checker forward to the revision that understands both
+
 ## 2026-09-14
 
 - render a page's provenance where a reader can see it: genre, status, who generated it, who verified it or that nobody has, and when to revisit it, in a card pinned to the foot of the table-of-contents column and moved under the content on narrow screens

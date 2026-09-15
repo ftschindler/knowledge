@@ -11,9 +11,12 @@ This site is a git-backed static site built from Markdown files and
   (OKF) v0.2** - `docs/` is an OKF *bundle*, so every Markdown file in it is a *concept*
   carrying frontmatter, and `index.md` and `log.md` are reserved. Pages describing the site
   live in `about/`, outside the bundle, and sources it is distilled from live in `raw/`.
-- **`docs/okf-floor.yaml`** - what this bundle requires of a concept beyond the format's one
-  mandatory field, and the only thing that decides it. See
-  [Editing Conventions](editing_conventions.md).
+- **`docs/fkb.yaml`** - what this bundle requires of a concept beyond the format's one
+  mandatory field, and the only thing that decides it. It also points at
+  [Editing Conventions](editing_conventions.md), so an agent that finds the bundle finds
+  the house rules with it rather than having to be told. The name is the federation's, not
+  ours: it is the filename `fkb` looks for when it discovers a bundle, whilst the hook is
+  handed the path and would accept any name.
 
 ## Static site generator
 

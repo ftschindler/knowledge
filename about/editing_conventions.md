@@ -23,7 +23,7 @@ there, because the format admits no exceptions: every non-reserved Markdown file
 
 ## Concepts
 
-Every concept requires the fields listed in `docs/okf-floor.yaml`:
+Every concept requires the fields listed in `docs/fkb.yaml`:
 
 ```yaml
 ---
@@ -225,10 +225,13 @@ existing pages *are* one, and prose matches nearby prose far more reliably than 
 adjective. Every convention on this page put together does less to keep the bundle sounding like
 one author than two pages of the real thing in front of you.
 
-It matters most for whoever has read least. An agent that opens `okf-floor.yaml`, the index and
+It matters most for whoever has read least. An agent that opens `fkb.yaml`, the index and
 nothing else has seen the bundle's *schema* and none of its *voice*, and will supply its own.
-That is also why the indexes are written in full house voice rather than as terse catalogues:
-they are read first, so they set the register for whatever gets written next.
+That is what the `conventions:` pointer in `fkb.yaml` is for - it names this page, so the file
+that carries the schema also carries the way back to the voice - but a pointer only gets the
+page opened, and it is the reading that does the work. That is also why the indexes are
+written in full house voice rather than as terse catalogues: they are read first, so they set
+the register for whatever gets written next.
 
 When writing several pages in one session, re-read from the bundle rather than from what you
 just wrote. Otherwise the reference drifts to your own last page, and a long session ends
@@ -320,7 +323,7 @@ client-side, in light or dark mode to match the reader.
 
 | Rule | Enforced by |
 | --- | --- |
-| The frontmatter fields above | `okf-concepts` hook, reading `docs/okf-floor.yaml` |
+| The frontmatter fields above | `okf-concepts` hook, reading `docs/fkb.yaml` |
 | `type` matches the directory's genre, and no note is written out | `genre-conformance` |
 | Sources are cited, and citations are declared | `source-citations`, and the site build |
 | Every concept reachable from an index | `okf-bundle`, on pull requests |
