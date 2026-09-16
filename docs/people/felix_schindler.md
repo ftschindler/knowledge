@@ -22,7 +22,7 @@ generated: { by: human:felix_schindler, at: 2026-09-07T13:00:00Z }
 
 Things of mine that have a page here. Tagged `self-authored`, wherever their nature puts them.
 
-- [federated-knowledge-skills (fkb)](../tools/federated_knowledge_skills.md) - the skill, CLI and pre-commit hooks this knowledge base is written through
+- [federated-knowledge-skills (Felix Schindler)](../tools/federated_knowledge_skills_schindler.md) - the skill, CLI and pre-commit hooks this knowledge base is written through
 
 ## Find me on
 

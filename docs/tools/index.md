@@ -15,9 +15,18 @@ would be the domain axis
 one plausible page at a time. The tag is what
 [my page](../people/felix_schindler.md) lists from.
 
-- [agent-wiki (awiki)](agent_wiki.md) - a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
-- [agent-knowledge (kb skills)](agent_knowledge.md) - skills rather than an engine for maintaining OKF bundles, and the upstream whose own bundle is cited here
-- [federated-knowledge-skills (fkb)](federated_knowledge_skills.md) - mine: the skill, CLI and hooks that bind privacy-tiered bundles into a federation, and what this bundle is now written through
-- [project-wiki](project_wiki.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
+**A page about somebody's repository carries their name, in the title and in the filename**, as
+`agent-wiki (TacoTakumi)` in `agent_wiki_tacotakumi.md`. Most of what is here is one person's
+project rather than a product, and those names are generic enough to collide with each other and
+with things that are not tools at all: "agent-wiki", "agent-knowledge" and "project-wiki" are
+three pages in this directory and could as easily have been the same one. Who wrote it is also
+the thing most worth knowing before depending on it, so it belongs where a reader lands rather
+than in a table halfway down. Products with a vendor behind them keep their plain name, because
+`uv` is Astral's and will not be anyone else's.
+
+- [agent-wiki (TacoTakumi)](agent_wiki_tacotakumi.md) - `awiki`: a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
+- [agent-knowledge (stjbrown)](agent_knowledge_stjbrown.md) - the `kb-*` skills rather than an engine for maintaining OKF bundles, and the upstream whose own bundle is cited here
+- [federated-knowledge-skills (Felix Schindler)](federated_knowledge_skills_schindler.md) - mine: the `fkb` skill, CLI and hooks that bind privacy-tiered bundles into a federation, and what this bundle is now written through
+- [project-wiki (giodra96)](project_wiki_giodra96.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name

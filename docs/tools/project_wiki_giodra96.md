@@ -1,6 +1,6 @@
 ---
 type: Tool
-title: project-wiki
+title: project-wiki (giodra96)
 description: An IDE-neutral agent skill that keeps a prescribed, traceable knowledge base beside a codebase,
   applying the LLM wiki pattern to one repository rather than to a person.
 tags:
@@ -93,7 +93,7 @@ It shares the substrate with everything else on this page, plain Markdown and YA
 differs on the two axes that actually separate these tools: **who the knowledge is about**, and
 **how much taxonomy is prescribed**.
 
-[agent-wiki (awiki)](agent_wiki.md) and this bundle are personal knowledge bases that happen to
+[agent-wiki (TacoTakumi)](agent_wiki_tacotakumi.md) and this bundle are personal knowledge bases that happen to
 contain software knowledge, organised by the nature of a page and scoped to a person.
 project-wiki is scoped to a repository, and organised by the artefact kinds of a software
 project. That is still filing
@@ -101,7 +101,7 @@ project. That is still filing
 a decision record and a requirement are genuinely different kinds of page. The difference is that
 the set of kinds is closed, and named in a schema file rather than chosen as the base grows.
 
-Against [agent-knowledge (kb skills)](agent_knowledge.md) the contrast is sharper, because the
+Against [agent-knowledge (stjbrown)](agent_knowledge_stjbrown.md) the contrast is sharper, because the
 two are the same shape - skills plus deterministic scripts, no runtime, no database - pointed at
 different targets. agent-knowledge builds
 [OKF](../research/open_knowledge_format_okf_findings.md) bundles, and OKF explicitly declines to
@@ -114,7 +114,7 @@ there because that contract will move. agent-knowledge's `kb-document` skill cov
 ground from the other side, documenting a repository from its source without prescribing what the
 documentation must contain.
 
-The overlap with [federated-knowledge-skills (fkb)](federated_knowledge_skills.md) is smaller
+The overlap with [federated-knowledge-skills (Felix Schindler)](federated_knowledge_skills_schindler.md) is smaller
 than it first looks. fkb's problem is that one person's knowledge spans several audiences, which
 is why it
 [separates audiences with separate bundles](../knowledge_management/separate_audiences_with_separate_bundles.md)
@@ -125,7 +125,7 @@ open question and alert in it.
 
 ## Where it sits in the ecosystem
 
-The landscape survey that [agent-knowledge](agent_knowledge.md) maintains groups the several
+The landscape survey that [agent-knowledge](agent_knowledge_stjbrown.md) maintains groups the several
 hundred implementations Karpathy's gist spawned by shape[^ak-landscape], and project-wiki
 straddles two of its categories. By packaging it is an agent skill, the busiest category in the survey and the one
 almost entirely Obsidian-wikilink-flavoured; by target it belongs to the codebase-doc generators,

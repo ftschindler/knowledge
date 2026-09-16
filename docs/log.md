@@ -2,6 +2,10 @@
 
 ## 2026-09-16
 
+- name the author in the title and filename of every tool page that is somebody's repository, so agent-wiki, agent-knowledge, project-wiki and federated-knowledge-skills now carry TacoTakumi, stjbrown, giodra96 and my own name; the names these projects give themselves are generic enough to collide with each other, and who wrote a one-person project is the thing most worth knowing before depending on it
+- leave uv and Dependabot under their plain names, since a product with a vendor behind it is not going to be confused with anyone else's, and record the split in the tools index where the rest of what we do here is written
+- move the CLI short names out of the titles and into the index entries, where `awiki`, `kb-*` and `fkb` still say how each one is invoked
+
 - add a tool page for project-wiki, the agent skill that keeps a requirements, decisions and traceability wiki inside a code repository: what the five modes and five scripts do, and the two axes that separate it from the other tools here, namely that it is scoped to a repository rather than a person and fixes its taxonomy in a schema file where OKF deliberately does not
 - record what I would take from it without adopting it: the provenance split between ingested evidence and canonical record, running deterministic validation before the semantic pass, and keeping unresolved contradictions as alerts rather than deleting them; not the bootstrap that writes into the repository's own always-on instruction files
 - place it against the upstream agent-knowledge bundle rather than describing it alone: it straddles the ecosystem survey's agent-skills and codebase-doc-generator lanes, its intent-versus-observation rule and alerts records are a shipped answer to the truth-maintenance objection, and it has no answer at all to the one about token cost being postponed rather than eliminated

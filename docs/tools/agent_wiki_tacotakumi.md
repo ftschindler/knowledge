@@ -1,6 +1,6 @@
 ---
 type: Tool
-title: agent-wiki (awiki)
+title: agent-wiki (TacoTakumi)
 description: A CLI-driven markdown knowledge vault that agents search before the web and write back to,
   and the tool this knowledge base ran on for a while.
 tags:

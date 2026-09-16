@@ -1,6 +1,6 @@
 ---
 type: Tool
-title: federated-knowledge-skills (fkb)
+title: federated-knowledge-skills (Felix Schindler)
 description: The agent skill, CLI and pre-commit hooks that bind several privacy-tiered OKF bundles into
   one federation, and the tooling this knowledge base is now written through.
 tags:
@@ -31,7 +31,7 @@ federated-knowledge-skills[^fks-readme] is the layer that turns several independ
 [OKF](../research/open_knowledge_format_okf_findings.md) bundles into one federation an agent
 can use: a skill it reads, a CLI it runs, and two pre-commit hooks each bundle pins for
 itself. It is mine, and it is the tooling this bundle is now written through, so it appears
-here in the same two roles that [agent-knowledge](agent_knowledge.md) does: a tool with a page,
+here in the same two roles that [agent-knowledge](agent_knowledge_stjbrown.md) does: a tool with a page,
 and the thing producing the pages.
 
 | | |
@@ -74,7 +74,7 @@ looks like when the thing being guarded is prose.
 
 **The Markdown file is the source.**[^fks-design] No ingest step, no rendered copy, no
 `render_hash` reconciling two versions of one note. An agent writes the file a person then
-edits, which is the property [agent-wiki](agent_wiki.md) traded away for a CLI that could hold
+edits, which is the property [agent-wiki](agent_wiki_tacotakumi.md) traded away for a CLI that could hold
 the vault's invariants.
 
 **A skill may run a command; a skill never invokes another skill.** Prose calling prose through
@@ -95,7 +95,7 @@ where it has to be enforced.
 is the decision, and
 [Federated OKF knowledge bases: a workspace-manifest architecture](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
 is the architecture it settled on. The first implementation wrapped the `kb-*` skills from
-[agent-knowledge](agent_knowledge.md) and was retired at twenty commits and a green test suite;
+[agent-knowledge](agent_knowledge_stjbrown.md) and was retired at twenty commits and a green test suite;
 the format discipline and that project's own bundle survived, and are still read here as an
 upstream source.
 

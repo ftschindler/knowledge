@@ -14,7 +14,7 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-**Context** – A security review of [TacoTakumi/agent-wiki](../tools/agent_wiki.md)
+**Context** – A security review of [TacoTakumi/agent-wiki](../tools/agent_wiki_tacotakumi.md)
 (PyPI: `agent-wiki-kb`), a CLI-driven markdown knowledge base that AI agents search before
 reaching for the web and write back to when they learn something. The driving question:
 **what is the potential for data leaks, and are there any deliberate reporting or
