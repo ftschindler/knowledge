@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### September
 
+- 2026-09-16: [nanobench reports no Big-O estimate, or one fitted across unrelated runs](20260916_nanobench_reports_no_bigo_estimate_or_one_fitted_across_unrelated_runs.md) - a scaling sweep that collects its data and then throws it away, and a fit that spans benchmarks measuring different things
 - 2026-09-11: [Dependabot declines transitive security updates in uv.lock](20260911_dependabot_declines_transitive_security_updates_in_uv_lock.md) - an error naming a version conflict that does not exist, and the two settings that actually caused it
 
 ### August

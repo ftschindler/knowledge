@@ -31,6 +31,7 @@ most general.
 - [A test that cannot run must fail loudly, never skip into a green result](a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md) - the difference between a check that passed and a check that never ran
 - [A sandbox test must use the live working-tree source and rebuild fresh each run](a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md) - how a sandbox test starts testing a stale copy of itself
 - [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md) - testing a markdown procedure by running an agent against it, not by grepping it
+- [A microbenchmark body must not mutate state that outlives one iteration](a_microbenchmark_body_must_not_mutate_state_that_outlives_one_iteration.md) - what the harness measures once it is running your setup's leftovers instead of your input
 - [Enforce LF line endings everywhere](enforce_lf_line_endings_everywhere.md) - declaring line endings in more than one place, because one is not believed
 - [Declare formatting once, editor-agnostically, via .editorconfig](declare_formatting_once_editor_agnostically_via_editorconfig.md) - the one formatting declaration every editor already reads
 - [Keep filenames lowercase with no whitespace](keep_filenames_lowercase_with_no_whitespace.md) - a portability constraint worth a guard, where it applies

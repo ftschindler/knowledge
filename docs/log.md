@@ -1,5 +1,10 @@
 # Log
 
+## 2026-09-16
+
+- add "A microbenchmark body must not mutate state that outlives one iteration", from reviewing a C++ benchmark suite where the expensive model was prepared outside the timed lambda: the harness chooses the iteration count, so hoisting setup out of the body silently changes what every iteration after the first is measuring
+- add the nanobench finding beside it: `complexityN` tags a run but prints nothing without `complexityBigO`, and the fit it feeds spans every run registered on the same `Bench`, so unrelated solvers registered together are fitted as one curve
+
 ## 2026-09-15
 
 - rename `okf-floor.yaml` to `fkb.yaml`: the `okf-` prefix claimed the format defines the file when the floor is ours, and `floor` named one of the three jobs it had grown into; the new name is the filename the federation's tooling looks for when it discovers a bundle, which is the one thing about the file nobody but that tooling owns
