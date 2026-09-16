@@ -1,0 +1,28 @@
+docs/people/felix_schindler.md
+  s_5af7bf8bf1067f::t_da36ca52ab0955 21-26
+docs/log.md
+  s_5af7bf8bf1067f::t_49bf532ab6b40e 5-7
+docs/tools/index.md
+  s_5af7bf8bf1067f::t_ccdf4fd8bcb078 3-4,11-16
+  s_5af7bf8bf1067f::t_fee74c26cbdb48 20
+docs/tools/.genre.yaml
+  s_5af7bf8bf1067f::t_c43bafc487581d 10-11
+docs/tools/federated_knowledge_skills.md
+  s_5af7bf8bf1067f::t_5e31e108474ff9 1-110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "72ab8e07ca3e88c7acd11da0625d43f7d187d148",
+  "prompts": {},
+  "sessions": {
+    "s_5af7bf8bf1067f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f53ece845ffemJd4hZP6L5PQ1W",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
