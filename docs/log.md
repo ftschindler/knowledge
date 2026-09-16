@@ -2,6 +2,9 @@
 
 ## 2026-09-16
 
+- add a tool page for federated-knowledge-skills, the skill, CLI and pre-commit hooks this bundle is now written through: what the four parts are, the three decisions the design rests on, and the search command deliberately withheld until the journal says it is needed
+- file it in `tools/` rather than a new `projects/` folder, and mark it `self-authored` instead: who made a thing is a fact about it, not a kind of page, and a folder per project is the domain axis growing back one plausible page at a time; the directory's genre note no longer says "external", and my own page grows a "Built" section that lists from the tag
+
 - add "A microbenchmark body must not mutate state that outlives one iteration", from reviewing a C++ benchmark suite where the expensive model was prepared outside the timed lambda: the harness chooses the iteration count, so hoisting setup out of the body silently changes what every iteration after the first is measuring
 - add the nanobench finding beside it: `complexityN` tags a run but prints nothing without `complexityBigO`, and the fit it feeds spans every run registered on the same `Bench`, so unrelated solvers registered together are fitted as one curve
 

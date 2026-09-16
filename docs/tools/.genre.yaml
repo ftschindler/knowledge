@@ -7,5 +7,5 @@ type: Tool
 article: a
 word: tool reference
 note: |-
-  What an external tool or project is, who makes it, and what it is for. Everything I have
-  learned *about* it lives elsewhere and links back here.
+  What a tool or project is, who makes it, and what it is for, whether someone else wrote it
+  or I did. Everything I have learned *about* it lives elsewhere and links back here.
