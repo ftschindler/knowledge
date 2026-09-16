@@ -30,6 +30,21 @@ sources:
   title: Karpathy's LLM Wiki gist
   author: human:andrej_karpathy
   last_modified: '2026-09-16'
+- id: ak-progressive-disclosure
+  resource: https://github.com/stjbrown/agent-knowledge/blob/main/knowledge/concepts/progressive_disclosure.md
+  title: 'Progressive Disclosure (stjbrown/agent-knowledge)'
+  author: human:stjbrown
+  last_modified: '2026-08-01'
+- id: ak-landscape
+  resource: https://github.com/stjbrown/agent-knowledge/blob/main/knowledge/ecosystem/landscape.md
+  title: 'LLM Wiki Ecosystem Landscape (stjbrown/agent-knowledge)'
+  author: human:stjbrown
+  last_modified: '2026-08-01'
+- id: ak-critiques
+  resource: https://github.com/stjbrown/agent-knowledge/blob/main/knowledge/ecosystem/critiques.md
+  title: 'Critiques & Open Problems (stjbrown/agent-knowledge)'
+  author: human:stjbrown
+  last_modified: '2026-08-01'
 ---
 project-wiki[^pw-readme] is an agent skill that builds and maintains a knowledge base at
 `.project-wiki/` inside a code repository: requirements, change requests, architectural
@@ -59,9 +74,10 @@ Five user-facing modes sit on top: `init`, `scan`, `update`, `sync` and `maintai
 The generated tree is fixed, not suggested. `requirements/functional`, `changes/decisions`,
 `technical/`, `traceability/`, `alerts/`, `logs/` and eight more directories are always created,
 each record carries a permanent ID matching a pattern (`REQ-*`, `ADR-*`, `CR-*`), and
-`REGISTRY.yml` catalogues the lot. Navigation is three levels deep by design: root `INDEX.md`,
-section index, record, so an agent loads the smallest relevant set rather than the history of the
-project.
+`REGISTRY.yml` catalogues the lot. Navigation is
+progressive disclosure[^ak-progressive-disclosure] by the book, three levels deep: root
+`INDEX.md`, section index, record, so an agent loads the smallest relevant set rather than the
+history of the project.
 
 Two mechanisms are worth naming because they are the parts an ordinary vault does not have.
 **Traceability is bidirectional and machine-facing**: `traceability/requirement-evidence.yml`
@@ -106,6 +122,49 @@ and binds them with a reference rule. project-wiki has exactly one tier by const
 repository, and inherits its visibility from whoever can clone it. Nothing in it is designed to
 be cited from outside, and a `.project-wiki/` committed to a public repository publishes every
 open question and alert in it.
+
+## Where it sits in the ecosystem
+
+The landscape survey that [agent-knowledge](agent_knowledge.md) maintains groups the several
+hundred implementations Karpathy's gist spawned by shape[^ak-landscape], and project-wiki
+straddles two of its categories. By packaging it is an agent skill, the busiest category in the survey and the one
+almost entirely Obsidian-wikilink-flavoured; by target it belongs to the codebase-doc generators,
+the adjacent lane that documents a repository rather than ingesting general sources, alongside
+openwiki and DeepWiki. What it has that neither lane usually does is the seam between them: an
+`update` mode that ingests meeting notes and PDFs like a general-knowledge wiki, feeding the same
+records that `sync` reconciles against code. The survey did not list it when I read it.
+
+Reading that survey is also what makes the taxonomy question sharper rather than academic. A
+closed schema is unusual here, and the cohort that has one has mostly reached for a database
+instead: the markdown-versus-database dissent the critiques page records holds that deterministic,
+strongly-typed knowledge wants SQL and an event log rather than a pile of files. project-wiki is
+the middle position, taking the typed IDs and the validator whilst staying greppable and
+diffable, and `WIKI_VERSION.yml` is what that position costs.
+
+## Against the objections to the pattern
+
+The objections to the LLM wiki are better documented than the pattern's successes, and
+agent-knowledge collects them[^ak-critiques]. Two of the three bear directly on this tool, and it
+answers them from opposite ends.
+
+**Truth maintenance, and the poisoning that follows from it**, is the strongest one: once
+model-authored synthesis sits beside its sources, later passes reason over AI output rather than
+ground truth, and the drift is invisible because every page still reads coherently. The fixes
+proposed in that thread are source-grounded, citation-first, review-gated knowledge bases where
+the model proposes rather than decides. project-wiki implements roughly that shape without
+citing the argument: extraction is provenance and never canon, code-derived behaviour is observed
+and never a requirement, an unresolved contradiction becomes an `alerts/` record instead of a
+silent edit, and the ambiguous case is an open question rather than an invention. It is the most
+disciplined answer to that objection I have seen shipped in this lane, and it is the reason the
+page is here rather than in a line of the index.
+
+**Token cost is postponed, not eliminated** is the one it does not answer. Progressive disclosure
+through indexes degrades past roughly 50 to 100K tokens, and the proposed fix is section-level
+retrieval or a real search tool. project-wiki has neither: `REGISTRY.yml` is a catalogue, not an
+index in the retrieval sense, and the routing layer is the whole of the strategy. For a wiki
+bounded by one repository that ceiling is further away than it is for a personal base that
+accumulates for years, which is a mitigation rather than a solution. It is the same gap the fkb
+journal is being kept to measure here.
 
 ## What I would take from it
 
