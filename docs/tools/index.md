@@ -18,5 +18,6 @@ one plausible page at a time. The tag is what
 - [agent-wiki (awiki)](agent_wiki.md) - a CLI-driven markdown vault agents search before the web, and what this knowledge base ran on before it was an OKF bundle
 - [agent-knowledge (kb skills)](agent_knowledge.md) - skills rather than an engine for maintaining OKF bundles, and the upstream whose own bundle is cited here
 - [federated-knowledge-skills (fkb)](federated_knowledge_skills.md) - mine: the skill, CLI and hooks that bind privacy-tiered bundles into a federation, and what this bundle is now written through
+- [project-wiki](project_wiki.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name
