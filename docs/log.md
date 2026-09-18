@@ -2,6 +2,9 @@
 
 ## 2026-09-18
 
+- add a tool page for linkspector, the link checker this bundle has committed through since before it had a page: the two passes it resolves every link with, an HTTP request and a headless Chrome behind it, and the strict schema that rejects any key it does not define, so the configuration file cannot be annotated in its own syntax
+- file a finding that linkspector ignores the httpHeaders in its config, dropped by the HTTP pass which never reads them and by the Puppeteer pass which hands them to a goto that has no such option
+- file the reusable half beside it as its own finding: a GitHub token does not authenticate requests to github.com web pages at all, so the website answers a token-bearing request with the same 404 it gives a stranger, which is indistinguishable from a repository that was deleted or never existed; the API and the raw host honour the same token, and one request to the organisation endpoint separates a bad credential from a dead link
 - enable the footnotes markdown extension and register hooks/concept_sources.py, which was present but never wired into the build: every page declaring sources had been rendering its citation markers literally, as `[^uv-docs]`, since the first one was written
 - add a tool page for opencode, the harness named in the `generated.by` field of nearly every page here and until now the only tool in this bundle without a page of its own: what the four extension points are, the two debug commands that say what a session actually resolved to, and how my own configuration keeps one directory per provider so a session never sees two at once
 - add a tool page for markitdown, Microsoft's converter from PDF and Office documents into Markdown, in both of the shapes it ships as: the command, and the MCP server exposing a single convert tool that also takes remote URIs
