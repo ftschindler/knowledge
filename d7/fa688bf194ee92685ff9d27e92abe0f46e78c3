@@ -1,0 +1,34 @@
+docs/tools/index.md
+  s_281461bd85b99b::t_635276deee2984 35
+docs/log.md
+  s_281461bd85b99b::t_0361978b6f6839 6-7
+  s_281461bd85b99b::t_4a260486c0165e 5
+docs/findings/index.md
+  s_281461bd85b99b::t_a8bdf281a12108 25
+  s_281461bd85b99b::t_aab6cb21ea4db0 26
+docs/principles/pin_transitive_runtime_dependencies_not_just_the_tool.md
+  s_281461bd85b99b::t_48f69d25d9c4f4 39-42
+docs/findings/20260918_a_github_token_does_not_authenticate_github_com_web_pages.md
+  s_281461bd85b99b::t_7b1d074cfaff44 1-92
+docs/findings/20260918_linkspector_ignores_the_httpheaders_in_its_config.md
+  s_281461bd85b99b::t_4c99c1b65f1146 46-48
+  s_281461bd85b99b::t_905d0577e101f1 1-45,49-64
+docs/tools/linkspector.md
+  s_281461bd85b99b::t_e2d8644cd6f6c7 1-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "d7fa688bf194ee92685ff9d27e92abe0f46e78c3",
+  "prompts": {},
+  "sessions": {
+    "s_281461bd85b99b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f53e6cccfffeB43J2L55TK1bq7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
