@@ -31,6 +31,8 @@ theme:
 hooks:
 - hooks/publish_about.py
 - hooks/concept_genre.py
+# A concept's declared sources, rendered as the footnotes its prose cites.
+- hooks/concept_sources.py
 plugins:
 - search
 - awesome-pages
@@ -46,6 +48,9 @@ plugins:
 - glightbox
 markdown_extensions:
 - admonition
+# A concept declares its sources in frontmatter and cites them by id from the
+# prose; hooks/concept_sources.py writes the definitions these render.
+- footnotes
 - pymdownx.details
 - pymdownx.superfences
 - pymdownx.tabbed:

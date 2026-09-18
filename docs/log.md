@@ -2,6 +2,7 @@
 
 ## 2026-09-18
 
+- enable the footnotes markdown extension and register hooks/concept_sources.py, which was present but never wired into the build: every page declaring sources had been rendering its citation markers literally, as `[^uv-docs]`, since the first one was written
 - add a tool page for opencode, the harness named in the `generated.by` field of nearly every page here and until now the only tool in this bundle without a page of its own: what the four extension points are, the two debug commands that say what a session actually resolved to, and how my own configuration keeps one directory per provider so a session never sees two at once
 - add a tool page for markitdown, Microsoft's converter from PDF and Office documents into Markdown, in both of the shapes it ships as: the command, and the MCP server exposing a single convert tool that also takes remote URIs
 - record that the extras belong to markitdown and not to markitdown-mcp, so asking for markitdown-mcp[all] is a no-op reported as a warning, whilst the server already depends on the full converter set outright and resolves to 74 packages
