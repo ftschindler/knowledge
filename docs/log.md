@@ -1,5 +1,13 @@
 # Log
 
+## 2026-09-18
+
+- add a tool page for opencode, the harness named in the `generated.by` field of nearly every page here and until now the only tool in this bundle without a page of its own: what the four extension points are, the two debug commands that say what a session actually resolved to, and how my own configuration keeps one directory per provider so a session never sees two at once
+- add a tool page for markitdown, Microsoft's converter from PDF and Office documents into Markdown, in both of the shapes it ships as: the command, and the MCP server exposing a single convert tool that also takes remote URIs
+- record that the extras belong to markitdown and not to markitdown-mcp, so asking for markitdown-mcp[all] is a no-op reported as a warning, whilst the server already depends on the full converter set outright and resolves to 74 packages
+- file a finding that an opencode profile merges over the base config rather than replacing it, settled with a marker key in the base layer and read back with a profile active, because the repeated plugin entry in every profile argues convincingly for the opposite answer
+- promote the reusable half of that to a principle: test a config layering assumption with a marker key, since the keys every layer sets cannot distinguish merging from replacement and a key present in only one layer can
+
 ## 2026-09-16
 
 - name the author in the title and filename of every tool page that is somebody's repository, so agent-wiki, agent-knowledge, project-wiki and federated-knowledge-skills now carry TacoTakumi, stjbrown, giodra96 and my own name; the names these projects give themselves are generic enough to collide with each other, and who wrote a one-person project is the thing most worth knowing before depending on it

@@ -45,6 +45,7 @@ most general.
 - [Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv](resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md) - why a git hook must not depend on a virtualenv being active
 - [Use PEP 723 inline script metadata for zero-install tooling scripts](use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md) - a standalone script that carries its own dependencies
 - [A declared-but-inert config documents intent, not enforcement](a_declared_but_inert_config_documents_intent_not_enforcement.md) - keeping a rule that fires on nothing, without believing it protects you
+- [Test a config layering assumption with a marker key](test_a_config_layering_assumption_with_a_marker_key.md) - the one-line experiment that says whether layers merge or replace, before you copy a setting into all of them
 - [Enforce the intersection of all renderers and consumers](enforce_the_intersection_of_all_renderers_and_consumers.md) - writing for the least capable tool that will read it
 - [Structure docs as the reader's task path - lead with action, defer rationale](structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md) - organising a guide around what the reader does next
 - [Hand the reader one idea at a time](hand_the_reader_one_idea_at_a_time.md) - why honest, jargon-free prose can still be exhausting to read

@@ -30,3 +30,5 @@ than in a table halfway down. Products with a vendor behind them keep their plai
 - [project-wiki (giodra96)](project_wiki_giodra96.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name
+- [opencode](opencode.md) - the terminal agent that writes most of these pages, and the one-directory-per-provider config my own setup is built from
+- [markitdown](markitdown.md) - Microsoft's PDF-and-Office-to-Markdown converter, as a command and as the MCP server an agent calls
