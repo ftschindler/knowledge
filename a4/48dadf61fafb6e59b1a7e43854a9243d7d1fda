@@ -1,0 +1,21 @@
+docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md
+  s_5d746b626b5f8c::t_e174e4081f075b 35-37,40-41
+  s_5d746b626b5f8c::t_a51448fec21a05 62,66
+  s_5d746b626b5f8c::t_6a4adf2fc55b12 79-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "a448dadf61fafb6e59b1a7e43854a9243d7d1fda",
+  "prompts": {},
+  "sessions": {
+    "s_5d746b626b5f8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
