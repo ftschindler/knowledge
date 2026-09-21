@@ -141,30 +141,30 @@ strongly-typed knowledge wants SQL and an event log rather than a pile of files.
 the middle position, taking the typed IDs and the validator whilst staying greppable and
 diffable, and `WIKI_VERSION.yml` is what that position costs.
 
-## Against the objections to the pattern
+## How it holds up against the usual objections
 
-The objections to the LLM wiki are better documented than the pattern's successes, and
-agent-knowledge collects them[^ak-critiques]. Two of the three bear directly on this tool, and it
-answers them from opposite ends.
+People have written more about what is wrong with the LLM wiki than about what it gets right,
+and agent-knowledge collects the complaints[^ak-critiques]. Two of them matter for this tool. It
+handles one of them well and the other not at all.
 
-**Truth maintenance, and the poisoning that follows from it**, is the strongest one: once
-model-authored synthesis sits beside its sources, later passes reason over AI output rather than
-ground truth, and the drift is invisible because every page still reads coherently. The fixes
-proposed in that thread are source-grounded, citation-first, review-gated knowledge bases where
-the model proposes rather than decides. project-wiki implements roughly that shape without
-citing the argument: extraction is provenance and never canon, code-derived behaviour is observed
-and never a requirement, an unresolved contradiction becomes an `alerts/` record instead of a
-silent edit, and the ambiguous case is an open question rather than an invention. It is the most
-disciplined answer to that objection I have seen shipped in this lane, and it is the reason the
-page is here rather than in a line of the index.
+**The first is that the wiki slowly fills up with its own output.** A page written by a model
+sits next to the sources it came from, and the next run reads the page instead of the sources.
+Nothing looks broken, because the page still reads well, so the errors accumulate unnoticed. The
+usual advice is to keep the model on a short lead: cite everything, treat sources as the
+authority, and let a human approve what becomes settled fact. project-wiki does almost exactly
+that, without ever mentioning the argument. Extracted text is evidence, not truth. Behaviour read
+out of the code stays labelled as behaviour and never becomes a requirement. A contradiction it
+cannot resolve is filed in `alerts/` rather than quietly edited away. Anything ambiguous becomes
+an open question rather than a guess. That is the most careful version of this I have seen
+actually shipped, and it is why the tool gets a page here instead of a line in the index.
 
-**Token cost is postponed, not eliminated** is the one it does not answer. Progressive disclosure
-through indexes degrades past roughly 50 to 100K tokens, and the proposed fix is section-level
-retrieval or a real search tool. project-wiki has neither: `REGISTRY.yml` is a catalogue, not an
-index in the retrieval sense, and the routing layer is the whole of the strategy. For a wiki
-bounded by one repository that ceiling is further away than it is for a personal base that
-accumulates for years, which is a mitigation rather than a solution. It is the same gap the fkb
-journal is being kept to measure here.
+**The second is that the wiki eventually gets too big to read.** Loading only an index and then
+the pages it points at works until the wiki passes roughly 50 to 100K tokens; after that you need
+real search, or a way to pull single sections rather than whole files. project-wiki has neither.
+`REGISTRY.yml` lists what exists, which is not the same as being able to search it, and pointing
+the agent at the right file is the entire strategy. A wiki about one repository will hit that
+limit much later than a personal one that grows for years, so the problem is delayed rather than
+solved. It is the same open question this bundle's own journal is meant to answer.
 
 ## What I would take from it
 
