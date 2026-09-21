@@ -35,3 +35,4 @@ than in a table halfway down. Products with a vendor behind them keep their plai
 - [linkspector](linkspector.md) - the link checker this bundle commits through, the two passes it resolves every link with, and the schema that refuses to be annotated
 - [skills (Vercel Labs)](skills_vercel_labs.md) - `npx skills add`: the installer that discovers a skill by finding its `SKILL.md`, and the leaderboard it reports installs to
 - [caveman (Julius Brussee)](caveman_brussee.md) - the terseness skill, what survives of it once the token-saving argument is dropped, and where its register collides with this bundle's
+- [ponytail (Dietrich Gebert)](ponytail_gebert.md) - the seven-rung ladder an agent climbs before writing code, the benchmark its author retracted, and why I took the review commands and left the ruleset

@@ -2,6 +2,10 @@
 
 ## 2026-09-21
 
+- write a tool page on ponytail, the skill that has an agent climb a seven-rung ladder before writing code: the ordering is the whole idea, since reuse sits above writing on it and a generic instruction to keep things small leaves the agent to decide what small means
+- record why I took only its review, audit and debt commands: the ladder's new material is narrower than my own scope rules already cover, and the opencode adapter cannot scope its injection the way the Claude Code and Codex hooks can, so a read-only search agent gets told to write one line
+- note that its author retracted his own 80-94% headline in place, on the grounds that the baseline was padding with prose, and left the reasoning up
+
 - write a tool page on caveman, the reply-compression skill: separate the MIT skill from the four commercial layers sold under the same name, since only the skill changes what a reader sees and only it is installable alone
 - record what survives of it when the token argument is dropped: the Simplified Technical English clause and the ban on narrating tool calls, against a full level whose dropped articles buy nothing the file itself does not argue against
 
