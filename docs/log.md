@@ -2,6 +2,9 @@
 
 ## 2026-09-21
 
+- write a tool page on caveman, the reply-compression skill: separate the MIT skill from the four commercial layers sold under the same name, since only the skill changes what a reader sees and only it is installable alone
+- record what survives of it when the token argument is dropped: the Simplified Technical English clause and the ban on narrating tool calls, against a full level whose dropped articles buy nothing the file itself does not argue against
+
 - file a finding that neo-tree's hide_hidden does not show dotfiles on Linux: the option names the NTFS hidden attribute and sits under filtered_items rather than filesystem, and setup rejects an unknown key with neither an error nor a warning
 - name all three writing principles in the editing conventions rather than one, as a table of what each guards against: the voice page was linked, the concrete-behaviour page paraphrased without a link, and the pacing page mentioned nowhere, so a writer following the authority page was given the honesty axis and neither clarity axis
 - rewrite the objections section of the project-wiki page in plainer terms, which is what turned that gap up: every sentence passed the voice rules and still carried three ideas at once
