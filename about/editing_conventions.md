@@ -209,7 +209,7 @@ Oxford comma. Write for a technical reader.
 The register is the one
 [Write in a calm, quantified, settled-fact voice - not a promotional one](../docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
 describes: a maintainer standing next to the reader, narrating what happened as settled fact,
-volunteering the real costs, first-person where a person decided something.
+volunteering the real costs, naming what a thing actually does rather than what it is for.
 
 That page is one of three, and they guard different things. Prose that satisfies the first two
 can still be hard work, so write against all three:
@@ -230,6 +230,52 @@ chumminess and exclamation, which is precisely the prose this bundle is trying n
 What makes these pages read as written by a person is specificity and restraint: a page that
 names what it gave up, quantifies where it can, and declines to hedge. Concreteness is
 expensive to fake; warmth is free.
+
+### Who is speaking
+
+**A concept is narrated in the third person, about named subjects.** Who wrote it is recorded
+in `generated`, and rendered on the page; a pronoun is not attribution, and does not need to
+carry any. Write "the local copy defaults to `lite`", or "Felix's `AGENTS.md`", rather than a
+first person that leaves the reader to work out whose it is.
+
+This bundle is `referenceable_by "*"`, so its
+concepts are quoted into other bundles and landed on from search, and a sentence whose subject
+is a pronoun with no antecedent degrades the moment it travels. A name survives the trip, and
+links to [the person](../docs/people/felix_schindler.md) it refers to.
+
+Two things keep the third person from reading like a profile of a stranger:
+
+- **Name a person only where a person acted.** An agent that reaches for a name to fill an
+  empty subject slot writes plausible attributions nobody can check. Where no person acted, the
+  artefact is the subject, and the sentence is usually shorter for it.
+- **Name once, then let the artefact take over.** The possessive carries most of it, and a page
+  that repeats a name nine times reads worse than one that never used it.
+
+Avoid the passive as the way out. It hides the actor without replacing them, which is the
+failure this convention exists to prevent.
+
+### When the first person is licensed
+
+The first person is available to Felix, on the genres that are about his own experience:
+[wishes](../docs/wishes/index.md), [decisions](../docs/decisions/index.md),
+[explorations](../docs/explorations/index.md) and his own
+[person page](../docs/people/felix_schindler.md). Those read badly in any other voice, because
+their subject *is* the person. A finding or a tool page does not, because what happened does not
+depend on who hit it.
+
+Both conditions hold together: **an agent never writes "I", whatever the genre, and no page
+outside those genres uses it, whoever wrote it.** `generated.by` is what a reader checks the
+pronoun against, so the two must agree.
+
+Rarity is what makes it work. Where every sentence is first person the pronoun carries no
+information; where it appears on one page in ten it says something specific, which is that a
+person wrote this from their own experience rather than being described.
+
+An agent editing a page it did not write **may extend it, but never in the first person, and
+never by putting words in anyone's mouth.** Artefact-centred sentences sit perfectly well beside
+"I wanted", and the page keeps one voice per author rather than acquiring a second silently. If
+the rewriting goes far enough that the page is no longer substantially its author's,
+`generated` changes, which is a visible act rather than a drift.
 
 ### Read before you write
 
