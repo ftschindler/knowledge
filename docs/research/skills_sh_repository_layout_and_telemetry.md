@@ -21,15 +21,17 @@ sources:
 ---
 **Context** - setting up a repository to hold several reusable agent skills, one per directory,
 distributed through [the `skills` CLI](../tools/skills_vercel_labs.md). Three questions had to
-be answered before the layout was fixed, because changing it later is expensive: **where does
-the installer look for skills, how does a user install one rather than all of them, and what
-does the CLI report back about the install?**
+be answered before the layout was fixed, because changing it later is expensive:
+
+- Where does the installer look for skills?
+- How does a user install one rather than all of them?
+- What does the CLI report back about the install?
 
 - **Version read**: `1.7.0`, commit `7407f38`, 2026-09-17[^skills-repo]
-- **Method**: source read of `src/skills.ts`, `src/source-parser.ts`, `src/frontmatter.ts`,
-  `src/telemetry.ts` and the telemetry call sites in `src/add.ts`, checked against the README;
-  then empirical confirmation by building a two-skill repository in the layout under question
-  and installing from it, selectively and wholesale, into scratch projects.
+- **Method**: a source read, confirmed empirically. The files read were `src/skills.ts`,
+  `src/source-parser.ts`, `src/frontmatter.ts`, `src/telemetry.ts` and the telemetry call sites
+  in `src/add.ts`, checked against the README. The confirmation was a two-skill repository built
+  in the layout under question, installed from selectively and wholesale into scratch projects.
 
 ## Layout: the repository root is a first-class location
 
@@ -85,10 +87,11 @@ The gap is what the two names are allowed to do to each other. **The installed d
 named after the frontmatter `name`, not the source directory.** A directory `some-directory/`
 whose `SKILL.md` declares `name: totally-different-name` installs to
 `.claude/skills/totally-different-name/`, which was confirmed rather than inferred. Nothing
-warns about the disagreement. Since the directory name is also the handle a user types after
-`@`, letting the two drift produces a skill that is installed under one name and requested by
-another, and a repository holding several skills is precisely where that stops being
-noticeable.
+warns about the disagreement.
+
+The directory name is also the handle a user types after `@`. Letting the two drift therefore
+produces a skill installed under one name and requested by another, and a repository holding
+several skills is precisely where that stops being noticeable.
 
 ## Telemetry: what is sent, and how to stop it
 
@@ -112,14 +115,14 @@ specially, which is the better of the two to set.
 Three qualifications worth knowing before switching it off or leaving it on.
 
 **Private GitHub repositories are already excluded, and the check fails closed.** Before
-sending, the CLI asks the GitHub API whether the repository is public and sends **only** when
+sending, the CLI asks the GitHub API whether the repository is public. It sends **only** when
 the answer is an explicit `false`; an error or an indeterminate answer skips the event. GitHub
 Enterprise sources are excluded by the same mechanism, with a comment saying the public API
 must not be told an Enterprise repository's name. A private repository therefore does not leak
 its name through this path by default.
 
-**The exclusion is keyed on parsing `owner/repo`, and what fails to parse is sent anyway.**
-The fallback branch reports the source when it cannot be split into exactly one owner and one
+**The exclusion is keyed on parsing `owner/repo`, and what fails to parse is sent anyway.** The
+fallback branch reports the source whenever it cannot be split into exactly one owner and one
 repository, on the reasoning that non-GitHub sources cannot be privacy-checked. A GitLab
 project inside a subgroup has two slashes and does not match, so a private
 `group/subgroup/repo` reaches the telemetry endpoint as a string. The default is safe for
@@ -137,9 +140,12 @@ about what it is about to run.
 A repository of one skill per root-level directory needs no manifest, no `skills/` wrapper and
 no publishing step, and users can take one skill or all of them from it, at a pinned revision,
 with the authentication they already have. Two things are worth adding around it rather than
-trusting to review: a commit-time check that `SKILL.md` carries a string `name` and
-`description`, since the installer only warns, and a check that the `name` matches its
-directory, since nothing anywhere else will notice when it does not.
+trusting to review:
+
+- a commit-time check that `SKILL.md` carries a string `name` and `description`, since the
+  installer only warns
+- a check that the `name` matches its directory, since nothing anywhere else will notice when
+  it does not
 
 Telemetry is on by default, reports the repository and the skill names, and is switched off by
 `DO_NOT_TRACK=1`. For anything not public, set it regardless of the built-in private-repository
