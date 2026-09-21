@@ -1,0 +1,39 @@
+docs/index.md
+  s_9338c8b6ad5b98::t_522b2bdbb1707c 8-9,13,16-26
+docs/tools/index.md
+  s_9338c8b6ad5b98::t_f6b0b464b13ff6 3-4,11-13,20-25
+docs/values/index.md
+  s_9338c8b6ad5b98::t_095d3bb16d3778 3,5-6
+docs/guides/index.md
+  s_9338c8b6ad5b98::t_7f5802f9e01459 6,8-11,13-19
+docs/decisions/index.md
+  s_9338c8b6ad5b98::t_957614852bb055 4,7
+docs/wishes/index.md
+  s_9338c8b6ad5b98::t_20e2011a6f92a3 3
+docs/findings/index.md
+  s_9338c8b6ad5b98::t_4e1c5e715d1185 3-4,6-8,10-11,13,18,25,29
+docs/explorations/index.md
+  s_9338c8b6ad5b98::t_f03390fe54ee9c 4-5,7-8,11
+docs/research/index.md
+  s_9338c8b6ad5b98::t_0aa41c9b58fad8 3-4,7,9-13
+docs/knowledge_management/index.md
+  s_9338c8b6ad5b98::t_7c19b3952f1fcc 3,6,12,14,16
+docs/principles/index.md
+  s_9338c8b6ad5b98::t_db7f8af211ce42 3,14-15,19,23,25-27,29,33-35,38-39,41,44,47,49-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "f8fc74fd7466f8d7f26bb5080e2de2d3e76790c6",
+  "prompts": {},
+  "sessions": {
+    "s_9338c8b6ad5b98": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a7de966ffer7u9kqYTcIAz3R",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
