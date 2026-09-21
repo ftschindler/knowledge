@@ -70,11 +70,11 @@ monorepo checkout (offline-resolvable but couples on-disk layout).
 The gap is not technology but the **skill + contract layer** that turns a generic
 LLM into a disciplined OKF wiki maintainer.
 [stjbrown/agent-knowledge](https://github.com/stjbrown/agent-knowledge) is the
-closest existing template, and its central lesson is architectural: **the
-discipline lives in skills + an AGENTS.md contract; the CLI (Janet) is optional
-and only adds runtime/UI/auth/memory.** Take the pattern, skip the engine - the
-same conclusion the substrate investigation reached, now confirmed against a real
-implementation.
+closest existing template, and its central lesson is architectural. **The
+discipline lives in skills plus an `AGENTS.md` contract. The CLI (Janet) is
+optional, and only adds runtime, UI, auth and memory.** Take the pattern, skip the
+engine - the same conclusion the substrate investigation reached, now confirmed
+against a real implementation.
 
 ### What agent-knowledge is (the reusable pattern)
 
@@ -94,13 +94,14 @@ wikilink graph.
 
 ### Target architecture for a MkDocs + git PKB
 
-- **Layer 1 - Contract (`AGENTS.md` per vault root).** The missing artifact;
-  Karpathy's "schema file." Encodes OKF v0.2 as a hard invariant (one concept =
-  one `.md`, required `type`, reserved `index.md`/`log.md`, standard
-  bundle-relative links), the trust model (`generated`/`sources`/`verified`/
-  `status`/`stale_after` + actor convention `human:felix`, `<agent>/<version>`,
-  `process:<id>`), append-only-on-meaning, "file good answers back as concepts,"
-  and existing house conventions (which already match).
+- **Layer 1 - Contract (`AGENTS.md` per vault root).** The missing artefact, and
+  Karpathy's "schema file". It encodes four things:
+  - OKF v0.2 as a hard invariant: one concept to one `.md`, a required `type`,
+      reserved `index.md` and `log.md`, standard bundle-relative links
+  - the trust model: `generated`, `sources`, `verified`, `status`, `stale_after`,
+      and the actor convention `human:felix`, `<agent>/<version>`, `process:<id>`
+  - append-only-on-meaning, and "file good answers back as concepts"
+  - the existing house conventions, which already match
 - **Layer 2 - Skills** (portable across Claude Code / OpenCode, like the existing
   `awiki-*` skills): `pkb-ingest`, `pkb-query`, `pkb-lint` (agent report over a
   deterministic script), optionally `pkb-document` / `pkb-visualize`.
@@ -130,13 +131,16 @@ in lint.
 ### Caveat: dual-author, not agent-only
 
 agent-knowledge's trust model assumes the *agent* is the primary author. This PKB
-is genuinely dual-author (human writes in nvim/Obsidian too), so the
-"append-only, LLM maintains everything" stance needs the
+is genuinely dual-author, since a human writes in nvim and Obsidian too. The
+"append-only, LLM maintains everything" stance therefore needs the
 **human-correction-survival** discipline flagged in the gist's comment thread:
-record the human's *intent/claim* (not a text diff), and re-check it after each
-regeneration - keep if still satisfied, surface (don't silently drop) if a newer
-source contradicts it. This is the one place to *extend* the agent-knowledge
-pattern rather than copy it.
+
+- record the human's *intent or claim*, not a text diff
+- re-check it after each regeneration, and keep it if it still holds
+- surface a contradiction from a newer source rather than silently dropping the
+  correction
+
+This is the one place to *extend* the agent-knowledge pattern rather than copy it.
 
 ## Bottom line
 
