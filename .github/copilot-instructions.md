@@ -34,6 +34,9 @@ neither takes frontmatter.
 - British English throughout: "ise" endings, "our" endings, "whilst" rather than "while",
   no Oxford comma.
 - Write for a technical reader. Prefer the concrete behaviour over its abstract label.
+- Hand the reader one idea at a time: one idea per sentence, one point per paragraph. Honest,
+  concrete prose can still be unreadable if it arrives three ideas at once. See
+  [docs/principles/hand_the_reader_one_idea_at_a_time.md](../docs/principles/hand_the_reader_one_idea_at_a_time.md).
 - Cross-reference related concepts by linking them, so the bundle stays connected rather
   than becoming a pile of pages.
 

@@ -2,6 +2,8 @@
 
 ## 2026-09-21
 
+- name all three writing principles in the editing conventions rather than one, as a table of what each guards against: the voice page was linked, the concrete-behaviour page paraphrased without a link, and the pacing page mentioned nowhere, so a writer following the authority page was given the honesty axis and neither clarity axis
+- rewrite the objections section of the project-wiki page in plainer terms, which is what turned that gap up: every sentence passed the voice rules and still carried three ideas at once
 - open a guides section, for a procedure carried out once that would otherwise be rediscovered: what separates it from a blueprint is that a blueprint is an artefact to copy whilst a guide is a sequence of acts performed in the world, and what makes one worth keeping is the two or three steps that are silent when skipped
 - write the first one, on letting CI push to a protected branch with a GitHub App rather than a maintainer's personal access token: an App installed on the one repository, holding contents write alone, minting a token that expires within the hour, committing under a bot identity whose numeric user id is looked up at run time
 - record the two steps in it that look like configuration and are not: the bypass list entry is not a permission, so everything else can be correct and the push still declined, and an App token starts workflow runs where the default token does not, so a job that pushes to the branch it triggers on has to terminate by construction

@@ -208,6 +208,19 @@ The register is the one
 describes: a maintainer standing next to the reader, narrating what happened as settled fact,
 volunteering the real costs, first-person where a person decided something.
 
+That page is one of three, and they guard different things. Prose that satisfies the first two
+can still be hard work, so write against all three:
+
+| Page | Guards against | Question it asks |
+| --- | --- | --- |
+| [Write in a calm, quantified, settled-fact voice](../docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) | dishonest language | Is this overselling? |
+| [Name the concrete behaviour, not its abstract label](../docs/principles/name_the_concrete_behaviour_not_its_abstract_label.md) | jargon-dense honest language | Is this the right *word*? |
+| [Hand the reader one idea at a time](../docs/principles/hand_the_reader_one_idea_at_a_time.md) | correct language delivered too fast | How much arrives *at once*? |
+
+The third is the one this page kept losing, because a paragraph can be honest, concrete and
+still deliver three ideas in one sentence to a reader holding one. It applies to reference prose
+as much as to a guide: a tool page is read by someone meeting the tool for the first time.
+
 **It is not "warm", and aiming at warmth produces the opposite.** Warmth is the cheapest
 register to imitate, so anything asked to be warm reaches for enthusiasm, second-person
 chumminess and exclamation, which is precisely the prose this bundle is trying not to contain.
