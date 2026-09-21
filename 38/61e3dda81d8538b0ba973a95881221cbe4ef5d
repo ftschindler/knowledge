@@ -1,0 +1,23 @@
+.github/copilot-instructions.md
+  s_5d746b626b5f8c::t_8db54a2c73330c 37-39
+docs/log.md
+  s_5d746b626b5f8c::t_876715e2f96453 5-6
+about/editing_conventions.md
+  s_5d746b626b5f8c::t_1ee4da7df90a20 211-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "3861e3dda81d8538b0ba973a95881221cbe4ef5d",
+  "prompts": {},
+  "sessions": {
+    "s_5d746b626b5f8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
