@@ -22,11 +22,13 @@ reaching for the web and write back to when they learn something. The driving qu
 
 - **Version audited**: `0.8.1` (commit `b4b3dfe`, latest tag at time of review)
 - **Date**: 2026-08-24
-- **Method**: Full source read of `src/agent_wiki/`, an independent literal scan for every
-  network primitive (`httpx`, `urllib`, `requests`, `socket`, `subprocess`) and every URL
-  in the tree, plus data-flow tracing of the three paths that touch a network (URL ingest,
-  the remote-vault client, the optional summariser) and the HTTP server's auth and path
-  handling.
+- **Method**: four passes.
+    1. A full source read of `src/agent_wiki/`.
+    2. An independent literal scan for every network primitive (`httpx`, `urllib`,
+       `requests`, `socket`, `subprocess`) and every URL in the tree.
+    3. Data-flow tracing of the three paths that touch a network: URL ingest, the
+       remote-vault client, the optional summariser.
+    4. A read of the HTTP server's auth and path handling.
 
 ## Verdict
 
@@ -159,10 +161,10 @@ threat model:
 ## Supply chain
 
 - Runtime dependencies are mainstream and pinned by floor: `httpx`, `trafilatura`,
-  `pymupdf4llm`, `fastapi`, `uvicorn`, `pyyaml`, `ruamel.yaml`, `yake`, `click`,
-  `python-multipart`, plus **`agentsquire`** (the author's own skill-installer library, used
-  only to copy bundled `SKILL.md` files into local agent harnesses - no network path in awiki's
-  use of it). None are invoked to phone home.
+  `pymupdf4llm`, `fastapi`, `uvicorn`, `pyyaml`, `ruamel.yaml`, `yake`, `click` and
+  `python-multipart`. None are invoked to phone home. The one unfamiliar name is
+  **`agentsquire`**, the author's own skill-installer library, used only to copy bundled
+  `SKILL.md` files into local agent harnesses; awiki's use of it has no network path.
 - The repo-local `.agent-wiki/config.yaml` mechanism is **trust-gated**: a checked-in config is
   ignored (with a one-line stderr notice) until you run `awiki vault trust <dir>`, so a hostile
   repo cannot silently repoint your CLI at an attacker's vault or token. Good default.
@@ -192,11 +194,13 @@ threat model:
 > What is the potential for data leaks, and are there deliberate reportings built in?
 
 **There are no deliberate reportings, telemetry or covert egress - none.** Every network call
-targets a destination you explicitly configured (a URL you ingest, your own remote vault, your
-own local LLM), and the default configuration is fully offline. The genuine data-leak potential
-is **not** a hidden channel but the tool doing exactly what it advertises: it deliberately reads
-your Claude Code and OpenCode transcripts and concentrates them, plus anything you ingest, into a
-**single plain-text vault** that you may then sync or serve. The exposure is therefore governed
-by *your* choices - what you ingest, whether you sync the vault, and whether you serve it with
-proper TLS - not by anything the code hides. The built-in redaction helps but is best-effort and
-partial, so the vault should be treated as sensitive plain text at rest.
+targets a destination you explicitly configured: a URL you ingest, your own remote vault, your
+own local LLM. The default configuration is fully offline.
+
+The genuine data-leak potential is **not** a hidden channel. It is the tool doing exactly what
+it advertises. It deliberately reads your Claude Code and OpenCode transcripts and concentrates
+them, plus anything you ingest, into a **single plain-text vault** that you may then sync or
+serve. The exposure is therefore governed by *your* choices - what you ingest, whether you sync
+the vault, whether you serve it with proper TLS - and not by anything the code hides. The
+built-in redaction helps, but it is best-effort and partial, so treat the vault as sensitive
+plain text at rest.
