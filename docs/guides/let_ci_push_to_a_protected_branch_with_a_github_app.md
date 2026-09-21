@@ -29,15 +29,19 @@ Some workflows have to write to the branch they are protecting: a release job th
 version file and tags it, a bot that regenerates a lockfile, a docs build that commits what it
 rendered. The token a job is handed by default cannot do it. `GITHUB_TOKEN` is deliberately
 excluded from bypassing branch protection, and pushes made with it start no further workflow
-runs, both of which are the right defaults everywhere except here.
+runs. Both are the right defaults everywhere except here.
 
 The usual answer is a personal access token in a repository secret, and it works. What it costs
-is that the credential is a **person's** standing access: it carries whatever that account can
-reach, it does not expire, the commits it makes are attributed to a human who did not make them,
-and revoking it disturbs that human's own work. A GitHub App installed on the one repository is
-smaller in every one of those directions. It holds a single permission, the token it mints
-expires about an hour after it is issued[^gh-app-installation-tokens], it is not a person, and
-the commits read as a bot's.
+is that the credential is a **person's** standing access:
+
+- it carries whatever that account can reach, not what the job needs
+- it does not expire
+- the commits it makes are attributed to a human who did not make them
+- revoking it disturbs that human's own work
+
+A GitHub App installed on the one repository is smaller in every one of those directions. It
+holds a single permission. The token it mints expires about an hour after it is
+issued[^gh-app-installation-tokens]. It is not a person, so the commits read as a bot's.
 
 Four things have to exist, and only the last of them lives in the repository. Three are done
 once, by hand, by somebody with admin on it.
@@ -65,7 +69,7 @@ public configuration.
 ## 2. Install it on the repository
 
 From the App's page, **Install App**, and select **only the repository that needs it**. An App
-is created and installed in two separate acts, and an App that exists but is installed nowhere
+is created and installed in two separate acts. An App that exists but is installed nowhere
 produces a token request that fails with a message about the installation rather than about
 permissions, which reads like a permissions problem for as long as you let it.
 
@@ -121,10 +125,10 @@ the ruleset protecting the branch → Bypass list → Add → the App.** Classic
 has the same control under "Allow specified actors to bypass required pull requests".
 
 Without it everything above is correct and the job still fails, at the last step, with
-`protected branch hook declined`. Which is the right failure, being loud and before anything is
-tagged, but it looks like a permissions problem and is not one: `Contents: write` says the App
-may write to the repository, whilst the bypass list says the branch rule does not apply to it.
-Two different questions, asked in two different places.
+`protected branch hook declined`. That is the right failure: loud, and before anything is
+tagged. It still looks like a permissions problem, and is not one. `Contents: write` says the
+App may write to the repository; the bypass list says the branch rule does not apply to it. Two
+different questions, asked in two different places.
 
 ## 6. Give the bot its committer identity
 
@@ -152,11 +156,12 @@ is recreated:
 
 **Pushes made with an App token do start workflows**, unlike pushes made with `GITHUB_TOKEN`.
 This is the one behavioural difference that can bite after everything is configured correctly,
-because a job that pushes to the branch it triggers on now triggers itself. Make the recursion
-terminate by construction rather than by a `[skip ci]` in a commit message: the job I wrote this
-for releases only when the merge it is reacting to came in on a labelled pull request, and its
-own push comes in on none, so the second run finds nothing to do and stops. A path filter or a
-committer check does the same job.
+because a job that pushes to the branch it triggers on now triggers itself.
+
+Make the recursion terminate by construction, not by a `[skip ci]` in a commit message. The job
+I wrote this for releases only on a merge that came in on a labelled pull request. Its own push
+comes in on none, so the second run finds nothing to do and stops. A path filter or a committer
+check does the same job.
 
 **The token dies within the hour.** A run log leaked tomorrow is worth nothing, which is the
 practical difference from a PAT and the reason to prefer this even where a PAT would be
