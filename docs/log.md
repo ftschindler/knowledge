@@ -2,7 +2,7 @@
 
 ## 2026-09-21
 
-- file a finding that neo-tree's hide_hidden does not show dotfiles on Linux: the option names the NTFS hidden attribute and sits under filtered_items rather than filesystem, and setup validates nothing, so a key in the wrong place is carried along without an error and the only way to settle whether a setting arrived is to read it back out of the running plugin
+- file a finding that neo-tree's hide_hidden does not show dotfiles on Linux: the option names the NTFS hidden attribute and sits under filtered_items rather than filesystem, and setup rejects an unknown key with neither an error nor a warning
 - name all three writing principles in the editing conventions rather than one, as a table of what each guards against: the voice page was linked, the concrete-behaviour page paraphrased without a link, and the pacing page mentioned nowhere, so a writer following the authority page was given the honesty axis and neither clarity axis
 - rewrite the objections section of the project-wiki page in plainer terms, which is what turned that gap up: every sentence passed the voice rules and still carried three ideas at once
 - open a guides section, for a procedure carried out once that would otherwise be rediscovered: what separates it from a blueprint is that a blueprint is an artefact to copy whilst a guide is a sequence of acts performed in the world, and what makes one worth keeping is the two or three steps that are silent when skipped
