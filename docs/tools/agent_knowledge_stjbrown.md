@@ -43,12 +43,17 @@ once: as a tool that was evaluated, and as a source that is cited.
 
 ## What it is
 
-Seven skills, split by who invokes them. Model-invoked: **`kb`**, the hub, holding the shared
-specification, glossary, trust model and templates and routing to the rest; **`kb-ingest`**,
-which reads a source once and integrates it across the bundle with provenance;
-**`kb-document`**, which documents a software repository from its source, tests, configuration
-and git history without modifying any of it; and **`kb-query`**, which answers from the bundle
-by progressive disclosure, cites what it used, and files valuable conclusions back.
+Seven skills, split by who invokes them.
+
+Model-invoked:
+
+| Skill | What it does |
+| --- | --- |
+| **`kb`** | the hub: shared specification, glossary, trust model and templates, and routing to the rest |
+| **`kb-ingest`** | reads a source once and integrates it across the bundle, with provenance |
+| **`kb-document`** | documents a software repository from its source, tests, configuration and git history, modifying none of it |
+| **`kb-query`** | answers from the bundle by progressive disclosure, cites what it used, and files valuable conclusions back |
+
 User-invoked: **`kb-init`** to scaffold, **`kb-lint`** for deterministic conformance plus a
 semantic drift audit, and **`kb-visualize`** to render the bundle as a graph.
 
@@ -70,17 +75,19 @@ work without it.
 
 **It ranked first as an architectural match.**
 [Substrate options for an OKF-based agent-first LLM wiki: investigation](../research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
-scored it as the best fit for "skill plus contract, CLI optional", and its index is the
-worked example behind the conclusion in
+scored it as the best fit for "skill plus contract, CLI optional".
+
+Its index is also the worked example behind the conclusion in
 [Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
-that an index should be authored rather than generated: it truncates, compresses or rewrites
+that an index should be authored rather than generated. It truncates, compresses or rewrites
 its own concept descriptions rather than copying them, which is what a generator cannot do.
 
-**Its knowledge bundle is an upstream source.** The repository documents itself: `knowledge/`
-is a conformant OKF bundle[^ak-bundle] of about 60 concepts *about* OKF and the LLM wiki pattern, covering
-the specification section by section, the operations, and a survey of the ecosystem. It is
-checked out here as a read-only bundle, so pages in this bundle cite it rather than
-re-deriving the pattern. [agent-wiki (TacoTakumi)](agent_wiki_tacotakumi.md) does exactly that.
+**Its knowledge bundle is an upstream source.** The repository documents itself. `knowledge/`
+is a conformant OKF bundle[^ak-bundle] of about 60 concepts *about* OKF and the LLM wiki
+pattern, covering the specification section by section, the operations, and a survey of the
+ecosystem. It is checked out here as a read-only bundle, so pages in this bundle cite it rather
+than re-deriving the pattern. [agent-wiki (TacoTakumi)](agent_wiki_tacotakumi.md) does exactly
+that.
 
 **Wrapping its skills was tried and retired.** The first attempt at a federation layer wrapped
 the `kb-*` skills, with a federated skill invoking a single-bundle one per bundle and then
