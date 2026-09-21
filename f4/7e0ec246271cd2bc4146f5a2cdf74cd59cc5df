@@ -1,0 +1,21 @@
+docs/findings/index.md
+  s_ab9cd6d5031422::t_cdc52c532f61be 7-12
+about/editing_conventions.md
+  s_ab9cd6d5031422::t_e141732de9cc3c 241-247
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "f47e0ec246271cd2bc4146f5a2cdf74cd59cc5df",
+  "prompts": {},
+  "sessions": {
+    "s_ab9cd6d5031422": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a9b4dc6ffeLr2trFLdGd5PXz",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
