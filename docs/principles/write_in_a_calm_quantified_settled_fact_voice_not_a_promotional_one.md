@@ -32,13 +32,13 @@ should read like [a maintainer wrote it, not a marketer](../values/prefer_plain_
    hedging. Not *"This will seamlessly set up your entire environment."*
 2. **"We" for choices, never for hype.** Use first-person-plural for decisions
    the project made on the reader's behalf: *"We ship tests which...", "We
-   recommend prek..."*. Never *"our powerful setup"*. In a walkthrough (as opposed
-   to terse reference prose) "we" may also serve as a companionable teaching
-   narrator guiding the reader through the task - *"We can also run individual
+   recommend prek..."*. Never *"our powerful setup"*. In a walkthrough, as opposed
+   to terse reference prose, "we" may also serve as a companionable teaching
+   narrator guiding the reader through the task: *"We can also run individual
    test layers", "As we can only test the skills by driving an agent, these
    tests are more involved"*. That register is legitimate for
-   [task-path guides](structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md); the bar it must still clear is guiding, never
-   selling.
+   [task-path guides](structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md).
+   The bar it must still clear is guiding, never selling.
 3. **"You" only to hand over an action or expectation.** *"Each time you open a
    new shell:", "you will also need latexmk", "This should leave you with
    output/"*. Never to flatter.
@@ -59,11 +59,11 @@ should read like [a maintainer wrote it, not a marketer](../values/prefer_plain_
    fact (*"150h of time on our target hardware!"*), never as perkiness.
 
 **Why.** This is the negative image of default LLM prose, which is the whole
-point: an agent told "write docs" reaches for *"This powerful setup script
+point. An agent told "write docs" reaches for *"This powerful setup script
 seamlessly handles everything, ensuring a smooth experience - simply run the
 command and you'll be up and running in no time!"*. That register is
 untrustworthy precisely because it hides cost and overstates certainty. The
-maintainer voice is enjoyable to read *because* it respects the reader - it
+maintainer voice is enjoyable to read *because* it respects the reader: it
 states what happens, admits what varies, and never sells.
 
 **Snippet (slop → voice).**
@@ -76,9 +76,9 @@ states what happens, admits what varies, and never sells.
 | "You'll be up and running in no time." | "Running them required around 52GB and 150h on our target hardware." |
 | "This produces identical results." | "This regenerates similar data, though timings and speedup may differ." |
 
-**How enforced.** Convention plus a review pass over agent-generated prose:
-grep for the tells (`seamless`, `powerful`, `simply`, `just`, `effortless`, "in
-no time", "will ensure", future-promise framing, bare superlatives, more than
-one `!`) and rewrite each hit toward settled-fact present tense with a quantified
+**How enforced.** Convention plus a review pass over agent-generated prose. Grep
+for the tells - `seamless`, `powerful`, `simply`, `just`, `effortless`, "in no
+time", "will ensure", future-promise framing, bare superlatives, more than one
+`!` - and rewrite each hit toward settled-fact present tense with a quantified
 cost. Derived from the companion-code READMEs of the 2026 pyMOR paper, whose
 voice this page distils.
