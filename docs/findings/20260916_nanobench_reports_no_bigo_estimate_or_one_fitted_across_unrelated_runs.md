@@ -54,11 +54,12 @@ scaling data is collected and discarded.
 **The fit spans every run on that `Bench` object.** The tutorial is explicit that
 a single `Bench` instance is reused across runs and that the object aggregates
 their results. That is exactly what you want when the runs measure one operation
-at ten sizes. It is not what you want when one file registers several unrelated
-groups - a seepage solve, a stress-initialisation solve, a consolidation solve -
-against the same `bench`, because they are then fitted together as though they
-were one curve, and the output is a plausible-looking table of coefficients about
-nothing.
+at ten sizes.
+
+It is not what you want when one file registers several unrelated groups against
+the same `bench`: a seepage solve, a stress-initialisation solve, a consolidation
+solve. They are then fitted together as though they were one curve, and the output
+is a plausible-looking table of coefficients about nothing.
 
 A third thing is not a bug but limits what the output is worth: the tutorial fits
 over ten sizes. Two points can be fitted by every candidate complexity exactly, so
@@ -78,9 +79,9 @@ for (const int n : {5, 10, 20, 40, 80})
 std::cout << stage_1.complexityBigO() << "\n";
 ```
 
-Where the work is too slow to afford five sizes - which is the usual reason a
-sweep ends up with two - drop the complexity framing rather than keeping a fit
-nobody can trust, and report the absolute times per size. Two timings and their
+Where the work is too slow to afford five sizes, drop the complexity framing
+rather than keeping a fit nobody can trust, and report the absolute times per
+size. That is the usual reason a sweep ends up with two. Two timings and their
 ratio is an honest thing to publish; a ranked table of six complexity classes
 derived from those same two timings is not.
 
