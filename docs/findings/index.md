@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### September
 
+- 2026-09-21: [neo-tree's hide_hidden does not show dotfiles on Linux](20260921_neo_tree_hide_hidden_does_not_show_dotfiles_on_linux.md) - an option that is Windows-only, in the wrong place, and rejected by nothing
 - 2026-09-18: [A GitHub token does not authenticate requests to github.com web pages](20260918_a_github_token_does_not_authenticate_github_com_web_pages.md) - a credential the website ignores, and a 404 that cannot be told apart from a deleted repository
 - 2026-09-18: [linkspector ignores the httpHeaders in its config](20260918_linkspector_ignores_the_httpheaders_in_its_config.md) - a credential that passes validation, is dropped by both checking passes, and leaves a live link reported as broken
 - 2026-09-18: [opencode merges a profile over the base config rather than replacing it](20260918_opencode_merges_a_profile_over_the_base_config_rather_than_replacing_it.md) - the marker key that settled it, and the duplicated setting that argues for the wrong answer
