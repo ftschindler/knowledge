@@ -50,8 +50,8 @@ project-wiki[^pw-readme] is an agent skill that builds and maintains a knowledge
 `.project-wiki/` inside a code repository: requirements, change requests, architectural
 decisions, observed technical behaviour and a traceability matrix linking all of them to source
 paths. It describes itself as an evolution of Karpathy's LLM wiki[^karpathy-llm-wiki] "built for
-codebases", and that qualifier is the whole of what distinguishes it from the other tools on
-this page.
+codebases", and that qualifier is the whole of what distinguishes it from the other tools
+collected here.
 
 | | |
 | --- | --- |
@@ -89,7 +89,7 @@ unclear, the skill is instructed to file an open question rather than invent one
 
 ## Where it sits among the tools here
 
-It shares the substrate with everything else on this page, plain Markdown and YAML in git, and
+It shares the substrate with everything else collected here, plain Markdown and YAML in git, and
 differs on the two axes that actually separate these tools: **who the knowledge is about**, and
 **how much taxonomy is prescribed**.
 
