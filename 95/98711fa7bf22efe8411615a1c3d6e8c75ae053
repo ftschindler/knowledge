@@ -1,0 +1,23 @@
+docs/findings/20260921_neo_tree_hide_hidden_does_not_show_dotfiles_on_linux.md
+  s_ab9cd6d5031422::t_c297056b17e308 1-50
+docs/log.md
+  s_ab9cd6d5031422::t_6707cf59d4fe88 5
+docs/findings/index.md
+  s_ab9cd6d5031422::t_966a0459be45e2 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "9598711fa7bf22efe8411615a1c3d6e8c75ae053",
+  "prompts": {},
+  "sessions": {
+    "s_ab9cd6d5031422": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a9b4dc6ffeLr2trFLdGd5PXz",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
