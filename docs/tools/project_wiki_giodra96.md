@@ -64,11 +64,16 @@ collected here.
 
 ## What it is
 
-Prose an agent reads, plus five Python helpers where determinism pays: `wiki_scaffold.py` to
-create the skeleton and refuse to overwrite one, `check_inbox.py` to hash and deduplicate
-incoming documents, `ingest_document.py` to extract PDF and DOCX outside the model's context,
-`validate_wiki.py` for tree, frontmatter, ID, registry and link validation, and
-`check_contracts.py` to catch drift between the manifest and the documentation that quotes it.
+Prose an agent reads, plus five Python helpers where determinism pays:
+
+| Script | What it does |
+| --- | --- |
+| `wiki_scaffold.py` | creates the skeleton, and refuses to overwrite one |
+| `check_inbox.py` | hashes and deduplicates incoming documents |
+| `ingest_document.py` | extracts PDF and DOCX outside the model's context |
+| `validate_wiki.py` | validates the tree, frontmatter, IDs, registry and links |
+| `check_contracts.py` | catches drift between the manifest and the documentation quoting it |
+
 Five user-facing modes sit on top: `init`, `scan`, `update`, `sync` and `maintain`.
 
 The generated tree is fixed, not suggested. `requirements/functional`, `changes/decisions`,
@@ -127,19 +132,20 @@ open question and alert in it.
 
 The landscape survey that [agent-knowledge](agent_knowledge_stjbrown.md) maintains groups the several
 hundred implementations Karpathy's gist spawned by shape[^ak-landscape], and project-wiki
-straddles two of its categories. By packaging it is an agent skill, the busiest category in the survey and the one
-almost entirely Obsidian-wikilink-flavoured; by target it belongs to the codebase-doc generators,
-the adjacent lane that documents a repository rather than ingesting general sources, alongside
-openwiki and DeepWiki. What it has that neither lane usually does is the seam between them: an
-`update` mode that ingests meeting notes and PDFs like a general-knowledge wiki, feeding the same
-records that `sync` reconciles against code. The survey did not list it when I read it.
+straddles two of its categories. By packaging it is an agent skill, the busiest category in the
+survey and the one almost entirely Obsidian-wikilink-flavoured. By target it belongs with the
+codebase-doc generators, the adjacent lane that documents a repository rather than ingesting
+general sources, alongside openwiki and DeepWiki. What it has that neither lane usually does is
+the seam between them: an `update` mode that ingests meeting notes and PDFs like a
+general-knowledge wiki, feeding the same records that `sync` reconciles against code. The survey
+did not list it when I read it.
 
 Reading that survey is also what makes the taxonomy question sharper rather than academic. A
 closed schema is unusual here, and the cohort that has one has mostly reached for a database
-instead: the markdown-versus-database dissent the critiques page records holds that deterministic,
-strongly-typed knowledge wants SQL and an event log rather than a pile of files. project-wiki is
-the middle position, taking the typed IDs and the validator whilst staying greppable and
-diffable, and `WIKI_VERSION.yml` is what that position costs.
+instead. The markdown-versus-database dissent the critiques page records holds that
+deterministic, strongly-typed knowledge wants SQL and an event log rather than a pile of files.
+project-wiki is the middle position, taking the typed IDs and the validator whilst staying
+greppable and diffable, and `WIKI_VERSION.yml` is what that position costs.
 
 ## How it holds up against the usual objections
 
@@ -190,5 +196,5 @@ everything it is most useful to remember.
 What I would not take is the always-on instruction bootstrap, which writes a marked block into
 both `AGENTS.md` and `.github/copilot-instructions.md` during `init` and `scan`. It is the
 honest way to make the wiki actually get used, since a skill nothing invokes is a skill nothing
-reads, but it is a tool editing the file that loads into every session in the repository, and
+reads. It is still a tool editing the file that loads into every session in the repository, and
 that file is the one I want to have written myself.
