@@ -44,8 +44,10 @@ Two things share the name, and separating them early saves confusion. The **CLI*
 that does the work: it clones a repository, finds the skills in it, and writes each one into
 every agent directory you selected. The **directory at skills.sh** is a leaderboard of
 publicly installed skills, ranked by install counts the CLI reports back[^skills-docs]. The
-first is a local tool; the second is a website the first feeds. What that reporting contains,
-and how to switch it off, is
+first is a local tool; the second is a website the first feeds. An install event names the
+repository and the skills taken from it; `DO_NOT_TRACK=1` switches the reporting off, at the
+cost of the pre-install security audit lookup, which is guarded by the same flag. What the
+event carries in full, and where the built-in private-repository exclusion does not hold, is
 [the research page](../research/skills_sh_repository_layout_and_telemetry.md).
 
 A skill is discovered, never declared. There is no manifest, no registry entry and no
