@@ -4,8 +4,12 @@ Things that cost time once. Each records the symptom, what it turned out to be, 
 past it, so the next encounter is short.
 
 A finding is the cheapest page here to write, and deliberately so: it does not have to be
-general, it does not have to connect to anything, and it only has to be true and to have cost
-someone an afternoon. See
+general, it does not have to connect to anything, and it only has to be true and worth not
+rediscovering. An afternoon lost is the most a finding costs, not the least it has to. Something
+settled in a minute belongs here on the same terms, and is written at the length that minute
+earned: the page exists so the next encounter is short, which is a claim about the future rather
+than about what it took. Dressing a cheap finding up as an expensive one is how a page acquires
+a detail nobody checked. See
 [Give a knowledge base a tier that is not asked to earn its place](../knowledge_management/give_a_knowledge_base_a_tier_that_is_not_asked_to_earn_its_place.md)
 for why that tier is the one that fills, and what happens when a finding turns out to carry a
 reusable claim.

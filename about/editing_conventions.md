@@ -238,6 +238,13 @@ existing pages *are* one, and prose matches nearby prose far more reliably than 
 adjective. Every convention on this page put together does less to keep the bundle sounding like
 one author than two pages of the real thing in front of you.
 
+**What the neighbours settle is register and structure, never length.** Two pages picked from a
+directory are whatever happened to be written there, and the thorough ones are the most
+inviting to imitate, so a page with nothing much to report acquires the sections it saw rather
+than the ones it needs. A concept is as long as its content, and a short one next to a long
+neighbour is the bundle working: the genre is a shape, not a quota. A heading with nothing
+underneath it that had to be found is the sign this went wrong.
+
 It matters most for whoever has read least. An agent that opens `fkb.yaml`, the index and
 nothing else has seen the bundle's *schema* and none of its *voice*, and will supply its own.
 That is what the `conventions:` pointer in `fkb.yaml` is for - it names this page, so the file
