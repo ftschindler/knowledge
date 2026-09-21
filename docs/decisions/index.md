@@ -1,10 +1,10 @@
 # Decisions
 
 What I chose, given my values, wishes and principles, and the reasoning that got me there. A
-decision here is one I still stand behind; where that stopped being true, the page moved to
+decision here is one I still stand behind. Where that stopped being true, the page moved to
 [Explorations](../explorations/index.md).
 
-Each is written wish-first and first-person, a friendlier take on an [architecture decision
+Each page is written wish-first and first-person, a friendlier take on an [architecture decision
 record](https://adr.github.io/): what I wanted, what I care about, what that led me to, what I
 built, and what I would reconsider. Listed oldest first, so the reasoning reads forward.
 

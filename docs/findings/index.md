@@ -1,32 +1,32 @@
 # Findings
 
-Things that cost time once. Each records the symptom, what it turned out to be, and how to get
-past it, so the next encounter is short.
+Things that cost time once. Each one records the symptom, the cause, and the way past it, so the
+next encounter is short.
 
-A finding is the cheapest page here to write, and deliberately so: it does not have to be
-general, it does not have to connect to anything, and it only has to be true and to have cost
-someone an afternoon. See
+A finding is the cheapest page here to write, by design: it does not have to be general, it does
+not have to connect to anything, and it only has to be true and to have cost someone an
+afternoon. See
 [Give a knowledge base a tier that is not asked to earn its place](../knowledge_management/give_a_knowledge_base_a_tier_that_is_not_asked_to_earn_its_place.md)
-for why that tier is the one that fills, and what happens when a finding turns out to carry a
-reusable claim.
+for why that tier is the one that fills, and what happens when a finding carries a reusable
+claim.
 
-Here that means four conventions. The title names the **symptom**, in the words you would have
+That means four conventions. The title names the **symptom**, in the words you would have
 searched for, because that is how anyone arrives. The filename leads with the date it was found,
 `20260911_`, and this list runs newest first. A finding about a tool carries `stale_after`, since
 its claim is a claim about a version; the reasoning is
 [Date a page whose claim is about a version](../knowledge_management/date_a_page_whose_claim_is_about_a_version.md).
-And the subject lives in the tags rather than in a directory, per
+The subject lives in the tags rather than in a directory, per
 [Split orthogonal classification axes across folders and tags](../knowledge_management/split_orthogonal_classification_axes_across_folders_and_tags.md).
 
 ## 2026
 
 ### September
 
-- 2026-09-18: [A GitHub token does not authenticate requests to github.com web pages](20260918_a_github_token_does_not_authenticate_github_com_web_pages.md) - a credential the website ignores, and a 404 that cannot be told apart from a deleted repository
+- 2026-09-18: [A GitHub token does not authenticate requests to github.com web pages](20260918_a_github_token_does_not_authenticate_github_com_web_pages.md) - a credential the website ignores, and a 404 that looks like a deleted repository
 - 2026-09-18: [linkspector ignores the httpHeaders in its config](20260918_linkspector_ignores_the_httpheaders_in_its_config.md) - a credential that passes validation, is dropped by both checking passes, and leaves a live link reported as broken
 - 2026-09-18: [opencode merges a profile over the base config rather than replacing it](20260918_opencode_merges_a_profile_over_the_base_config_rather_than_replacing_it.md) - the marker key that settled it, and the duplicated setting that argues for the wrong answer
 - 2026-09-16: [nanobench reports no Big-O estimate, or one fitted across unrelated runs](20260916_nanobench_reports_no_bigo_estimate_or_one_fitted_across_unrelated_runs.md) - a scaling sweep that collects its data and then throws it away, and a fit that spans benchmarks measuring different things
-- 2026-09-11: [Dependabot declines transitive security updates in uv.lock](20260911_dependabot_declines_transitive_security_updates_in_uv_lock.md) - an error naming a version conflict that does not exist, and the two settings that actually caused it
+- 2026-09-11: [Dependabot declines transitive security updates in uv.lock](20260911_dependabot_declines_transitive_security_updates_in_uv_lock.md) - an error naming a version conflict that does not exist, and the two settings that caused it
 
 ### August
 
