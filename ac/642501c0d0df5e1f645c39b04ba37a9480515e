@@ -1,0 +1,23 @@
+docs/tools/ponytail_gebert.md
+  s_a5ba5545535175::t_f6c841780c2053 1-92
+docs/tools/index.md
+  s_a5ba5545535175::t_de2285c4e4765e 38
+docs/log.md
+  s_a5ba5545535175::t_001bf23d8850ba 5-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "ac642501c0d0df5e1f645c39b04ba37a9480515e",
+  "prompts": {},
+  "sessions": {
+    "s_a5ba5545535175": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a77e268ffeZt93xzXGjUSpNX",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
