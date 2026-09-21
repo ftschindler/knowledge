@@ -57,15 +57,18 @@ sources, the wiki pages rendered *from* those sources, and `wiki.yaml` as the sc
 Each page carries a `render_hash`, so a page edited by hand is detected as drift and
 `awiki reingest` prints a diff rather than clobbering the edit.
 
-Around that sit the things a vault needs to be useful daily: full-text search over ripgrep,
-conversation-transcript adapters for Claude Code and OpenCode, a `UserPromptSubmit` hook that
-surfaces relevant page titles on every prompt, a tag vocabulary with a lint gate, a linter
-covering broken links, orphans, drift, staleness and index gaps, and `awiki serve` to share
-one vault over HTTP with reader, writer and admin tokens.
+Around that sit the things a vault needs to be useful daily:
+
+- full-text search over ripgrep
+- conversation-transcript adapters for Claude Code and OpenCode
+- a `UserPromptSubmit` hook that surfaces relevant page titles on every prompt
+- a tag vocabulary with a lint gate
+- a linter covering broken links, orphans, drift, staleness and index gaps
+- `awiki serve`, to share one vault over HTTP with reader, writer and admin tokens
 
 ## The design decision everything follows from
 
-**The CLI is the only door in.** That is deliberate and stated as such: because every write
+**The CLI is the only door in.** That is deliberate and stated as such. Because every write
 goes through `awiki`, the tool can hold the vault's invariants no matter who is driving, so a
 small local model needs to know a handful of commands rather than the vault's layout. The same
 commands work against a local folder or a remote vault, which is what makes one shared brain
