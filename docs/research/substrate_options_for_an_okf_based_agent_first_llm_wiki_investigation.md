@@ -50,8 +50,8 @@ and the research
    choice, not the pattern's requirement.
 2. **OKF itself mandates no tooling and standard markdown links.** From
    [OKF v0.2 SPEC.md](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md):
-   *"no required tooling"* (intro/§1), one concept = *"one markdown document"* with
-   every non-reserved `.md` a concept doc (§2–4, so **no raw/rendered split**), and
+   *"no required tooling"* (intro/§1); one concept is *"one markdown document"*, with
+   every non-reserved `.md` a concept doc (§2-4, so **no raw/rendered split**); and
    links *"using standard markdown links"* (§6.1). Conformance is file-structural
    (§11). The [launch blog](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing)
    frames OKF as *"format, not platform... no new runtime, no required SDK."*
@@ -142,10 +142,13 @@ capability.
 
 ## Bottom line (research result, decision deferred)
 
-The evidence points to **OKF plain-markdown files, standard links, maintained by an
-AGENTS.md contract + skills + existing git/pre-commit - no dedicated engine** as the
-only path satisfying R1/R2/R3 without compromise while hitting the OKF target and
-collapsing the wikilink tension between the agent wiki and the human PKB. A concrete
-decision (adopt no-engine vs a markdown-link engine like my-wiki/agent-knowledge;
-unify into one tree vs two vaults sharing conventions) is **intentionally not made
-here** and remains open.
+The evidence points to one path: **OKF plain-markdown files, standard links,
+maintained by an AGENTS.md contract plus skills plus the existing git and
+pre-commit setup, with no dedicated engine.** It is the only candidate satisfying
+R1, R2 and R3 without compromise whilst hitting the OKF target, and it collapses
+the wikilink tension between the agent wiki and the human PKB.
+
+A concrete decision is **intentionally not made here** and remains open. Two
+questions are left: no-engine versus a markdown-link engine such as
+my-wiki or agent-knowledge, and one unified tree versus two vaults sharing
+conventions.
