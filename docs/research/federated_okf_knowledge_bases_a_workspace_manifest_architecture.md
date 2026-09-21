@@ -39,7 +39,7 @@ place**, never smeared across the bundles or the cross-links.
 - **Flat, independent OKF bundles.** No nesting, no submodules. Each bundle is its
   own git repo, clones standalone, publishes standalone, and is unaware of the
   others.
-- **One workspace manifest** (`workspace.okf.yaml`) is the sole artifact that knows
+- **One workspace manifest** (`workspace.okf.yaml`) is the sole artefact that knows
   the bundles are related; it assigns each bundle a role in this local context.
 - **A thin skill layer** that reads the manifest and owns only the concerns a single
   bundle cannot handle for itself.
@@ -72,9 +72,9 @@ bundles:
 | `writable` | may an agent author into this bundle here | `false` |
 | `publish` | my published URL base, if any | `null` |
 
-Both configurable defaults **fail closed**: an unconfigured bundle is sealed
-(`referenceable_by: []`) and read-only (`writable: false`) until deliberately opened
-on each axis.
+Both configurable defaults **fail closed**: a bundle nobody has configured cannot be
+referenced by anything (`referenceable_by: []`) and cannot be written to
+(`writable: false`), until each axis is opened deliberately.
 
 ### Field semantics
 
@@ -87,7 +87,7 @@ on each axis.
 - **`publish`** - write-side resolution (local→URL): when authoring a cross-bundle
   link, emit the target's published URL if it has one, else a workspace-relative
   path. `publish: null` is meaningful ("not published, keep links local"). The
-  published URL has **no `docs/`** segment (MkDocs strips it) while `path` does -
+  published URL has **no `docs/`** segment (MkDocs strips it) whilst `path` does -
   which is exactly why `path` and `publish` are two independent fields.
 - **`referenceable_by`** - the leak rule (below).
 - **`writable`** - authoring capability; a read-only upstream repo you can't push to
@@ -109,11 +109,10 @@ capture. One dictionary lookup enforces it.
 ## Read-only upstreams are first-class sources
 
 A `writable: false` bundle (someone else's repo you cannot publish into) is a pure
-**source**: freely read and referenced, never authored into. Because you cannot fix
-a dangling link into it (you don't control the target), such cross-references should
-also be recorded as OKF `sources[]` provenance entries (with the upstream's
-`publish` URL and a `last_modified` signal), so provenance survives if the live link
-breaks.
+**source**: freely read and referenced, never authored into. You cannot fix a dangling
+link into it, because you do not control the target. Record such cross-references as
+OKF `sources[]` provenance entries too, carrying the upstream's `publish` URL and a
+`last_modified` signal, so the provenance survives if the live link breaks.
 
 ## The skill layer
 
@@ -121,11 +120,13 @@ Agents reach the bundles through skills rather than a runtime. A skill's first a
 to read `workspace.okf.yaml`; it then owns the manifest-aware concerns, which are the
 only concerns a single bundle cannot handle for itself:
 
-- **ingest** - read source → **classify** the target bundle (fail-closed to the
-  sealed, most-private one) → **gate** (target must be `writable`; placing into a
-  more-open bundle than the default needs human sign-off, since publishing is
-  irreversible disclosure) → resolve cross-links via `path`/`publish` → write the
-  concept, and that bundle's own `index.md` and `log.md`.
+- **ingest** - four steps, in order:
+    1. read the source, and **classify** which bundle it belongs in, defaulting to the
+       sealed, most-private one
+    2. **gate**: the target must be `writable`, and placing a concept into a more-open
+       bundle than the default needs human sign-off, since publishing cannot be undone
+    3. resolve cross-links via `path` and `publish`
+    4. write the concept, and that bundle's own `index.md` and `log.md`
 - **query** - fan out across every bundle in the manifest, since reading is
   unrestricted, then merge and cite by bundle-qualified path or URL. The asymmetry is
   read-all, write-one.
@@ -162,9 +163,9 @@ Each bundle must be leak-safe *by itself*, enforced at commit time in its own re
 independent of the manifest:
 
 - **Per-repo pre-commit is the real gate.** A publishing bundle's own hooks reject
-  outbound cross-bundle links except to declared-safe (public URL) targets - this
-  catches an up-link leak however the file was authored, because pre-commit runs on
-  the commit, not on the skill.
+  outbound cross-bundle links except to targets declared safe by a public URL. That
+  catches an up-link leak however the file was authored, because pre-commit runs on the
+  commit rather than on the skill.
 - **Keyword/secret scanner** per publishing bundle (client names, internal
   hostnames, codenames) - the "named-entity ⇒ not public" rule enforced at commit.
 - **CI publish-gate** - human review of the diff before anything goes live, the
@@ -208,11 +209,11 @@ axes before adding the private tiers.
 Kept only as a record of why the flat-manifest design won.
 
 - **Nested submodule chain** (most-private outermost, more-public bundles as
-  submodules). Spec-legal (OKF §3 allows a bundle as "a subdirectory within a larger
-  repository") and gives frictionless path-based cross-tier links - but couples tiers
-  in git: an outer operation can disturb inner uncommitted work (**knowledge-loss
-  risk**), pins go stale, and it forces a *linear* tier order the real topology does
-  not have.
+  submodules). Spec-legal: OKF §3 allows a bundle as "a subdirectory within a larger
+  repository", and it gives frictionless path-based cross-tier links. It also couples
+  the tiers in git. An outer operation can disturb inner uncommitted work, which is a
+  **knowledge-loss risk**, the pins go stale, and it forces a *linear* tier order the
+  real topology does not have.
 - **Ignored nested checkouts** (parent `.gitignore`s each inner bundle). Removes git
   coupling but keeps the awkward nesting and can double-track content if the ignore
   boundary drifts from the bundle boundary.
