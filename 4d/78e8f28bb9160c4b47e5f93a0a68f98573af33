@@ -1,0 +1,22 @@
+docs/research/skills_sh_repository_layout_and_telemetry.md
+  s_5d746b626b5f8c::t_fc3298dd43f3a1 24-28,31-34
+  s_5d746b626b5f8c::t_5a20d816ce4dfa 90-94
+  s_5d746b626b5f8c::t_1e16b24b86ea04 118,124-125
+  s_5d746b626b5f8c::t_49f69d4038c43a 143-148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "4d78e8f28bb9160c4b47e5f93a0a68f98573af33",
+  "prompts": {},
+  "sessions": {
+    "s_5d746b626b5f8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
