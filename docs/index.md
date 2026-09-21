@@ -20,6 +20,7 @@ Each section defines what it holds on its own page, and lists what is in it. The
 - [Decisions](decisions/index.md) - what I chose given those, and the reasoning that got me there
 - [Explorations](explorations/index.md) - what I committed to, built on, and then withdrew from, kept for what it taught
 - [Blueprints](blueprints/index.md) - the concrete, copyable artefact a decision produced
+- [Guides](guides/index.md) - a procedure I have carried out and would carry out again, with the steps that are silent when skipped marked as such
 - [Knowledge management](knowledge_management/index.md) - how knowledge gets organised, independently of any tool that stores it
 - [Research](research/index.md) - longer investigations, recorded as findings rather than conclusions
 - [Tools](tools/index.md) - an external tool or project that earns a page of its own

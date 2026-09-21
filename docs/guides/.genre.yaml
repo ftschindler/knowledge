@@ -1,0 +1,11 @@
+---
+# What kind of page this directory holds. One directory, one genre, so this is
+# declared once here rather than copied into every page's body. The build hook
+# `hooks/concept_genre.py` renders the note, and the `genre-conformance` check
+# holds every concept's `type` to the one named here.
+type: Guide
+article: a
+word: guide
+note: |-
+  A procedure I have carried out and would carry out again, written so it can be followed
+  without rediscovering why each step is there.
