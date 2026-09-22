@@ -9,6 +9,7 @@
 - turn off the backlinks section on `blog/`, and exclude the entrypoint from the git revision date plugin
 - render a page's status into the genre note it already opens with, rather than as a second block: the note turns amber for draft and red for deprecated and leads with the status word
 - let a directory say what draft means for its genre, under `status_notes`, since in `decisions/` it means decided and not yet carried out rather than unfinished
+- drop the principle "Concreteness is expensive to fake, warmth is free", and its entry in the principles index; the editing conventions of both bundles already carry the argument in prose
 - write a decision on adopting ponytail as two halves, the ladder as instruction and the commands as tooling, and leave it at draft status until it is carried out
 
 ## 2026-09-21
