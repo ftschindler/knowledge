@@ -10,9 +10,6 @@ using [Open Knowledge Format](https://github.com/GoogleCloudPlatform/open-knowle
 to form an OKF bundle, an [Obsidian](https://obsidian.md/) vault (with embedded [Excalidraw](https://excalidraw.com) diagrams),
 and be deployed as a git-backed static site with [MkDocs](https://www.mkdocs.org/).
 
-<!-- See [Tech Stack](tech_stack.md) for more information, or
-[PKB Tech Stack](../done/20260520-pkb-tech-stack.md) for the full design rationale. -->
-
 Browse the sections in the navigation, or start at the [Index](../docs/index.md). Those are
 ordered by what a page _is_; to read by what a page is _about_, use [Tags](tags.md).
 
