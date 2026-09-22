@@ -17,8 +17,11 @@ generated:
 ---
 [ponytail](../tools/ponytail_gebert.md) is a ruleset and a set of commands that push an agent to
 reuse what exists before writing anything. I run [opencode](../tools/opencode.md) with the
-`oh-my-openagent` plugin, whose own prompt already argues for small changes. This is how I took
-the half that adds something.
+`oh-my-openagent` plugin, whose own prompt already argues for small changes. This is how I mean
+to take the half that adds something.
+
+**Decided, not yet carried out.** Nothing below has been installed or written; the page records
+the choice and what it commits me to.
 
 ## What I wanted
 
@@ -44,11 +47,11 @@ The ladder is an instruction, so it belongs where my instructions already live. 
 prompt ranks user instructions above its own defaults. A rule written there is stronger than one
 patched into the bundle, not weaker.
 
-The commands are not prose and cannot go there, so the plugin stays installed with its injection
+The commands are not prose and cannot go there, so the plugin goes in with its injection
 off. Its `config` hook still registers the commands and its skills directory; the hook that
 appends to the system prompt reads the mode and returns.
 
-## What I built
+## What I will build
 
 | Half | Where | Why there |
 | --- | --- | --- |
@@ -59,10 +62,11 @@ This is the same split I made for [caveman](../tools/caveman_brussee.md), and fo
 the always-on part of a skill collides with the block already in that file, whilst the tooling
 does not.
 
-## What I gave up, and would reconsider
+## What I am leaving out, and would reconsider
 
-**The first and sixth rungs are not adopted.** I left out the YAGNI framing, which I already
-have, and the one-line rung, which is where the tension with test and error-handling work sits.
+**The first and sixth rungs are not adopted.** I am leaving out the YAGNI framing, which I
+already have, and the one-line rung, which is where the tension with test and error-handling work
+sits.
 
 **I have not measured whether the ladder changes anything.** Its author's own benchmark says the
 gain is near zero on code that is already minimal, and my prompt already pushes that way. A month
