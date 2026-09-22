@@ -1,6 +1,6 @@
 ---
 type: Decision
-title: Teaching my agents to write like me
+title: Teaching my agents to write better
 description: How the three prose principles became a commit hook, a portable skill and an always-on digest,
   and why each copy lives where it does.
 tags:
@@ -24,18 +24,12 @@ decision is what made them arrive on their own.
 
 ## What I wanted
 
-**Agents write in my voice everywhere, and I maintain the rules once.**
+**Agents write in an acceptable voice everywhere, and I maintain the rules once.**
 
 Everywhere means more than this repository. It means a chat reply, a commit
 message, an email, and a project that has nothing to do with knowledge
 management. The rules had reached only the bundles, and only when something
 thought to read the conventions page.
-
-Once means what it says. Before this, the pace rules existed twice, as
-[the principle page](../principles/hand_the_reader_one_idea_at_a_time.md) and as a
-copy inlined in my harness configuration, and the observation that warmth is the
-cheapest register to fake existed twice more, copied into conventions pages with
-no definitional home at all.
 
 ## What I care about
 
@@ -67,7 +61,7 @@ contradiction rather than passing quietly, because each layer names where its
 authority sits.
 
 I considered [Vale](https://vale.sh) first, and its `vale-ai-tells` package, which
-is 111 rules for exactly these tells. I did not take it. Vale is a Go binary whose
+is 111 rules for exactly these tells. I did not take it yet, as it's a Go binary whose
 rule packages are fetched over the network, and this repository already runs
 `check_markdown_style.py` as a dependency-free
 [PEP 723 script](../principles/use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md)
@@ -92,33 +86,3 @@ Y* construction, and more than one exclamation mark in a page. Text inside code
 fences, inline code, link targets and quotation marks is exempt, with the
 open-quote state carried between lines, which is what lets the voice page print
 its own table of slop without tripping the hook that enforces it.
-
-**I calibrated the word list against this bundle before shipping it, and three
-rules did not survive.** American spellings would have failed on the `Authorization`
-header, the `kb-visualize` command and the page title
-[Categorize by what content is, not why you made it](../knowledge_management/categorize_by_what_content_is_not_why_you_made_it.md),
-whose rename cascades through every link to it. Requiring "whilst" would have failed
-on the 17 uses of "while" already here, against 25 of "whilst". Forbidding `simply`
-anywhere but at the start of a sentence would have failed on eight legitimate uses,
-including a values page observing that the proprietary tool is sometimes better.
-A hook that fires on everything guards nothing, so all three stayed convention.
-
-## What I gave up, and would reconsider
-
-**The judgement half is not enforced, and cannot be.** Whether a paragraph carries
-one idea or three is the rule I break most, and no regex decides it. The hook says
-so in its own docstring rather than implying a coverage it does not have.
-
-**British English, the Oxford comma and "whilst" are convention only**, for the
-calibration reasons above. Renaming that one page title would let the American
-spelling check in, and it may be worth it later.
-
-**The digest is a third copy**, and the layer most likely to drift, because it is
-the one I will edit in a hurry. The mitigation is that it carries no reasoning, so
-a drift is visible as a flat contradiction rather than as two arguments that no
-longer agree.
-
-**This covers only the bundles that want it.** A repository with its own house
-style keeps it, and both the skill and the digest say that a repository naming a
-style guide in its conventions wins over mine. The failure mode there is that my
-style is absent rather than that the two fight, which is the right way round.

@@ -82,4 +82,4 @@ A rule a person can break needs one, or it is decoration. Earned building the
 prose style this bundle runs on, where the same three principles now exist as
 pages, a hook, a skill and a digest, and each copy reaches somebody the other
 three miss. The episode is
-[Teaching my agents to write like me](../decisions/teaching_my_agents_to_write_like_me.md).
+[Teaching my agents to write like me](../decisions/teaching_my_agents_to_write_better.md).
