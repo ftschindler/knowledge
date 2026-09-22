@@ -13,6 +13,9 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-09-21T00:00:00Z'
+verified:
+  by: human:felix_schindler
+  at: '2026-09-22T10:12:20Z'
 ---
 **Claim.** Where a rule lives is decided by its audience, not by its subject. A
 human contributor only ever meets a page or a failing commit, because nobody
@@ -42,7 +45,7 @@ the opposite on both counts.
 **The rule.**
 
 1. **Name who must obey, before deciding where it goes.** If the answer includes
-   a person, a page or a hook is required, and no amount of instruction covers
+   a person: a page or a hook is required, and no amount of instruction covers
    it.
 2. **Put the reasoning in exactly one layer**, the one that argues. Every other
    copy carries imperatives and a link back.
