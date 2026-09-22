@@ -2,6 +2,9 @@
 
 ## 2026-09-22
 
+- add a blog beside the bundle, as the one surface addressed to a reader who does not already have the thread: posts carry a date, what changed and the links out, and no reasoning, since the concepts hold that
+- generalise the publish hook from `about/` to any sibling of the bundle, and widen its link rewriting to any depth, so a post two directories down resolves into the bundle the same way an about page one directory down does
+- record the one wart: Material's blog plugin stats `docs/blog/index.md` rather than reading the file list, and writes a stub when it finds nothing, so the hook mirrors the real entrypoint there and the mirror is gitignored
 - record the decision to adopt ponytail as two halves: the middle rungs of its ladder into my harness AGENTS.md as instruction, the review, audit and debt commands from the plugin with its injection switched off
 - name why patching the agent plugin was never an option: it resolves as a floating tag into a cache directory as a bundled artefact, so an edit survives until the tag moves and then disappears without failing
 - note the same split was already made for caveman, which is what made it obvious: the always-on part of a skill collides with the block in that file, whilst the tooling does not
