@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: caveman (Julius Brussee)
-description: An MIT skill that compresses agent replies by cutting filler and tool-call narration,
+description: An MIT-licensed skill that compresses agent replies by cutting filler and tool-call narration,
   and the four commercial token-reduction layers sold alongside it.
 tags:
 - tools
@@ -39,7 +39,7 @@ free layer of a commercial stack[^caveman-site].
 
 ## What is actually being offered
 
-Five layers share the name, and only the first is prose. The skill is MIT and local. The proxy
+Five layers share the name, and only the first is prose. The skill is MIT-licensed and local. The proxy
 and middleware below it compress context on its way to a provider and keep the original for
 recovery. The platform and enterprise layers above are a gateway with caching, routing and a
 signed savings ledger, both still in development.
