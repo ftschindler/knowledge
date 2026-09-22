@@ -6,6 +6,8 @@
 - generalise the publish hook from `about/` to any sibling of the bundle, rename it to `publish_siblings.py`, and widen its link rewriting to any depth
 - have that hook write the blog's entrypoint into the bundle directory as a gitignored build artefact, since the blog plugin cannot bootstrap its own in this layout
 - turn off the backlinks section on `blog/`, and exclude the entrypoint from the git revision date plugin
+- render a page's status into the genre note it already opens with, rather than as a second block: the note turns amber for draft and red for deprecated and leads with the status word
+- let a directory say what draft means for its genre, under `status_notes`, since in `decisions/` it means decided and not yet carried out rather than unfinished
 - write a decision on adopting ponytail as two halves, the ladder as instruction and the commands as tooling, and leave it at draft status until it is carried out
 
 ## 2026-09-21

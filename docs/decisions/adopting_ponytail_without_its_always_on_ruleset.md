@@ -20,9 +20,6 @@ reuse what exists before writing anything. I run [opencode](../tools/opencode.md
 `oh-my-openagent` plugin, whose own prompt already argues for small changes. This is how I mean
 to take the half that adds something.
 
-**Decided, not yet carried out.** Nothing below has been installed or written; the page records
-the choice and what it commits me to.
-
 ## What I wanted
 
 **The agent checks this codebase, the standard library and what is already installed, in that

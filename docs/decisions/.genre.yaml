@@ -9,3 +9,9 @@ word: decision
 note: |-
   What I chose, given my values, wishes and principles, and the reasoning
   that got me there. A decision here is one I still stand behind.
+# What `draft` means here, which is not what it means elsewhere in the bundle:
+# not an unfinished page, but a choice whose consequence has not happened yet.
+status_notes:
+  draft: |-
+    Decided, not yet carried out. The choice is made and the reasoning is settled;
+    nothing described here exists yet.

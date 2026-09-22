@@ -6,6 +6,16 @@ the middle of the bundle where nothing else says which genre they are reading.
 The note is identical for every page in a directory, so it is declared once, in
 that directory's `.genre.yaml`, and rendered here.
 
+A page whose `status` is not stable says so in that same note, which changes
+colour and leads with the status word rather than adding a second block above the
+body. The card at the foot of the rail already carries the status, but a reader
+landing mid-page from search never looks there.
+
+What `draft` means differs by genre: an unfinished page in most directories, a
+decision not yet carried out in `decisions/`. So the wording is the directory's
+to override, under `status_notes`, and there is a default for the genres that do
+not.
+
 The declaration is also what `type` is checked against, by the `genre-conformance`
 pre-commit hook, so the directory, the note and the frontmatter cannot disagree.
 """
@@ -17,6 +27,15 @@ from pathlib import Path
 import yaml
 
 GENRE_FILE = ".genre.yaml"
+STATUS_ADMONITIONS = {
+    "draft": ("warning", "Draft"),
+    "deprecated": ("danger", "Deprecated"),
+}
+STABLE_ADMONITION = "note"
+DEFAULT_STATUS_NOTES = {
+    "draft": "Unfinished. It is here because the gap is worth showing, not because it is ready to be read as settled.",
+    "deprecated": "Superseded, and kept for the record rather than to be followed.",
+}
 NOT_CONCEPTS = frozenset({"about", "stylesheets"})
 RESERVED = frozenset({"index.md", "log.md"})
 
@@ -40,12 +59,27 @@ def genre_of(src_uri: str, docs_dir: str) -> dict | None:
     return _declarations[directory]
 
 
+def note_for(genre: dict, status: object) -> str:
+    """Build the one note a concept opens with, coloured by its status."""
+    genre_phrase = f"This is {genre['article']} [{genre['word']}](index.md)"
+    body = genre["note"].strip()
+
+    if status in STATUS_ADMONITIONS:
+        kind, word = STATUS_ADMONITIONS[status]
+        title = f"{word} - {genre_phrase[0].lower()}{genre_phrase[1:]}"
+        declared = genre.get("status_notes") or {}
+        body = f"{declared.get(status) or DEFAULT_STATUS_NOTES[status]}\n\n{body}"
+    else:
+        kind, title = STABLE_ADMONITION, genre_phrase
+
+    indented = "\n".join(f"    {line}" for line in body.strip().splitlines())
+    return f'!!! {kind} "{title}"\n{indented}\n\n'
+
+
 def on_page_markdown(markdown, page, config, files):
     genre = genre_of(page.file.src_uri, config.docs_dir)
     if genre is None:
         return markdown
 
     page.meta["genre"] = genre
-    note = "\n".join(f"    {line}" for line in genre["note"].strip().splitlines())
-    title = f"This is {genre['article']} [{genre['word']}](index.md)"
-    return f'!!! note "{title}"\n{note}\n\n{markdown}'
+    return note_for(genre, page.meta.get("status")) + markdown
