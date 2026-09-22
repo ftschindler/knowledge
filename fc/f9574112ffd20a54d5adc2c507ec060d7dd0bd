@@ -1,0 +1,23 @@
+docs/decisions/index.md
+  s_a5ba5545535175::t_6829b87bec83f8 14
+docs/log.md
+  s_a5ba5545535175::t_e80d0c30944990 3-8
+docs/decisions/adopting_ponytail_without_its_always_on_ruleset.md
+  s_a5ba5545535175::t_7e5972fb7c134c 1-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "fcf9574112ffd20a54d5adc2c507ec060d7dd0bd",
+  "prompts": {},
+  "sessions": {
+    "s_a5ba5545535175": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a77e268ffeZt93xzXGjUSpNX",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
