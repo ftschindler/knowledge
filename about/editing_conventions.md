@@ -15,7 +15,7 @@ bundle, so every Markdown file in it is a *concept* and carries frontmatter acco
 | --- | --- | --- |
 | `docs/` | The bundle. Concepts, one per idea | Yes |
 | `about/` | Pages describing the site rather than carrying knowledge, like this one | Yes |
-| `raw/` | Sources the knowledge is distilled from, never edited | No |
+| `blog/` | Blog entries about the site, rather than carrying knowledge | Yes |
 
 The bundle root holds concepts and nothing else. A page that describes the site cannot live
 there, because the format admits no exceptions: every non-reserved Markdown file under
@@ -53,7 +53,7 @@ the author about their own work.
 
 ### What the reader sees of it
 
-Frontmatter is not a filing cabinet the site ignores. Every field above reaches the page,
+Every field above reaches the page,
 most of them through the metadata card at the foot of the table-of-contents column, which
 [the tech stack](tech_stack.md#theme-overrides) describes:
 
@@ -96,18 +96,15 @@ the same sentence twice, and reads worse in both places.
 to the log, find today's heading or create one at the top; do not append at the bottom.
 
 **A log entry records what changed, never why.** Added, moved, renamed, dropped, and the page
-it happened to. The reasoning belongs to the concept the change produced, and a log line that
-carries it stores the argument in a second place, where it cannot be edited when the argument
-moves on. Entries written before this rule are left as they are, since the log is append-only.
+it happened to. The reasoning belongs to the concept the change produced, and never in the log.
+Do not look at other log entries, they might not comply.
 
 **Log entries name a concept in plain text and never link to one.** The log is append-only:
 an entry stays true after its subject is renamed, moved or deleted, whilst a link does not,
-and there is no good way to react to that. Rewriting the entry falsifies the record, deleting
-it loses the history, and leaving it dangling breaks the site build from a line nobody is
-editing. This is the one place in the bundle where a link is wrong; `index.md`, which
-describes the present rather than the past, must link and must resolve.
+and there is no good way to react to that. This is the one place in the bundle where a link is wrong;
+`index.md` on the other hand, which describes the present rather than the past, must link and must resolve.
 
-**A concept never links into `about/`.** The bundle has to make sense on its own, so it may
+**A concept never links into `about/` or `blog/`.** The bundle has to make sense on its own, so it may
 not depend on the pages that describe the site around it. Links run the other way.
 
 ## Directory indexes
@@ -152,8 +149,8 @@ the two can drift.
 
 ### Every concept opens with its genre, and nobody writes it
 
-The first thing in the body of a rendered concept is a note naming what kind of page this is
-and linking to the index that defines the kind:
+The first thing in the body of a rendered concept (not in the sources) is a note naming
+what kind of page this is and linking to the index that defines the kind:
 
 ```markdown
 !!! note "This is an [exploration](index.md)"
@@ -174,23 +171,7 @@ note: |
 ```
 
 One directory holds one genre. The declaration also fixes the `type` every concept in the
-directory must carry,
-which the `genre-conformance` hook enforces, so the frontmatter federation tooling reads and
-the note the reader sees cannot disagree. A page still carrying a written-out note is
-rejected by the same hook.
-
-The note exists because a reader rarely arrives through the index. The index defines the
-genres and orders the sections by how the ideas build, but a link from search, from another
-site or from an agent lands in the middle of the bundle, where the only marker of genre would
-otherwise be the frontmatter `type`. A decision and an exploration read alike until you know
-that one is current and the other is history, and that difference changes what the page is
-*for*.
-
-The consequence of generating it is that the note is a fact of the *site*, not of the file:
-GitHub, Obsidian and an agent reading the raw Markdown see `type` and the directory, and not
-the sentence. That is the trade, and it is the right way round, because `type` and the
-directory are what those readers can act on, whilst the sentence is what a browser reader
-needs.
+directory must carry, which is all enforced by the `genre-conformance` hook.
 
 Write the declaration in the voice of the directory's index, whose opening it should match.
 
@@ -238,7 +219,7 @@ in `generated`, and rendered on the page; a pronoun is not attribution, and does
 carry any. Write "the local copy defaults to `lite`", or "Felix's `AGENTS.md`", rather than a
 first person that leaves the reader to work out whose it is.
 
-This bundle is `referenceable_by "*"`, so its
+This bundle is public and published, so its
 concepts are quoted into other bundles and landed on from search, and a sentence whose subject
 is a pronoun with no antecedent degrades the moment it travels. A name survives the trip, and
 links to [the person](../docs/people/felix_schindler.md) it refers to.
@@ -251,8 +232,7 @@ Two things keep the third person from reading like a profile of a stranger:
 - **Name once, then let the artefact take over.** The possessive carries most of it, and a page
   that repeats a name nine times reads worse than one that never used it.
 
-Avoid the passive as the way out. It hides the actor without replacing them, which is the
-failure this convention exists to prevent.
+Avoid the passive as the way out: it hides the actor without replacing them.
 
 ### When the first person is licensed
 
@@ -266,10 +246,6 @@ depend on who hit it.
 Both conditions hold together: **an agent never writes "I", whatever the genre, and no page
 outside those genres uses it, whoever wrote it.** `generated.by` is what a reader checks the
 pronoun against, so the two must agree.
-
-Rarity is what makes it work. Where every sentence is first person the pronoun carries no
-information; where it appears on one page in ten it says something specific, which is that a
-person wrote this from their own experience rather than being described.
 
 An agent editing a page it did not write **may extend it, but never in the first person, and
 never by putting words in anyone's mouth.** Artefact-centred sentences sit perfectly well beside
@@ -293,14 +269,6 @@ inviting to imitate, so a page with nothing much to report acquires the sections
 than the ones it needs. A concept is as long as its content, and a short one next to a long
 neighbour is the bundle working: the genre is a shape, not a quota. A heading with nothing
 underneath it that had to be found is the sign this went wrong.
-
-It matters most for whoever has read least. An agent that opens `fkb.yaml`, the index and
-nothing else has seen the bundle's *schema* and none of its *voice*, and will supply its own.
-That is what the `conventions:` pointer in `fkb.yaml` is for - it names this page, so the file
-that carries the schema also carries the way back to the voice - but a pointer only gets the
-page opened, and it is the reading that does the work. That is also why the indexes are
-written in full house voice rather than as terse catalogues: they are read first, so they set
-the register for whatever gets written next.
 
 When writing several pages in one session, re-read from the bundle rather than from what you
 just wrote. Otherwise the reference drifts to your own last page, and a long session ends
