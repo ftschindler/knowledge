@@ -50,6 +50,12 @@ plugins:
 - excalidraw
 - git-revision-date-localized:
     enable_creation_date: true
+    # The blog entrypoint MkDocs sees is the gitignored mirror that
+    # hooks/publish_siblings.py writes into the bundle directory, so it has no
+    # history to read and warns on every build, which fails --strict. The page
+    # it renders is blog/index.md, which is committed.
+    exclude:
+    - blog/index.md
 - glightbox
 markdown_extensions:
 - admonition
