@@ -84,28 +84,5 @@ Installing the skill by hand is a copy of one file, because a skill is discovere
 `SKILL.md` rather than declared, the same property
 [the skills installer](skills_vercel_labs.md) is built on.
 
-## What I took
-
-I copied the file into my own skills directory rather than running the installer, and changed
-three things. The default level is `lite` rather than `full`, so asking for it gets tight prose
-instead of dropped articles. Article-dropping moved out of the baseline rules into `full` and
-above, where upstream applies it at every level including the one whose description promises
-full sentences. The classical Chinese levels are gone.
-
-The always-on part went into my `AGENTS.md` by hand, as three rules: fire tools without
-narrating them, skip the opening acknowledgement, do not recap what was just said. Running
-`--with-init` would have appended a second style block beside the one already there, and the two
-disagree about register.
-
-That disagreement is the thing to decide before installing. This bundle's voice is
-[calm and settled](../principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
-and [paced one idea at a time](../principles/hand_the_reader_one_idea_at_a_time.md); caveman at
-`full` is neither, because it is optimising for a different quantity. The overlap is real but
-partial: both want the filler gone, and only one of them wants the grammar gone with it.
-
-## On the headline number
-
-The site's claim is 65% fewer output tokens, measured across ten prompts, with code, commands
-and errors byte-for-byte exact. It is an output-token measurement and says nothing about
-whether the shorter answers were easier to read, which is the axis that matters if the bill is
-not what you are trying to reduce.
+What I took of it, and what I left, is
+[Adopting caveman at lite, without its init block](../decisions/adopting_caveman_at_lite_without_its_init_block.md).

@@ -62,18 +62,3 @@ by hand rather than by the installer.
 
 Installing by hand is a copy of one file, because a skill is discovered by its `SKILL.md` rather
 than declared.
-
-## What I gave up, and would reconsider
-
-**The statusline hooks, which only the installer writes.** For Claude Code they track the active
-level and render it, and that is the only place the level survives being pushed out of context.
-Copying one file means the level is whatever the skill was last told, and nothing shows me which.
-
-**Whether the register question is settled.** The overlap between caveman and this bundle's
-voice is real but partial: both want the filler gone, and only one of them wants the grammar
-gone with it. At `lite` that collision does not arise, which is the reason `lite` is the
-default rather than a considered view that `full` is wrong.
-
-This is the same split as
-[Adopting ponytail without its always-on ruleset](adopting_ponytail_without_its_always_on_ruleset.md),
-made first and for the same reason.
