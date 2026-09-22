@@ -1,8 +1,7 @@
 ---
 type: Decision
 title: Adopting ponytail without its always-on ruleset
-description: Why ponytail's ladder went into my harness AGENTS.md whilst its plugin runs with the injection
-  switched off, and why patching the agent plugin was never an option.
+description: Why ponytail's ladder should go into my harness AGENTS.md whilst its plugin runs with the injection switched off.
 tags:
 - decision
 - agents
@@ -13,7 +12,7 @@ tags:
 status: draft
 generated:
   by: opencode/claude-opus-5
-  at: '2026-09-22T00:00:00Z'
+  at: 2026-09-22T00:00:00Z
 ---
 [ponytail](../tools/ponytail_gebert.md) is a ruleset and a set of commands that push an agent to
 reuse what exists before writing anything. I run [opencode](../tools/opencode.md) with the
@@ -22,10 +21,9 @@ to take the half that adds something.
 
 ## What I wanted
 
-**The agent checks this codebase, the standard library and what is already installed, in that
-order, before it writes a line.**
+**An agent that actually behaves like a senior developer.**
 
-That ordering is ponytail's contribution. My existing prompt asks for the smallest correct
+That is basically ponytail's promise. My existing prompt asks for the smallest correct
 change and leaves the agent to decide what small means, which is a different instruction.
 
 ## What I care about
