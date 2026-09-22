@@ -1,0 +1,23 @@
+.github/workflows/merge-back.yml
+  s_1b594390f711d6::t_374c13b24ca2d3 1-26,30-35
+  s_1b594390f711d6::t_3b76f16f79eff6 27-29
+.github/workflows/governance.yml
+  s_1b594390f711d6::t_3207bafdf4082c 10-13
+  s_1b594390f711d6::t_ccb9b967040dc8 110-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "0cedfcfee10b5e4bddf74930a379716b595abe6e",
+  "prompts": {},
+  "sessions": {
+    "s_1b594390f711d6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f353e9fb6ffefzJi0s4H2S0QGv",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
