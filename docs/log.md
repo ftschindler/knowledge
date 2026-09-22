@@ -2,6 +2,7 @@
 
 ## 2026-09-21
 
+- add "Concreteness is expensive to fake, warmth is free" to principles
 - add the prose-tells hook and its script, and record it in the editing conventions
 - drop the duplicated concrete-behaviour sentence from the editing conventions
 - state in the editing conventions that a log entry records what changed and never why
