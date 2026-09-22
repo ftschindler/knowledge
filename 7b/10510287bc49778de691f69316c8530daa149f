@@ -1,0 +1,23 @@
+docs/principles/concreteness_is_expensive_to_fake_warmth_is_free.md
+  s_30f4a2a7e2d52e::t_35efdaa038672b 1-66
+docs/log.md
+  s_30f4a2a7e2d52e::t_de6c0df4b0778c 5
+docs/principles/index.md
+  s_30f4a2a7e2d52e::t_f88916a0e24265 54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "7b10510287bc49778de691f69316c8530daa149f",
+  "prompts": {},
+  "sessions": {
+    "s_30f4a2a7e2d52e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a5a5f5affe1N21BAfzvfaKs1",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
