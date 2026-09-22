@@ -1,0 +1,19 @@
+docs/decisions/adopting_ponytail_without_its_always_on_ruleset.md
+  s_a5ba5545535175::t_c3085c7c7c3e7c 20-24,50,54,65,67-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "eacff7db51cdb0786ff3072207bea3dae2416b5d",
+  "prompts": {},
+  "sessions": {
+    "s_a5ba5545535175": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a77e268ffeZt93xzXGjUSpNX",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
