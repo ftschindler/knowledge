@@ -1,5 +1,11 @@
 # Log
 
+## 2026-09-22
+
+- record the decision to adopt ponytail as two halves: the middle rungs of its ladder into my harness AGENTS.md as instruction, the review, audit and debt commands from the plugin with its injection switched off
+- name why patching the agent plugin was never an option: it resolves as a floating tag into a cache directory as a bundled artefact, so an edit survives until the tag moves and then disappears without failing
+- note the same split was already made for caveman, which is what made it obvious: the always-on part of a skill collides with the block in that file, whilst the tooling does not
+
 ## 2026-09-21
 
 - add "Teaching my agents to write like me" to decisions
