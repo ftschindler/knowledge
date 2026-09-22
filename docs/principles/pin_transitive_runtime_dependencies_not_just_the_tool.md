@@ -36,6 +36,10 @@ entry: bash -c 'npx --yes puppeteer browsers install chrome@148.0.7778.97
 additional_dependencies: ['@umbrelladocs/linkspector@0.5.3', 'puppeteer']
 ```
 
+The runtime here is not incidental: [linkspector](../tools/linkspector.md) resolves a link it
+cannot settle with an HTTP request by loading the page in headless Chrome, so the browser is
+part of what decides the answer.
+
 **How enforced.** Explicit version pins for the runtime alongside the tool, with
 a paired comment. Extends the SHA-pinning family:
 [Pin GitHub Actions to full commit SHAs](pin_github_actions_to_full_commit_shas.md), [Pin pre-commit hooks to frozen revisions](pin_pre_commit_hooks_to_frozen_revisions.md).

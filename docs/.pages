@@ -4,6 +4,9 @@
 # injects reach the navigation at all. Without it they are silently dropped.
 nav:
 - index.md
+# Not a section of the bundle: the human-facing surface, kept near the top for a
+# reader who arrives without the thread.
+- blog
 - people
 - values
 - wishes
@@ -11,6 +14,7 @@ nav:
 - decisions
 - explorations
 - blueprints
+- guides
 - knowledge_management
 - research
 - tools

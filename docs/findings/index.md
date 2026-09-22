@@ -1,11 +1,11 @@
 # Findings
 
-Things that cost time once. Each records the symptom, what it turned out to be, and how to get
-past it, so the next encounter is short.
+Something I found or learned, or a discovery that cost time once already.
+Each records the symptom, what it turned out to be, and how to get past it (if applicable), so the next encounter is short.
 
 A finding is the cheapest page here to write, and deliberately so: it does not have to be
-general, it does not have to connect to anything, and it only has to be true and to have cost
-someone an afternoon. See
+general, it does not have to connect to anything, and it only has to be true and worth not
+rediscovering. See
 [Give a knowledge base a tier that is not asked to earn its place](../knowledge_management/give_a_knowledge_base_a_tier_that_is_not_asked_to_earn_its_place.md)
 for why that tier is the one that fills, and what happens when a finding turns out to carry a
 reusable claim.
@@ -22,6 +22,11 @@ And the subject lives in the tags rather than in a directory, per
 
 ### September
 
+- 2026-09-21: [neo-tree's hide_hidden does not show dotfiles on Linux](20260921_neo_tree_hide_hidden_does_not_show_dotfiles_on_linux.md) - an option that is Windows-only, in the wrong place, and rejected by nothing
+- 2026-09-18: [A GitHub token does not authenticate requests to github.com web pages](20260918_a_github_token_does_not_authenticate_github_com_web_pages.md) - a credential the website ignores, and a 404 that cannot be told apart from a deleted repository
+- 2026-09-18: [linkspector ignores the httpHeaders in its config](20260918_linkspector_ignores_the_httpheaders_in_its_config.md) - a credential that passes validation, is dropped by both checking passes, and leaves a live link reported as broken
+- 2026-09-18: [opencode merges a profile over the base config rather than replacing it](20260918_opencode_merges_a_profile_over_the_base_config_rather_than_replacing_it.md) - the marker key that settled it, and the duplicated setting that argues for the wrong answer
+- 2026-09-16: [nanobench reports no Big-O estimate, or one fitted across unrelated runs](20260916_nanobench_reports_no_bigo_estimate_or_one_fitted_across_unrelated_runs.md) - a scaling sweep that collects its data and then throws it away, and a fit that spans benchmarks measuring different things
 - 2026-09-11: [Dependabot declines transitive security updates in uv.lock](20260911_dependabot_declines_transitive_security_updates_in_uv_lock.md) - an error naming a version conflict that does not exist, and the two settings that actually caused it
 
 ### August

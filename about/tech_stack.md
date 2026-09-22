@@ -37,12 +37,17 @@ This site is a git-backed static site built from Markdown files and
 
 ## Build hooks
 
-Three hooks reconcile the bundle with the site, none of them changing anything on disk.
+Three hooks reconcile the bundle with the site, and one of them writes a single build
+artefact, noted below.
 
-- **`hooks/publish_about.py`** publishes `about/`, which sits outside the MkDocs source
-  directory; gives the site its landing page; moves the bundle's own index to `/index/` so
-  that page can take the root; and rewrites links from `about/` into the bundle, so a single
-  spelling resolves both in an editor and on the rendered site.
+- **`hooks/publish_siblings.py`** publishes `about/` and `blog/`, which sit outside the MkDocs
+  source directory; gives the site its landing page; moves the bundle's own index to `/index/`
+  so that page can take the root; and rewrites links from a sibling into the bundle, so a
+  single spelling resolves both in an editor and on the rendered site. It also writes the
+  blog's entrypoint to `docs/blog/index.md`, which is the one thing here that touches the
+  bundle directory: Material's blog plugin needs that page to hang its post list on and cannot
+  create it in this layout. The file is a gitignored stub with no body, so the blog opens on
+  its posts rather than on an introduction.
 - **`hooks/concept_genre.py`** renders each concept's genre note from the `.genre.yaml` its
   directory declares, so the sentence saying what kind of page this is exists once per genre
   rather than once per page.

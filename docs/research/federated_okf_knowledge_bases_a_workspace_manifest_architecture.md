@@ -138,7 +138,7 @@ only concerns a single bundle cannot handle for itself:
 
 !!! warning "Layering this over a second set of skills does not work"
     An earlier version of this architecture wrapped the single-bundle `kb-*` skills
-    from [agent-knowledge](../tools/agent_knowledge.md), with each federated skill
+    from [agent-knowledge](../tools/agent_knowledge_stjbrown.md), with each federated skill
     invoking its single-bundle counterpart per bundle and delegating every write to
     it. The attraction was obvious: nothing reimplemented, upstream improvements for
     free.

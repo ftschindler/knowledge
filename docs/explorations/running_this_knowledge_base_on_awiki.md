@@ -48,7 +48,7 @@ three layers (immutable raw sources, an LLM-owned wiki, and a schema file such
 as `AGENTS.md`) and its operations (ingest, query, lint including orphan
 detection) are the shape I set out to follow.
 
-The tool was [agent-wiki (awiki)](../tools/agent_wiki.md),
+The tool was [agent-wiki (TacoTakumi)](../tools/agent_wiki_tacotakumi.md),
 which implements that concept directly. I ran it as a **multi-vault** setup: a
 `public` vault (the ancestor of this bundle), a private sink for captured agent
 conversations, and internal vaults for work, all reached through one CLI with a

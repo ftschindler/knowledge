@@ -1,7 +1,7 @@
 # Principles
 
-Reusable technical claims, each one a thing I would want true in any repository I work in. Start
-here if you are setting up a project and want the settled answers.
+Reusable technical claims, each one a thing I would want true in any of my work (if applicable).
+Start here if you are setting up a project and want the settled answers.
 
 Listed roughly in the order they build on each other rather than alphabetically, starting from the
 most general.
@@ -31,6 +31,7 @@ most general.
 - [A test that cannot run must fail loudly, never skip into a green result](a_test_that_cannot_run_must_fail_loudly_never_skip_into_a_green_result.md) - the difference between a check that passed and a check that never ran
 - [A sandbox test must use the live working-tree source and rebuild fresh each run](a_sandbox_test_must_use_the_live_working_tree_source_and_rebuild_fresh_each_run.md) - how a sandbox test starts testing a stale copy of itself
 - [End-to-end test an LLM skill by driving a real agent in a disposable fake HOME](end_to_end_test_an_llm_skill_by_driving_a_real_agent_in_a_disposable_fake_home.md) - testing a markdown procedure by running an agent against it, not by grepping it
+- [A microbenchmark body must not mutate state that outlives one iteration](a_microbenchmark_body_must_not_mutate_state_that_outlives_one_iteration.md) - what the harness measures once it is running your setup's leftovers instead of your input
 - [Enforce LF line endings everywhere](enforce_lf_line_endings_everywhere.md) - declaring line endings in more than one place, because one is not believed
 - [Declare formatting once, editor-agnostically, via .editorconfig](declare_formatting_once_editor_agnostically_via_editorconfig.md) - the one formatting declaration every editor already reads
 - [Keep filenames lowercase with no whitespace](keep_filenames_lowercase_with_no_whitespace.md) - a portability constraint worth a guard, where it applies
@@ -44,9 +45,11 @@ most general.
 - [Resolve a repo's own dev tools through an ephemeral runner, not a project virtualenv](resolve_a_repos_own_dev_tools_through_an_ephemeral_runner_not_a_project_virtualenv.md) - why a git hook must not depend on a virtualenv being active
 - [Use PEP 723 inline script metadata for zero-install tooling scripts](use_pep_723_inline_script_metadata_for_zero_install_tooling_scripts.md) - a standalone script that carries its own dependencies
 - [A declared-but-inert config documents intent, not enforcement](a_declared_but_inert_config_documents_intent_not_enforcement.md) - keeping a rule that fires on nothing, without believing it protects you
+- [Test a config layering assumption with a marker key](test_a_config_layering_assumption_with_a_marker_key.md) - the one-line experiment that says whether layers merge or replace, before you copy a setting into all of them
 - [Enforce the intersection of all renderers and consumers](enforce_the_intersection_of_all_renderers_and_consumers.md) - writing for the least capable tool that will read it
 - [Structure docs as the reader's task path - lead with action, defer rationale](structure_docs_as_the_readers_task_path_lead_with_action_defer_rationale.md) - organising a guide around what the reader does next
 - [Hand the reader one idea at a time](hand_the_reader_one_idea_at_a_time.md) - why honest, jargon-free prose can still be exhausting to read
 - [Name the concrete behaviour, not its abstract label](name_the_concrete_behaviour_not_its_abstract_label.md) - the re-read a category name causes where a behaviour would not
 - [Write in a calm, quantified, settled-fact voice - not a promotional one](write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) - the voice these pages are written in, and its tells on both sides
 - [Give every cross-cutting concept one definitional home](give_every_cross_cutting_concept_one_definitional_home.md) - single source of truth, applied to prose instead of code
+- [Route a rule to the layer that reaches whoever must obey it](route_a_rule_to_the_layer_that_reaches_whoever_must_obey_it.md) - a page, a hook, a skill or an always-on instruction, chosen by who has to obey

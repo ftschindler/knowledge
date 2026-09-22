@@ -78,6 +78,11 @@ repos:
     entry: uv run --script .scripts/check_markdown_style.py
     language: system
     files: '\.md$'
+  - id: prose-tells
+    name: Forbid the prose tells of default LLM register
+    entry: uv run --script .scripts/check_prose_tells.py
+    language: system
+    files: '\.md$'
   - id: genre-conformance
     name: Check each concept against its directory's declared genre
     entry: uv run --script .scripts/check_genre.py
@@ -125,7 +130,7 @@ repos:
 # use here; pinning it by revision is what keeps this bundle standalone without
 # carrying a copy that could drift.
 - repo: https://github.com/ftschindler/federated-knowledge-skills
-  rev: d84b1049c71dddda0a7cfd0c00f160b9017aece0
+  rev: 4d8ff526cbcb0ecc5872f838a0437e9e2c8e2f69
   hooks:
   - id: okf-concepts
     args: [--bundle-root, docs, --floor, docs/fkb.yaml]

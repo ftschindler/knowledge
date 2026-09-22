@@ -17,3 +17,7 @@ site/
 # OpenCode runtime files
 .omo/
 .playwright-mcp
+
+# Build artefact: the blog entrypoint mirrored where the blog plugin stats for
+# it; the source of truth is blog/index.md. See hooks/publish_siblings.py.
+docs/blog/

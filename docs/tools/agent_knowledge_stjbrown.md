@@ -1,6 +1,6 @@
 ---
 type: Tool
-title: agent-knowledge (kb skills)
+title: agent-knowledge (stjbrown)
 description: A portable set of agent skills for building and maintaining OKF knowledge bundles in plain
   Markdown, whose own knowledge bundle is an upstream source here.
 tags:
@@ -55,7 +55,7 @@ semantic drift audit, and **`kb-visualize`** to render the bundle as a graph.
 There is no runtime and no database. The skills are prose an agent reads, backed by two
 deterministic scripts where determinism actually matters (conformance and the graph). That is
 the design property that distinguishes it from
-[agent-wiki](agent_wiki.md), which puts a CLI between the author and every write.
+[agent-wiki](agent_wiki_tacotakumi.md), which puts a CLI between the author and every write.
 
 Two commitments do most of the work. **A real, open format**, so a bundle is portable rather
 than a tool-specific store. And an **explicit trust model**: accumulated claims are append-only
@@ -80,7 +80,7 @@ its own concept descriptions rather than copying them, which is what a generator
 is a conformant OKF bundle[^ak-bundle] of about 60 concepts *about* OKF and the LLM wiki pattern, covering
 the specification section by section, the operations, and a survey of the ecosystem. It is
 checked out here as a read-only bundle, so pages in this bundle cite it rather than
-re-deriving the pattern. [agent-wiki (awiki)](agent_wiki.md) does exactly that.
+re-deriving the pattern. [agent-wiki (TacoTakumi)](agent_wiki_tacotakumi.md) does exactly that.
 
 **Wrapping its skills was tried and retired.** The first attempt at a federation layer wrapped
 the `kb-*` skills, with a federated skill invoking a single-bundle one per bundle and then

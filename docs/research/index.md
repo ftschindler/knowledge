@@ -1,5 +1,7 @@
 # Research
 
+> This needs to be split into analyses and findings!
+
 Longer investigations, recorded as findings rather than conclusions. Read these when you want
 the evidence a [decision](../decisions/index.md) was made on.
 
@@ -11,3 +13,4 @@ date. Where an investigation deliberately stops short of choosing, it says so.
 - [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md) - how an agent reaches these pages, and how several bundles at different privacy tiers meet
 - [Federated OKF knowledge bases: a workspace-manifest architecture](federated_okf_knowledge_bases_a_workspace_manifest_architecture.md) - the architecture that answered the previous two, and that this bundle is now an instance of
 - [Security Analysis of Agent Wiki (awiki)](security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
+- [skills.sh: repository layout, selective install and telemetry](skills_sh_repository_layout_and_telemetry.md) - where the skills installer looks, how a user takes one skill rather than all, and what it reports back

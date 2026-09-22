@@ -29,23 +29,45 @@ theme:
       icon: material/brightness-4
       name: Switch to light mode
 hooks:
-- hooks/publish_about.py
+- hooks/publish_siblings.py
 - hooks/concept_genre.py
+# A concept's declared sources, rendered as the footnotes its prose cites.
+- hooks/concept_sources.py
 plugins:
 - search
 - awesome-pages
+# Dated posts addressed to a reader, in `blog/` beside the bundle rather than in
+# it; hooks/publish_siblings.py injects them. The plugin discovers posts by path
+# and runs its own `on_files` late (priority -50) so injected files are already
+# in the list, which is what makes the sibling layout work.
+- blog
 # The domain axis: folders carry a page's nature, tags carry its subject, so the
 # tag listing is the only place the bundle can be read by subject. Listings are
 # rendered wherever a page carries the `material/tags` marker; see about/tags.md.
 - tags
 - obsidian-support
-- backlinks_section
+# Backlinks are a property of the bundle: a concept is worth knowing about
+# because other concepts point at it. Nothing in the bundle ever links to a post,
+# by design, so on `blog/` the section is always empty and sits between the page
+# and the post list the blog plugin appends.
+- backlinks_section:
+    ignore_links_to:
+    - blog/**
 - excalidraw
 - git-revision-date-localized:
     enable_creation_date: true
+    # The blog needs an entrypoint page and does not deserve an introduction, so
+    # the blog plugin writes its own `# Blog` stub into the bundle directory.
+    # That stub is gitignored, so it has no history to read and would warn on
+    # every build, which fails --strict.
+    exclude:
+    - blog/index.md
 - glightbox
 markdown_extensions:
 - admonition
+# A concept declares its sources in frontmatter and cites them by id from the
+# prose; hooks/concept_sources.py writes the definitions these render.
+- footnotes
 - pymdownx.details
 - pymdownx.superfences
 - pymdownx.tabbed:

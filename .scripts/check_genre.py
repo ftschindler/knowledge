@@ -29,7 +29,12 @@ BUNDLE_ROOT = Path("docs")
 GENRE_FILE = ".genre.yaml"
 RESERVED = frozenset({"index.md", "log.md"})
 NOT_CONCEPTS = frozenset({"stylesheets"})
-WRITTEN_NOTE = re.compile(r'^!!! note "This is an? \[[^\]]+\]\(index\.md\)"', re.M)
+# Any admonition kind, with or without the status word the hook prefixes when a
+# page is not stable: `!!! note "This is a ..."`, `!!! warning "Draft - this is
+# a ..."`. All of them are the rendered note written out by hand.
+WRITTEN_NOTE = re.compile(
+    r'^!!! \w+ "(?:\w+ - )?[Tt]his is an? \[[^\]]+\]\(index\.md\)"', re.M
+)
 TYPE = re.compile(r"^type:\s*(.+?)\s*$", re.M)
 
 

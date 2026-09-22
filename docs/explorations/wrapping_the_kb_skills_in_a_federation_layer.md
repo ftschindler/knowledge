@@ -19,7 +19,7 @@ generated:
 written yet. What it needs to cover:
 
 - **What I wanted.** A federation layer over
-  [the `kb-*` skills](../tools/agent_knowledge.md) that reimplemented nothing: the upstream
+  [the `kb-*` skills](../tools/agent_knowledge_stjbrown.md) that reimplemented nothing: the upstream
   skills vendored unmodified as the single-bundle mechanic, a thin layer above them owning
   only the manifest-aware concerns. The architecture is
   [Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md),

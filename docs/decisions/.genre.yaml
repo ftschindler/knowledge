@@ -8,4 +8,10 @@ article: a
 word: decision
 note: |-
   What I chose, given my values, wishes and principles, and the reasoning
-  that got me there. A decision here is one I still stand behind.
+  that got me there.
+# What `draft` means here, which is not what it means elsewhere in the bundle:
+# not an unfinished page, but a choice whose consequence has not happened yet.
+status_notes:
+  draft: |-
+    A draft decision means: this is a record of a thought process,
+    but I may not have acted upon it yet!
