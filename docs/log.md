@@ -2,6 +2,7 @@
 
 ## 2026-09-22
 
+- move the "What I took" section off the caveman tool page into a decision, "Adopting caveman at lite, without its init block", and leave the tool page pointing at it
 - add a blog beside the bundle, in `blog/`, with a first post on adding it
 - generalise the publish hook from `about/` to any sibling of the bundle, rename it to `publish_siblings.py`, and widen its link rewriting to any depth
 - have that hook write the blog's entrypoint into the bundle directory as a gitignored build artefact, since the blog plugin cannot bootstrap its own in this layout

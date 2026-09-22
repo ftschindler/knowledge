@@ -34,5 +34,5 @@ than in a table halfway down. Products with a vendor behind them keep their plai
 - [markitdown](markitdown.md) - Microsoft's PDF-and-Office-to-Markdown converter, as a command and as the MCP server an agent calls
 - [linkspector](linkspector.md) - the link checker this bundle commits through, the two passes it resolves every link with, and the schema that refuses to be annotated
 - [skills (Vercel Labs)](skills_vercel_labs.md) - `npx skills add`: the installer that discovers a skill by finding its `SKILL.md`, and the leaderboard it reports installs to
-- [caveman (Julius Brussee)](caveman_brussee.md) - the terseness skill, what survives of it once the token-saving argument is dropped, and where its register collides with this bundle's
+- [caveman (Julius Brussee)](caveman_brussee.md) - the terseness skill, the four commercial layers sold under the same name, and what survives once the token-saving argument is dropped
 - [ponytail (Dietrich Gebert)](ponytail_gebert.md) - the seven-rung ladder an agent climbs before writing code, the benchmark its author retracted, and why I took the review commands and left the ruleset

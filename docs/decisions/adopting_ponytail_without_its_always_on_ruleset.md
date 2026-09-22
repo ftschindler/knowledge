@@ -55,7 +55,8 @@ appends to the system prompt reads the mode and returns.
 | The middle rungs of the ladder | the writing-adjacent section of my harness `AGENTS.md` | reaches every session, survives plugin updates |
 | `/ponytail-review`, `-audit`, `-debt` | the npm plugin, with `PONYTAIL_DEFAULT_MODE=off` | pull-based, so they cost nothing unused |
 
-This is the same split I made for [caveman](../tools/caveman_brussee.md), and for the same reason:
+This is the same split I made for
+[caveman](adopting_caveman_at_lite_without_its_init_block.md), and for the same reason:
 the always-on part of a skill collides with the block already in that file, whilst the tooling
 does not.
 
