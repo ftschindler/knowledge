@@ -349,9 +349,13 @@ client-side, in light or dark mode to match the reader.
 | Every concept reachable from an index | `okf-bundle`, on pull requests |
 | Links resolve | `mkdocs build --strict`, and `linkspector` |
 | Filenames, embeds, diagram format | The hooks named above |
+| The greppable prose tells of LLM register | `prose-tells` |
 | One top-level heading per page | `markdownlint-cli2` |
 
-A rule no hook checks is still a rule. See
+A rule no hook checks is still a rule. `prose-tells` covers only what a regex can decide:
+the hype words, the throat-clearing openers, the future-promise framing and the corpus
+tells. Whether a paragraph carries one idea or three is a judgement, and stays a review
+pass. See
 [the development environment](local_dev_environment.md#pre-commit-hooks) for running these
 locally.
 
