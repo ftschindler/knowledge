@@ -95,6 +95,11 @@ the same sentence twice, and reads worse in both places.
 `log.md` records changes newest first, under a `## YYYY-MM-DD` heading per day. When adding
 to the log, find today's heading or create one at the top; do not append at the bottom.
 
+**A log entry records what changed, never why.** Added, moved, renamed, dropped, and the page
+it happened to. The reasoning belongs to the concept the change produced, and a log line that
+carries it stores the argument in a second place, where it cannot be edited when the argument
+moves on. Entries written before this rule are left as they are, since the log is append-only.
+
 **Log entries name a concept in plain text and never link to one.** The log is append-only:
 an entry stays true after its subject is renamed, moved or deleted, whilst a link does not,
 and there is no good way to react to that. Rewriting the entry falsifies the record, deleting

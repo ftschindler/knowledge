@@ -4,6 +4,7 @@
 
 - add the prose-tells hook and its script, and record it in the editing conventions
 - drop the duplicated concrete-behaviour sentence from the editing conventions
+- state in the editing conventions that a log entry records what changed and never why
 
 - write a tool page on ponytail, the skill that has an agent climb a seven-rung ladder before writing code: the ordering is the whole idea, since reuse sits above writing on it and a generic instruction to keep things small leaves the agent to decide what small means
 - record why I took only its review, audit and debt commands: the ladder's new material is narrower than my own scope rules already cover, and the opencode adapter cannot scope its injection the way the Claude Code and Codex hooks can, so a read-only search agent gets told to write one line
