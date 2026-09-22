@@ -1,0 +1,27 @@
+docs/decisions/adopting_caveman_at_lite_without_its_init_block.md
+  s_bc43e7b483091d::t_add49d5a4ad06c 1-79
+docs/decisions/adopting_ponytail_without_its_always_on_ruleset.md
+  s_bc43e7b483091d::t_7d0cfd7153a662 58-59
+docs/log.md
+  s_bc43e7b483091d::t_e47f9b097837b4 5
+docs/decisions/index.md
+  s_bc43e7b483091d::t_bd793ae5da4542 14
+docs/tools/index.md
+  s_bc43e7b483091d::t_2ace691acd9082 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "51c18778459d55effd8f68b32507e1efbfbcc4d7",
+  "prompts": {},
+  "sessions": {
+    "s_bc43e7b483091d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f37980215ffexpdnoF14JiBkDp",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
