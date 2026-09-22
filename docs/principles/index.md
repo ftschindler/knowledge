@@ -53,3 +53,4 @@ most general.
 - [Write in a calm, quantified, settled-fact voice - not a promotional one](write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) - the voice these pages are written in, and its tells on both sides
 - [Concreteness is expensive to fake, warmth is free](concreteness_is_expensive_to_fake_warmth_is_free.md) - why asking for a friendlier tone returns the exact prose you were trying to avoid
 - [Give every cross-cutting concept one definitional home](give_every_cross_cutting_concept_one_definitional_home.md) - single source of truth, applied to prose instead of code
+- [Route a rule to the layer that reaches whoever must obey it](route_a_rule_to_the_layer_that_reaches_whoever_must_obey_it.md) - a page, a hook, a skill or an always-on instruction, chosen by who has to obey

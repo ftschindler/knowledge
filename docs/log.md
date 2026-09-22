@@ -2,6 +2,8 @@
 
 ## 2026-09-21
 
+- add "Teaching my agents to write like me" to decisions
+- add "Route a rule to the layer that reaches whoever must obey it" to principles
 - add "Concreteness is expensive to fake, warmth is free" to principles
 - add the prose-tells hook and its script, and record it in the editing conventions
 - drop the duplicated concrete-behaviour sentence from the editing conventions
