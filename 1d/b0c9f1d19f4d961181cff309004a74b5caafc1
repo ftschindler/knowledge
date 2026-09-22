@@ -1,0 +1,29 @@
+hooks/publish_siblings.py
+  s_a5ba5545535175::t_75c95cac38edee 35
+  s_a5ba5545535175::t_b97ec3d3a2be2b 60-82,91-92,108-112
+  s_a5ba5545535175::t_fa4ec9e7a557dc 1-34,36-59,83-90,93-107,113-115
+docs/log.md
+  s_a5ba5545535175::t_8b6030068ce7f6 5-7
+blog/index.md
+  s_a5ba5545535175::t_ba56ca382695f7 1-10
+about/tech_stack.md
+  s_a5ba5545535175::t_0c293f7d0456d2 40-49
+blog/posts/adding_a_blog_to_this_site.md
+  s_a5ba5545535175::t_480c5b5310b58d 1-60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "1db0c9f1d19f4d961181cff309004a74b5caafc1",
+  "prompts": {},
+  "sessions": {
+    "s_a5ba5545535175": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3a77e268ffeZt93xzXGjUSpNX",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
