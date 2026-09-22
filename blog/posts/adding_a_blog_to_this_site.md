@@ -1,8 +1,7 @@
 ---
 title: Adding a blog to a knowledge base that already has a log
 date: 2026-09-22
-description: Why the append-only log and the git history were not enough, and the twelve lines of hook
-that put dated posts next to the bundle without putting them in it.
+description: Why the append-only log and the git history were not enough, and where the posts sit.
 ---
 
 This site now has a blog, and this is the first post on it. The short version: the knowledge
