@@ -1,0 +1,19 @@
+docs/principles/a_microbenchmark_body_must_not_mutate_state_that_outlives_one_iteration.md
+  s_5d746b626b5f8c::t_ca9bfde97d1f3b 26-27,37-50,54-65,69-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "75b23571846ae75e841913bf80d877ad91d761a1",
+  "prompts": {},
+  "sessions": {
+    "s_5d746b626b5f8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}

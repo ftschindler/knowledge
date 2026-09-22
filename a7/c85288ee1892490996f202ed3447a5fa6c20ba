@@ -1,0 +1,31 @@
+docs/research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md
+  s_5d746b626b5f8c::t_d77f58caeff66a 75-77
+  s_5d746b626b5f8c::t_eae8c28bf0c180 123-129
+  s_5d746b626b5f8c::t_83bdfb3d5babee 212-216
+  s_5d746b626b5f8c::t_cb72d106a09d18 112-115
+  s_42be5e85923d72::t_948b21653de61c 166-168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "a7c85288ee1892490996f202ed3447a5fa6c20ba",
+  "prompts": {},
+  "sessions": {
+    "s_42be5e85923d72": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "unknown"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    },
+    "s_5d746b626b5f8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}

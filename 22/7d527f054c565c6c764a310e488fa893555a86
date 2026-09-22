@@ -1,0 +1,19 @@
+docs/log.md
+  s_5d746b626b5f8c::t_1d5bec67dbc5e5 7-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "227d527f054c565c6c764a310e488fa893555a86",
+  "prompts": {},
+  "sessions": {
+    "s_5d746b626b5f8c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f3c7265a8ffefzefCOYO4WSOit",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
