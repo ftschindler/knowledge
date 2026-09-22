@@ -173,9 +173,8 @@ note: |
   work taught, not a description of how anything is done now.
 ```
 
-One directory holds one genre, so a note copied onto each of its pages stored the same
-paragraph seventy-six times and relied on whoever wrote the seventy-seventh to copy it
-correctly. The declaration also fixes the `type` every concept in the directory must carry,
+One directory holds one genre. The declaration also fixes the `type` every concept in the
+directory must carry,
 which the `genre-conformance` hook enforces, so the frontmatter federation tooling reads and
 the note the reader sees cannot disagree. A page still carrying a written-out note is
 rejected by the same hook.
@@ -235,7 +234,7 @@ expensive to fake; warmth is free.
 ### Read before you write
 
 **Before writing a new concept, read two existing pages from the directory you are writing
-into.** The directory's `index.md` lists them, so this costs one file and two reads.
+into.** The directory's `index.md` lists them.
 
 This is not a courtesy step, it is the actual style control. A rule *describes* a voice; the
 existing pages *are* one, and prose matches nearby prose far more reliably than it satisfies an
