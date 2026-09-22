@@ -200,8 +200,7 @@ Both are ignored inside fenced code blocks, where a snippet quotes something els
 ## Voice
 
 British English throughout: "ise" endings, "our" endings, "whilst" rather than "while", no
-Oxford comma. Write for a technical reader, and prefer the concrete behaviour to its abstract
-label.
+Oxford comma. Write for a technical reader.
 
 The register is the one
 [Write in a calm, quantified, settled-fact voice - not a promotional one](../docs/principles/write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md)
