@@ -1,5 +1,7 @@
 # Research
 
+> This needs to be split into analyses and findings!
+
 Longer investigations, recorded as findings rather than conclusions. Read these when you want
 the evidence a [decision](../decisions/index.md) was made on.
 

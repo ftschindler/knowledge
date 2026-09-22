@@ -1,7 +1,7 @@
 # Principles
 
-Reusable technical claims, each one a thing I would want true in any repository I work in. Start
-here if you are setting up a project and want the settled answers.
+Reusable technical claims, each one a thing I would want true in any of my work (if applicable).
+Start here if you are setting up a project and want the settled answers.
 
 Listed roughly in the order they build on each other rather than alphabetically, starting from the
 most general.
