@@ -43,10 +43,11 @@ artefact, noted below.
 - **`hooks/publish_siblings.py`** publishes `about/` and `blog/`, which sit outside the MkDocs
   source directory; gives the site its landing page; moves the bundle's own index to `/index/`
   so that page can take the root; and rewrites links from a sibling into the bundle, so a
-  single spelling resolves both in an editor and on the rendered site. It also mirrors
-  `blog/index.md` to `docs/blog/index.md`, which is the one thing here that touches the bundle
-  directory: Material's blog plugin stats that path rather than consulting the file list, and
-  writes a stub when it finds nothing. The mirror is gitignored and never committed.
+  single spelling resolves both in an editor and on the rendered site. It also writes the
+  blog's entrypoint to `docs/blog/index.md`, which is the one thing here that touches the
+  bundle directory: Material's blog plugin needs that page to hang its post list on and cannot
+  create it in this layout. The file is a gitignored stub with no body, so the blog opens on
+  its posts rather than on an introduction.
 - **`hooks/concept_genre.py`** renders each concept's genre note from the `.genre.yaml` its
   directory declares, so the sentence saying what kind of page this is exists once per genre
   rather than once per page.

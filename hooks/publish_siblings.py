@@ -9,7 +9,8 @@ outside the bundle, and this hook adds them to the build:
 * `blog/` is the human-facing surface: dated posts saying what changed, linking
   into the concepts that carry the reasoning. Material's blog plugin discovers
   posts by path, and runs its own `on_files` at priority -50 precisely so that
-  files injected here are already in the list when it looks.
+  files injected here are already in the list when it looks. Its entrypoint is
+  a stub this hook writes, for the reason given at `_ensure_blog_entrypoint`.
 
 Three consequences follow, all handled here:
 
@@ -33,6 +34,7 @@ from mkdocs.structure.files import File
 SIBLING_DIRS = ("about", "blog")
 BUNDLE_DIR = "docs"
 BLOG_DIR = "blog"
+BLOG_ENTRYPOINT = "# Blog\n\n"
 LANDING_PAGE = "welcome.md"
 BUNDLE_INDEX_URL = "index/"
 
@@ -57,39 +59,48 @@ def on_page_markdown(markdown, page, config, files):
     return INTO_BUNDLE.sub(r"](\1", markdown)
 
 
-def _mirror_blog_entrypoint(repo, config):
-    """Put the blog's entrypoint where the blog plugin insists on looking.
+def _ensure_blog_entrypoint(files, config):
+    """Write the page the blog plugin hangs its post list on.
 
-    The plugin resolves `<docs_dir>/<blog_dir>/index.md` against the filesystem
-    rather than against the file list, and writes a `# Blog` stub when it finds
-    nothing. That stub would then replace the injected entrypoint, so the blog
-    would lose its own landing text. Mirroring the sibling's copy there first
-    makes the check pass and leaves the source of truth in `blog/index.md`.
+    The plugin wants `<docs_dir>/<blog_dir>/index.md` and bootstraps a `# Blog`
+    stub when it is missing, but that bootstrap does not survive this layout:
+    the file it appends is not found by the lookup on the next line, and the
+    build dies on a `None`. Writing the stub before the plugin looks, and putting
+    it in the file list, avoids that path. A stub written during `on_files` is
+    not in the list already, because the source directory was scanned before
+    this ran.
 
-    The mirror is a build artefact and is gitignored. It is the one file this
-    layout has to put inside the bundle directory, and it is never committed,
-    so the OKF hooks, which read what is staged, never see it.
+    The stub is a build artefact and is gitignored, so the OKF hooks, which read
+    what is staged, never see a non-concept inside the bundle directory. It has
+    no body on purpose: a blog needs no introduction, and anything written here
+    would sit above the post list.
     """
-    source = repo / BLOG_DIR / "index.md"
-    if not source.is_file():
-        return
-    mirror = Path(config.docs_dir) / BLOG_DIR / "index.md"
-    mirror.parent.mkdir(parents=True, exist_ok=True)
-    content = source.read_text(encoding="utf-8")
-    if not mirror.is_file() or mirror.read_text(encoding="utf-8") != content:
-        mirror.write_text(content, encoding="utf-8")
+    src_uri = f"{BLOG_DIR}/index.md"
+    entrypoint = Path(config.docs_dir) / src_uri
+    if not entrypoint.is_file():
+        entrypoint.parent.mkdir(parents=True, exist_ok=True)
+        entrypoint.write_text(BLOG_ENTRYPOINT, encoding="utf-8")
+    if files.get_file_from_path(src_uri) is None:
+        files.append(
+            File(
+                src_uri,
+                src_dir=config.docs_dir,
+                dest_dir=config.site_dir,
+                use_directory_urls=config.use_directory_urls,
+            )
+        )
 
 
 def on_files(files, config):
     repo = Path(config.config_file_path).parent
+
+    _ensure_blog_entrypoint(files, config)
 
     index = files.get_file_from_path("index.md")
     if index is not None:
         index.dest_uri = BUNDLE_INDEX_URL + "index.html"
         index.abs_dest_path = str(Path(config.site_dir) / index.dest_uri)
         index.url = BUNDLE_INDEX_URL
-
-    _mirror_blog_entrypoint(repo, config)
 
     for directory in SIBLING_DIRS:
         for path in sorted((repo / directory).rglob("*.md")):
@@ -105,11 +116,6 @@ def on_files(files, config):
                 page.dest_uri = "index.html"
                 page.url = "."
                 page.abs_dest_path = str(Path(config.site_dir) / page.dest_uri)
-            # The mirrored entrypoint is scanned in from the bundle directory,
-            # so the injected copy would be a second file at the same address.
-            existing = files.get_file_from_path(page.src_uri)
-            if existing is not None:
-                files.remove(existing)
             files.append(page)
 
     return files

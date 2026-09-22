@@ -10,7 +10,7 @@ tags:
 - opencode
 - ponytail
 - dx
-status: stable
+status: draft
 generated:
   by: opencode/claude-opus-5
   at: '2026-09-22T00:00:00Z'

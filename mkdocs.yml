@@ -46,14 +46,20 @@ plugins:
 # rendered wherever a page carries the `material/tags` marker; see about/tags.md.
 - tags
 - obsidian-support
-- backlinks_section
+# Backlinks are a property of the bundle: a concept is worth knowing about
+# because other concepts point at it. Nothing in the bundle ever links to a post,
+# by design, so on `blog/` the section is always empty and sits between the page
+# and the post list the blog plugin appends.
+- backlinks_section:
+    ignore_links_to:
+    - blog/**
 - excalidraw
 - git-revision-date-localized:
     enable_creation_date: true
-    # The blog entrypoint MkDocs sees is the gitignored mirror that
-    # hooks/publish_siblings.py writes into the bundle directory, so it has no
-    # history to read and warns on every build, which fails --strict. The page
-    # it renders is blog/index.md, which is committed.
+    # The blog needs an entrypoint page and does not deserve an introduction, so
+    # the blog plugin writes its own `# Blog` stub into the bundle directory.
+    # That stub is gitignored, so it has no history to read and would warn on
+    # every build, which fails --strict.
     exclude:
     - blog/index.md
 - glightbox
