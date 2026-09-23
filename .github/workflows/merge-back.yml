@@ -23,11 +23,7 @@ permissions:
 jobs:
   merge_back:
     name: 🔁 (merge main back into staging)
-    # Pinned at the head of ftschindler/federated-knowledge-skills#24 rather
-    # than at a commit on that repository's `main`, for the error message that
-    # branch adds to the conflict path. Re-pin once it is merged, to the same
-    # commit the hooks pin in .pre-commit-config.yaml.
-    uses: ftschindler/federated-knowledge-skills/.github/workflows/merge-back.yml@7ac80da252f408d1f910cac5db6206d313668e6c
+    uses: ftschindler/federated-knowledge-skills/.github/workflows/merge-back.yml@a56c34298a91ded8f88519a027d38ff930ea9ae1
     with:
       branch: staging
     permissions:
