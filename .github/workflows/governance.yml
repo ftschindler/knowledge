@@ -7,7 +7,10 @@ permissions:
 
 on:
   push:
-    branches: [main]
+    # `staging` as well as `main`: a change made on the web has no working copy,
+    # so the pre-commit hooks never ran on it, and the shared branch is where
+    # such a change lands first.
+    branches: [main, staging]
   pull_request:
   workflow_call:
 
@@ -104,7 +107,14 @@ jobs:
                 sys.exit(1)
 
     - name: Block merge commits
-      if: ${{ github.event_name == 'pull_request' }}
+      # Exempt by head branch, never by dropping the check. The release pull
+      # request from `staging` carries every merge the merge-back workflow
+      # pushed there, and the pull request the same workflow opens from `main`
+      # when that merge conflicts carries whatever `main` itself merged. Both
+      # have multi-parent commits by construction, so reading every commit
+      # rejects exactly the two pull requests the shared-branch shape is made
+      # of. Everything a person opens is still linear.
+      if: ${{ github.event_name == 'pull_request' && github.head_ref != 'staging' && github.head_ref != 'main' }}
       shell: python {0}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

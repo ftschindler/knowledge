@@ -1,0 +1,31 @@
+---
+name: Merge back
+
+# `staging` is where every checkout sits and every agent files; `main` is what
+# has been reviewed and what the site is built from. Whatever lands on `main`
+# has to come back, or the two drift and every working copy of this bundle goes
+# stale without saying so - the first symptom is a concept filed twice by an
+# agent that could not see the first one.
+#
+# The behaviour ships from the skills repository, because it is the one property
+# of this shape whose absence nobody sees. Pinned by full commit SHA and never by
+# tag or branch name: it is granted write access to `staging`, which is a larger
+# trust step than a hook that only ever ran on a machine already holding the
+# files.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  merge_back:
+    name: 🔁 (merge main back into staging)
+    uses: ftschindler/federated-knowledge-skills/.github/workflows/merge-back.yml@a56c34298a91ded8f88519a027d38ff930ea9ae1
+    with:
+      branch: staging
+    permissions:
+      contents: write
+      pull-requests: write
