@@ -1,0 +1,23 @@
+docs/research/index.md
+  s_858890bc73a287::t_7ca79e195bec3b 17
+docs/log.md
+  s_858890bc73a287::t_9bc72770546f8c 3-6
+docs/research/sharing_one_user_level_agents_md_across_harnesses.md
+  s_858890bc73a287::t_8515ec3ecf0b68 1-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "8174ae8e4808b007838941a51b8d87e38bab8308",
+  "prompts": {},
+  "sessions": {
+    "s_858890bc73a287": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f329043dcffeTwnSBp9Bh8rE5L",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
