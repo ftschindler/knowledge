@@ -130,7 +130,7 @@ repos:
 # use here; pinning it by revision is what keeps this bundle standalone without
 # carrying a copy that could drift.
 - repo: https://github.com/ftschindler/federated-knowledge-skills
-  rev: 4d8ff526cbcb0ecc5872f838a0437e9e2c8e2f69
+  rev: a56c34298a91ded8f88519a027d38ff930ea9ae1  # frozen: v0.2.1
   hooks:
   - id: okf-concepts
     args: [--bundle-root, docs, --floor, docs/fkb.yaml]
