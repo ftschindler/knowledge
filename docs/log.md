@@ -1,5 +1,9 @@
 # Log
 
+## 2026-09-23
+
+- add research, "Sharing one user-level AGENTS.md across harnesses", surveying where each harness looks for a user-level instruction file and which adapter mechanism survives Windows
+
 ## 2026-09-22
 
 - move the "What I took" section off the caveman tool page into a decision, "Adopting caveman at lite, without its init block", and leave the tool page pointing at it

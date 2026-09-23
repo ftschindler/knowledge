@@ -14,3 +14,4 @@ date. Where an investigation deliberately stops short of choosing, it says so.
 - [Federated OKF knowledge bases: a workspace-manifest architecture](federated_okf_knowledge_bases_a_workspace_manifest_architecture.md) - the architecture that answered the previous two, and that this bundle is now an instance of
 - [Security Analysis of Agent Wiki (awiki)](security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
 - [skills.sh: repository layout, selective install and telemetry](skills_sh_repository_layout_and_telemetry.md) - where the skills installer looks, how a user takes one skill rather than all, and what it reports back
+- [Sharing one user-level AGENTS.md across harnesses](sharing_one_user_level_agents_md_across_harnesses.md) - five harnesses, five paths, and why the import beats the symlink
