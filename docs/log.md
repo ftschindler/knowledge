@@ -4,6 +4,7 @@
 
 - add research, "Sharing one user-level AGENTS.md across harnesses", surveying where each harness looks for a user-level instruction file and which adapter mechanism survives Windows
 - rewrite it around the rule-file generator category, Ruler and rulesync, after confirming opencode's `instructions` key expands a leading tilde at source
+- correct that survey after a proper enumeration: split the population into content generators and distributors, add vibe-rules, ai-rulez and ai-rules-sync, and record that writing to the home directory is the rare feature
 
 ## 2026-09-22
 

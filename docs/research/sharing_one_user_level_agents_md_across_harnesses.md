@@ -1,9 +1,8 @@
 ---
 type: Reference
 title: Sharing one user-level AGENTS.md across harnesses
-description: A survey of the rule-file generator category, why every mature tool in it solves the
-  project problem rather than the user-level one, and the two config lines that make a generator
-  unnecessary here.
+description: A survey of the tools that distribute one ruleset to many coding agents, why almost all
+  of them refuse the home directory, and the two config lines that make one unnecessary here.
 tags:
 - research
 - ai-agents
@@ -49,6 +48,14 @@ sources:
   resource: https://rulesync.dyoshikawa.com/reference/supported-tools
   title: 'Rulesync: Supported Tools and Features'
   last_modified: '2026-09-23'
+- id: vibe-rules
+  resource: https://www.npmjs.com/package/vibe-rules
+  title: 'vibe-rules: a utility for managing Cursor rules, Windsurf rules and other AI prompts'
+  last_modified: '2025-08-21'
+- id: ai-rules-sync
+  resource: https://www.npmjs.com/package/ai-rules-sync
+  title: 'ai-rules-sync: synchronize, manage and share your AI rules, skills, commands and subagents'
+  last_modified: '2026-08-20'
 ---
 **Context** - Felix keeps one always-on instruction file for every agent session, the digest
 described in
@@ -58,54 +65,84 @@ nothing else reads. The question was how to make that file portable across opera
 and harnesses.
 
 - **Read on**: 2026-09-23
-- **Method**: vendor documentation read directly; repository metadata via `gh`; the two leading
-  tools cloned and their READMEs read; opencode's instruction loader read at source.
+- **Method**: vendor documentation read directly; the tool population enumerated by repeated
+  GitHub repository search and npm registry search, then each candidate's star count and last
+  push read through `gh` and its README read for the words `global`, `$HOME` and `~/.`;
+  opencode's instruction loader read at source.
 
-There is a mature tool category for this, and surveying it answers the question by showing
+There is a crowded tool category for this, and surveying it answers the question by showing
 that the question was the wrong size.
 
-## The generators, and what they are for
+## The population, and the two things it splits into
 
-Two tools lead a category of perhaps a dozen. **Ruler** has 2.9k stars and targets around
-thirty agents[^ruler]. **Rulesync** has 1.5k stars and targets around fifty, across eight
-surfaces - not just rules but ignore files, MCP servers, commands, subagents, skills, hooks
-and permissions[^rulesync-tools]. Both are actively developed, both are TypeScript, both take
-one source directory and compile it into each tool's native files.
+Searching for these tools returns dozens, which is the expected shape for anything in this
+ecosystem. Nearly all of them are answering a different question.
 
-The category is real, it is maintained, and adopting it would be the ordinary answer. It also
-does not solve this problem, and the two tools fail to in different and instructive ways.
+**The bulk of the count is content generators**: point one at a repository and it inspects the
+package manager, scripts and CI and writes an `AGENTS.md` describing what it found. A single
+search phrase returns thirty of these, almost all under ten stars. They produce a first draft
+of a project file, which is not a distribution problem and has nothing to say about where a
+user-level file lives.
 
-**Ruler writes only into the project.** Its `--global` flag creates a configuration at
-`~/.config/ruler` used "when no local `.ruler/` directory is found" - a global *source*, whose
-*outputs* still land in the repository[^ruler]. The README states the boundary as a safety
-property: "Ruler never writes MCP configuration files outside your project root. Any
-historical references to user home directories ... have been removed; only project-local paths
-are targeted."[^ruler] Writing to `$HOME` is not a missing feature. It is a thing the tool
-removed on purpose.
+**The distributors are the relevant category**, and there the count is smaller and the
+adoption curve brutal:
 
-**Rulesync has a global mode, and it is three tools wide.** The tool matrix marks global
-support against most of its fifty targets, but the Global Mode guide is narrower than the
-matrix: "Currently, supports rules generation for Claude Code, GitHub Copilot, and
-OpenCode."[^rulesync-global] Commands in global mode are Claude Code only.
+| Tool | Stars | Last push | Writes to `$HOME`? |
+| --- | --- | --- | --- |
+| Ruler | 2.9k | 2026-09 | No, by explicit design[^ruler] |
+| Rulesync | 1.5k | 2026-09 | Rules, for three tools[^rulesync-global] |
+| vibe-rules | 528 | 2025-08 | Yes, four tools[^vibe-rules] |
+| ai-rulez | 143 | 2026-09 | No |
+| ai-rules-sync | 38 | 2026-08 | Yes, `--user`[^ai-rules-sync] |
+| airul | 34 | 2025-09 | No |
+| rulix, airules, dev-spec | 0-4 | 2025-10 to 2026-09 | Not documented |
 
-So the category is built for a repository handing instructions to whichever agent a
-contributor brought. The user-level file - one person, many harnesses, many machines - is the
-long tail, and the coverage numbers that make these tools look decisive are project-scope
-numbers.
+Two tools hold the category, a third is an order of magnitude behind, and below that is a tail
+of projects with no users. So the explosion is real in count and thin in adoption, which is a
+different thing from the category being empty.
 
-## The three harnesses that do have global support
+## Writing to the home directory is the rare feature
 
-The reframing is that the narrow answer lands exactly on target. Rulesync's global rule
-generation covers Claude Code, GitHub Copilot and opencode[^rulesync-global] - which is the
-harness in use here, plus the two most likely to be added. Measured against the harnesses that
-matter rather than against a catalogue, coverage is complete.
+**Ruler writes only into the project, and says so as a safety property**: "Ruler never writes
+MCP configuration files outside your project root. Any historical references to user home
+directories ... have been removed; only project-local paths are targeted."[^ruler] Its
+`--global` flag creates a configuration at `~/.config/ruler` used "when no local `.ruler/`
+directory is found" - a global *source* feeding project *outputs*[^ruler]. Not a missing
+feature; a thing the tool removed on purpose. ai-rulez is project-scoped the same way, where
+"global" means the npm install.
 
-That makes rulesync a genuine option rather than a near-miss, and the decision becomes a
-comparison rather than a search. What it costs is a compile step: a source directory, a
-generate command, generated files in three home directories that no longer say where they came
-from, and a fourth tool in the chain that has to keep tracking fifty moving targets. What it
-buys, beyond the file itself, is the other seven surfaces - skills, commands, MCP servers,
-permissions - kept in step by the same run.
+Three tools do write to `$HOME`, and each carries a catch:
+
+- **Rulesync** has a global mode whose reach is narrower than its fifty-target
+  matrix[^rulesync-tools] suggests: "Currently, supports rules generation for Claude Code,
+  GitHub Copilot, and OpenCode."[^rulesync-global] Commands in global mode are Claude Code only.
+- **vibe-rules** has the best-shaped mechanism found. `--global` writes `~/.claude/CLAUDE.md`,
+  `~/.gemini/GEMINI.md`, `~/.codex/AGENTS.md` and `~/.cursor/rules/`, and it edits inside a
+  delimited `<!-- vibe-rules Integration -->` block rather than owning the
+  file[^vibe-rules], so hand-written content survives a regeneration. It has had no commit
+  since 2025-08 and has no opencode target.
+- **ai-rules-sync** is the only one built for this case on purpose, with a `--user` flag and an
+  `ais user install` for a new machine[^ai-rules-sync]. Its mechanism is a git repository
+  cloned to a cache with symlinks into place - which is a dotfile manager, and inherits the
+  Windows symlink problem below.
+
+The asymmetry has an obvious cause once the two categories are separated. Shared rules
+committed to a repository are a team problem, with onboarding and drift and a reviewer; one
+person's instruction file across their own machines is a dotfiles problem, and dotfiles are
+already solved. The tools go where the teams are.
+
+## What this costs against two lines of config
+
+Rulesync's three global targets are Claude Code, GitHub Copilot and opencode - the harness in
+use here plus the two most likely to be added. Measured against the harnesses that matter
+rather than against a catalogue, that is full coverage, so it is a real alternative rather than
+an absent one.
+
+What it costs is a compile step: a source directory, a generate command, generated files in
+three home directories that no longer say where they came from, and a fourth tool in the chain
+that has to keep tracking fifty moving targets. What it buys, beyond the file itself, is the
+other seven surfaces - skills, commands, MCP servers, permissions - kept in step by the same
+run.
 
 ## The two lines that make it unnecessary
 
@@ -164,16 +201,24 @@ makes from the other side.
 
 ## Bottom line
 
-The generator category is mature and aimed elsewhere. Ruler will not write to `$HOME` by
-design; rulesync will, for three tools, which happen to be the right three - so it is a real
-alternative, not an absent one.
+The category is crowded and aimed elsewhere. Most of its headcount writes project files from a
+repository scan; of the handful that distribute one source to many tools, the two with real
+adoption treat the home directory as out of scope or nearly so, and the three that do write
+there are narrow, unmaintained or symlink-based.
 
-It is still the wrong size for two harnesses. One canonical file at `~/.agents/AGENTS.md`, an
-`instructions` entry in opencode's config and an `@` import in `~/.claude/CLAUDE.md` gets the
-content to both with no compile step and nothing generated. Revisit rulesync when a third
-harness arrives without a reference mechanism, or when the thing being synchronised stops
-being one markdown file and becomes skills, commands and MCP servers as well - which is the
-threshold it was actually built for.
+Rulesync is the one worth holding onto, because its three global targets happen to be the
+right three. It is still the wrong size for two harnesses. One canonical file at
+`~/.agents/AGENTS.md`, an `instructions` entry in opencode's config and an `@` import in
+`~/.claude/CLAUDE.md` gets the content to both with no compile step and nothing generated.
+Revisit it when a third harness arrives without a reference mechanism, or when the thing being
+synchronised stops being one markdown file and becomes skills, commands and MCP servers as
+well - which is the threshold it was actually built for.
+
+The more useful thing the survey settles is what kind of problem this is. The tools decline
+the home directory because a user-level instruction file is not an agent problem at all: it is
+one person's configuration across their own machines, which is a dotfiles problem wearing a
+new hat. ai-rules-sync is the tool that noticed, and its answer - a git repository, a cache
+and symlinks - is what a dotfile manager already does.
 
 One thing this does not settle: the file is currently version-controlled inside the opencode
 config repository, and `~/.agents` is a different repository with a different publishing
