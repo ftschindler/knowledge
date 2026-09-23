@@ -1,0 +1,8 @@
+# The two files everybody appends to, merged by keeping both sides.
+# A concept is one file one person wrote, so it never conflicts; the index and
+# the log are where two people writing on the same day would collide over lines
+# neither of them disagrees about. `union` keeps both, in order, and leaves a
+# real conflict - two people writing the same concept - as the only one a person
+# is asked about.
+index.md merge=union
+log.md merge=union
