@@ -1,5 +1,7 @@
 .PHONY: help bootstrap site serve
 
+PORT_FILE := .serve-port
+
 ## Show available targets
 help:
 	@grep -B1 '^[a-z]' $(MAKEFILE_LIST) | grep '^##' | sed 's/## /  /'
@@ -14,5 +16,10 @@ site:
 	NO_MKDOCS_2_WARNING=true uv run mkdocs build --strict
 
 ## Start the live-reloading dev server
-serve:
-	NO_MKDOCS_2_WARNING=true uv run mkdocs serve -a localhost:80$$(( RANDOM % 10 ))$$(( RANDOM % 10 ))
+serve: $(PORT_FILE)
+	NO_MKDOCS_2_WARNING=true uv run mkdocs serve -a localhost:$$(cat $(PORT_FILE))
+
+# Pick a random port once and reuse it; delete the file to get a new one
+$(PORT_FILE):
+	awk 'BEGIN { srand(); print 8000 + int(rand() * 1000) }' > $@
+	@echo "picked port $$(cat $@) (stored in $@)"
