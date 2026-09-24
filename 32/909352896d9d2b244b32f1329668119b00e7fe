@@ -1,0 +1,22 @@
+Makefile
+  s_327af0965fc0f4::t_3ced2fca9d7691 3-4
+  s_327af0965fc0f4::t_b4fe3e1584eae8 19-25
+.gitignore
+  s_327af0965fc0f4::t_12f8f20d3449cc 24-26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "32909352896d9d2b244b32f1329668119b00e7fe",
+  "prompts": {},
+  "sessions": {
+    "s_327af0965fc0f4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f2dcac786ffeRawPBq3lvGZI6W",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
