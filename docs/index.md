@@ -24,4 +24,5 @@ Each section defines what it holds on its own page, and lists what is in it. The
 - [Knowledge management](knowledge_management/index.md) - how knowledge gets organised, independently of any tool that stores it
 - [Research](research/index.md) - longer investigations, recorded as findings rather than conclusions
 - [Tools](tools/index.md) - an external tool or project that earns a page of its own
+- [Hardware](hardware/index.md) - a machine or peripheral in daily use, and how it presents itself to Linux
 - [Findings](findings/index.md) - things that cost time once: the symptom, what it was, and how to get past it

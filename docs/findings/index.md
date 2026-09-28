@@ -22,6 +22,8 @@ And the subject lives in the tags rather than in a directory, per
 
 ### September
 
+- 2026-09-28: [Bluetooth A2DP fails with Protocol not available after resume](20260928_bluetooth_a2dp_fails_with_protocol_not_available_after_resume.md) - a session manager that never starts its Bluetooth monitor, because logind's user file and its seat file stopped agreeing
+- 2026-09-28: [A Bluetooth headset reconnects in A2DP instead of the saved profile](20260928_a_bluetooth_headset_reconnects_in_a2dp_instead_of_the_saved_profile.md) - a saved profile that is consulted in one of three passes, and the priority that decides the other two
 - 2026-09-21: [neo-tree's hide_hidden does not show dotfiles on Linux](20260921_neo_tree_hide_hidden_does_not_show_dotfiles_on_linux.md) - an option that is Windows-only, in the wrong place, and rejected by nothing
 - 2026-09-18: [A GitHub token does not authenticate requests to github.com web pages](20260918_a_github_token_does_not_authenticate_github_com_web_pages.md) - a credential the website ignores, and a 404 that cannot be told apart from a deleted repository
 - 2026-09-18: [linkspector ignores the httpHeaders in its config](20260918_linkspector_ignores_the_httpheaders_in_its_config.md) - a credential that passes validation, is dropped by both checking passes, and leaves a live link reported as broken

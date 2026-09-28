@@ -5,6 +5,12 @@
 - add research, "Spell-checking prose in a pre-commit hook", comparing codespell, typos and cspell against one real misspelling and finding that corpus and dictionary checkers fail on sets neither contains
 - record that only a locale-aware checker can enforce a British-English rule, codespell shipping the conversion in the wrong direction and cspell having no grounds to reject a valid -ize ending
 - keep the measurements that argue for scope, five hundred hits from diagram JSON against seven from the markdown a person wrote
+- add a hardware section, holding device references, with its genre declaration and its place in the root index and the nav
+- add "Dell Precision 5470", the notebook
+- add "OpenMove by Shokz", the headset
+- add tool page, "WirePlumber"
+- add finding, "Bluetooth A2DP fails with Protocol not available after resume"
+- add finding, "A Bluetooth headset reconnects in A2DP instead of the saved profile"
 
 ## 2026-09-23
 

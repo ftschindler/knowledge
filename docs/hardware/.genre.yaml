@@ -1,0 +1,11 @@
+---
+# What kind of page this directory holds. One directory, one genre, so this is
+# declared once here rather than copied into every page's body. The build hook
+# `hooks/concept_genre.py` renders the note, and the `genre-conformance` check
+# holds every concept's `type` to the one named here.
+type: Device
+article: a
+word: device reference
+note: |-
+  What a machine or peripheral is, and how it presents itself to Linux. Anything
+  learned whilst getting it to work lives elsewhere and links back here.
