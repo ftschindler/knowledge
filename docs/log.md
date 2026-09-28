@@ -13,6 +13,8 @@
 - add finding, "Bluetooth A2DP fails with Protocol not available after resume"
 - add finding, "A Bluetooth headset reconnects in A2DP instead of the saved profile"
 - correct the discrete graphics section of "Dell Precision 5470", which read a device removed by EnvyControl as a device the machine does not have
+- add tool stub, "Voxtype (Peter Jackson)"
+- add tool stub, "Vocalinux (VocaHQ)"
 
 ## 2026-09-23
 

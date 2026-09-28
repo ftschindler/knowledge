@@ -27,3 +27,5 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [caveman (Julius Brussee)](caveman_brussee.md) - the terseness skill, the four commercial layers sold under the same name, and what survives once the token-saving argument is dropped
 - [ponytail (Dietrich Gebert)](ponytail_gebert.md) - the seven-rung ladder an agent climbs before writing code, the benchmark its author retracted, and why I took the review commands and left the ruleset
 - [WirePlumber](wireplumber.md) - the session manager that decides what reaches a PipeWire graph, and the half of the audio stack that owns the decision when a device never appears
+- [Voxtype (Peter Jackson)](voxtype_jackson.md) - stub: push-to-talk dictation as a single Rust binary, with eight local engines behind one config line
+- [Vocalinux (VocaHQ)](vocalinux_vocahq.md) - stub: the AGPL Python alternative, dictating from a tray icon on X11 and Wayland alike
