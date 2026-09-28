@@ -1,0 +1,24 @@
+docs/log.md
+  s_194b311e2d0ba1::t_e12f07e844de7b 14
+docs/hardware/dell_precision_5470.md
+  s_194b311e2d0ba1::t_b7066019d5cd52 29
+  s_194b311e2d0ba1::t_2ff8721fb309a5 15-19
+  s_194b311e2d0ba1::t_3de5d09072e54b 72,74-76,81-103,109-110
+  s_194b311e2d0ba1::t_f3a8abaa102fac 78-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "b503c1d9e9114b1f7e5fbcc4d2c53b3c61cfa0a7",
+  "prompts": {},
+  "sessions": {
+    "s_194b311e2d0ba1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f18e2d019ffe2PDsMC1iY2bncs",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
