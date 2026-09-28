@@ -1,0 +1,24 @@
+docs/findings/index.md
+  s_1a501f406a5dc0::t_c4eabd88ba3e23 25
+docs/findings/20260928_git_lfs_fails_when_the_remote_url_has_a_trailing_slash.md
+  s_1a501f406a5dc0::t_8761731e1fdf23 70
+  s_1a501f406a5dc0::t_dd27b2c33bf2ed 1-69,71-90
+docs/log.md
+  s_1a501f406a5dc0::t_8512871cc87bf4 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "9fc4524e85905688d4e71623aa043a70c100c12c",
+  "prompts": {},
+  "sessions": {
+    "s_1a501f406a5dc0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f189f7fc4ffeTN00mkUuo0xBIQ",
+        "model": "claude-opus-5"
+      },
+      "human_author": null
+    }
+  }
+}
