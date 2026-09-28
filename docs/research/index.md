@@ -15,3 +15,4 @@ date. Where an investigation deliberately stops short of choosing, it says so.
 - [Security Analysis of Agent Wiki (awiki)](security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
 - [skills.sh: repository layout, selective install and telemetry](skills_sh_repository_layout_and_telemetry.md) - where the skills installer looks, how a user takes one skill rather than all, and what it reports back
 - [Sharing one user-level AGENTS.md across harnesses](sharing_one_user_level_agents_md_across_harnesses.md) - a crowded tool category that almost entirely refuses to write to the home directory, and why
+- [Spell-checking prose in a pre-commit hook](spell_checking_prose_in_a_pre_commit_hook.md) - why two spell checkers catch different mistakes, and the one word that shows it

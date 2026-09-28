@@ -1,5 +1,11 @@
 # Log
 
+## 2026-09-28
+
+- add research, "Spell-checking prose in a pre-commit hook", comparing codespell, typos and cspell against one real misspelling and finding that corpus and dictionary checkers fail on sets neither contains
+- record that only a locale-aware checker can enforce a British-English rule, codespell shipping the conversion in the wrong direction and cspell having no grounds to reject a valid -ize ending
+- keep the measurements that argue for scope, five hundred hits from diagram JSON against seven from the markdown a person wrote
+
 ## 2026-09-23
 
 - add research, "Sharing one user-level AGENTS.md across harnesses", surveying where each harness looks for a user-level instruction file and which adapter mechanism survives Windows
