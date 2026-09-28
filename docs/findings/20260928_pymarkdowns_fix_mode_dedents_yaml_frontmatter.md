@@ -55,8 +55,19 @@ Enable the extension in `.pymarkdown.json`:
 }
 ```
 
-Two things about that file are worth checking at the same time, because a configuration that has
-this bug tends to have them too.
+Three things about that file are worth checking at the same time, because every one of them fails
+the same way, by leaving the configuration unread and saying nothing.
+
+**pymarkdown does not look for `.pymarkdown.json` on its own.** The name is conventional, not a
+default, so a config nothing points at is a config nothing reads, and editing it changes nothing.
+Under pre-commit that means the hook needs the flag:
+
+```yaml
+args: [--strict-config, --config, .pymarkdown.json, --disable-rules, MD046, fix]
+```
+
+`--strict-config` is what turns the rest of this page into an error instead of a default. Without
+it, a configuration pymarkdown cannot use is a configuration pymarkdown ignores in silence.
 
 **`extensions` and `plugins` are objects, not arrays.** Written as `[]` they are accepted, and
 nothing is configured.
