@@ -69,7 +69,7 @@ four entries rather than two: the two Dell platform switches, `dell-wifi` and `d
 and the two radios themselves, `phy0` and `hci0`. A radio can be blocked at either level, and
 the platform switch is the one a function key toggles.
 
-## The discrete GPU is switched off, not absent
+## The discrete GPU is switched off
 
 This unit has the discrete NVIDIA GPU, on the x16 bridge at `00:01.0`. It does not appear in
 `lspci`, and that absence is the thing to be careful about: the device is removed at boot rather
@@ -109,7 +109,7 @@ systemd[1]: nvidia-hibernate.service: Skipped due to 'exec-condition'.
 That line sits close enough to the sleep transition to look relevant when reading a journal for
 something else, and on this machine it is noise.
 
-## What has cost time here
+## Findings related to this machine
 
 - [Bluetooth A2DP fails with Protocol not available after resume](../findings/20260928_bluetooth_a2dp_fails_with_protocol_not_available_after_resume.md), which is a logind bookkeeping problem rather than a Bluetooth one, and survives a hibernate cycle on this machine specifically because hibernation works
 - [A Bluetooth headset reconnects in A2DP instead of the saved profile](../findings/20260928_a_bluetooth_headset_reconnects_in_a2dp_instead_of_the_saved_profile.md), met with [the OpenMove](openmove_by_shokz.md)
