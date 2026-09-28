@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### September
 
+- 2026-09-28: [Git LFS fails when the remote URL has a trailing slash](20260928_git_lfs_fails_when_the_remote_url_has_a_trailing_slash.md) - a character git ignores and the LFS authentication endpoint does not, reported as a permissions error
 - 2026-09-28: [Bluetooth A2DP fails with Protocol not available after resume](20260928_bluetooth_a2dp_fails_with_protocol_not_available_after_resume.md) - a session manager that never starts its Bluetooth monitor, because logind's user file and its seat file stopped agreeing
 - 2026-09-28: [A Bluetooth headset reconnects in A2DP instead of the saved profile](20260928_a_bluetooth_headset_reconnects_in_a2dp_instead_of_the_saved_profile.md) - a saved profile that is consulted in one of three passes, and the priority that decides the other two
 - 2026-09-21: [neo-tree's hide_hidden does not show dotfiles on Linux](20260921_neo_tree_hide_hidden_does_not_show_dotfiles_on_linux.md) - an option that is Windows-only, in the wrong place, and rejected by nothing
