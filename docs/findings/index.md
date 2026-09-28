@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### September
 
+- 2026-09-28: [pymarkdown's fix mode dedents YAML frontmatter](20260928_pymarkdowns_fix_mode_dedents_yaml_frontmatter.md) - an extension that is off by default, and a nested key that loses its indentation into YAML that still parses
 - 2026-09-28: [opencode writes its session transcripts into the Claude config directory](20260928_opencode_writes_its_session_transcripts_into_the_claude_config_directory.md) - a directory that fills up where Claude Code has never run, and the session search that stops 50 sessions back
 - 2026-09-28: [Git LFS fails when the remote URL has a trailing slash](20260928_git_lfs_fails_when_the_remote_url_has_a_trailing_slash.md) - a character git ignores and the LFS authentication endpoint does not, reported as a permissions error
 - 2026-09-28: [Bluetooth A2DP fails with Protocol not available after resume](20260928_bluetooth_a2dp_fails_with_protocol_not_available_after_resume.md) - a session manager that never starts its Bluetooth monitor, because logind's user file and its seat file stopped agreeing

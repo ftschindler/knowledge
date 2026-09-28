@@ -2,6 +2,7 @@
 
 ## 2026-09-28
 
+- add finding, "pymarkdown's fix mode dedents YAML frontmatter"
 - add finding, "opencode writes its session transcripts into the Claude config directory"
 - add finding, "Git LFS fails when the remote URL has a trailing slash"
 - add research, "Spell-checking prose in a pre-commit hook", comparing codespell, typos and cspell against one real misspelling and finding that corpus and dictionary checkers fail on sets neither contains
