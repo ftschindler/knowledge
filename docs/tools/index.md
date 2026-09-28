@@ -26,3 +26,4 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [skills (Vercel Labs)](skills_vercel_labs.md) - `npx skills add`: the installer that discovers a skill by finding its `SKILL.md`, and the leaderboard it reports installs to
 - [caveman (Julius Brussee)](caveman_brussee.md) - the terseness skill, the four commercial layers sold under the same name, and what survives once the token-saving argument is dropped
 - [ponytail (Dietrich Gebert)](ponytail_gebert.md) - the seven-rung ladder an agent climbs before writing code, the benchmark its author retracted, and why I took the review commands and left the ruleset
+- [liseur and liseur-sync (Chmouel Boudjnah)](liseur_chmouel.md) - EPUB reader for Android with self-hosted sync server, reading-position synchronization across devices, KOReader compatibility, and offline PWA web reader
