@@ -1,8 +1,7 @@
 ---
 type: Device
 title: Dell Precision 5470
-description: A 14-inch Alder Lake mobile workstation whose audio path runs over SoundWire rather than
-  classic HD Audio, and whose Bluetooth radio shares a die with its Wi-Fi.
+description: A 14-inch Alder Lake mobile workstation
 tags:
 - hardware
 - dell
@@ -13,10 +12,13 @@ status: stable
 generated:
   by: opencode/claude-opus-5
   at: '2026-09-28T08:58:20Z'
+sources:
+- id: envycontrol
+  resource: https://github.com/bayasdev/envycontrol
+  title: 'EnvyControl: a tool to switch between hybrid and dedicated graphics'
+  last_modified: '2026-09-28'
 ---
-The Precision 5470 is Dell's 14-inch mobile workstation on Intel's Alder Lake-P platform. It is
-the machine this bundle is written on, and the one every Linux finding here was found on unless
-a page says otherwise.
+The Precision 5470 is Dell's 14-inch mobile workstation on Intel's Alder Lake-P platform.
 
 | | |
 | --- | --- |
@@ -24,7 +26,7 @@ a page says otherwise.
 | Form factor | Notebook, 14-inch, DMI chassis type 10 |
 | Processor | Intel Core i7-12800H, Alder Lake-P, 14-core hybrid |
 | Memory | 32 GB, of which 30 GiB is visible to the kernel |
-| Graphics | Intel Iris Xe, Alder Lake-P GT2, at `00:02.0` |
+| Graphics | Intel Iris Xe, Alder Lake-P GT2, at `00:02.0`, alongside a discrete NVIDIA GPU at `01:00.0` currently switched off |
 | Display | eDP-1, 2560x1600, 301 x 188 mm |
 | Audio | Alder Lake PCH-P High Definition Audio controller at `00:1f.3`, driving a SoundWire codec through SOF |
 | Wireless | Intel AX211 CNVi, `iwlwifi` for Wi-Fi and `btusb` for Bluetooth |
@@ -67,19 +69,45 @@ four entries rather than two: the two Dell platform switches, `dell-wifi` and `d
 and the two radios themselves, `phy0` and `hci0`. A radio can be blocked at either level, and
 the platform switch is the one a function key toggles.
 
-## No discrete GPU, despite the drivers
+## The discrete GPU is switched off, not absent
 
-The 5470 is offered with a discrete workstation GPU. This unit does not have one: `lspci`
-enumerates only the integrated Iris Xe, and no NVIDIA module is loaded. The NVIDIA userspace
-packages are nonetheless installed, which means `nvidia-hibernate.service` and its siblings
-appear in the journal on every suspend, skipped by their own `ExecCondition`:
+This unit has the discrete NVIDIA GPU, on the x16 bridge at `00:01.0`. It does not appear in
+`lspci`, and that absence is the thing to be careful about: the device is removed at boot rather
+than missing.
+
+EnvyControl[^envycontrol] holds the machine in `integrated` mode, which it does with two files.
+A modprobe blacklist refuses `nouveau` and every `nvidia` module, and a udev rule removes the
+hardware as it is enumerated:
+
+```text
+# /etc/udev/rules.d/50-remove-nvidia.rules
+ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x03[0-9]*", \
+  ATTR{power/control}="auto", ATTR{remove}="1"
+```
+
+So the rule fires on any NVIDIA display controller, sets it to autosuspend and unbinds it. By the
+time anything asks `lspci` what is on the bus, bridge `00:01.0` has an empty secondary bus behind
+it. Two things still record that the GPU exists: EnvyControl's own cache names its address, and
+the bridge is there with nowhere to lead.
+
+```bash
+$ envycontrol --query
+integrated
+$ cat /var/cache/envycontrol/cache.json
+{ "nvidia_gpu_pci_bus": "PCI:1:0:0" }
+```
+
+The NVIDIA driver packages are installed and current for the same reason, rather than being
+leftovers: `envycontrol -s hybrid` and a reboot bring the card back, and it needs its drivers to
+be there when it returns. The visible consequence in the meantime is that `nvidia-suspend`,
+`nvidia-resume` and `nvidia-hibernate` are enabled units that skip themselves on every sleep:
 
 ```text
 systemd[1]: nvidia-hibernate.service: Skipped due to 'exec-condition'.
 ```
 
-That line is noise on this machine rather than a symptom, and it sits close enough to the sleep
-transition to look relevant when reading a journal for something else.
+That line sits close enough to the sleep transition to look relevant when reading a journal for
+something else, and on this machine it is noise.
 
 ## What has cost time here
 
