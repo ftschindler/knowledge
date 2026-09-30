@@ -1,5 +1,9 @@
 # Log
 
+## 2026-09-30
+
+- add finding, "Chromium maximises to the wrong size after an undock, and closing every window does not restart it"
+
 ## 2026-09-28
 
 - add finding, "pymarkdown's fix mode dedents YAML frontmatter"
