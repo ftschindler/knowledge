@@ -1,5 +1,10 @@
 # Log
 
+## 2026-10-01
+
+- add finding, "A plugin upgrade renamed a routing category and breached provider isolation"
+- add finding, "zsh does not expand a tilde in env VAR=~/path, and opencode creates the literal directory"
+
 ## 2026-09-30
 
 - add finding, "Chromium maximises to the wrong size after an undock, and closing every window does not restart it"

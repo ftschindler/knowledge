@@ -20,6 +20,11 @@ And the subject lives in the tags rather than in a directory, per
 
 ## 2026
 
+### October
+
+- 2026-10-01: [A plugin upgrade renamed a routing category and breached provider isolation](20261001_a_plugin_upgrade_renamed_a_routing_category_and_breached_provider_isolation.md) - a pin that stayed valid whilst the key it named stopped existing, and the three guards that all declined to notice
+- 2026-10-01: [zsh does not expand a tilde in env VAR=~/path, and opencode creates the literal directory](20261001_zsh_does_not_expand_a_tilde_in_env_var_assignments.md) - a shell that leaves the tilde alone, a tool that makes the directory anyway, and an error about neither
+
 ### September
 
 - 2026-09-30: [Chromium maximises to the wrong size after an undock, and closing every window does not restart it](20260930_chromium_maximises_to_the_wrong_size_after_an_undock.md) - a window that quietly loses its maximised state, and a PWA that keeps the process alive so the restart never happens
