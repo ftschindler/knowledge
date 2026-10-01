@@ -2,6 +2,7 @@
 
 ## 2026-10-01
 
+- add finding, "A config symlink makes every omo migration fail on start"
 - add finding, "A plugin upgrade renamed a routing category and breached provider isolation"
 - add finding, "zsh does not expand a tilde in env VAR=~/path, and opencode creates the literal directory"
 
