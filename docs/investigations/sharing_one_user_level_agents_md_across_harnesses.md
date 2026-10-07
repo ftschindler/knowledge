@@ -1,10 +1,9 @@
 ---
-type: Reference
+type: Investigation
 title: Sharing one user-level AGENTS.md across harnesses
 description: A survey of the tools that distribute one ruleset to many coding agents, why almost all
   of them refuse the home directory, and the two config lines that make one unnecessary here.
 tags:
-- research
 - ai-agents
 - agents
 - opencode

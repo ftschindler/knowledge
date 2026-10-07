@@ -48,7 +48,7 @@ first is a local tool; the second is a website the first feeds. An install event
 repository and the skills taken from it; `DO_NOT_TRACK=1` switches the reporting off, at the
 cost of the pre-install security audit lookup, which is guarded by the same flag. What the
 event carries in full, and where the built-in private-repository exclusion does not hold, is
-[the research page](../research/skills_sh_repository_layout_and_telemetry.md).
+[the investigation](../investigations/skills_sh_repository_layout_and_telemetry.md).
 
 A skill is discovered, never declared. There is no manifest, no registry entry and no
 packaging step: a directory containing a `SKILL.md` whose YAML frontmatter carries a `name`

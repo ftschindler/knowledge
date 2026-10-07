@@ -37,8 +37,10 @@ generated: { by: human:felix_schindler, at: 2026-09-07T10:00:00Z }
 ```
 
 - `type` is free text describing what kind of thing this is: `Principle`, `Person`,
-  `Decision`, `Reference`. It is not free per page, though: one directory holds one genre, so
-  `type` must be the one its `.genre.yaml` declares, and the `genre-conformance` hook says so.
+  `Decision`, `Investigation`. It is not free per page, though: one directory holds one genre,
+  so `type` must be the one its `.genre.yaml` declares, and the `genre-conformance` hook says
+  so. Every directory names its own genre, so the type and the directory say the same thing
+  twice on purpose, and a generic type is a sign the directory has not decided what it holds.
 - `status` is `draft`, `stable` or `deprecated`. Absent means stable.
 - `generated.by` names whatever did the writing: `human:<name>` for a person,
   `<harness>/<model>` for an agent such as `opencode/claude-opus-5`, `process:<id>` for a

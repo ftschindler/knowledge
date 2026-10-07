@@ -2,6 +2,10 @@
 
 ## 2026-10-07
 
+- rename the research section to investigations, moving all eight of its pages, its genre note and its nav entry, and dropping the now-redundant research tag from each
+- change the investigations genre type from Reference to Investigation, on all eight pages and in the directory's genre note
+- rewrite the investigations index to define the genre against findings and decisions
+- retitle the research layer as investigations in "Layer build-knowledge as a values-to-blueprints derivation pipeline" and "Record an abandoned exploration as an exploration, not a superseded decision"
 - add tool, "OpenChamber"
 
 ## 2026-10-01

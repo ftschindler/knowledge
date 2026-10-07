@@ -1,12 +1,11 @@
 ---
-type: Reference
+type: Investigation
 title: 'Spell-checking prose in a pre-commit hook: corpus checkers, dictionary checkers, and what
   each one misses'
 description: A measured comparison of codespell, typos and cspell against one real misspelling, showing
   that corpus and dictionary checkers fail on disjoint sets and that neither alone enforces a
   language variant.
 tags:
-- research
 - pre-commit
 - linting
 - spelling

@@ -1,9 +1,11 @@
-# Research
-
-> This needs to be split into analyses and findings!
+# Investigations
 
 Longer investigations, recorded as findings rather than conclusions. Read these when you want
 the evidence a [decision](../decisions/index.md) was made on.
+
+A [finding](../findings/index.md) is the cheap neighbour: something that cost time once,
+written so the next encounter is short. An investigation costs more, and is read against the
+decision it fed rather than on its own.
 
 A survey is a claim about what existed when it was written, so read one against its `generated`
 date. Where an investigation deliberately stops short of choosing, it says so.

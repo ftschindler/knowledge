@@ -56,7 +56,7 @@ exploration produced:
 ## What that led me to
 
 - **A format instead of an engine.**
-  [Open Knowledge Format](../research/open_knowledge_format_okf_findings.md)
+  [Open Knowledge Format](../investigations/open_knowledge_format_okf_findings.md)
   specifies one concept per Markdown document, standard Markdown links, and no
   required tooling, with conformance judged file-structurally. It grants what the
   engine was for and imposes none of what the engine cost. `docs/` is an OKF
@@ -71,12 +71,12 @@ exploration produced:
   own git repository, each cloning and publishing standalone and unaware of the
   others, bound by a single local manifest file that assigns each a role.
   The architecture is written up in
-  [Federated OKF knowledge bases: a workspace-manifest architecture](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md).
+  [Federated OKF knowledge bases: a workspace-manifest architecture](../investigations/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md).
 - **The leak boundary in each repository, not in the skill layer.** The manifest
   is a guardrail; the actual boundary is each bundle's own pre-commit hooks and
   publish gate, so a bundle stays safe even when an agent bypasses the federation
   layer entirely. This is the direct answer to the aggregation risk the
-  [security review](../research/security_analysis_of_agent_wiki_awiki.md) found.
+  [security review](../investigations/security_analysis_of_agent_wiki_awiki.md) found.
 - **A skill layer, kept thin.** Agents reach the bundles through skills rather
   than a runtime: single-bundle mechanics wrapped by a federation layer that owns
   only the manifest-aware decisions. Skills are prose an agent reads, so they are

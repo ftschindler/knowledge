@@ -60,7 +60,7 @@ the same way every other invariant here is guarded.
 
 Before trusting it with real conversation history and a public repository I read
 its source, which became
-[Security Analysis of Agent Wiki (awiki)](../research/security_analysis_of_agent_wiki_awiki.md).
+[Security Analysis of Agent Wiki (awiki)](../investigations/security_analysis_of_agent_wiki_awiki.md).
 That review found no covert egress and no telemetry of any kind, so nothing below
 is a complaint about the tool's integrity. It is a good tool that turned out to
 be the wrong tool for this.
@@ -143,7 +143,7 @@ Almost all of it, which is why this page is worth its length:
 - **The engine belongs in the quality gate.** The instinct to run the knowledge
   tool's own checks as pre-commit hooks survived; the hooks in this repository
   are the same idea with the engine replaced by scripts.
-- **[Open Knowledge Format](../research/open_knowledge_format_okf_findings.md).**
+- **[Open Knowledge Format](../investigations/open_knowledge_format_okf_findings.md).**
   Reached through awiki's alignment with it, and kept once it became clear the
   format mandates no tooling, no raw-and-rendered split, and standard Markdown
   links, meaning it grants everything I wanted from the engine and imposes none
@@ -166,7 +166,7 @@ so that if one of them is later missed, it is missed knowingly.
 ## What it led to
 
 The survey of what to use instead is
-[Substrate options for an OKF-based agent-first LLM wiki: investigation](../research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md),
+[Substrate options for an OKF-based agent-first LLM wiki: investigation](../investigations/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md),
 which scored candidates against requirements written directly out of the four
 failures above and deliberately stopped short of choosing. The choice itself is
 [Federating my knowledge base as privacy-tiered OKF bundles](../decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md).

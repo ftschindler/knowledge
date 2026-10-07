@@ -1,5 +1,5 @@
 ---
-type: Reference
+type: Investigation
 title: Agent-integration layer and multi-vault interaction for an OKF-conformant PKB
 description: How an agent reaches an OKF-conformant personal knowledge base, and how several vaults at
   different privacy tiers interact.
@@ -10,7 +10,6 @@ tags:
 - agent-first
 - knowledge-management
 - mkdocs
-- research
 status: stable
 generated:
   by: opencode/claude-opus-5

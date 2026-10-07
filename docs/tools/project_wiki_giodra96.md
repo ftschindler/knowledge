@@ -104,7 +104,7 @@ the set of kinds is closed, and named in a schema file rather than chosen as the
 Against [agent-knowledge (stjbrown)](agent_knowledge_stjbrown.md) the contrast is sharper, because the
 two are the same shape - skills plus deterministic scripts, no runtime, no database - pointed at
 different targets. agent-knowledge builds
-[OKF](../research/open_knowledge_format_okf_findings.md) bundles, and OKF explicitly declines to
+[OKF](../investigations/open_knowledge_format_okf_findings.md) bundles, and OKF explicitly declines to
 fix a taxonomy of concept types. project-wiki fixes one, completely, in
 `schema/project-wiki.yml`, and gains from it what OKF gives up: `validate_wiki.py` can check that
 an ADR exists for a decision a requirement references, because it knows what an ADR is. The

@@ -1,5 +1,5 @@
 ---
-type: Reference
+type: Investigation
 title: 'Substrate options for an OKF-based agent-first LLM wiki: investigation'
 description: What tool or substrate to adopt for an agent-first LLM wiki that is also a human PKB, given
   an already-adopted OKF target.
@@ -10,7 +10,6 @@ tags:
 - agent-wiki
 - knowledge-management
 - agent-first
-- research
 status: stable
 generated:
   by: opencode/claude-opus-5

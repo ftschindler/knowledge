@@ -39,11 +39,11 @@ sit beside the pipeline and supply the hinge with evidence:
 
 | Layer | Question it answers | Nature |
 | --- | --- | --- |
-| **Research** | What is actually the case, before I commit to anything? | evidence gathered, conclusion deferred |
+| **Investigations** | What is actually the case, before I commit to anything? | evidence gathered, conclusion deferred |
 | **Explorations** | What did I try, what did it teach me, and why did I stop? | a commitment made and then withdrawn |
 
 They differ by commitment, and that difference is what tells a reader how much
-weight the findings carry: research is reading, an exploration is building.
+weight the findings carry: an investigation is reading, an exploration is building.
 Somebody who read the documentation and somebody who ran the thing for a month
 know different amounts.
 
@@ -88,5 +88,5 @@ compliance artefact. Because the knowledge is *yours*, the record can be persona
 Applying this model means creating a directory per layer, which is itself an instance
 of [Split orthogonal classification axes across folders and tags](split_orthogonal_classification_axes_across_folders_and_tags.md) (nature is the
 folder axis). This page is the general technique; standing up the actual
-`values` / `wishes` / `decisions` / `blueprints` directories, alongside `research`
-and `explorations`, is its application.
+`values` / `wishes` / `decisions` / `blueprints` directories, alongside
+`investigations` and `explorations`, is its application.

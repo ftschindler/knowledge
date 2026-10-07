@@ -16,7 +16,7 @@ generated:
   by: opencode/claude-opus-5
   at: '2026-08-27T00:00:00Z'
 ---
-Found while ingesting a page from [Security Analysis of Agent Wiki (awiki)](../research/security_analysis_of_agent_wiki_awiki.md)
+Found while ingesting a page from [Security Analysis of Agent Wiki (awiki)](../investigations/security_analysis_of_agent_wiki_awiki.md)
 into this vault - noted here as a standalone tool gotcha.
 
 **Version**: agent-wiki-kb `0.8.1` - verified against the installed source at

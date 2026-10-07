@@ -28,7 +28,7 @@ sources:
 ---
 agent-knowledge[^ak-readme] is a set of portable agent
 skills for building and maintaining knowledge bundles in plain Markdown, conformant to
-[Open Knowledge Format v0.2](../research/open_knowledge_format_okf_findings.md). It is the
+[Open Knowledge Format v0.2](../investigations/open_knowledge_format_okf_findings.md). It is the
 closest published thing to what this knowledge base is, and it appears here in two roles at
 once: as a tool that was evaluated, and as a source that is cited.
 
@@ -69,10 +69,10 @@ work without it.
 ## Why it matters here
 
 **It ranked first as an architectural match.**
-[Substrate options for an OKF-based agent-first LLM wiki: investigation](../research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
+[Substrate options for an OKF-based agent-first LLM wiki: investigation](../investigations/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md)
 scored it as the best fit for "skill plus contract, CLI optional", and its index is the
 worked example behind the conclusion in
-[Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
+[Federated OKF knowledge bases](../investigations/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
 that an index should be authored rather than generated: it truncates, compresses or rewrites
 its own concept descriptions rather than copying them, which is what a generator cannot do.
 

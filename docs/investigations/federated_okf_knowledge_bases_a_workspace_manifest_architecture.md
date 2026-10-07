@@ -1,5 +1,5 @@
 ---
-type: Reference
+type: Investigation
 title: 'Federated OKF knowledge bases: a workspace-manifest architecture'
 description: An implementation-ready architecture binding independent OKF bundles into one privacy-tiered
   knowledge base through a workspace manifest and a skill layer.
@@ -11,7 +11,6 @@ tags:
 - knowledge-management
 - federation
 - mkdocs
-- research
 status: stable
 generated:
   by: opencode/claude-opus-5

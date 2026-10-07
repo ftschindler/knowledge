@@ -1,10 +1,9 @@
 ---
-type: Reference
+type: Investigation
 title: 'skills.sh: repository layout, selective install and telemetry'
 description: A source read of the skills CLI, answering where it finds skills in a repository, how a
   user installs one rather than all, and what it reports back about the install.
 tags:
-- research
 - agent-skills
 - skills-sh
 - data-privacy

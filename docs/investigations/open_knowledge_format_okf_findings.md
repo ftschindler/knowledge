@@ -1,10 +1,9 @@
 ---
-type: Reference
+type: Investigation
 title: 'Open Knowledge Format (OKF): findings'
 description: 'Factual notes from reading the Open Knowledge Format v0.2 specification: what it standardises
   and what it leaves open.'
 tags:
-- research
 - okf
 - knowledge-management
 - agent-wiki

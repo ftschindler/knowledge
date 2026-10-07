@@ -22,7 +22,7 @@ Each section defines what it holds on its own page, and lists what is in it. The
 - [Blueprints](blueprints/index.md) - the concrete, copyable artefact a decision produced
 - [Guides](guides/index.md) - a procedure I have carried out and would carry out again, with the steps that are silent when skipped marked as such
 - [Knowledge management](knowledge_management/index.md) - how knowledge gets organised, independently of any tool that stores it
-- [Research](research/index.md) - longer investigations, recorded as findings rather than conclusions
+- [Investigations](investigations/index.md) - longer reading, kept for the evidence rather than the conclusion it reached
 - [Tools](tools/index.md) - an external tool or project that earns a page of its own
 - [Hardware](hardware/index.md) - a machine or peripheral in daily use, and how it presents itself to Linux
 - [Findings](findings/index.md) - things that cost time once: the symptom, what it was, and how to get past it

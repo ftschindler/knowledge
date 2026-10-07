@@ -56,14 +56,14 @@ claims about the world, and a status field on a page whose header says
 **Decision** cannot carry the difference: the reader has already accepted the
 frame by the time they reach it.
 
-Research is the nearer neighbour, and still not the same thing. Research is
-evidence gathered without committing; an exploration is a commitment made and
-then withdrawn. The distinction is worth keeping because it tells the reader how
-much weight the findings carry. Somebody who read the documentation and somebody
-who ran the thing for a month know different amounts.
+An investigation is the nearer neighbour, and still not the same thing. An
+investigation is evidence gathered without committing; an exploration is a
+commitment made and then withdrawn. The distinction is worth keeping because it
+tells the reader how much weight the findings carry. Somebody who read the
+documentation and somebody who ran the thing for a month know different amounts.
 
 ## The tell that you have one
 
-You are hesitating over whether a page is a decision or research, and the reason
-is that you *did* decide, and it *is* no longer true. That hesitation is the
-exploration layer asking to exist.
+You are hesitating over whether a page is a decision or an investigation, and
+the reason is that you *did* decide, and it *is* no longer true. That hesitation
+is the exploration layer asking to exist.
