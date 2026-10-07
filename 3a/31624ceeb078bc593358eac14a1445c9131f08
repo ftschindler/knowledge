@@ -1,0 +1,25 @@
+docs/tools/index.md
+  s_3bb5124fc1190e::t_24e18fab251849 30-31
+docs/tools/voxtype_jackson.md
+  s_3bb5124fc1190e::t_7fed24933f7a0c 1-43
+docs/log.md
+  s_3bb5124fc1190e::t_f59ca0f3255a2c 16-17
+docs/tools/vocalinux_vocahq.md
+  s_3bb5124fc1190e::t_a8208ef794c9d4 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "3a31624ceeb078bc593358eac14a1445c9131f08",
+  "prompts": {},
+  "sessions": {
+    "s_3bb5124fc1190e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f187df019ffezVRBiL7tdzIBss",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+docs/findings/20261001_zsh_does_not_expand_a_tilde_in_env_var_assignments.md
+  s_6f1897f7d49f65::t_adf353c8aad8d0 1-63
+docs/log.md
+  s_6f1897f7d49f65::t_c9aa4d16be16ce 3-7
+docs/findings/20261001_a_plugin_upgrade_renamed_a_routing_category_and_breached_provider_isolation.md
+  s_6f1897f7d49f65::t_824c71e1545c74 1-70
+docs/findings/index.md
+  s_6f1897f7d49f65::t_9f77caf422334d 23-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "e37605d92e42fa80cc4d95550041983e46058288",
+  "prompts": {},
+  "sessions": {
+    "s_6f1897f7d49f65": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f0871a246ffeKOg6NZzKohCnSy",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}

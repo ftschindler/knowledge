@@ -1,0 +1,23 @@
+docs/log.md
+  s_1c39c9c2e60551::t_328081d22525ca 5
+docs/findings/20261001_a_config_symlink_makes_every_omo_migration_fail_on_start.md
+  s_1c39c9c2e60551::t_910d858bed29ee 1-79
+docs/findings/index.md
+  s_1c39c9c2e60551::t_22487ec04454de 25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "b5111f8068434bdba9ebe538a05f15e19d188edb",
+  "prompts": {},
+  "sessions": {
+    "s_1c39c9c2e60551": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f0851ee81ffeFnXoTH504bZnZb",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
