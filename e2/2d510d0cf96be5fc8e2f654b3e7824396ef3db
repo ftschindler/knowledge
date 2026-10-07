@@ -1,0 +1,23 @@
+docs/log.md
+  s_dd32a146358720::t_600258e4d2452e 3-6
+docs/tools/index.md
+  s_dd32a146358720::t_f935437518277e 24
+docs/tools/openchamber.md
+  s_dd32a146358720::t_614355f4d2704b 1-116
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "e22d510d0cf96be5fc8e2f654b3e7824396ef3db",
+  "prompts": {},
+  "sessions": {
+    "s_dd32a146358720": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_eea965dd8ffeeTVN7yaJRlQBIT",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
