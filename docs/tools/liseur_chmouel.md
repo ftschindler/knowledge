@@ -27,7 +27,7 @@ An open-source EPUB reader for Android paired with a self-hosted sync server, de
 
 ## What it is
 
-**Liseur** is the Android client: an EPUB reader using the Readium engine with support for local files, OPDS catalogs, and sync servers. **Liseur-sync** is the companion server: a single Go binary that provides reading-position synchronization, library management, and statistics.
+**Liseur**[^liseur-repo] is the Android client: an EPUB reader using the Readium engine with support for local files, OPDS catalogs, and sync servers. **Liseur-sync**[^liseur-sync-repo] is the companion server: a single Go binary that provides reading-position synchronization, library management, and statistics.
 
 Together they form a self-hosted alternative to commercial ebook ecosystems, with explicit support for KOReader synchronization and Calibre library integration.
 
