@@ -19,8 +19,8 @@ knowledge. They landed there because **that is what I happened to be doing**
 when I found them, not because of what they actually are.
 
 Corrected:
-[Security Analysis of Agent Wiki (awiki)](../research/security_analysis_of_agent_wiki_awiki.md)
-is a security review, so it belongs in `research`.
+[Security Analysis of Agent Wiki (awiki)](../investigations/security_analysis_of_agent_wiki_awiki.md)
+is a security review, so it belongs in `investigations`.
 [awiki title extraction breaks on frontmatter-led source files](../findings/20260827_awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
 is a finding, so it belongs in `findings`. Both stand on their own merits as
 durable, hard-won knowledge. Neither needed the knowledge-management framing to

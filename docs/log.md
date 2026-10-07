@@ -1,5 +1,47 @@
 # Log
 
+## 2026-10-07
+
+- rename the research section to investigations, moving all eight of its pages, its genre note and its nav entry, and dropping the now-redundant research tag from each
+- change the investigations genre type from Reference to Investigation, on all eight pages and in the directory's genre note
+- rewrite the investigations index to define the genre against findings and decisions
+- retitle the research layer as investigations in "Layer build-knowledge as a values-to-blueprints derivation pipeline" and "Record an abandoned exploration as an exploration, not a superseded decision"
+- add tool, "OpenChamber"
+
+## 2026-10-01
+
+- add finding, "A config symlink makes every omo migration fail on start"
+- add finding, "A plugin upgrade renamed a routing category and breached provider isolation"
+- add finding, "zsh does not expand a tilde in env VAR=~/path, and opencode creates the literal directory"
+
+## 2026-09-30
+
+- add finding, "Chromium maximises to the wrong size after an undock, and closing every window does not restart it"
+
+## 2026-09-28
+
+- add finding, "pymarkdown's fix mode dedents YAML frontmatter"
+- add finding, "opencode writes its session transcripts into the Claude config directory"
+- add finding, "Git LFS fails when the remote URL has a trailing slash"
+- add research, "Spell-checking prose in a pre-commit hook", comparing codespell, typos and cspell against one real misspelling and finding that corpus and dictionary checkers fail on sets neither contains
+- record that only a locale-aware checker can enforce a British-English rule, codespell shipping the conversion in the wrong direction and cspell having no grounds to reject a valid -ize ending
+- keep the measurements that argue for scope, five hundred hits from diagram JSON against seven from the markdown a person wrote
+- add a hardware section, holding device references, with its genre declaration and its place in the root index and the nav
+- add "Dell Precision 5470", the notebook
+- add "OpenMove by Shokz", the headset
+- add tool page, "WirePlumber"
+- add finding, "Bluetooth A2DP fails with Protocol not available after resume"
+- add finding, "A Bluetooth headset reconnects in A2DP instead of the saved profile"
+- correct the discrete graphics section of "Dell Precision 5470", which read a device removed by EnvyControl as a device the machine does not have
+- add tool stub, "Voxtype (Peter Jackson)"
+- add tool stub, "Vocalinux (VocaHQ)"
+
+## 2026-09-23
+
+- add research, "Sharing one user-level AGENTS.md across harnesses", surveying where each harness looks for a user-level instruction file and which adapter mechanism survives Windows
+- rewrite it around the rule-file generator category, Ruler and rulesync, after confirming opencode's `instructions` key expands a leading tilde at source
+- correct that survey after a proper enumeration: split the population into content generators and distributors, add vibe-rules, ai-rulez and ai-rules-sync, and record that writing to the home directory is the rare feature
+
 ## 2026-09-22
 
 - move the "What I took" section off the caveman tool page into a decision, "Adopting caveman at lite, without its init block", and leave the tool page pointing at it

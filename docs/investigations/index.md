@@ -1,9 +1,11 @@
-# Research
-
-> This needs to be split into analyses and findings!
+# Investigations
 
 Longer investigations, recorded as findings rather than conclusions. Read these when you want
 the evidence a [decision](../decisions/index.md) was made on.
+
+A [finding](../findings/index.md) is the cheap neighbour: something that cost time once,
+written so the next encounter is short. An investigation costs more, and is read against the
+decision it fed rather than on its own.
 
 A survey is a claim about what existed when it was written, so read one against its `generated`
 date. Where an investigation deliberately stops short of choosing, it says so.
@@ -14,3 +16,5 @@ date. Where an investigation deliberately stops short of choosing, it says so.
 - [Federated OKF knowledge bases: a workspace-manifest architecture](federated_okf_knowledge_bases_a_workspace_manifest_architecture.md) - the architecture that answered the previous two, and that this bundle is now an instance of
 - [Security Analysis of Agent Wiki (awiki)](security_analysis_of_agent_wiki_awiki.md) - a read of one such tool's source, asking what it does with your data
 - [skills.sh: repository layout, selective install and telemetry](skills_sh_repository_layout_and_telemetry.md) - where the skills installer looks, how a user takes one skill rather than all, and what it reports back
+- [Sharing one user-level AGENTS.md across harnesses](sharing_one_user_level_agents_md_across_harnesses.md) - a crowded tool category that almost entirely refuses to write to the home directory, and why
+- [Spell-checking prose in a pre-commit hook](spell_checking_prose_in_a_pre_commit_hook.md) - why two spell checkers catch different mistakes, and the one word that shows it

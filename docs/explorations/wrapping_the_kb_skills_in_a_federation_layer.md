@@ -22,7 +22,7 @@ written yet. What it needs to cover:
   [the `kb-*` skills](../tools/agent_knowledge_stjbrown.md) that reimplemented nothing: the upstream
   skills vendored unmodified as the single-bundle mechanic, a thin layer above them owning
   only the manifest-aware concerns. The architecture is
-  [Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md),
+  [Federated OKF knowledge bases](../investigations/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md),
   whose skill-layer section this design originally filled.
 - **What I built.** Roughly twenty commits and fifty-six passing tests, so this was not
   abandoned at the sketch stage. Worth saying what actually worked.

@@ -28,7 +28,7 @@ sources:
   last_modified: '2026-09-16'
 ---
 federated-knowledge-skills[^fks-readme] is the layer that turns several independent
-[OKF](../research/open_knowledge_format_okf_findings.md) bundles into one federation an agent
+[OKF](../investigations/open_knowledge_format_okf_findings.md) bundles into one federation an agent
 can use: a skill it reads, a CLI it runs, and two pre-commit hooks each bundle pins for
 itself. It is mine, and it is the tooling this bundle is now written through, so it appears
 here in the same two roles that [agent-knowledge](agent_knowledge_stjbrown.md) does: a tool with a page,
@@ -93,7 +93,7 @@ where it has to be enforced.
 
 [Federating my knowledge base as privacy-tiered OKF bundles](../decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md)
 is the decision, and
-[Federated OKF knowledge bases: a workspace-manifest architecture](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
+[Federated OKF knowledge bases: a workspace-manifest architecture](../investigations/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md)
 is the architecture it settled on. The first implementation wrapped the `kb-*` skills from
 [agent-knowledge](agent_knowledge_stjbrown.md) and was retired at twenty commits and a green test suite;
 the format discipline and that project's own bundle survived, and are still read here as an

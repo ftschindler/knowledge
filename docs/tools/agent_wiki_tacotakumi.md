@@ -78,7 +78,7 @@ was already git and pre-commit. That argument, and three others, are in
 ## On its OKF claim
 
 The README describes the vault as roughly 80% conformant with the
-[Open Knowledge Format](../research/open_knowledge_format_okf_findings.md) *by convergent
+[Open Knowledge Format](../investigations/open_knowledge_format_okf_findings.md) *by convergent
 design* rather than by implementing the spec: markdown with frontmatter, generated `index.md`
 and `log.md`, no prescribed taxonomy, arbitrary frontmatter keys preserved. That is an honest
 framing, and the missing fraction is where it matters. OKF §6.1 specifies standard markdown
@@ -89,7 +89,7 @@ concept, whilst awiki splits each one into a raw source and a rendered page.
 
 - [awiki tracks backlinks via wikilinks only, not Markdown links](../findings/20260827_awiki_tracks_backlinks_via_wikilinks_only_not_markdown_links.md)
 - [awiki title extraction breaks on frontmatter-led source files](../findings/20260827_awiki_title_extraction_breaks_on_frontmatter_led_source_files.md)
-- [Security Analysis of Agent Wiki (awiki)](../research/security_analysis_of_agent_wiki_awiki.md) - a full source read, asking what it does with your data
+- [Security Analysis of Agent Wiki (awiki)](../investigations/security_analysis_of_agent_wiki_awiki.md) - a full source read, asking what it does with your data
 - [Running this knowledge base on awiki](../explorations/running_this_knowledge_base_on_awiki.md) - the phase spent running on it, and why it ended
 
 ## Where it sits among the alternatives
@@ -102,4 +102,4 @@ of the tools implementing the pattern and a
 of the OKF-authoring ones. It is a bundle in this workspace, so it is worth reading there
 rather than restating here. The narrower question of what to use *instead*, scored against
 requirements, is
-[Substrate options for an OKF-based agent-first LLM wiki: investigation](../research/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md).
+[Substrate options for an OKF-based agent-first LLM wiki: investigation](../investigations/substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md).

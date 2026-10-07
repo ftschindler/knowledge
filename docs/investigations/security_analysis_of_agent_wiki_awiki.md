@@ -1,5 +1,5 @@
 ---
-type: Reference
+type: Investigation
 title: Security Analysis of Agent Wiki (awiki)
 description: A security review of the agent-wiki CLI, asking what its potential for data leaks is and
   whether it phones home.

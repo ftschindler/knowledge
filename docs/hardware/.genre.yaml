@@ -3,9 +3,9 @@
 # declared once here rather than copied into every page's body. The build hook
 # `hooks/concept_genre.py` renders the note, and the `genre-conformance` check
 # holds every concept's `type` to the one named here.
-type: Reference
+type: Device
 article: a
-word: piece of research
+word: device reference
 note: |-
-  A longer investigation, recorded as findings rather than conclusions. A
-  survey is a claim about what existed when it was written.
+  What a machine or peripheral is, and how it presents itself to Linux. Anything
+  learned whilst getting it to work lives elsewhere and links back here.

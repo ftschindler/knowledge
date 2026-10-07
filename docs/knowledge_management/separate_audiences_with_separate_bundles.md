@@ -52,7 +52,7 @@ reorganising an existing one.
 - **Cross-bundle links become their own problem**, since a link from a public page into a
   private one leaks the private page's existence and often its title. That needs a rule of its
   own; in this knowledge base it is the `referenceable_by` allow-list in
-  [Federated OKF knowledge bases](../research/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md).
+  [Federated OKF knowledge bases](../investigations/federated_okf_knowledge_bases_a_workspace_manifest_architecture.md).
 - **Moving a page to a wider audience is irreversible**, because the target's history keeps it.
   That makes promotion a deliberate, gated act rather than a drag-and-drop, which is why
   [Federating my knowledge base as privacy-tiered OKF bundles](../decisions/federating_my_knowledge_base_as_privacy_tiered_okf_bundles.md)
