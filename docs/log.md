@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-07
+
+- add tool, "OpenChamber"
+
 ## 2026-10-01
 
 - add finding, "A config symlink makes every omo migration fail on start"
