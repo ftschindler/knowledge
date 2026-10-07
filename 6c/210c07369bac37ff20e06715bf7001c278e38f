@@ -1,0 +1,19 @@
+docs/tools/liseur_chmouel.md
+  s_327d26dcf0d834::t_f2a2dfbea0c007 30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "6c210c07369bac37ff20e06715bf7001c278e38f",
+  "prompts": {},
+  "sessions": {
+    "s_327d26dcf0d834": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ee98a989dffePfpoD6lrdjX5WM",
+        "model": "claude-opus-5"
+      },
+      "human_author": "Felix Schindler <107669806+ftschindler@users.noreply.github.com>"
+    }
+  }
+}
