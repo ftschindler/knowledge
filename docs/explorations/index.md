@@ -10,3 +10,4 @@ date, the work simply ended. The argument for keeping them as their own genre is
 
 - [Running this knowledge base on awiki](running_this_knowledge_base_on_awiki.md) - my trial of agent-first authoring on a dedicated wiki engine, the four things that ended it, and the much longer list of what survived
 - [Wrapping the kb skills in a federation layer](wrapping_the_kb_skills_in_a_federation_layer.md) - a stub: the federation layer that wrapped another skill set, reached a green test suite, and was retired
+- [Tracking AI authorship with git-ai](tracking_ai_authorship_with_git_ai.md) - three and a half months of recording which lines an agent wrote, never reading any of it, and what that says about collecting data because collecting is cheap

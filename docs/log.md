@@ -2,6 +2,7 @@
 
 ## 2026-10-09
 
+- add exploration, "Tracking AI authorship with git-ai", and link it from the git-ai tool page
 - add tool, "puppeteer"
 - add finding, "An unpinned puppeteer replaces the Chrome pinned beside it"
 - correct the snippet in "Pin transitive runtime dependencies, not just the tool", which pinned the browser and left the library choosing it unpinned
