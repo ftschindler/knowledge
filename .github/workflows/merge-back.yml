@@ -23,7 +23,7 @@ permissions:
 jobs:
   merge_back:
     name: 🔁 (merge main back into staging)
-    uses: ftschindler/federated-knowledge-skills/.github/workflows/merge-back.yml@a56c34298a91ded8f88519a027d38ff930ea9ae1
+    uses: ftschindler/federated-knowledge-skills/.github/workflows/merge-back.yml@5b0771e12f55d1ce5f598f4e42e788bcac4c4447  # v0.2.2
     with:
       branch: staging
     permissions:
