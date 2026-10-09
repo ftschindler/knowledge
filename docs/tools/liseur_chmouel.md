@@ -1,26 +1,33 @@
 ---
-description: EPUB reader and sync server for self-hosted book libraries with reading-position synchronization across devices
-type: concept
+type: Tool
+title: Liseur and Liseur-Sync
+description: An open-source Android EPUB reader paired with a self-hosted Go sync server, for keeping
+  reading positions in step across devices and serving a personal book library.
 tags:
-  - tools
-  - reading
-  - epub
-  - self-hosted
-resource:
-  liseur: https://github.com/chmouel/liseur
-  liseur-sync: https://github.com/chmouel/liseur-sync
+- tools
+- reading
+- epub
+- self-hosted
+status: stable
+sources:
+- id: liseur-repo
+  resource: https://github.com/chmouel/liseur
+  title: 'chmouel/liseur: EPUB reader for Android'
+  last_modified: '2026-09-28'
+- id: liseur-sync-repo
+  resource: https://github.com/chmouel/liseur-sync
+  title: 'chmouel/liseur-sync: sync server for Liseur'
+  last_modified: '2026-09-28'
 generated:
   by: opencode/qwen3.5-397b-a17b
-  on: 2026-09-28
+  at: '2026-09-28T00:00:00Z'
 ---
-
-# Liseur and Liseur-Sync (Chmouel Boudjnah)
 
 An open-source EPUB reader for Android paired with a self-hosted sync server, designed for reading-position synchronization across devices and integration with personal book libraries.
 
 ## What it is
 
-**Liseur** is the Android client: an EPUB reader using the Readium engine with support for local files, OPDS catalogs, and sync servers. **Liseur-sync** is the companion server: a single Go binary that provides reading-position synchronization, library management, and statistics.
+**Liseur**[^liseur-repo] is the Android client: an EPUB reader using the Readium engine with support for local files, OPDS catalogs, and sync servers. **Liseur-sync**[^liseur-sync-repo] is the companion server: a single Go binary that provides reading-position synchronization, library management, and statistics.
 
 Together they form a self-hosted alternative to commercial ebook ecosystems, with explicit support for KOReader synchronization and Calibre library integration.
 
@@ -30,11 +37,12 @@ Together they form a self-hosted alternative to commercial ebook ecosystems, wit
 
 Reading positions are stored as an append-only log rather than replacing the previous state. This allows the server to resolve updates from multiple devices without older clients blindly overwriting newer state. The same history derives reading sessions and statistics.
 
-Book identity is independent of filesystem path—clients resolve books using content and metadata identifiers before exchanging reading state. Reader preferences (typeface, theme, margins) sync as a small map of opaque strings per account, resolving by last-writer-wins.
+Book identity is independent of filesystem path - clients resolve books using content and metadata identifiers before exchanging reading state. Reader preferences (typeface, theme, margins) sync as a small map of opaque strings per account, resolving by last-writer-wins.
 
 ### Library management
 
 The server can index either:
+
 - A directory containing EPUB files
 - A Calibre library using `metadata.db`
 
@@ -66,16 +74,19 @@ curl -fsSL https://raw.githubusercontent.com/chmouel/liseur-sync/main/scripts/in
 ### Docker Compose
 
 SQLite (simplest):
+
 ```bash
 docker compose --profile sqlite up -d
 ```
 
 Bundled PostgreSQL:
+
 ```bash
 docker compose --profile postgres up -d
 ```
 
 External PostgreSQL:
+
 ```bash
 docker compose --profile external up -d
 ```
@@ -112,6 +123,7 @@ MIT
 ## Author
 
 Chmouel Boudjnah
+
 - Fediverse: [@chmouel@chmouel.com](https://fosstodon.org/@chmouel)
 - Twitter: [@chmouel](https://twitter.com/chmouel)
-- Blog: https://blog.chmouel.com
+- Blog: <https://blog.chmouel.com>
