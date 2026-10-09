@@ -2,6 +2,9 @@
 
 ## 2026-10-09
 
+- add tool, "puppeteer"
+- add finding, "An unpinned puppeteer replaces the Chrome pinned beside it"
+- correct the snippet in "Pin transitive runtime dependencies, not just the tool", which pinned the browser and left the library choosing it unpinned
 - add tool, "git-ai"
 - add guide, "Uninstall git-ai and the state it left in every repository"
 - add finding, "git-ai uninstall-hooks has no help flag and uninstalls when asked for one"

@@ -30,15 +30,22 @@ it to the tool version with a comment so upgrades move together.
 **Snippet.**
 
 ```yaml
-# linkspector pinned together with the exact Chrome it drives
-entry: bash -c 'npx --yes puppeteer browsers install chrome@148.0.7778.97
+# linkspector, the puppeteer that chooses the browser, and the exact Chrome
+# that puppeteer release defaults to. All three move together.
+entry: bash -c 'npx --yes puppeteer browsers install chrome@152.0.7977.75
                 && linkspector check -c .linkspector.yml'
-additional_dependencies: ['@umbrelladocs/linkspector@0.5.3', 'puppeteer']
+additional_dependencies: ['@umbrelladocs/linkspector@0.5.3', 'puppeteer@25.10.0']
 ```
 
 The runtime here is not incidental: [linkspector](../tools/linkspector.md) resolves a link it
 cannot settle with an HTTP request by loading the page in headless Chrome, so the browser is
 part of what decides the answer.
+
+**Pin whatever decides which runtime starts, not only the runtime.** An earlier version of this
+snippet pinned Chrome and left `puppeteer` floating, which pins nothing, because
+[puppeteer](../tools/puppeteer.md) launches the revision compiled into its own release rather
+than the one just installed. That is
+[a finding that cost a fortnight of red pull requests](../findings/20261009_an_unpinned_puppeteer_replaces_the_chrome_pinned_beside_it.md).
 
 **How enforced.** Explicit version pins for the runtime alongside the tool, with
 a paired comment. Extends the SHA-pinning family:
