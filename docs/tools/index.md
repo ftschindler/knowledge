@@ -23,6 +23,7 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [opencode](opencode.md) - the terminal agent that writes most of these pages, and the one-directory-per-provider config my own setup is built from
 - [OpenChamber](openchamber.md) - the desktop, web and mobile workspace that drives an opencode server rather than replacing it, and what adopting it would and would not change here
 - [markitdown](markitdown.md) - Microsoft's PDF-and-Office-to-Markdown converter, as a command and as the MCP server an agent calls
+- [git-ai](git_ai.md) - the git extension that records which lines an agent wrote, where it puts itself, and what that leaves behind
 - [linkspector](linkspector.md) - the link checker this bundle commits through, the two passes it resolves every link with, and the schema that refuses to be annotated
 - [skills (Vercel Labs)](skills_vercel_labs.md) - `npx skills add`: the installer that discovers a skill by finding its `SKILL.md`, and the leaderboard it reports installs to
 - [caveman (Julius Brussee)](caveman_brussee.md) - the terseness skill, the four commercial layers sold under the same name, and what survives once the token-saving argument is dropped

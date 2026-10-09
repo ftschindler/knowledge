@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### October
 
+- 2026-10-09: [git-ai uninstall-hooks has no help flag and uninstalls when asked for one](20261009_git_ai_uninstall_hooks_has_no_help_flag_and_uninstalls_when_asked_for_one.md) - the one flag it is safe to try on an unfamiliar command, read as noise and the subcommand run anyway
 - 2026-10-01: [A config symlink makes every omo migration fail on start](20261001_a_config_symlink_makes_every_omo_migration_fail_on_start.md) - a path check that follows the link before it judges the name, and a journal that would have overwritten a fortnight of edits had it succeeded
 - 2026-10-01: [A plugin upgrade renamed a routing category and breached provider isolation](20261001_a_plugin_upgrade_renamed_a_routing_category_and_breached_provider_isolation.md) - a pin that stayed valid whilst the key it named stopped existing, and the three guards that all declined to notice
 - 2026-10-01: [zsh does not expand a tilde in env VAR=~/path, and opencode creates the literal directory](20261001_zsh_does_not_expand_a_tilde_in_env_var_assignments.md) - a shell that leaves the tilde alone, a tool that makes the directory anyway, and an error about neither

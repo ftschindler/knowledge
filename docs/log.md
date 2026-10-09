@@ -1,5 +1,11 @@
 # Log
 
+## 2026-10-09
+
+- add tool, "git-ai"
+- add guide, "Uninstall git-ai and the state it left in every repository"
+- add finding, "git-ai uninstall-hooks has no help flag and uninstalls when asked for one"
+
 ## 2026-10-07
 
 - rename the research section to investigations, moving all eight of its pages, its genre note and its nav entry, and dropping the now-redundant research tag from each

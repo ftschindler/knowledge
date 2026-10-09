@@ -12,3 +12,4 @@ Conventions:
 [Date a page whose claim is about a version](../knowledge_management/date_a_page_whose_claim_is_about_a_version.md).
 
 - [Let CI push to a protected branch with a GitHub App](let_ci_push_to_a_protected_branch_with_a_github_app.md) - an App installed on one repository, minting an hour-long token, instead of a maintainer's personal token in a secret
+- [Uninstall git-ai and the state it left in every repository](uninstall_git_ai.md) - four removals in a fixed order, because the daemon reinstalls the hooks it just lost and the data outlives the binary
