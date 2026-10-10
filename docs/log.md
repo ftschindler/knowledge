@@ -2,6 +2,7 @@
 
 ## 2026-10-09
 
+- extend "Pin GitHub Actions to full commit SHAs" to name reusable workflows, with the permissions argument and a snippet line
 - add exploration, "Tracking AI authorship with git-ai", and link it from the git-ai tool page
 - add tool, "puppeteer"
 - add finding, "An unpinned puppeteer replaces the Chrome pinned beside it"

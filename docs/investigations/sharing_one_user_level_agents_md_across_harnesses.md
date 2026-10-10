@@ -24,7 +24,7 @@ sources:
   title: Rules - opencode docs
   last_modified: '2026-09-22'
 - id: opencode-src
-  resource: https://github.com/anomalyco/opencode/blob/dev/packages/opencode/src/session/instruction.ts
+  resource: https://github.com/anomalyco/opencode/blob/fc7e4cf93e660ad5ddabb0c48ecc99e934ebfe95/packages/opencode/src/session/instruction.ts
   title: 'opencode: session/instruction.ts'
   last_modified: '2026-09-23'
 - id: claude-memory
