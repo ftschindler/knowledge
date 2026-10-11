@@ -64,6 +64,8 @@ which one gets launched.** The two look interchangeable and are not: one populat
 the other is a constant compiled into the library. A project that installs a pinned Chrome and
 leaves the library version floating has pinned nothing, which is
 [the finding this page exists for](../findings/20261009_an_unpinned_puppeteer_replaces_the_chrome_pinned_beside_it.md).
+The procedure that follows from it is
+[Pin the browser behind a pre-commit link checker](../guides/pin_the_browser_behind_a_pre_commit_link_checker.md).
 
 ## Where it turns up here
 

@@ -2,6 +2,7 @@
 
 ## 2026-10-09
 
+- add guide, "Pin the browser behind a pre-commit link checker", and link it from the puppeteer tool page
 - extend "Pin GitHub Actions to full commit SHAs" to name reusable workflows, with the permissions argument and a snippet line
 - add exploration, "Tracking AI authorship with git-ai", and link it from the git-ai tool page
 - add tool, "puppeteer"
