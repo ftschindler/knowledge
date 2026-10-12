@@ -35,7 +35,9 @@ repos:
     # It is what decides which Chrome launches: each release downloads and runs
     # the revision compiled into it, so a floating range here means the browser
     # resolving a link changes without anything in this repository changing.
-    # 24.39.1 -> Chrome 146.0.7680.76.
+    # 24.39.1 -> Chrome 146.0.7680.76. How to choose the pair, and how to read
+    # the mapping out of a release:
+    # https://raw.githubusercontent.com/ftschindler/knowledge/staging/docs/guides/pin_the_browser_behind_a_pre_commit_link_checker.md
     additional_dependencies: ['@umbrelladocs/linkspector@0.5.3', 'puppeteer@24.39.1']
     pass_filenames: false
     files: \.md$
