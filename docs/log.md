@@ -2,6 +2,7 @@
 
 ## 2026-10-14
 
+- write out "Wrapping the kb skills in a federation layer", which had stood as a stub, and take it out of draft
 - extend the federated-knowledge-skills tool page with sharing, migration and the subscribed rule, and bring its status and sources current
 - correct "Federating my knowledge base as privacy-tiered OKF bundles", which said the federation layer was at design stage, and point it at the blueprint it deferred
 - add principle, "A version stamp is bookkeeping about capabilities, not a lock"
