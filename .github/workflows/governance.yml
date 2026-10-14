@@ -50,7 +50,15 @@ jobs:
     - name: Cache prek environments
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
       with:
-        path: ~/.cache/prek
+        # Both directories, because the linkspector hook's environment is split
+        # across them. `prek` holds the node_modules; puppeteer's browser lands
+        # in its own cache from a postinstall script. Restoring only the first
+        # gives a hook environment that looks complete and has no browser: the
+        # install step never re-runs, so nothing fetches Chrome. They are cached
+        # under one key so a restore cannot bring back half the pair.
+        path: |
+          ~/.cache/prek
+          ~/.cache/puppeteer
         key: prek|${{ steps.setup-python.outputs.python-version }}|${{ hashFiles('.pre-commit-config.yaml') }}
         restore-keys: |
           prek|${{ steps.setup-python.outputs.python-version }}

@@ -29,7 +29,13 @@ repos:
   hooks:
   - id: linkspector
     name: Check broken links (linkspector)
-    entry: linkspector check -c .linkspector.yml
+    # `browsers install chrome` names no version on purpose: the pinned puppeteer
+    # below resolves its own, so this cannot drift from the pin the way a literal
+    # `chrome@...` does. It is a cheap no-op once the browser is in the cache, and
+    # it is what makes the check independent of whether anything downloaded a
+    # browser earlier - a restored hook environment, or an npm that declines to
+    # run puppeteer's postinstall, otherwise leaves it with no browser at all.
+    entry: bash -c 'puppeteer browsers install chrome && linkspector check -c .linkspector.yml'
     language: node
     # puppeteer is pinned exactly, not left to linkspector's own `^24.37.5`.
     # It is what decides which Chrome launches: each release downloads and runs
