@@ -10,6 +10,9 @@
 - add principle, "Subscribe to shared instruction text rather than pasting a copy"
 - add blueprint, "Sharing one knowledge bundle on two branches"
 - add principle, "Give a shared repository two clocks when review is slower than the work"
+- add finding, "A hard freeze leaves no journal, and the last entry is not where it hung"
+- add guide, "Decide whether a Linux freeze is failing hardware"
+- add a storage row to "Dell Precision 5470", and link the two new findings from it
 - add finding, "ahci probe fails with error -12 on an Intel VMD machine"
 
 ## 2026-10-09

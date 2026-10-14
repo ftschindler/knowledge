@@ -26,6 +26,7 @@ The Precision 5470 is Dell's 14-inch mobile workstation on Intel's Alder Lake-P 
 | Form factor | Notebook, 14-inch, DMI chassis type 10 |
 | Processor | Intel Core i7-12800H, Alder Lake-P, 14-core hybrid |
 | Memory | 32 GB, of which 30 GiB is visible to the kernel |
+| Storage | A 2 TB SK hynix PC801 NVMe, reached through Intel Volume Management Device at `00:0e.0` rather than off the root complex, carrying LUKS and LVM |
 | Graphics | Intel Iris Xe, Alder Lake-P GT2, at `00:02.0`, alongside a discrete NVIDIA GPU at `01:00.0` currently switched off |
 | Display | eDP-1, 2560x1600, 301 x 188 mm |
 | Audio | Alder Lake PCH-P High Definition Audio controller at `00:1f.3`, driving a SoundWire codec through SOF |
@@ -113,3 +114,5 @@ something else, and on this machine it is noise.
 
 - [Bluetooth A2DP fails with Protocol not available after resume](../findings/20260928_bluetooth_a2dp_fails_with_protocol_not_available_after_resume.md), which is a logind bookkeeping problem rather than a Bluetooth one, and survives a hibernate cycle on this machine specifically because hibernation works
 - [A Bluetooth headset reconnects in A2DP instead of the saved profile](../findings/20260928_a_bluetooth_headset_reconnects_in_a2dp_instead_of_the_saved_profile.md), met with [the OpenMove](openmove_by_shokz.md)
+- [ahci probe fails with error -12 on an Intel VMD machine](../findings/20261014_ahci_probe_fails_with_error_12_on_an_intel_vmd_machine.md), a line this machine has logged at every boot since it was installed, and which reads as a storage fault
+- [A hard freeze leaves no journal, and the last entry is not where it hung](../findings/20261014_a_hard_freeze_leaves_no_journal_and_the_last_entry_is_not_where_it_hung.md), met after three failed boots here, and general to any machine running journald

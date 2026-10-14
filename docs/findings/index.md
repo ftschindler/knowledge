@@ -22,6 +22,8 @@ And the subject lives in the tags rather than in a directory, per
 
 ### October
 
+- 2026-10-14: [A hard freeze leaves no journal, and the last entry is not where it hung](20261014_a_hard_freeze_leaves_no_journal_and_the_last_entry_is_not_where_it_hung.md) - the driver line a frozen boot stops on, which marks where the journal reached disk and nothing else
+- 2026-10-14: [ahci probe fails with error -12 on an Intel VMD machine](20261014_ahci_probe_fails_with_error_12_on_an_intel_vmd_machine.md) - a storage controller apparently out of memory, in all 72 boots including the ones that worked
 - 2026-10-09: [A ruleset bypass applies to every rule in that ruleset](20261009_a_ruleset_bypass_applies_to_every_rule_in_that_ruleset.md) - why "let me override a red check, but still make me open a pull request" needs two rulesets rather than one setting
 - 2026-10-09: [An unpinned puppeteer replaces the Chrome pinned beside it](20261009_an_unpinned_puppeteer_replaces_the_chrome_pinned_beside_it.md) - a version string that read as rigour, next to the implicit one that actually chose the browser
 - 2026-10-09: [git-ai uninstall-hooks has no help flag and uninstalls when asked for one](20261009_git_ai_uninstall_hooks_has_no_help_flag_and_uninstalls_when_asked_for_one.md) - the one flag it is safe to try on an unfamiliar command, read as noise and the subcommand run anyway

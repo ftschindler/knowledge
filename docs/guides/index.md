@@ -14,3 +14,4 @@ Conventions:
 - [Let CI push to a protected branch with a GitHub App](let_ci_push_to_a_protected_branch_with_a_github_app.md) - an App installed on one repository, minting an hour-long token, instead of a maintainer's personal token in a secret
 - [Uninstall git-ai and the state it left in every repository](uninstall_git_ai.md) - four removals in a fixed order, because the daemon reinstalls the hooks it just lost and the data outlives the binary
 - [Pin the browser behind a pre-commit link checker](pin_the_browser_behind_a_pre_commit_link_checker.md) - which puppeteer version to choose, how to read the Chrome it carries, and why a separate browser install line is a liability
+- [Decide whether a Linux freeze is failing hardware](decide_whether_a_linux_freeze_is_failing_hardware.md) - six checks that read a component's own error counters, ordered so the one that usually settles it runs first
