@@ -25,28 +25,15 @@ repos:
     files: \.md$
     args: [--disable-rules, MD046, fix]
     pass_filenames: true
-- repo: local
+# The browser and the linkspector version behind it are pinned in that
+# repository as a matched pair, so one `rev` here replaces the two
+# `additional_dependencies` this used to carry. The hook checks the files
+# pre-commit passes it rather than the whole bundle; CI runs `--all-files`,
+# which hands it everything and so remains the full sweep.
+- repo: https://github.com/ftschindler/linkspector-pre-commit
+  rev: v0.1.0
   hooks:
-  - id: linkspector
-    name: Check broken links (linkspector)
-    # `browsers install chrome` names no version on purpose: the pinned puppeteer
-    # below resolves its own, so this cannot drift from the pin the way a literal
-    # `chrome@...` does. It is a cheap no-op once the browser is in the cache, and
-    # it is what makes the check independent of whether anything downloaded a
-    # browser earlier - a restored hook environment, or an npm that declines to
-    # run puppeteer's postinstall, otherwise leaves it with no browser at all.
-    entry: bash -c 'puppeteer browsers install chrome && linkspector check -c .linkspector.yml'
-    language: node
-    # puppeteer is pinned exactly, not left to linkspector's own `^24.37.5`.
-    # It is what decides which Chrome launches: each release downloads and runs
-    # the revision compiled into it, so a floating range here means the browser
-    # resolving a link changes without anything in this repository changing.
-    # 24.39.1 -> Chrome 146.0.7680.76. How to choose the pair, and how to read
-    # the mapping out of a release:
-    # https://raw.githubusercontent.com/ftschindler/knowledge/staging/docs/guides/pin_the_browser_behind_a_pre_commit_link_checker.md
-    additional_dependencies: ['@umbrelladocs/linkspector@0.5.3', 'puppeteer@24.39.1']
-    pass_filenames: false
-    files: \.md$
+  - id: linkspector-changed
     # -- Python formatting + linting --
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
