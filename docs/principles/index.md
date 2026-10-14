@@ -20,6 +20,7 @@ most general.
 - [Batch dependency updates with a cooldown, not a firehose](batch_dependency_updates_with_a_cooldown_not_a_firehose.md) - how to keep an update bot from becoming noise you learn to ignore
 - [Keep transitive dependencies in the regular update cycle](keep_transitive_dependencies_in_the_update_cycle.md) - the packages nobody chose, which is why nobody is watching them
 - [Keep declared toolchain versions in sync, and guard it](keep_declared_toolchain_versions_in_sync_and_guard_it.md) - what to do when the same fact has to live in two files
+- [A version stamp is bookkeeping about capabilities, not a lock](a_version_stamp_is_bookkeeping_about_capabilities_not_a_lock.md) - how a tool copied into place asks something of state it does not own
 - [Validate config files against their published schema](validate_config_files_against_their_published_schema.md) - linting the configuration, not just the content
 - [Document a rationale for every disabled lint rule](document_a_rationale_for_every_disabled_lint_rule.md) - why a bare suppression is indistinguishable from an accident
 - [Grant least-privilege CI permissions at both workflow and job level](grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md) - scoping a CI token twice, so a job holds only what it uses
