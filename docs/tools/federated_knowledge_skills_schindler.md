@@ -20,12 +20,12 @@ sources:
   resource: https://github.com/ftschindler/federated-knowledge-skills
   title: 'ftschindler/federated-knowledge-skills: README'
   author: human:felix_schindler
-  last_modified: '2026-09-16'
+  last_modified: '2026-10-14'
 - id: fks-design
   resource: https://github.com/ftschindler/federated-knowledge-skills/blob/main/DESIGN.md
   title: 'federated-knowledge-skills: DESIGN.md'
   author: human:felix_schindler
-  last_modified: '2026-09-16'
+  last_modified: '2026-10-14'
 ---
 federated-knowledge-skills[^fks-readme] is the layer that turns several independent
 [OKF](../investigations/open_knowledge_format_okf_findings.md) bundles into one federation an agent
@@ -39,9 +39,9 @@ and the thing producing the pages.
 | Author | [Felix Schindler](../people/felix_schindler.md) |
 | Licence | MIT, with the vendored OKF validator under its own |
 | Language | Python 3.11+, run through [uv](uv.md) as PEP 723 scripts with no install step |
-| Distribution | A skill directory to copy, and two pre-commit hook ids a bundle pins by revision |
+| Distribution | A kit `akit` subscribes to, or a skill directory to copy; plus two pre-commit hook ids a bundle pins by revision |
 | Source | [github.com/ftschindler/federated-knowledge-skills](https://github.com/ftschindler/federated-knowledge-skills) |
-| Status | The skill, the CLI and the hooks are shipped and in use here; a second tier and the retirement of the old architecture are not done |
+| Status | Released at v0.3.0 and in daily use since September, across four bundles at three privacy tiers |
 
 ## What it is
 
@@ -58,8 +58,8 @@ Four things, and the split between them is the whole design.
   and the content" true.
 - **A CLI**, also `fkb`, owns the handful of questions that need a deterministic answer:
   `list` for what exists and what each allows, `resolve` for one bundle as JSON, `lint` for
-  whether it holds up, `url` for a link into another bundle, and `init` and `add` for setting
-  one up.
+  whether it holds up, `url` for a link into another bundle, `sync` for moving a shared
+  bundle's commits, and `init`, `add` and `migrate` for setting one up and keeping it current.
 
 Underneath, `okf-concepts` and `okf-bundle` are the same checker under two blocking policies,
 shipped as pre-commit hooks a bundle pins by revision. They enforce the format's hard rules
@@ -88,6 +88,32 @@ bypasses the federation layer entirely. The reasoning is
 [Separate audiences with separate bundles, not with folders or tags](../knowledge_management/separate_audiences_with_separate_bundles.md),
 taken to its conclusion: if the audience boundary is the repository, then the repository is
 where it has to be enforced.
+
+## A bundle several people file into
+
+A bundle names the branch it is shared on, and that one field means three things: this
+checkout belongs there, commits here may leave the machine, and somebody else is writing here
+so it has to be read fresh. `fkb sync` fetches, rebases and pushes, and refuses rather than
+resolving: uncommitted work in the tree, a checkout on another branch or a conflict all leave
+the commit standing and nothing pushed.
+
+The branch shape around it is
+[Sharing one knowledge bundle on two branches](../blueprints/sharing_one_knowledge_bundle_on_two_branches.md),
+which this bundle and one shared with an employer's team both run. The one piece the project
+ships rather than documents is the merge back, as a reusable workflow, because it is the only
+part of the shape whose absence nobody sees.
+
+## How an upgrade reaches a setup
+
+The skill is installed by copying, so a new release arrives without announcement. `fkb list`
+compares the copy on disk against the version recorded in the workspace manifest and says when
+something since then wants a decision; `fkb migrate` names the guides and `fkb migrate --done`
+records them. Nothing is blocked in the meantime, which is
+[the point of the stamp](../principles/a_version_stamp_is_bookkeeping_about_capabilities_not_a_lock.md).
+
+The rule that makes a session reach for the skill at all ships beside it rather than inside
+it, and [akit](federated_agent_kits_schindler.md) carries both under one name. A skill nothing
+points at is never loaded, and nothing appears to go wrong when that happens.
 
 ## Where it came from
 

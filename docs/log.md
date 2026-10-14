@@ -2,6 +2,8 @@
 
 ## 2026-10-14
 
+- extend the federated-knowledge-skills tool page with sharing, migration and the subscribed rule, and bring its status and sources current
+- correct "Federating my knowledge base as privacy-tiered OKF bundles", which said the federation layer was at design stage, and point it at the blueprint it deferred
 - add principle, "A version stamp is bookkeeping about capabilities, not a lock"
 - add tool, "federated-agent-kits (Felix Schindler)", and link it from the person page
 - add principle, "Subscribe to shared instruction text rather than pasting a copy"
