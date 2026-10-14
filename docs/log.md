@@ -1,5 +1,34 @@
 # Log
 
+## 2026-10-14
+
+- write out "Wrapping the kb skills in a federation layer", which had stood as a stub, and take it out of draft
+- extend the federated-knowledge-skills tool page with sharing, migration and the subscribed rule, and bring its status and sources current
+- correct "Federating my knowledge base as privacy-tiered OKF bundles", which said the federation layer was at design stage, and point it at the blueprint it deferred
+- add principle, "A version stamp is bookkeeping about capabilities, not a lock"
+- add tool, "federated-agent-kits (Felix Schindler)", and link it from the person page
+- add principle, "Subscribe to shared instruction text rather than pasting a copy"
+- add blueprint, "Sharing one knowledge bundle on two branches"
+- add principle, "Give a shared repository two clocks when review is slower than the work"
+- add finding, "A hard freeze leaves no journal, and the last entry is not where it hung"
+- add guide, "Decide whether a Linux freeze is failing hardware"
+- add a storage row to "Dell Precision 5470", and link the two new findings from it
+- add finding, "ahci probe fails with error -12 on an Intel VMD machine"
+
+## 2026-10-09
+
+- add finding, "A ruleset bypass applies to every rule in that ruleset"
+- point the linkspector hook comment at the browser-pinning guide
+- add guide, "Pin the browser behind a pre-commit link checker", and link it from the puppeteer tool page
+- extend "Pin GitHub Actions to full commit SHAs" to name reusable workflows, with the permissions argument and a snippet line
+- add exploration, "Tracking AI authorship with git-ai", and link it from the git-ai tool page
+- add tool, "puppeteer"
+- add finding, "An unpinned puppeteer replaces the Chrome pinned beside it"
+- correct the snippet in "Pin transitive runtime dependencies, not just the tool", which pinned the browser and left the library choosing it unpinned
+- add tool, "git-ai"
+- add guide, "Uninstall git-ai and the state it left in every repository"
+- add finding, "git-ai uninstall-hooks has no help flag and uninstalls when asked for one"
+
 ## 2026-10-07
 
 - rename the research section to investigations, moving all eight of its pages, its genre note and its nav entry, and dropping the now-redundant research tag from each

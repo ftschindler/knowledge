@@ -20,6 +20,7 @@ most general.
 - [Batch dependency updates with a cooldown, not a firehose](batch_dependency_updates_with_a_cooldown_not_a_firehose.md) - how to keep an update bot from becoming noise you learn to ignore
 - [Keep transitive dependencies in the regular update cycle](keep_transitive_dependencies_in_the_update_cycle.md) - the packages nobody chose, which is why nobody is watching them
 - [Keep declared toolchain versions in sync, and guard it](keep_declared_toolchain_versions_in_sync_and_guard_it.md) - what to do when the same fact has to live in two files
+- [A version stamp is bookkeeping about capabilities, not a lock](a_version_stamp_is_bookkeeping_about_capabilities_not_a_lock.md) - how a tool copied into place asks something of state it does not own
 - [Validate config files against their published schema](validate_config_files_against_their_published_schema.md) - linting the configuration, not just the content
 - [Document a rationale for every disabled lint rule](document_a_rationale_for_every_disabled_lint_rule.md) - why a bare suppression is indistinguishable from an accident
 - [Grant least-privilege CI permissions at both workflow and job level](grant_least_privilege_ci_permissions_at_both_workflow_and_job_level.md) - scoping a CI token twice, so a job holds only what it uses
@@ -39,6 +40,7 @@ most general.
 - [Track every committed binary type in .gitattributes](track_every_committed_binary_type_in_gitattributes.md) - not trusting Git to guess which of your files are opaque
 - [Enforce a canonical author identity via .mailmap](enforce_a_canonical_author_identity_via_mailmap.md) - one person, one identity in the history, checked mechanically
 - [Keep a linear history: block merge, fixup and squash commits](keep_a_linear_history_block_merge_fixup_and_squash_commits.md) - what it takes to actually get the linear history you asked for
+- [Give a shared repository two clocks when review is slower than the work](give_a_shared_repository_two_clocks_when_review_is_slower_than_the_work.md) - the second long-lived branch, and the merge back that keeps it honest
 - [Make the build interface a self-documenting Makefile](make_the_build_interface_a_self_documenting_makefile.md) - one entry point whose help text cannot drift from its targets
 - [Fail early on a missing tool with a message that names it and points at the fix](fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md) - the difference between a guard and a bare command not found
 - [Do not make a tool a prerequisite for work it is not needed for](do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md) - checking that a listed requirement is on a path anyone walks
@@ -53,3 +55,5 @@ most general.
 - [Write in a calm, quantified, settled-fact voice - not a promotional one](write_in_a_calm_quantified_settled_fact_voice_not_a_promotional_one.md) - the voice these pages are written in, and its tells on both sides
 - [Give every cross-cutting concept one definitional home](give_every_cross_cutting_concept_one_definitional_home.md) - single source of truth, applied to prose instead of code
 - [Route a rule to the layer that reaches whoever must obey it](route_a_rule_to_the_layer_that_reaches_whoever_must_obey_it.md) - a page, a hook, a skill or an always-on instruction, chosen by who has to obey
+- [Subscribe to shared instruction text rather than pasting a copy](subscribe_to_shared_instruction_text_rather_than_pasting_a_copy.md) - what happens to a block of prose that no later version can reach
+- [Give an MCP server an HTTP surface before anything needs one](give_an_mcp_server_an_http_surface_before_anything_needs_one.md) - the consumer that cannot launch a subprocess, and the rewrite it causes if you wait for it

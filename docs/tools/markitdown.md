@@ -76,7 +76,9 @@ and a wiped cache makes the next start slow again rather than broken.
 An agent that cannot read a PDF cannot file what is in one, and this bundle is written by
 agents. Declaring it as an MCP server rather than leaving it to the shell means the capability
 is present without anyone remembering the command, which matters for exactly the tool you reach
-for twice a month.
+for twice a month. It is the plainest example of the shape described in
+[what an MCP server can be, and who can reach one](../investigations/mcp_server_entry_points_and_transports.md):
+a subprocess the harness launches, holding nothing between calls.
 
 It is declared in the base layer of [my opencode configuration](opencode.md), because which
 model is answering has no bearing on how a DOCX is parsed. That is the general shape:

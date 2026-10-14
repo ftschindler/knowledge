@@ -89,10 +89,14 @@ The bundle you are reading, as the `public` tier: an OKF bundle over the same
 MkDocs stack, with the hooks doing what the engine used to.
 
 The federation layer around it is
-[federated-knowledge-skills](https://github.com/ftschindler/federated-knowledge-skills),
-currently at design stage. Its blueprint is not written here yet, deliberately,
-for the same reason the previous decision deferred one: it should be documented
-from a working setup rather than guessed at. This decision points forward to it.
+[federated-knowledge-skills](../tools/federated_knowledge_skills_schindler.md), which has been
+released and in daily use since September. There are now four bundles at three tiers: this
+public one, a sealed private one, one shared with an employer's team, and a read-only upstream.
+
+The blueprint this decision deferred is written, now that there is a working setup to write it
+from rather than a design to guess at:
+[Sharing one knowledge bundle on two branches](../blueprints/sharing_one_knowledge_bundle_on_two_branches.md)
+is the shape a bundle takes once more than one person files into it.
 
 ## What I gave up, and would reconsider
 
