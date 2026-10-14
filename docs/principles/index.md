@@ -56,3 +56,4 @@ most general.
 - [Give every cross-cutting concept one definitional home](give_every_cross_cutting_concept_one_definitional_home.md) - single source of truth, applied to prose instead of code
 - [Route a rule to the layer that reaches whoever must obey it](route_a_rule_to_the_layer_that_reaches_whoever_must_obey_it.md) - a page, a hook, a skill or an always-on instruction, chosen by who has to obey
 - [Subscribe to shared instruction text rather than pasting a copy](subscribe_to_shared_instruction_text_rather_than_pasting_a_copy.md) - what happens to a block of prose that no later version can reach
+- [Give an MCP server an HTTP surface before anything needs one](give_an_mcp_server_an_http_surface_before_anything_needs_one.md) - the consumer that cannot launch a subprocess, and the rewrite it causes if you wait for it
