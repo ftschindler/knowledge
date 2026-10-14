@@ -2,6 +2,8 @@
 
 ## 2026-10-14
 
+- add tool, "federated-agent-kits (Felix Schindler)", and link it from the person page
+- add principle, "Subscribe to shared instruction text rather than pasting a copy"
 - add blueprint, "Sharing one knowledge bundle on two branches"
 - add principle, "Give a shared repository two clocks when review is slower than the work"
 - add finding, "ahci probe fails with error -12 on an Intel VMD machine"
