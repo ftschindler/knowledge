@@ -39,6 +39,7 @@ most general.
 - [Track every committed binary type in .gitattributes](track_every_committed_binary_type_in_gitattributes.md) - not trusting Git to guess which of your files are opaque
 - [Enforce a canonical author identity via .mailmap](enforce_a_canonical_author_identity_via_mailmap.md) - one person, one identity in the history, checked mechanically
 - [Keep a linear history: block merge, fixup and squash commits](keep_a_linear_history_block_merge_fixup_and_squash_commits.md) - what it takes to actually get the linear history you asked for
+- [Give a shared repository two clocks when review is slower than the work](give_a_shared_repository_two_clocks_when_review_is_slower_than_the_work.md) - the second long-lived branch, and the merge back that keeps it honest
 - [Make the build interface a self-documenting Makefile](make_the_build_interface_a_self_documenting_makefile.md) - one entry point whose help text cannot drift from its targets
 - [Fail early on a missing tool with a message that names it and points at the fix](fail_early_on_a_missing_tool_with_a_message_that_names_it_and_points_at_the_fix.md) - the difference between a guard and a bare command not found
 - [Do not make a tool a prerequisite for work it is not needed for](do_not_make_a_tool_a_prerequisite_for_work_it_is_not_needed_for.md) - checking that a listed requirement is on a path anyone walks

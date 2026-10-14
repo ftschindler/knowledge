@@ -1,5 +1,11 @@
 # Log
 
+## 2026-10-14
+
+- add blueprint, "Sharing one knowledge bundle on two branches"
+- add principle, "Give a shared repository two clocks when review is slower than the work"
+- add finding, "ahci probe fails with error -12 on an Intel VMD machine"
+
 ## 2026-10-09
 
 - add finding, "A ruleset bypass applies to every rule in that ruleset"
