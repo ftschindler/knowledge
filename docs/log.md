@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-15
+
+- add tool, "peon-ping", on removing it: the twelve hook events, the plaintext prompt log, and the three paths its own uninstaller leaves behind
+
 ## 2026-10-14
 
 - write out "Wrapping the kb skills in a federation layer", which had stood as a stub, and take it out of draft
