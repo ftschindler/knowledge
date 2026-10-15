@@ -2,6 +2,7 @@
 
 ## 2026-10-15
 
+- add finding, "A tag pushed after its commit is rejected as missing necessary objects", and link it from the guide on letting CI push to a protected branch
 - add tool, "oh-my-openagent (YeonGyu-Kim)", on the three editions it grew into, the transcripts it writes into a Claude Code directory, and the opencode 2.x break
 - add a section to the opencode page naming the plugin it runs here, and the last version pair known to work
 - add tool, "peon-ping", on removing it: the twelve hook events, the plaintext prompt log, and the three paths its own uninstaller leaves behind
