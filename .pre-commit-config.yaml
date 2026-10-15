@@ -31,7 +31,7 @@ repos:
 # pre-commit passes it rather than the whole bundle; CI runs `--all-files`,
 # which hands it everything and so remains the full sweep.
 - repo: https://github.com/ftschindler/linkspector-pre-commit
-  rev: v0.1.0
+  rev: db683f24c1df3b24e91c81271811a9e8b3ae5409  # frozen: v0.1.0
   hooks:
   - id: linkspector-changed
     # -- Python formatting + linting --
