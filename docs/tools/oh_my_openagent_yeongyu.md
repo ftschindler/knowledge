@@ -1,8 +1,8 @@
 ---
 type: Tool
 title: oh-my-openagent (YeonGyu-Kim)
-description: The plugin that supplies this opencode setup's agents, skills and orchestration, now
-  one of three editions of a harness-independent product, and broken on opencode 2.x.
+description: The plugin that supplies an opencode install with agents, skills and orchestration,
+  now one of three editions of a harness-independent product, and broken on opencode 2.x.
 tags:
 - tools
 - oh-my-openagent
@@ -40,11 +40,10 @@ sources:
   title: 'SPDX: Sustainable Use License 1.0'
   last_modified: '2026-10-15'
 ---
-oh-my-openagent[^omo-repo] - OmO - is what turns a bare [opencode](opencode.md) into the setup
-these pages are written through: a roster of named agents, a skill loader, model routing per
-task category, background agents and a set of LSP and AST tools. It is installed here as one
-line of `opencode.jsonc`, which is the whole of its configuration surface and conceals how much
-it brings.
+oh-my-openagent[^omo-repo] - OmO - is what turns a bare [opencode](opencode.md) into a
+multi-agent one: a roster of named agents, a skill loader, model routing per task category,
+background agents and a set of LSP and AST tools. It installs as one line of `opencode.jsonc`,
+which is the whole of its configuration surface and conceals how much it brings.
 
 | | |
 | --- | --- |
@@ -52,7 +51,7 @@ it brings.
 | Licence | SUL-1.0, source-available and **not** open source |
 | Distribution | npm, as `"plugin": ["oh-my-openagent@latest"]` in `opencode.jsonc` |
 | Source | [github.com/code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) |
-| Version read | 5.1.30 installed, against opencode 1.18.34 |
+| Version read | 5.1.30, against opencode 1.18.34 |
 
 ## It is no longer an opencode plugin, exactly
 
@@ -71,7 +70,7 @@ adapters over shared cores, and the npm `bin` block exposes five aliases from on
 `oh-my-opencode`, `oh-my-openagent`, `omo-agent-toolkit`, `lazycodex`, `lazycodex-ai`.
 
 **This is a widening rather than a departure.** Opencode is still the edition the docs call
-Ultimate and still the build entry for the main npm package, so nothing here is being dropped.
+Ultimate and still the build entry for the main npm package, so that edition is not being dropped.
 But the project's centre of gravity has moved to a layer above any one harness, and the package
 name is now the least reliable guide to what it is.
 
@@ -83,9 +82,9 @@ Almost everywhere it writes is opencode's own state, with one exception that out
 `join(homedir(), ".claude")`.
 
 That directory is Claude Code's by convention, and the plugin claims it whether or not Claude
-Code is installed. Here it holds 96 MB of `ses_*.jsonl` across 599 sessions, written by
-opencode, in a directory named after a tool this machine does not have. Anybody tidying up
-after an uninstalled Claude Code will find it and reasonably conclude it is residue.
+Code is installed. A machine that has never run Claude Code still accumulates `ses_*.jsonl`
+there, one file per opencode session, growing without bound. Anybody tidying up after a Claude
+Code they do not have will find the directory and reasonably conclude it is residue.
 
 Setting `CLAUDE_CONFIG_DIR` moves it, and is the supported way out: the environment variable is
 read first, with the `~/.claude` default behind it. The `coding-agent-sessions` skill reads
@@ -94,8 +93,8 @@ those transcripts, so moving the directory means moving the corpus with it.
 ## Versions, and what breaks
 
 Releases are frequent to the point of being hard to track - several in a day, with published
-numbers skipped where a release did not reach npm. Pinning `@latest`, as this setup does, means
-taking whatever landed.
+numbers skipped where a release did not reach npm. Pinning `@latest`, which is how the install
+line is usually written, means taking whatever landed.
 
 **The plugin does not work on opencode 2.x.** The v2 loader expects a default export shaped as
 `effect` or `setup`; the plugin still exports the v1 `server` shape, so it fails to load. This
@@ -108,9 +107,9 @@ Nothing in the package declares this. There is no `peerDependencies` entry for o
 runs. So the incompatibility is discovered by the plugin silently not loading, and the fix is to
 hold opencode at 1.x until the dual-host work ships.
 
-**Known good on this machine: plugin 5.1.30 with opencode 1.18.34**, which is what wrote this
-page. That pairing is a first-hand observation rather than anything the project certifies, and
-it is the number to come back to if an upgrade takes the agents away.
+**Observed working: plugin 5.1.30 with opencode 1.18.34.** That is a tested pair rather than
+anything the project certifies, and it is the pair to fall back to when an upgrade takes the
+agent roster away.
 
 ## The licence is not an open-source one
 

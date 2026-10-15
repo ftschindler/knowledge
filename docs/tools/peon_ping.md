@@ -37,7 +37,7 @@ minutes, and it answers it with sound rather than a notification you also have t
 | Distribution | `curl -fsSL https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh \| bash` |
 | Source | [github.com/PeonPing/peon-ping](https://github.com/PeonPing/peon-ping) |
 | Site | [peonping.com](https://www.peonping.com) |
-| Version read | 2.22.0, installed 23 April 2026 |
+| Version read | 2.22.0 |
 
 It keeps its plain name here rather than carrying its author's, because PeonPing is a vendor
 with a site behind the repository, which is the same exception [uv](uv.md) gets.
@@ -76,10 +76,10 @@ Five places, of which the installer announces about two:
 
 Two of those deserve naming on their own. **It logs every prompt you type**, to
 `hook-handle-use.log` and `hook-handle-rename.log` beside the install, in plaintext, with no
-rotation - 5,216 lines each after six months here, each carrying the opening clause of a
-prompt. The scripts are reading `UserPromptSubmit` to find their own commands and recording
-what they saw on the way past. And **it checks for updates against GitHub and the pack
-registry**, so an installed copy reaches the network on its own schedule.
+rotation, each line carrying the opening clause of a prompt. A few months of ordinary use runs
+to thousands of lines. The scripts are reading `UserPromptSubmit` to find their own commands
+and recording what they saw on the way past. And **it checks for updates against GitHub and the
+pack registry**, so an installed copy reaches the network on its own schedule.
 
 ## Uninstalling it
 
@@ -105,4 +105,4 @@ completion in a way you can see, the sound is decoration; the twelve hooks and t
 are not. A notification hook is a reasonable thing to want, and this is more surface than that
 want justifies.
 
-I removed it in October 2026, having installed it in April and left it paused since June.
+Mine went unused for months before it went, which is its own verdict on the feature.
