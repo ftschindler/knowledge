@@ -58,7 +58,7 @@ and nothing said so.
 
 | Model | In the skill directory | Packages live in | Pinned |
 | --- | --- | --- | --- |
-| `npm install` with a lockfile | `node_modules/`, 143 MB, 45 entries | the skill directory | yes |
+| `npm ci` against a lockfile | `node_modules/`, 143 MB, 45 entries | the skill directory | yes |
 | `bun run` auto-install | nothing | `~/.bun/install/cache` | **no** |
 | `uv run --script` with [PEP 723](https://peps.python.org/pep-0723/) | nothing | `~/.cache/uv` | yes |
 
@@ -71,12 +71,17 @@ to run one script.
 
 ## What this settles for a skill
 
-Take the `node_modules`. A skill is installed by copying a directory, so an artefact beside
-`SKILL.md` is in the one place the format can carry, and 143 MB buys a dependency tree that
-matches the one that was read. A shared cache that silently floats is the wrong trade for
-anything whose contents were audited, which is the position any skill that reaches the network
-is in; the case that prompted this is
+Take the `node_modules`, and populate it with `npm ci` rather than `npm install`. A skill is
+installed by copying a directory, so an artefact beside `SKILL.md` is in the one place the
+format can carry, and 143 MB buys a dependency tree that matches the one that was read. A
+shared cache that silently floats is the wrong trade for anything whose contents were audited,
+which is the position any skill that reaches the network is in; the case that prompted this is
 [the deutsche-bahn skill](../investigations/deutsche_bahn_skill_security_and_telemetry.md).
+
+**`npm ci` is the half of that worth stating separately.** It treats the committed lockfile as
+authoritative and refuses when the manifest disagrees with it, where `npm install` may update
+the lockfile to resolve the difference. A command that can rewrite the pin is the wrong one to
+reach for when the pin is the entire reason for choosing this layout.
 
 This is the same shape as
 [an unpinned puppeteer replacing the Chrome pinned beside it](20261009_an_unpinned_puppeteer_replaces_the_chrome_pinned_beside_it.md):
