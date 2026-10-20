@@ -77,13 +77,23 @@ run. The `db` profile does not set `randomizeUserAgent`, so the string goes out 
 every request: traffic from this skill is trivially separable from browser traffic in DB's
 logs, and attributable to the toolkit's user base rather than to a person.
 
+A shared constant is a cohort label rather than anonymity, and it is worth being clear about
+which direction it moves the reader. It does not distinguish one toolkit user from another, so
+nothing in it points at a person. What it does is take that person out of the set of everyone
+using bahn.de and the DB Navigator, which is millions, and put them in the set of everyone
+running this skill, which is small and whose size is not knowable from outside. Editing the
+string does not improve that: a value nobody else uses is a perfect fingerprint, and the value
+the library actually asks for is contact details, which is deliberate identification. The
+default is the largest set on offer.
+
 **The correlation ID is fresh per request.** Requests carry `X-Correlation-ID` built from two
 newly generated v4 UUIDs. It links nothing across invocations and is not a stable device
 identifier.
 
 **The query content is the real disclosure, and it is unavoidable.** A journey search sends
-origin, destination, date and time. Run against your own trips, over a public IP, with a
-distinguishing user agent, that is a travel-planning history held by a third party. This is
+origin, destination, date and time. Run against your own trips, over a public IP, that is a
+travel-planning history held by a third party, and the IP and the recurring home station
+identify a person inside the cohort in a way the user agent never does. This is
 what the skill is *for*, so it is not a finding against it - but it is the exposure that
 matters, and it is larger than anything a telemetry endpoint would have collected.
 
@@ -120,10 +130,10 @@ roughly what this page is.
 
 1. **Decide whether DB seeing your itineraries is acceptable**, because that is the actual
    cost and nothing in the configuration changes it.
-2. **Change the user agent if you would rather not be counted as a toolkit user** - it is one
-   string literal in `scripts/search_trains.mjs`, and the library only requires that it not be
-   one of the known placeholders. Something that genuinely identifies you is what the field is
-   asking for.
+2. **Leave the user agent alone.** The toolkit default is a cohort label, which is the largest
+   anonymity set available here; a value of your own is unique to you, and the contact details
+   the library is asking for are identification by design. Change it only if being reachable
+   by DB is what you want.
 3. **Respect the rate limits the skill documents.** DB's backend enforces low ones, and the
    script applies no throttling of its own, although the library ships a `withThrottling`
    wrapper it does not use.
