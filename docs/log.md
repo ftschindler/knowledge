@@ -6,6 +6,7 @@
 - add investigation, "Travel management skills: what is portable out of a repo-shaped toolkit", counting the skills that depend on the repository root, and link it from the deutsche-bahn page
 - add finding, "Bun's auto-install ignores the version pinned in package.json", on the three dependency layouts a skill can take and what each costs
 - add finding, "uvx --from silently runs the system binary when the package ships no executable", on the PATH fallthrough and the diagnosis uv prints only when it cannot fall through
+- add principle, "A command's progress goes to stderr, its answer to stdout", on deciding the stream by whether two identical runs would print the same line
 
 ## 2026-10-15
 
