@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-20
+
+- add investigation, "The deutsche-bahn agent skill: security and telemetry", on the single host its traffic reaches, the toolkit-naming user agent, its 45 pinned dependencies, and the six MCP servers in the repository around it
+
 ## 2026-10-15
 
 - add finding, "A tag pushed after its commit is rejected as missing necessary objects", and link it from the guide on letting CI push to a protected branch
