@@ -120,7 +120,9 @@ Both are worth fixing on the next upgrade rather than before the first run.
     `npx -y @openbnb/mcp-server-airbnb@latest --ignore-robots-txt`, which pulls the latest
     published version at every start. Those are a different and much wider trust decision, and
     they have nothing to do with train schedules. Taking one skill out of the repository
-    leaves all of it behind; cloning the repository and running its setup does not.
+    leaves all of it behind; cloning the repository and running its setup does not. What the
+    rest of that repository is, and how much of it travels, is surveyed in
+    [travel management skills](travel_management_skills_portability.md).
 
 This is the argument for a per-skill subscription rather than a repository clone. One skill
 from a toolkit is one 174-line script and a lockfile you can read in an afternoon, which is

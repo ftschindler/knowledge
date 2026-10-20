@@ -19,4 +19,5 @@ date. Where an investigation deliberately stops short of choosing, it says so.
 - [Sharing one user-level AGENTS.md across harnesses](sharing_one_user_level_agents_md_across_harnesses.md) - a crowded tool category that almost entirely refuses to write to the home directory, and why
 - [Spell-checking prose in a pre-commit hook](spell_checking_prose_in_a_pre_commit_hook.md) - why two spell checkers catch different mistakes, and the one word that shows it
 - [The deutsche-bahn agent skill: security and telemetry](deutsche_bahn_skill_security_and_telemetry.md) - what one skill from a travel toolkit runs, and what a rail operator learns from it
+- [Travel management skills: what is portable out of a repo-shaped toolkit](travel_management_skills_portability.md) - counting how much of a 48-skill collection survives leaving the repository it ships in
 - [What an MCP server can be, and who can reach one](mcp_server_entry_points_and_transports.md) - two transports, five shapes and six callers, and the two variables that decide which are reachable

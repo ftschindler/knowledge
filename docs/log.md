@@ -3,6 +3,7 @@
 ## 2026-10-20
 
 - add investigation, "The deutsche-bahn agent skill: security and telemetry", on the single host its traffic reaches, the toolkit-naming user agent, its 45 pinned dependencies, and the six MCP servers in the repository around it
+- add investigation, "Travel management skills: what is portable out of a repo-shaped toolkit", counting the skills that depend on the repository root, and link it from the deutsche-bahn page
 
 ## 2026-10-15
 
