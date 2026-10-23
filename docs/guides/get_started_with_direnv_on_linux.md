@@ -98,11 +98,8 @@ started from there inherits them: build scripts, package manager hooks, and any 
 working on that project. Reading them takes one `env`.
 
 What it buys is that they are absent everywhere else. For a secret that must stay out of reach of
-what runs in the project itself, the environment is the wrong place entirely, and a wrapper
-function that fetches it into one command is the shape that delivers that:
+what runs in the project itself, the environment is the wrong place entirely, and
+[a PATH shim that fetches it from the keyring](authenticate_a_cli_from_the_keyring_with_a_path_shim.md)
+is the shape that delivers that.
 
-```bash
-jira() { JIRA_API_TOKEN=$(secret-tool lookup service jira account felix) command jira "$@"; }
-```
-
-The two compose. direnv carries the harmless settings, and the wrapper carries the secret.
+The two compose. direnv carries the harmless settings, and the shim carries the secret.

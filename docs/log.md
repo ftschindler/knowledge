@@ -3,6 +3,7 @@
 ## 2026-10-23
 
 - add guide, "Get started with direnv on Linux", on installing it, hooking the shell, the allow step that gates an .envrc, and the limit that keeps it hygiene rather than a boundary
+- add guide, "Authenticate a CLI from the keyring with a PATH shim", on fetching a token per call instead of exporting it, and point the direnv guide at it in place of the shell function it suggested
 
 ## 2026-10-20
 
