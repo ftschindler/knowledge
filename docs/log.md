@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-23
+
+- add guide, "Get started with direnv on Linux", on installing it, hooking the shell, the allow step that gates an .envrc, and the limit that keeps it hygiene rather than a boundary
+
 ## 2026-10-20
 
 - add investigation, "The deutsche-bahn agent skill: security and telemetry", on the single host its traffic reaches, the toolkit-naming user agent, its 45 pinned dependencies, and the six MCP servers in the repository around it

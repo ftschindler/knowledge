@@ -15,3 +15,4 @@ Conventions:
 - [Uninstall git-ai and the state it left in every repository](uninstall_git_ai.md) - four removals in a fixed order, because the daemon reinstalls the hooks it just lost and the data outlives the binary
 - [Pin the browser behind a pre-commit link checker](pin_the_browser_behind_a_pre_commit_link_checker.md) - which puppeteer version to choose, how to read the Chrome it carries, and why a separate browser install line is a liability
 - [Decide whether a Linux freeze is failing hardware](decide_whether_a_linux_freeze_is_failing_hardware.md) - six checks that read a component's own error counters, ordered so the one that usually settles it runs first
+- [Get started with direnv on Linux](get_started_with_direnv_on_linux.md) - install, hook, first `.envrc`, and why the allow step is the whole trust model
