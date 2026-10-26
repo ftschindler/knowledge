@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-26
+
+- add guide, "Add Scaleway as an opencode provider", on enabling the provider with one API key and pinning every oh-my-openagent slot from a catalogue measured with real inference calls
+
 ## 2026-10-23
 
 - add guide, "Get started with direnv on Linux", on installing it, hooking the shell, the allow step that gates an .envrc, and the limit that keeps it hygiene rather than a boundary

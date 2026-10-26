@@ -17,3 +17,4 @@ Conventions:
 - [Decide whether a Linux freeze is failing hardware](decide_whether_a_linux_freeze_is_failing_hardware.md) - six checks that read a component's own error counters, ordered so the one that usually settles it runs first
 - [Get started with direnv on Linux](get_started_with_direnv_on_linux.md) - install, hook, first `.envrc`, and why the allow step is the whole trust model
 - [Authenticate a CLI from the keyring with a PATH shim](authenticate_a_cli_from_the_keyring_with_a_path_shim.md) - feeding a token to a CLI that reads only the environment, and why a shell function reaches the prompt but never an agent
+- [Add Scaleway as an opencode provider](add_scaleway_as_an_opencode_provider.md) - one API key and a native provider block, then a pin for every oh-my-openagent slot, mapped from a catalogue measured with real inference calls
