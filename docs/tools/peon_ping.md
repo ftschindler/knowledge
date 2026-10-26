@@ -40,7 +40,8 @@ minutes, and it answers it with sound rather than a notification you also have t
 | Version read | 2.22.0 |
 
 It keeps its plain name here rather than carrying its author's, because PeonPing is a vendor
-with a site behind the repository, which is the same exception [uv](uv.md) gets.
+with a site behind the repository[^peon-ping-site], which is the same exception [uv](uv.md)
+gets.
 
 ## What it actually hooks
 
