@@ -22,6 +22,9 @@ And the subject lives in the tags rather than in a directory, per
 
 ### October
 
+- 2026-10-20: [uvx --from silently runs the system binary when the package ships no executable](20261020_uvx_from_silently_runs_the_system_binary_when_the_package_ships_no_executable.md) - a download, an install and a plausible version, none of which came from the package
+- 2026-10-20: [Bun's auto-install ignores the version pinned in package.json](20261020_bun_auto_install_ignores_the_version_pinned_in_package_json.md) - the clean working directory that costs the pin, and why a skill is better off keeping its node_modules
+- 2026-10-15: [A tag pushed after its commit is rejected as missing necessary objects](20261015_a_tag_pushed_after_its_commit_is_rejected_as_missing_necessary_objects.md) - a second push carrying the tag alone, and the release that stopped half way with a version number spent
 - 2026-10-14: [A hard freeze leaves no journal, and the last entry is not where it hung](20261014_a_hard_freeze_leaves_no_journal_and_the_last_entry_is_not_where_it_hung.md) - the driver line a frozen boot stops on, which marks where the journal reached disk and nothing else
 - 2026-10-14: [ahci probe fails with error -12 on an Intel VMD machine](20261014_ahci_probe_fails_with_error_12_on_an_intel_vmd_machine.md) - a storage controller apparently out of memory, in all 72 boots including the ones that worked
 - 2026-10-09: [A ruleset bypass applies to every rule in that ruleset](20261009_a_ruleset_bypass_applies_to_every_rule_in_that_ruleset.md) - why "let me override a red check, but still make me open a pull request" needs two rulesets rather than one setting

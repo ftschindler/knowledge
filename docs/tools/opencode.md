@@ -64,6 +64,21 @@ are worth reaching for before reading a config file and inferring:
 | `opencode debug config` | The fully resolved configuration, after every layer has been merged |
 | `opencode mcp list` | Each MCP server and whether it is connected, disabled or failing |
 
+## The plugin that carries the agents
+
+A bare session has no named agents, no skill loader and no background agents. Those come from a
+plugin, and in practice from [oh-my-openagent](oh_my_openagent_yeongyu.md), declared as a single
+line of `opencode.jsonc`. That line is worth knowing about before an upgrade, because the two
+versions are coupled and nothing says so.
+
+**The plugin does not load on opencode 2.x.** The v2 loader expects a default export shaped as
+`effect` or `setup` and the plugin still exports the v1 `server` shape, so it fails silently:
+opencode starts, and the agents are simply not there. There is no `peerDependencies` entry and
+no `engines` field to catch this at install time.
+
+**Observed working: oh-my-openagent 5.1.30 with opencode 1.18.34.** When an upgrade takes the
+agent roster away, that is the pair to fall back to, and the plugin page carries the detail.
+
 ## How I configure it
 
 `OPENCODE_CONFIG_DIR` points opencode at a directory other than `~/.config/opencode`, and my

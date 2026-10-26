@@ -168,3 +168,7 @@ touching anyone's own account, and nothing has to be rotated anywhere else.
 A worked example of all six steps is the release job in
 [federated-knowledge-skills](../tools/federated_knowledge_skills_schindler.md), which stamps a
 version file into the default branch and tags it on every merge.
+
+**Push the commit and the tag in one command**, which is the one thing left to get wrong once
+the App is past the branch rule:
+[A tag pushed after its commit is rejected as missing necessary objects](../findings/20261015_a_tag_pushed_after_its_commit_is_rejected_as_missing_necessary_objects.md).

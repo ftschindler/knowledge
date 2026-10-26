@@ -22,6 +22,7 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name
 - [opencode](opencode.md) - the terminal agent that writes most of these pages, and the one-directory-per-provider config my own setup is built from
+- [oh-my-openagent (YeonGyu-Kim)](oh_my_openagent_yeongyu.md) - the plugin that gives opencode its agents and skills, the three editions it grew into, and the opencode 2.x break that stops it loading
 - [OpenChamber](openchamber.md) - the desktop, web and mobile workspace that drives an opencode server rather than replacing it, and what adopting it would and would not change here
 - [markitdown](markitdown.md) - Microsoft's PDF-and-Office-to-Markdown converter, as a command and as the MCP server an agent calls
 - [git-ai](git_ai.md) - the git extension that records which lines an agent wrote, where it puts itself, and what that leaves behind
@@ -32,5 +33,6 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [ponytail (Dietrich Gebert)](ponytail_gebert.md) - the seven-rung ladder an agent climbs before writing code, the benchmark its author retracted, and why I took the review commands and left the ruleset
 - [liseur and liseur-sync (Chmouel Boudjnah)](liseur_chmouel.md) - EPUB reader for Android with self-hosted sync server, reading-position synchronization across devices, KOReader compatibility, and offline PWA web reader
 - [WirePlumber](wireplumber.md) - the session manager that decides what reaches a PipeWire graph, and the half of the audio stack that owns the decision when a device never appears
+- [peon-ping](peon_ping.md) - Warcraft III voice lines on agent hooks, the twelve lifecycle events and plaintext prompt log that come with them, and the three paths its own uninstaller misses
 - [Voxtype (Peter Jackson)](voxtype_jackson.md) - stub: push-to-talk dictation as a single Rust binary, with eight local engines behind one config line
 - [Vocalinux (VocaHQ)](vocalinux_vocahq.md) - stub: the AGPL Python alternative, dictating from a tray icon on X11 and Wayland alike

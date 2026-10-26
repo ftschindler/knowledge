@@ -1,5 +1,25 @@
 # Log
 
+## 2026-10-23
+
+- add guide, "Get started with direnv on Linux", on installing it, hooking the shell, the allow step that gates an .envrc, and the limit that keeps it hygiene rather than a boundary
+- add guide, "Authenticate a CLI from the keyring with a PATH shim", on fetching a token per call instead of exporting it, and point the direnv guide at it in place of the shell function it suggested
+
+## 2026-10-20
+
+- add investigation, "The deutsche-bahn agent skill: security and telemetry", on the single host its traffic reaches, the toolkit-naming user agent, its 45 pinned dependencies, and the six MCP servers in the repository around it
+- add investigation, "Travel management skills: what is portable out of a repo-shaped toolkit", counting the skills that depend on the repository root, and link it from the deutsche-bahn page
+- add finding, "Bun's auto-install ignores the version pinned in package.json", on the three dependency layouts a skill can take and what each costs
+- add finding, "uvx --from silently runs the system binary when the package ships no executable", on the PATH fallthrough and the diagnosis uv prints only when it cannot fall through
+- add principle, "A command's progress goes to stderr, its answer to stdout", on deciding the stream by whether two identical runs would print the same line
+
+## 2026-10-15
+
+- add finding, "A tag pushed after its commit is rejected as missing necessary objects", and link it from the guide on letting CI push to a protected branch
+- add tool, "oh-my-openagent (YeonGyu-Kim)", on the three editions it grew into, the transcripts it writes into a Claude Code directory, and the opencode 2.x break
+- add a section to the opencode page naming the plugin it runs here, and the last version pair known to work
+- add tool, "peon-ping", on removing it: the twelve hook events, the plaintext prompt log, and the three paths its own uninstaller leaves behind
+
 ## 2026-10-14
 
 - write out "Wrapping the kb skills in a federation layer", which had stood as a stub, and take it out of draft
