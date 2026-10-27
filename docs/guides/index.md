@@ -18,3 +18,4 @@ Conventions:
 - [Get started with direnv on Linux](get_started_with_direnv_on_linux.md) - install, hook, first `.envrc`, and why the allow step is the whole trust model
 - [Authenticate a CLI from the keyring with a PATH shim](authenticate_a_cli_from_the_keyring_with_a_path_shim.md) - feeding a token to a CLI that reads only the environment, and why a shell function reaches the prompt but never an agent
 - [Add Scaleway as an opencode provider](add_scaleway_as_an_opencode_provider.md) - one API key and a native provider block, then a pin for every oh-my-openagent slot, mapped from a catalogue measured with real inference calls
+- [Pin an AUR package to an older version with a paru PKGBUILD repo](pin_an_aur_package_to_an_older_version_with_a_paru_pkgbuild_repo.md) - masking the AUR with a local checkout when the distribution is too far behind to satisfy an exact dependency, and the Mode setting that makes it a no-op

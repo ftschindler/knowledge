@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-27
+
+- add guide, "Pin an AUR package to an older version with a paru PKGBUILD repo", on checking the matching commit into a local repo that masks the AUR, and the Mode setting that makes the pin a no-op
+
 ## 2026-10-26
 
 - add guide, "Add Scaleway as an opencode provider", on enabling the provider with one API key and pinning every oh-my-openagent slot from a catalogue measured with real inference calls
