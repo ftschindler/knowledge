@@ -1,5 +1,12 @@
 # Log
 
+## 2026-10-28
+
+- added a naming rule to the guide "Authenticate a CLI from the keyring with a PATH shim": the
+  `service` attribute names the tool as `<name>-<owner>` from its repository rather than the
+  service it talks to, with the two-command form for renaming an entry that already exists.
+  Updated every example to `jira-cli-ankitpokhrel`
+
 ## 2026-10-27
 
 - add guide, "Pin an AUR package to an older version with a paru PKGBUILD repo", on checking the matching commit into a local repo that masks the AUR, and the Mode setting that makes the pin a no-op

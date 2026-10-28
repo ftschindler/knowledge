@@ -33,12 +33,44 @@ KWallet. GNOME Keyring answers the same interface.
 ## 1. Put the secret in the keyring
 
 ```bash
-secret-tool store --label='Jira API token' service jira account felix.schindler@example.com
+secret-tool store --label='jira-cli API token' service jira-cli-ankitpokhrel account felix.schindler@example.com
 ```
 
 It reads the value from stdin and prints nothing. The attribute pairs after the label are
 arbitrary, and they are also the lookup key, so whatever is chosen here has to be repeated
 verbatim in step 2.
+
+### Name the attributes after the tool, not after what it talks to
+
+`service jira` is the obvious spelling and it is the wrong one. It describes the far end, and
+the far end is shared: [jira-cli](https://github.com/ankitpokhrel/jira-cli) and
+[fjira](https://github.com/mk-5/fjira) are different programs by different authors against the
+same Jira. The second one set up this way either collides with the first entry or quietly
+reuses its token, and nothing in the command says which happened.
+
+A shared token is the part that costs something later. Revoking it takes down a tool nobody was
+thinking about, which is the pressure that ends in it not being revoked at all, and Atlassian's
+per-token last-used column stops being able to say which program made a call.
+
+The form that cannot collide is the repository: `<name>-<owner>`, for `github.com/<owner>/<name>`.
+So `jira-cli-ankitpokhrel` here, and `fjira-mk-5` for the other one. It is ugly, and it is
+unambiguous across every tool that will ever be stored this way, which is the right trade for a
+string that is never typed outside a shim. One tool, one entry, one token that can be revoked
+on its own.
+
+Renaming an entry that already exists is two commands, because libsecret has no rename. Store
+it again under the new attributes, reading the old value straight out of the keyring, then clear
+the old one:
+
+```bash
+secret-tool lookup service jira account felix.schindler@example.com |
+  secret-tool store --label='jira-cli API token' service jira-cli-ankitpokhrel account felix.schindler@example.com
+secret-tool clear service jira account felix.schindler@example.com
+```
+
+`lookup` prints the secret with no trailing newline, which is what makes the pipe safe; a token
+retyped by hand is the version that acquires one. Clear only after the shim has been pointed at
+the new attributes and run once, since `clear` deletes without confirming.
 
 ## 2. Write the shim
 
@@ -48,7 +80,7 @@ cat > ~/.local/bin/jira <<'EOF'
 #!/bin/bash
 # jira-cli reads its token only from JIRA_API_TOKEN. Fetch it from the keyring for the
 # duration of this one process rather than exporting it into every shell.
-export JIRA_API_TOKEN="$(secret-tool lookup service jira account felix.schindler@example.com)"
+export JIRA_API_TOKEN="$(secret-tool lookup service jira-cli-ankitpokhrel account felix.schindler@example.com)"
 exec /usr/bin/jira "$@"
 EOF
 chmod +x ~/.local/bin/jira
