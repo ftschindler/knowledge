@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-29
+
+- add finding, "A phantom touch pins the pointer to one point in the system tray", on a touchscreen contact that never lifts and the absolute reporting that makes the pointer snap back
+
 ## 2026-10-28
 
 - added a naming rule to the guide "Authenticate a CLI from the keyring with a PATH shim": the
