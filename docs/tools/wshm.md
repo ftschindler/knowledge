@@ -85,7 +85,9 @@ in the paid edition.[^wshm-readme]
 The mechanism is a hook registry whose own first comment states the position: "In the OSS
 build, all hooks are None (no-op)."[^wshm-pro-hooks] The free binary therefore contains the
 configuration keys for these features and the call sites that would invoke them, and does
-nothing when asked. Setting `auto_fix = true` in a config file is accepted and has no effect.
+nothing when asked. Setting `auto_fix = true` in a config file is accepted and has no effect,
+which is the subject of
+[a finding on reading an open-core split](../findings/20261030_wshm_accepts_auto_fix_and_auto_merge_settings_its_open_source_build_never_acts_on.md).
 
 One claim is weaker still. The free feature list advertises the merge queue as "scoring,
 auto-merge above threshold", and the queue does score. The merge is a `println!` behind

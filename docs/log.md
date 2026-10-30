@@ -3,6 +3,7 @@
 ## 2026-10-30
 
 - add tool page, "wshm", on the self-hosted repo agent: what its Apache-2.0 edition triages and scores, which advertised features are paid or unimplemented, and the three shapes it runs in
+- add finding, "wshm accepts auto_fix and auto-merge settings that its open-source build never acts on", carrying the verdict against adopting it and the way to read an open-core split. Linked from the wshm tool page
 
 ## 2026-10-29
 

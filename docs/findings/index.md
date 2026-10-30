@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### October
 
+- 2026-10-30: [wshm accepts auto_fix and auto-merge settings that its open-source build never acts on](20261030_wshm_accepts_auto_fix_and_auto_merge_settings_its_open_source_build_never_acts_on.md) - the hook registry that decides an open-core split, and the queue that ranks pull requests and then declines to merge one
 - 2026-10-29: [A phantom touch pins the pointer to one point in the system tray](20261029_a_phantom_touch_pins_the_pointer_to_one_point_in_the_system_tray.md) - a touchscreen contact that never lifts, and why an absolute device undoes every attempt to move the mouse away
 - 2026-10-20: [uvx --from silently runs the system binary when the package ships no executable](20261020_uvx_from_silently_runs_the_system_binary_when_the_package_ships_no_executable.md) - a download, an install and a plausible version, none of which came from the package
 - 2026-10-20: [Bun's auto-install ignores the version pinned in package.json](20261020_bun_auto_install_ignores_the_version_pinned_in_package_json.md) - the clean working directory that costs the pin, and why a skill is better off keeping its node_modules
