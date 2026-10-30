@@ -1,5 +1,9 @@
 # Log
 
+## 2026-10-30
+
+- add tool page, "wshm", on the self-hosted repo agent: what its Apache-2.0 edition triages and scores, which advertised features are paid or unimplemented, and the three shapes it runs in
+
 ## 2026-10-29
 
 - add finding, "A phantom touch pins the pointer to one point in the system tray", on a touchscreen contact that never lifts and the absolute reporting that makes the pointer snap back

@@ -21,6 +21,7 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [project-wiki (giodra96)](project_wiki_giodra96.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name
+- [wshm](wshm.md) - the self-hosted repo agent whose free edition triages and scores, and whose review, auto-fix and merge are sold separately or not written yet
 - [opencode](opencode.md) - the terminal agent that writes most of these pages, and the one-directory-per-provider config my own setup is built from
 - [oh-my-openagent (YeonGyu-Kim)](oh_my_openagent_yeongyu.md) - the plugin that gives opencode its agents and skills, the three editions it grew into, and the opencode 2.x break that stops it loading
 - [OpenChamber](openchamber.md) - the desktop, web and mobile workspace that drives an opencode server rather than replacing it, and what adopting it would and would not change here
