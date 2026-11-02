@@ -2,7 +2,7 @@
 repos:
 # -- Validate as much json as we can --
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 6b63472e72e1a91ed8a2f6d483790dfb644fa1d3  # frozen: 0.37.4
+  rev: 0494aa7fa1314e98913a41227d8f0a515b2c1049  # frozen: 0.38.2
   hooks:
   - id: check-jsonschema
     name: Validate markdownlint-cli2 config schema
@@ -12,13 +12,13 @@ repos:
 # -- Markdown linting and canonicalisation --
 - repo: https://github.com/DavidAnson/markdownlint-cli2
   # ATTENTION: ensure to update the version in check-jsonschema above!
-  rev: 534166213006ec869b773b7ed8c6ebeaad1165d0  # frozen: v0.23.0
+  rev: 341e2a331ba578029e66c2e01183e7a6b5ca9ab4  # frozen: v0.24.0
   hooks:
   - id: markdownlint-cli2
     files: \.md$
     args: [--config=.markdownlint-cli2.jsonc, --fix]
 - repo: https://github.com/jackdewinter/pymarkdown
-  rev: 5a91b386476b633c4a594951397139aa5ab45a78  # frozen: v0.9.38
+  rev: 25eba0fb2eb4bd1d59dc69a59cb9976d821106e7  # frozen: v0.9.41
   hooks:
   - id: pymarkdown
     name: PyMarkdown linter
@@ -31,13 +31,13 @@ repos:
 # pre-commit passes it rather than the whole bundle; CI runs `--all-files`,
 # which hands it everything and so remains the full sweep.
 - repo: https://github.com/ftschindler/linkspector-pre-commit
-  rev: db683f24c1df3b24e91c81271811a9e8b3ae5409  # frozen: v0.1.0
+  rev: 27eda8114c9644dc673405c0b741a5a1941bd65e  # frozen: v0.2.1
   hooks:
   - id: linkspector-changed
     # -- Python formatting + linting --
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: c59bba8fb259db0fec2bbb77ad8ba51ea7341b56  # frozen: v0.15.20
+  rev: f368fb366ff7f2f808dd324b83a6d32267799e19  # frozen: v0.17.2
   hooks:
   - id: ruff-check
   - id: ruff-format
@@ -128,7 +128,7 @@ repos:
 # use here; pinning it by revision is what keeps this bundle standalone without
 # carrying a copy that could drift.
 - repo: https://github.com/ftschindler/federated-knowledge-skills
-  rev: 5b0771e12f55d1ce5f598f4e42e788bcac4c4447  # frozen: v0.2.2
+  rev: 793df7d018ea0b580fbf8229d993fc2ee72d4183  # frozen: v0.3.1
   hooks:
   - id: okf-concepts
     args: [--bundle-root, docs, --floor, docs/fkb.yaml]
