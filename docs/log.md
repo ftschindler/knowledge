@@ -1,5 +1,12 @@
 # Log
 
+## 2026-11-10
+
+- add tool page, "Docker", on running it rootless on Arch and where its config, data and logs live when it is
+- add finding, "Deleting every image and container leaves rootless Docker using 100 GB", on the build cache and untagged images that survive and where the containerd store keeps them
+- add finding, "docker volume prune -a deletes a Compose database while the stack is down", on Compose volume naming, unattached volumes of stopped stacks, and worktrees getting volumes of their own
+- add guide, "Cap the Docker build cache on rootless Docker", on BuildKit garbage collection in the user's daemon.json and checking it through buildx
+
 ## 2026-10-30
 
 - add tool page, "wshm", on the self-hosted repo agent: what its Apache-2.0 edition triages and scores, which advertised features are paid or unimplemented, and the three shapes it runs in

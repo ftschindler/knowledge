@@ -19,6 +19,7 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [federated-knowledge-skills (Felix Schindler)](federated_knowledge_skills_schindler.md) - mine: the `fkb` skill, CLI and hooks that bind privacy-tiered bundles into a federation, and what this bundle is now written through
 - [federated-agent-kits (Felix Schindler)](federated_agent_kits_schindler.md) - also mine: one manifest line instead of a skill copied by hand into every harness that wants it
 - [project-wiki (giodra96)](project_wiki_giodra96.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
+- [Docker](docker.md) - the container engine, run rootless as a user unit on Arch, and the table of where config, data and logs move to when it is
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name
 - [wshm](wshm.md) - the self-hosted repo agent whose free edition triages and scores, and whose review, auto-fix and merge are sold separately or not written yet

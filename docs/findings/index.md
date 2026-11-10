@@ -20,6 +20,11 @@ And the subject lives in the tags rather than in a directory, per
 
 ## 2026
 
+### November
+
+- 2026-11-10: [docker volume prune -a deletes a Compose database while the stack is down](20261110_docker_volume_prune_a_deletes_a_compose_database_while_the_stack_is_down.md) - volumes named after the directory, a stopped stack that leaves its database unattached, and the worktree that quietly gets an empty one
+- 2026-11-10: [Deleting every image and container leaves rootless Docker using 100 GB](20261110_deleting_every_image_and_container_leaves_rootless_docker_using_100g.md) - a build cache and untagged images that no listing shows, stored where most advice does not look
+
 ### October
 
 - 2026-10-30: [wshm accepts auto_fix and auto-merge settings that its open-source build never acts on](20261030_wshm_accepts_auto_fix_and_auto_merge_settings_its_open_source_build_never_acts_on.md) - the hook registry that decides an open-core split, and the queue that ranks pull requests and then declines to merge one
