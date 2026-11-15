@@ -20,6 +20,9 @@
 
 - added a section to the tool page "Inference Manager (Canonical)" on sudo not finding snap commands on Arch, and the sudoers drop-in that fixes it
 - add tool page, "Inference Manager (Canonical)", on the inference CLI and proxy over Canonical's inference snaps, written from the documentation
+## 2026-11-15
+
+- add hardware page, "Lenovo ThinkPad X390 Yoga", a 13-inch Whiskey Lake convertible with Wacom pen and touch, classic Realtek HDA audio, and no discrete GPU
 
 ## 2026-11-10
 

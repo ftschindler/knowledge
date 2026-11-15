@@ -25,5 +25,6 @@ Conventions:
 
 ## Devices
 
+- [Lenovo ThinkPad X390 Yoga](lenovo_thinkpad_x390_yoga.md) - a 13-inch Whiskey Lake convertible with a Wacom pen and touch digitizer
 - [Dell Precision 5470](dell_precision_5470.md) - my work machine from 2022 until now: a 14-inch Alder Lake workstation
 - [OpenMove by Shokz](openmove_by_shokz.md) - my open-ear bone-conduction headset
