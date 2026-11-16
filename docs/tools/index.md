@@ -26,6 +26,7 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [opencode](opencode.md) - the terminal agent that writes most of these pages, and the one-directory-per-provider config my own setup is built from
 - [oh-my-openagent (YeonGyu-Kim)](oh_my_openagent_yeongyu.md) - the plugin that gives opencode its agents and skills, the three editions it grew into, and the opencode 2.x break that stops it loading
 - [OpenChamber](openchamber.md) - the desktop, web and mobile workspace that drives an opencode server rather than replacing it, and what adopting it would and would not change here
+- [Inference Manager (Canonical)](inference_canonical.md) - draft, from the docs: one CLI and one local OpenAI endpoint over Canonical's model-per-snap inference snaps
 - [markitdown](markitdown.md) - Microsoft's PDF-and-Office-to-Markdown converter, as a command and as the MCP server an agent calls
 - [git-ai](git_ai.md) - the git extension that records which lines an agent wrote, where it puts itself, and what that leaves behind
 - [linkspector](linkspector.md) - the link checker this bundle commits through, the two passes it resolves every link with, and the schema that refuses to be annotated

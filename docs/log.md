@@ -1,5 +1,9 @@
 # Log
 
+## 2026-11-16
+
+- add tool page, "Inference Manager (Canonical)", on the inference CLI and proxy over Canonical's inference snaps, written from the documentation
+
 ## 2026-11-10
 
 - add tool page, "Docker", on running it rootless on Arch and where its config, data and logs live when it is
