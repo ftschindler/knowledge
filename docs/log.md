@@ -2,6 +2,7 @@
 
 ## 2026-11-16
 
+- added a section to the tool page "Inference Manager (Canonical)" on sudo not finding snap commands on Arch, and the sudoers drop-in that fixes it
 - add tool page, "Inference Manager (Canonical)", on the inference CLI and proxy over Canonical's inference snaps, written from the documentation
 
 ## 2026-11-10

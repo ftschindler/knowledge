@@ -40,12 +40,17 @@ sources:
   resource: https://computingforgeeks.com/ubuntu-inference-snaps/
   title: 'ComputingForGeeks: Ubuntu Inference Snaps Tested: Gemma 4 vs Ollama'
   last_modified: '2026-11-11'
+- id: arch-wiki-snap
+  resource: https://wiki.archlinux.org/title/Snap#Sudo
+  title: 'ArchWiki: Snap, section Sudo'
+  last_modified: '2026-11-16'
 ---
 The Inference Manager[^inference-repo] is one command and one local endpoint in front of
 Canonical's inference snaps. The two are easy to conflate: the **inference snaps** are the
 models, one snap each, and the **Inference Manager** is the `inference` snap that finds,
-installs and routes to them. This page is written from the documentation; nothing here has
-been run on my machines yet.
+installs and routes to them. This page is written from the documentation; apart from
+installing the manager on Arch and getting it past sudo, nothing here has been run on my
+machines yet.
 
 | | |
 | --- | --- |
@@ -102,6 +107,28 @@ take as a provider. Canonical document doing that per snap, as an `openai` provi
 [^opencode-howto]. Pointing the provider at the manager's proxy instead would make it one
 provider for every local model, and that would fit my one-directory-per-provider layout as
 a profile of its own; that is untested.
+
+## On Arch, sudo cannot find it
+
+Installed from the snapd AUR package, `inference` runs as my user but `sudo inference` says
+the command is not found. sudo ignores the caller's `PATH` and searches its own
+`secure_path`, and on Arch that list lacks `/var/lib/snapd/snap/bin`, where snaps put their
+commands. Ubuntu's default sudoers adds `/snap/bin` to it, which is why the problem does not
+show there.
+
+The fix is a sudoers drop-in, as the Arch wiki gives it[^arch-wiki-snap]. Create it with
+`sudo visudo -f /etc/sudoers.d/90_snap`, so a syntax error is refused rather than locking
+you out of sudo:
+
+```text
+# Add snap binaries installation dir to PATH
+Defaults:<user> secure_path="/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin"
+```
+
+The snippet has to restate the whole list: a later `secure_path` replaces the earlier one,
+and there is no way to append to it. `Defaults:<user>` limits the change to one user; plain
+`Defaults` applies it to everyone. `sudo env | grep ^PATH` should then end in the snap
+directory.
 
 ## Reported by others
 
