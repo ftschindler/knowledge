@@ -2,6 +2,7 @@
 
 ## 2026-11-17
 
+- add finding, "The Plasma lock screen logs a failed login on every resume, and faillock locks the account"
 - add wish, "Following people and projects like the old days of RSS"
 - add decision, "Self-hosting Miniflux as a feed reader", as a draft
 
