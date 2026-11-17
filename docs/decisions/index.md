@@ -13,3 +13,4 @@ Listed oldest first, so the reasoning reads forward.
 - [Teaching my agents to write like me](teaching_my_agents_to_write_better.md) - the three prose principles turned into a hook, a skill and an always-on digest, each reaching an audience the others miss
 - [Adopting caveman at lite, without its init block](adopting_caveman_at_lite_without_its_init_block.md) - keeping the terseness skill and refusing the rule block its installer would have written into a file that already argues the other way
 - [Adopting ponytail without its always-on ruleset](adopting_ponytail_without_its_always_on_ruleset.md) - taking the half of a skill that adds something, and why the plugin it would have collided with cannot be patched
+- [Self-hosting Miniflux as a feed reader](self_hosting_miniflux_as_a_feed_reader.md) - two containers behind the existing Traefik, the server doubling as the sync, and RSSHub held back until a source needs it

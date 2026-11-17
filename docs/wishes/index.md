@@ -5,3 +5,4 @@ which I want generally.
 
 - [Wishes for a personal knowledge base](wishes_for_a_personal_knowledge_base.md) - the full list of requirements the knowledge base had to meet
 - [Local-first, but not local-required](local_first_but_not_local_required.md) - one wish worth its own page: offline by default, never offline-only
+- [Following people and projects like the old days of RSS](following_people_and_projects_like_the_old_days_of_rss.md) - one inbox for blogs, releases and people, synced read status, no accounts to tend

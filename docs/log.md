@@ -2,6 +2,9 @@
 
 ## 2026-11-17
 
+- add wish, "Following people and projects like the old days of RSS"
+- add decision, "Self-hosting Miniflux as a feed reader", as a draft
+
 - add investigation, "Type annotations for a Python library: the options", on annotation placement, syntax and Python floor, checkers, strictness, interface typing and arrays, with pymor#2680 placed among them
 - add principle, "Run a type checker against the project environment in CI, not in an isolated hook"
 - add tool page, "pyMOR"
