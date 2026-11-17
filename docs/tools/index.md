@@ -21,6 +21,7 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [project-wiki (giodra96)](project_wiki_giodra96.md) - the LLM wiki pattern aimed at a repository rather than a person, with a closed taxonomy of requirements, decisions and traceability
 - [Docker](docker.md) - the container engine, run rootless as a user unit on Arch, and the table of where config, data and logs move to when it is
 - [uv](uv.md) - the Python manager under everything here, and the manifest-versus-lockfile split several principles turn on
+- [pyMOR](pymor.md) - the model order reduction library I co-author, built on interfaces an external solver can implement
 - [Dependabot](dependabot.md) - the update bot, and the three different things that share its name
 - [wshm](wshm.md) - the self-hosted repo agent whose free edition triages and scores, and whose review, auto-fix and merge are sold separately or not written yet
 - [opencode](opencode.md) - the terminal agent that writes most of these pages, and the one-directory-per-provider config my own setup is built from

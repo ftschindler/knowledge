@@ -1,5 +1,12 @@
 # Log
 
+## 2026-11-17
+
+- add investigation, "Type annotations for a Python library: the options", on annotation placement, syntax and Python floor, checkers, strictness, interface typing and arrays, with pymor#2680 placed among them
+- add principle, "Run a type checker against the project environment in CI, not in an isolated hook"
+- add tool page, "pyMOR"
+- extended the principle "A declared-but-inert config documents intent, not enforcement" with type annotations that no checker runs on
+
 ## 2026-11-16
 
 - added a section to the tool page "Inference Manager (Canonical)" on sudo not finding snap commands on Arch, and the sudoers drop-in that fixes it

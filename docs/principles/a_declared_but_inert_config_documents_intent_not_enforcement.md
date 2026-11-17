@@ -25,6 +25,12 @@ rules for languages not yet in the tree, CI matrix entries for platforms not yet
 targeted. Also when auditing requirements: an inert declaration is not a reason
 to require the tooling it names.
 
+Type annotations in a repository that runs no type checker are the same case.
+They record what the author meant, and nothing rejects code that contradicts
+them; enforcement starts only when a checker runs, which is what
+[Run a type checker against the project environment in CI, not in an isolated hook](run_a_type_checker_against_the_project_environment_in_ci_not_an_isolated_hook.md)
+is about.
+
 **Why.** Config carries two separable jobs that are easy to conflate. One is
 *enforcement* - actively rejecting or transforming real inputs. The other is
 *documentation of intent* - recording a decision so the next contributor inherits
