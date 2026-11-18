@@ -1,5 +1,10 @@
 # Log
 
+## 2026-11-18
+
+- add tool page, "Math*DB MCP (MaRDI4NFDI)", as a draft
+- add finding, "An MCP server without tool annotations looks destructive to every client", as a draft
+
 ## 2026-11-17
 
 - add finding, "The Plasma lock screen logs a failed login on every resume, and faillock locks the account"

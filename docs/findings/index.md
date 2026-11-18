@@ -22,6 +22,7 @@ And the subject lives in the tags rather than in a directory, per
 
 ### November
 
+- 2026-11-18: [An MCP server without tool annotations looks destructive to every client](20261118_an_mcp_server_without_tool_annotations_looks_destructive_to_every_client.md) - every hint defaults to the cautious value, so a query tool and a mail-sending one look the same until the server says otherwise
 - 2026-11-17: [The Plasma lock screen logs a failed login on every resume, and faillock locks the account](20261117_the_plasma_lock_screen_logs_a_failed_login_on_every_resume.md) - no keypress at all, just a cancelled password prompt that pam_unix calls a wrong password
 - 2026-11-10: [docker volume prune -a deletes a Compose database while the stack is down](20261110_docker_volume_prune_a_deletes_a_compose_database_while_the_stack_is_down.md) - volumes named after the directory, a stopped stack that leaves its database unattached, and the worktree that quietly gets an empty one
 - 2026-11-10: [Deleting every image and container leaves rootless Docker using 100 GB](20261110_deleting_every_image_and_container_leaves_rootless_docker_using_100g.md) - a build cache and untagged images that no listing shows, stored where most advice does not look

@@ -40,3 +40,4 @@ behind them: they keep their plain name, because `uv` is Astral's and will not b
 - [peon-ping](peon_ping.md) - Warcraft III voice lines on agent hooks, the twelve lifecycle events and plaintext prompt log that come with them, and the three paths its own uninstaller misses
 - [Voxtype (Peter Jackson)](voxtype_jackson.md) - stub: push-to-talk dictation as a single Rust binary, with eight local engines behind one config line
 - [Vocalinux (VocaHQ)](vocalinux_vocahq.md) - stub: the AGPL Python alternative, dictating from a tray icon on X11 and Wayland alike
+- [Math*DB MCP (MaRDI4NFDI)](mathstardb_mcp_mardi4nfdi.md) - draft: one public MCP server over MaRDI's model and algorithm graphs, and the tools that walk from a model to the software that solves it
