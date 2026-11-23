@@ -2,7 +2,7 @@
 repos:
 # -- Validate as much json as we can --
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 6b63472e72e1a91ed8a2f6d483790dfb644fa1d3  # frozen: 0.37.4
+  rev: a76b92851fc9eede9f9bc4073eb55202f34eb0df  # frozen: 0.39.0
   hooks:
   - id: check-jsonschema
     name: Validate markdownlint-cli2 config schema
@@ -12,13 +12,13 @@ repos:
 # -- Markdown linting and canonicalisation --
 - repo: https://github.com/DavidAnson/markdownlint-cli2
   # ATTENTION: ensure to update the version in check-jsonschema above!
-  rev: 534166213006ec869b773b7ed8c6ebeaad1165d0  # frozen: v0.23.0
+  rev: c01a1853c19b175aee6a09f24e2ad9b748c485ad  # frozen: v0.24.1
   hooks:
   - id: markdownlint-cli2
     files: \.md$
     args: [--config=.markdownlint-cli2.jsonc, --fix]
 - repo: https://github.com/jackdewinter/pymarkdown
-  rev: 5a91b386476b633c4a594951397139aa5ab45a78  # frozen: v0.9.38
+  rev: 4b13b0235c9921966e8093b46948041075c80460  # frozen: v0.9.42
   hooks:
   - id: pymarkdown
     name: PyMarkdown linter
@@ -31,13 +31,13 @@ repos:
 # pre-commit passes it rather than the whole bundle; CI runs `--all-files`,
 # which hands it everything and so remains the full sweep.
 - repo: https://github.com/ftschindler/linkspector-pre-commit
-  rev: db683f24c1df3b24e91c81271811a9e8b3ae5409  # frozen: v0.1.0
+  rev: 27eda8114c9644dc673405c0b741a5a1941bd65e  # frozen: v0.2.1
   hooks:
   - id: linkspector-changed
     # -- Python formatting + linting --
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: c59bba8fb259db0fec2bbb77ad8ba51ea7341b56  # frozen: v0.15.20
+  rev: ef6cf06c079dd6b299dfc720b0f14400c9d168e1  # frozen: v0.17.5
   hooks:
   - id: ruff-check
   - id: ruff-format
