@@ -10,6 +10,8 @@ decision it fed rather than on its own.
 A survey is a claim about what existed when it was written, so read one against its `generated`
 date. Where an investigation deliberately stops short of choosing, it says so.
 
+**Latest:** [Agentic AI and Home Assistant Integration](agentic_ai_homeassistant_integration.md) — 9.6K-install skill + MCP server architecture for full remote agent access.
+
 - [Open Knowledge Format (OKF): findings](open_knowledge_format_okf_findings.md) - what the format these pages are written in actually specifies
 - [Substrate options for an OKF-based agent-first LLM wiki: investigation](substrate_options_for_an_okf_based_agent_first_llm_wiki_investigation.md) - the survey of tools that could hold such a knowledge base, deliberately stopping short of choosing
 - [Agent-integration layer and multi-vault interaction for an OKF-conformant PKB](agent_integration_layer_and_multi_vault_interaction_for_an_okf_conformant_pkb.md) - how an agent reaches these pages, and how several bundles at different privacy tiers meet
@@ -22,3 +24,4 @@ date. Where an investigation deliberately stops short of choosing, it says so.
 - [Travel management skills: what is portable out of a repo-shaped toolkit](travel_management_skills_portability.md) - counting how much of a 48-skill collection survives leaving the repository it ships in
 - [What an MCP server can be, and who can reach one](mcp_server_entry_points_and_transports.md) - two transports, five shapes and six callers, and the two variables that decide which are reachable
 - [Type annotations for a Python library: the options](type_annotation_options_for_a_python_library.md) - the syntax, checker and strictness choices a typing pull request makes without naming, with one from pyMOR placed among them
+- [Agentic AI and Home Assistant Integration](agentic_ai_homeassistant_integration.md) - survey of skills and MCP servers for connecting AI agents to Home Assistant, with security and architecture findings
